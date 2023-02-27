@@ -1,6 +1,5 @@
-import { useRouter } from "next/router"
 import { GetStaticProps, GetStaticPaths } from 'next';
-import { FetchConteudo } from "@/services/fetch"
+import { FetchConteudo, FetchAPICapitulos } from "@/services/fetch"
 import { IBuscaConteudoLeitura } from "@/components/entities/interfaces"
 
 // const versaoAmount = 1 // somente a Almeida revisada e atualizada
@@ -8,10 +7,14 @@ import { IBuscaConteudoLeitura } from "@/components/entities/interfaces"
 // const livroAmount = 66  //todos os livros Antigo e novo testamentos
 // const capituloAmount = "solicitar api quantidade de capitulos que tem o livro. utilizar a FetchAPICapitulos()"
 
-const versaoAmountTest = 1 // somente a Almeida revisada e atualizada
-const testamentoAmountTest = 2 //os dois testamentos
-const livroAmountTest = 66  //todos os livros Antigo e novo testamentos
-const capituloAmountTest = 5 //somente os 5 capitulos de cada livro
+const versao = 1 // somente a Almeida revisada e atualizada
+const todostestamentos = 2 //os dois testamentos
+const antigoTestamento = 1
+const novoTestamento = 2
+const todosLivros = 66  //todos os livros Antigo e novo testamentos
+const livrosAntigoTestamento = 39
+const livroNovotestamento = 66
+const capituloAmountTest = 150 //somente os 5 capitulos de cada livro
 
 interface IGetStaticProps {
     versaoid: string,
@@ -22,9 +25,6 @@ interface IGetStaticProps {
 
 
 export default function LeituraBiblia({ data }: any) {
-    const router = useRouter()
-    console.log(router.query)
-    console.log(data)
     return (
         <>
             <h1>LEITURAAA</h1>
@@ -32,27 +32,26 @@ export default function LeituraBiblia({ data }: any) {
             <h1>
                 {data?.nomeLivro[0].livro_nome}
             </h1>
-            {data?.conteudo.map((dados: any) => {
+            <h3>{data?.capituloAtual}</h3>
+            {data?.conteudo.map((dados: any, index: number) => {
                 return (
-                    <p>{dados.conteudo}</p>
+                    <p key={index}>{dados.conteudo}</p>
                 )
             })
             }
         </>
     )
 }
-
-
 export const getStaticPaths: GetStaticPaths = async () => {
-
     let paths = []
-    for (let testamento = 1; testamento <= testamentoAmountTest; testamento++) {
-        for (var livros = 1; livros <= livroAmountTest; livros++) {
-            for (var capitulos = 1; capitulos <= capituloAmountTest; capitulos++) {
+    for (let testamento = 1; testamento <= antigoTestamento; testamento++) {
+        for (var livros = 1; livros <= livrosAntigoTestamento; livros++) {
+            let fetchCapitulos = await FetchAPICapitulos(versao, livros)
+            for (var capitulos = 1; capitulos <= fetchCapitulos[0].capitulo; capitulos++) {
                 paths.push({
                     params: {
-                        versaoid: `${versaoAmountTest}`,
-                        testamentoid: `${testamento}}`,
+                        versaoid: `${versao}`,
+                        testamentoid: `${testamento}`,
                         livroid: `${livros}`,
                         capitulo: `${capitulos}`
                     }

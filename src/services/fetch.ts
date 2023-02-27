@@ -42,7 +42,12 @@ export async function FetchAPILivros(testamentoID: number) {
 export async function FetchAPICapitulos(versaoID: string | number, livroID: string | number) {
     console.log(versaoID, livroID)
     try {
-        const response = await fetch(`${urlApiDev}/mais/buscacapitulo/${versaoID}/${livroID}`)
+        const response = await fetch(`${urlApiDev}/mais/buscacapitulo/${versaoID}/${livroID}`, {
+            headers: {
+                'Content-Type': 'application/json',
+                'origin': 'http://marcosusepc:3001'
+            }
+        })
         const data = await response.json()
         return data as IresultCapitulos[]
     } catch (error) {
