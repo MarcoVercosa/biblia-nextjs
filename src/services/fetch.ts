@@ -1,6 +1,6 @@
 import {
     IresultVersao, IresultTestamento,
-    IresultLivros, IresultCapitulos
+    IresultLivros, IresultCapitulos, IBuscaConteudoLeitura
 } from "@/components/entities/interfaces"
 
 const urlApiDev = 'http://marcosusepc:9000'
@@ -40,10 +40,28 @@ export async function FetchAPILivros(testamentoID: number) {
 }
 
 export async function FetchAPICapitulos(versaoID: string | number, livroID: string | number) {
+    console.log(versaoID, livroID)
     try {
         const response = await fetch(`${urlApiDev}/mais/buscacapitulo/${versaoID}/${livroID}`)
         const data = await response.json()
         return data as IresultCapitulos[]
+    } catch (error) {
+        console.log(error)
+        return []
+    }
+}
+
+export async function FetchConteudo(versaoID: string, testamentoID: string, livroId: string, capitulo: string) {
+
+    try {
+        const response = await fetch(`${urlApiDev}/mais/buscaconteudo/${versaoID}/${testamentoID}/${livroId}/${capitulo}`, {
+            headers: {
+                'Content-Type': 'application/json',
+                'origin': 'http://marcosusepc:3001'
+            }
+        })
+        const data = await response.json()
+        return data as IBuscaConteudoLeitura
     } catch (error) {
         console.log(error)
         return []
