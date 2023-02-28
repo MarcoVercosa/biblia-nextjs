@@ -20,7 +20,6 @@
     width: 35vw;
     height: auto;
     margin: 0 auto;
-    background-color: rgb(243, 241, 241);
     margin-top: 20vh;
     margin-left: 30vw;
     border-radius: 20px;
@@ -37,7 +36,7 @@
     font-family: CormorantGaramond;
     font-size: 2rem;
     text-align: center;
-    color: #ffffff;
+    color: #000000;
 }
 
 .modalmain {}
@@ -56,7 +55,7 @@
     font-family: CormorantGaramond;
     font-size: 2rem;
     font-weight: bold;
-    color: #ffffff;
+    color: #080808;
 
 }
 

@@ -1,0 +1,109 @@
+@font-face {
+    font-family: CardoGaramond;
+    /* src: url('../asset/CormorantGaramond/CormorantGaramond-Medium.ttf');
+    src: url('../asset/CormorantGaramond/CormorantGaramond-BoldItalic.ttf'); */
+    src: url('../asset//CardoGaramond//Cardo/Cardo-Regular.ttf');
+    /* font-weight: 400;
+    font-style: normal; */
+}
+
+.main {
+    background-image: url("../../public/images/backgroundReading/background.jpg");
+    width: 98vw;
+    margin: 0 auto;
+    margin-top: 1rem;
+    border-radius: 30px;
+}
+
+.nomeversao h3 {
+    /* font-family: CormorantGaramond; */
+    font-family: 'CardoGaramond', serif;
+    font-size: 1.5rem;
+    text-align: center;
+    color: #000000;
+}
+
+.livrocapitulo {
+    display: flex;
+    width: 30vw;
+    justify-content: flex-start;
+}
+
+.livrocapitulo h1 {
+    font-family: CardoGaramond;
+    font-size: 1.2rem;
+    padding: 1rem;
+    font-weight: 600;
+}
+
+.content {
+    display: flex;
+    flex-direction: column;
+    margin: 0 auto;
+    width: 93vw;
+}
+
+.content p {
+    font-family: CardoGaramond;
+    font-size: 1.2rem;
+    padding: 0.3rem;
+    cursor: pointer;
+    transition: all 0.5s
+}
+
+.content p:hover {
+    background-color: rgb(233, 233, 233);
+    border-radius: 30px;
+
+}
+
+.content span {
+    display: inline-block;
+    background-color: rgb(0, 0, 0);
+    border-radius: 30px;
+    color: white;
+    padding: 0.2rem;
+}
+
+.articlenavegacao {
+    margin: 0 auto;
+    width: 35vw;
+    display: flex;
+    justify-content: center;
+    gap: 10rem;
+    margin-top: 2rem;
+    padding: 1rem;
+    border-radius: 30px;
+    background: rgba(180, 180, 180, 0.486);
+    backdrop-filter: blur(4.7px);
+    -webkit-backdrop-filter: blur(1.7px);
+
+}
+
+.articlenavegacao select {
+    background-color: #181818;
+    color: rgb(255, 255, 255);
+    padding: 12px;
+    /* width: 2rem; */
+    border: none;
+    font-size: 20px;
+    box-shadow: 0 5px 25px rgba(0, 0, 0, 0.2);
+    -webkit-appearance: button;
+    appearance: button;
+    outline: none;
+    border-radius: 15px;
+    cursor: pointer;
+}
+
+.articlenavegacao select option {
+    padding: 30px;
+}
+
+.articlenavegacaoarrow {
+    transition: all 0.5s;
+    cursor: pointer;
+}
+
+.articlenavegacaoarrow:hover {
+    transform: scale(1.1);
+}

@@ -3,14 +3,16 @@ import {
     IresultLivros, IresultCapitulos, IBuscaConteudoLeitura
 } from "@/components/entities/interfaces"
 
-const urlApiDev = 'http://marcosusepc:9000'
+const urlApiDev = 'http://localhost:9000'
 const urlApiProd = 'http://...'
 
 export async function FetchAPIVersao(): Promise<IresultVersao[]> {
     try {
         const response = await fetch(`${urlApiDev}/mais/buscaversao`)
-        const data = await response.json()
-        return data as IresultVersao[]
+        if (response.status == 200) {
+            const data = await response.json()
+            return data as IresultVersao[]
+        } else { throw new Error("Forbidden or error") }
     } catch (error) {
         console.log(error)
         return []
@@ -20,8 +22,10 @@ export async function FetchAPIVersao(): Promise<IresultVersao[]> {
 export async function FetchAPITestamento(): Promise<IresultTestamento[]> {
     try {
         const response = await fetch(`${urlApiDev}/mais/buscatestamento`)
-        const data = await response.json()
-        return data as IresultTestamento[]
+        if (response.status == 200) {
+            const data = await response.json()
+            return data as IresultTestamento[]
+        } else { throw new Error("Forbidden or internal error") }
     } catch (error) {
         console.log(error)
         return []
@@ -31,8 +35,10 @@ export async function FetchAPITestamento(): Promise<IresultTestamento[]> {
 export async function FetchAPILivros(testamentoID: number) {
     try {
         const response = await fetch(`${urlApiDev}/mais/buscalivros/${testamentoID}`)
-        const data = await response.json()
-        return data as IresultLivros[]
+        if (response.status == 200) {
+            const data = await response.json()
+            return data as IresultLivros[]
+        } else { throw new Error("Forbidden or internal error") }
     } catch (error) {
         console.log(error)
         return []
@@ -40,16 +46,13 @@ export async function FetchAPILivros(testamentoID: number) {
 }
 
 export async function FetchAPICapitulos(versaoID: string | number, livroID: string | number) {
-    console.log(versaoID, livroID)
+    console.log("CAPITULOS")
     try {
-        const response = await fetch(`${urlApiDev}/mais/buscacapitulo/${versaoID}/${livroID}`, {
-            headers: {
-                'Content-Type': 'application/json',
-                'origin': 'http://marcosusepc:3001'
-            }
-        })
-        const data = await response.json()
-        return data as IresultCapitulos[]
+        const response = await fetch(`${urlApiDev}/mais/buscacapitulo/${versaoID}/${livroID}`)
+        if (response.status == 200) {
+            const data = await response.json()
+            return data as IresultCapitulos[]
+        } else { throw new Error("Forbidden or internal error") }
     } catch (error) {
         console.log(error)
         return []
@@ -57,16 +60,51 @@ export async function FetchAPICapitulos(versaoID: string | number, livroID: stri
 }
 
 export async function FetchConteudo(versaoID: string, testamentoID: string, livroId: string, capitulo: string) {
+    console.log("FetchConteudo")
+    try {
+        const response = await fetch(`${urlApiDev}/mais/buscaconteudo/${versaoID}/${testamentoID}/${livroId}/${capitulo}`)
 
+        if (response.status == 200) {
+            const data = await response.json()
+            return data as IBuscaConteudoLeitura
+        } else { throw new Error("Forbidden or internal error") }
+    } catch (error) {
+        console.log(error)
+        return []
+    }
+}
+
+export async function FetchAPICapitulosServerSide(versaoID: string | number, livroID: string | number) {
+    try {
+        const response = await fetch(`${urlApiDev}/mais/buscacapitulo/${versaoID}/${livroID}`, {
+            headers: {
+                'Content-Type': 'application/json',
+                'origin': 'http://localhost:3001'
+            }
+        })
+        if (response.status == 200) {
+            const data = await response.json()
+            return data as IresultCapitulos[]
+        } else { throw new Error("Forbidden or internal error") }
+    } catch (error) {
+        console.log(error)
+        return []
+    }
+}
+
+export async function FetchConteudoServerSide(versaoID: string, testamentoID: string, livroId: string, capitulo: string) {
     try {
         const response = await fetch(`${urlApiDev}/mais/buscaconteudo/${versaoID}/${testamentoID}/${livroId}/${capitulo}`, {
             headers: {
                 'Content-Type': 'application/json',
-                'origin': 'http://marcosusepc:3001'
+                'origin': 'http://localhost:3001'
             }
         })
-        const data = await response.json()
-        return data as IBuscaConteudoLeitura
+
+        if (response.status == 200) {
+            const data = await response.json()
+            return data as IBuscaConteudoLeitura
+        } else { throw new Error("Forbidden or internal error") }
     } catch (error) {
         console.log(error)
         return []
