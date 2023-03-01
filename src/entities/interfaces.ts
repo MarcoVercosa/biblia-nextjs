@@ -29,8 +29,7 @@ export interface ISelectFieldOptions {
     livro_id: number,
     capitulo: string,
     capitulo_id: number,
-    conteudo: string,
-    conteudo_id: number
+
 }
 
 export interface IBuscaConteudoLeitura {
@@ -41,4 +40,10 @@ export interface IBuscaConteudoLeitura {
         nomeVersao: Array<{ versao_nome: string; }>
         capituloAtual: number
     }
+}
+
+export interface IProps {
+    OpenCloseModal: () => void
+    preRenderVersaoOpcoes: IresultVersao[]
+    preRenderTestamentoOpcoes: IresultTestamento[]
 }

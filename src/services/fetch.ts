@@ -1,14 +1,19 @@
 import {
     IresultVersao, IresultTestamento,
     IresultLivros, IresultCapitulos, IBuscaConteudoLeitura
-} from "@/components/entities/interfaces"
+} from "@/entities/interfaces"
 
 const urlApiDev = 'http://localhost:9000'
 const urlApiProd = 'http://...'
 
-export async function FetchAPIVersao(): Promise<IresultVersao[]> {
+export async function FetchAPIVersaoServerSide(): Promise<IresultVersao[]> {
     try {
-        const response = await fetch(`${urlApiDev}/mais/buscaversao`)
+        const response = await fetch(`${urlApiDev}/mais/buscaversao`, {
+            headers: {
+                'Content-Type': 'application/json',
+                'origin': 'http://localhost'
+            }
+        })
         if (response.status == 200) {
             const data = await response.json()
             return data as IresultVersao[]
@@ -19,9 +24,15 @@ export async function FetchAPIVersao(): Promise<IresultVersao[]> {
     }
 }
 
-export async function FetchAPITestamento(): Promise<IresultTestamento[]> {
+export async function FetchAPITestamentoServerSide(): Promise<IresultTestamento[]> {
     try {
-        const response = await fetch(`${urlApiDev}/mais/buscatestamento`)
+        const response = await fetch(`${urlApiDev}/mais/buscatestamento`, {
+            headers: {
+                'Content-Type': 'application/json',
+                'origin': 'http://localhost'
+            }
+
+        })
         if (response.status == 200) {
             const data = await response.json()
             return data as IresultTestamento[]
@@ -79,7 +90,7 @@ export async function FetchAPICapitulosServerSide(versaoID: string | number, liv
         const response = await fetch(`${urlApiDev}/mais/buscacapitulo/${versaoID}/${livroID}`, {
             headers: {
                 'Content-Type': 'application/json',
-                'origin': 'http://localhost:3001'
+                'origin': 'http://localhost'
             }
         })
         if (response.status == 200) {
@@ -97,7 +108,7 @@ export async function FetchConteudoServerSide(versaoID: string, testamentoID: st
         const response = await fetch(`${urlApiDev}/mais/buscaconteudo/${versaoID}/${testamentoID}/${livroId}/${capitulo}`, {
             headers: {
                 'Content-Type': 'application/json',
-                'origin': 'http://localhost:3001'
+                'origin': 'http://localhost'
             }
         })
 

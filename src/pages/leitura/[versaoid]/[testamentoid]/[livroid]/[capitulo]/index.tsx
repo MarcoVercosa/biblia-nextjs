@@ -1,11 +1,12 @@
 import { GetStaticProps, GetStaticPaths } from 'next';
 import { FetchAPICapitulosServerSide, FetchConteudoServerSide } from "@/services/fetch"
-import { IBuscaConteudoLeitura } from "@/components/entities/interfaces"
+import { IBuscaConteudoLeitura } from "@/entities/interfaces"
 import Head from 'next/head'
 import styles from '@/styles/Home.module.css'
 import NavBar from "../../../../../../components/navbar"
-import ReadingPanel from '@/components/entities/readingPanel';
+import ReadingPanel from '@/entities/readingPanel';
 import Footer from "../../../../../../components/footer"
+import Loading from '@/components/loading/loading';
 
 
 
@@ -27,6 +28,15 @@ interface IGetStaticProps {
 
 
 export default function LeituraBiblia({ data }: IBuscaConteudoLeitura) {
+
+    if (!data) {
+        return (
+            <>
+                <NavBar />
+                <Loading />
+            </>
+        )
+    }
     return (
         <>
             <div >
@@ -37,8 +47,6 @@ export default function LeituraBiblia({ data }: IBuscaConteudoLeitura) {
                     <link rel="icon" href="/favicon.ico" />
                 </Head>
                 <NavBar />
-
-
             </div>
             {/* <Footer /> */}
 
@@ -76,12 +84,3 @@ export const getStaticProps: GetStaticProps = async ({ params }: any) => {
     }
 }
 
-
-
-// for (var testamento = 1; testamento <= testamentoAmountTest; testamento++) {
-//     for (var livros = 1; livros <= livroAmountTest; livros++) {
-//         for (var capitulos = 1; capitulos <= capituloAmountTest; capitulos++) {
-//             console.log(`conteudo/${versaoAmountTest}/${testamento}/${testamento}/${capitulos}`)
-//         }
-//     }
-// }

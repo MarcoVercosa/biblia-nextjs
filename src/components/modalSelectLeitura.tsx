@@ -2,19 +2,15 @@ import { useEffect, useState } from "react";
 import React from "react";
 import { useRouter } from 'next/router'
 import styles from "../styles/modalSelectLeitura.module.css"
-import { FetchAPIVersao, FetchAPITestamento, FetchAPILivros, FetchAPICapitulos } from "@/services/fetch";
-import { IresultVersao, IresultTestamento, IresultLivros, IresultCapitulos, ISelectFieldOptions } from "./entities/interfaces";
+import { FetchAPILivros, FetchAPICapitulos } from "@/services/fetch";
+import { IresultVersao, IresultTestamento, IresultLivros, IresultCapitulos, ISelectFieldOptions, IProps } from "../entities/interfaces";
 
-interface IProps {
-    OpenCloseModal: () => void
-}
 
-export default function ModalSelectLeitura(props: IProps) {
-    const [versao, setVersao] = useState<IresultVersao[]>([]);
-    const [testamento, setTestamento] = useState<IresultTestamento[]>([]);
+export default function ModalSelectLeitura({ OpenCloseModal, preRenderVersaoOpcoes, preRenderTestamentoOpcoes }: IProps) { //as props preReder são feitas através de fetch via getServerSideProps na page Home, pois a versão e testamento, são sempre os mesmos
+    const [versao, setVersao] = useState<IresultVersao[]>(preRenderVersaoOpcoes);
+    const [testamento, setTestamento] = useState<IresultTestamento[]>(preRenderTestamentoOpcoes);
     const [livros, setLivros] = useState<IresultLivros[]>([]);
     const [capitulo, setCapitulo] = useState<any>([]);
-    const [conteudo, setConteudo] = useState([]);
 
     const [selectedField, setSelectedField] = useState<ISelectFieldOptions>({
         versao: "selecione",
@@ -25,15 +21,13 @@ export default function ModalSelectLeitura(props: IProps) {
         livro_id: 0,
         capitulo: "selecione",
         capitulo_id: 0,
-        conteudo: "selecione",
-        conteudo_id: 0
     })
     const router = useRouter()
 
-    useEffect(() => {//assim q a pagina é aberta ele puxa as versões e testamentos disponíveis
-        FetchAPIVersao().then((data) => setVersao(data))
-        FetchAPITestamento().then((data) => setTestamento(data))
-    }, [])
+    // useEffect(() => {//assim q a pagina é aberta ele puxa as versões e testamentos disponíveis
+    //     FetchAPIVersao().then((data) => setVersao(data))
+    //     FetchAPITestamento().then((data) => setTestamento(data))
+    // }, [])
 
     function UpdateSelectedFields(field: string, value: string, keyName: string, keyValue: string) {
         setSelectedField(prevState => { return { ...prevState, [field]: value, [keyName]: keyValue } })
@@ -104,11 +98,10 @@ export default function ModalSelectLeitura(props: IProps) {
                     </div>
                     <div className={styles.buttons}>
                         <button className={styles.buttonsok} onClick={GoBible} >OK</button>
-                        <button className={styles.buttonsfechar} onClick={props.OpenCloseModal}>FECHAR </button>
+                        <button className={styles.buttonsfechar} onClick={OpenCloseModal}>FECHAR </button>
                     </div>
                 </div>
             </article>
         </div>
     )
 }
-

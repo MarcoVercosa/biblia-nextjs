@@ -13,12 +13,24 @@
     margin: 0 auto;
     margin-top: 1rem;
     border-radius: 30px;
+    animation-duration: 2s;
+    animation-name: slidein;
+}
+
+@keyframes slidein {
+    from {
+        opacity: 0;
+    }
+
+    to {
+        opacity: 1;
+    }
 }
 
 .nomeversao h3 {
     /* font-family: CormorantGaramond; */
     font-family: 'CardoGaramond', serif;
-    font-size: 1.5rem;
+    font-size: 2rem;
     text-align: center;
     color: #000000;
 }
@@ -31,7 +43,7 @@
 
 .livrocapitulo h1 {
     font-family: CardoGaramond;
-    font-size: 1.2rem;
+    font-size: 2rem;
     padding: 1rem;
     font-weight: 600;
 }
@@ -45,7 +57,7 @@
 
 .content p {
     font-family: CardoGaramond;
-    font-size: 1.2rem;
+    font-size: 1.3rem;
     padding: 0.3rem;
     cursor: pointer;
     transition: all 0.5s
@@ -54,7 +66,6 @@
 .content p:hover {
     background-color: rgb(233, 233, 233);
     border-radius: 30px;
-
 }
 
 .content span {
@@ -67,10 +78,9 @@
 
 .articlenavegacao {
     margin: 0 auto;
-    width: 35vw;
+    width: 40vw;
     display: flex;
-    justify-content: center;
-    gap: 10rem;
+    gap: 2rem;
     margin-top: 2rem;
     padding: 1rem;
     border-radius: 30px;
@@ -81,13 +91,13 @@
 }
 
 .articlenavegacao select {
-    background-color: #181818;
+    background-color: #242424;
     color: rgb(255, 255, 255);
-    padding: 12px;
+    padding: 1.4rem;
     /* width: 2rem; */
     border: none;
     font-size: 20px;
-    box-shadow: 0 5px 25px rgba(0, 0, 0, 0.2);
+    box-shadow: 0 5px 25px rgba(36, 36, 36, 0.2);
     -webkit-appearance: button;
     appearance: button;
     outline: none;
@@ -100,10 +110,24 @@
 }
 
 .articlenavegacaoarrow {
+    display: flex;
+    justify-content: center;
+    width: 30vw;
     transition: all 0.5s;
     cursor: pointer;
+    align-items: center;
 }
+
+
+.articlenavegacaoarrow p {
+    font-size: 2rem;
+    padding: 0;
+}
+
 
 .articlenavegacaoarrow:hover {
     transform: scale(1.1);
+
 }
+
+.articlenavegacaoseelct {}

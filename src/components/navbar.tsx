@@ -3,7 +3,7 @@ import { useState } from 'react'
 import styles from '@/styles/navbar.module.css'
 import ModalSelectLeitura from './modalSelectLeitura'
 
-export default function NavBar() {
+export default function NavBar({ preRenderVersaoOpcoes, preRenderTestamentoOpcoes }: any) {
     const [menu, setMenu] = useState<boolean>(false)
     const OpenMenu = () => setMenu(!menu)
     const [modal, setModal] = useState<boolean>(false)
@@ -11,7 +11,7 @@ export default function NavBar() {
 
     return (
         <>
-            {modal && <ModalSelectLeitura OpenCloseModal={OpenCloseModal} />}
+            {modal && <ModalSelectLeitura OpenCloseModal={OpenCloseModal} preRenderVersaoOpcoes={preRenderVersaoOpcoes} preRenderTestamentoOpcoes={preRenderTestamentoOpcoes} />}
 
             <main className={styles.main}>
                 <div className={styles.menuBotton} onClick={() => OpenMenu()}>

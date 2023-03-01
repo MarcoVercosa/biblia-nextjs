@@ -3,10 +3,12 @@ import styles from '@/styles/Home.module.css'
 import NavBar from "../components/navbar"
 import Footer from "../components/footer"
 import ArticleHome from '../components/articleHomeInfos'
+import { IProps, IresultTestamento, IresultVersao } from '@/entities/interfaces'
+import { FetchAPITestamentoServerSide, FetchAPIVersaoServerSide } from '@/services/fetch'
 
 
-export default function Home() {
 
+export default function Home({ preRenderVersaoOpcoes, preRenderTestamentoOpcoes }: IProps) {
   return (
     <>
       <div className={styles.backgroundanimation}>
@@ -16,12 +18,19 @@ export default function Home() {
           <meta name="viewport" content="width=device-width, initial-scale=1" />
           <link rel="icon" href="/favicon.ico" />
         </Head>
-        <NavBar />
+        <NavBar preRenderVersaoOpcoes={preRenderVersaoOpcoes} preRenderTestamentoOpcoes={preRenderTestamentoOpcoes} />
         <ArticleHome />
-
-
       </div>
       <Footer />
     </>
   )
 }
+
+
+export async function getServerSideProps() {
+  let preRenderVersaoOpcoes: IresultVersao[] = await FetchAPIVersaoServerSide()
+  let preRenderTestamentoOpcoes: IresultTestamento[] = await FetchAPITestamentoServerSide()
+  // Fetch data from external API
+  return { props: { preRenderVersaoOpcoes, preRenderTestamentoOpcoes } }
+}
+

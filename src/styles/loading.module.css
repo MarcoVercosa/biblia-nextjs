@@ -1,0 +1,62 @@
+.loaderContainerBalls {
+    width: 30vw;
+    height: 20vh;
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    background: #080808;
+    border-radius: 30px;
+}
+
+.loaderContainerBallsBlobUm,
+.loaderContainerBallsBlobDois {
+    width: 70px;
+    height: 70px;
+    position: absolute;
+    background: #0ff;
+    border-radius: 50%;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+}
+
+.loaderContainerBallsBlobUm {
+    left: 20%;
+    animation: osc-l 2.5s ease infinite;
+}
+
+.loaderContainerBallsBlobDois {
+    left: 80%;
+    animation: osc-r 2.5s ease infinite;
+    background: #fafafa;
+
+}
+
+@keyframes osc-l {
+    0% {
+        left: 20%;
+    }
+
+    50% {
+        left: 50%;
+    }
+
+    100% {
+        left: 20%;
+    }
+}
+
+@keyframes osc-r {
+    0% {
+        left: 80%;
+    }
+
+    50% {
+        left: 50%;
+    }
+
+    100% {
+        left: 80%;
+    }
+}
