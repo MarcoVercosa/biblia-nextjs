@@ -121,3 +121,19 @@ export async function FetchConteudoServerSide(versaoID: string, testamentoID: st
         return []
     }
 }
+
+export async function FetchSelectNumeroHarpa() {
+    try {
+        const response = await fetch(`${urlApiDev}/hinoharpa/buscanumeroharpa`, {
+            headers: {
+                'Content-Type': 'application/json',
+                'origin': 'http://localhost'
+            }
+        })
+        const data = await response.json()
+        return data
+    } catch (error) {
+        console.log(error)
+        return []
+    }
+}

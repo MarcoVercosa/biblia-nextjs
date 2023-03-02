@@ -1,4 +1,4 @@
-import { IBuscaConteudoLeitura } from "./interfaces"
+import { IBuscaConteudoLeitura } from "../entities/interfaces"
 import styles from "@/styles/readingPanel.module.css"
 import { useEffect, useState } from "react"
 import Image from "next/image"

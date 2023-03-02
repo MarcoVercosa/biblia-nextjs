@@ -30,7 +30,7 @@ export default function Home({ preRenderVersaoOpcoes, preRenderTestamentoOpcoes 
 export async function getServerSideProps() {
   let preRenderVersaoOpcoes: IresultVersao[] = await FetchAPIVersaoServerSide()
   let preRenderTestamentoOpcoes: IresultTestamento[] = await FetchAPITestamentoServerSide()
-  // Fetch data from external API
+  // Fetch data from external API on time build
   return { props: { preRenderVersaoOpcoes, preRenderTestamentoOpcoes } }
 }
 

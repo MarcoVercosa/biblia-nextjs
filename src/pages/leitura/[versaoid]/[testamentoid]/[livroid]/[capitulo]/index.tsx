@@ -4,9 +4,9 @@ import { IBuscaConteudoLeitura } from "@/entities/interfaces"
 import Head from 'next/head'
 import styles from '@/styles/Home.module.css'
 import NavBar from "../../../../../../components/navbar"
-import ReadingPanel from '@/entities/readingPanel';
+import ReadingPanel from '@/components/readingPanel';
 import Footer from "../../../../../../components/footer"
-import Loading from '@/components/loading/loading';
+import Loading from '@/components/loading';
 
 
 

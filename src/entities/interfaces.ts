@@ -47,3 +47,8 @@ export interface IProps {
     preRenderVersaoOpcoes: IresultVersao[]
     preRenderTestamentoOpcoes: IresultTestamento[]
 }
+export interface IHarpaNumeros {
+    data: {
+        numero: number
+    }
+}
