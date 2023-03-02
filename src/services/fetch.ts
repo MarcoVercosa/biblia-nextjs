@@ -122,9 +122,25 @@ export async function FetchConteudoServerSide(versaoID: string, testamentoID: st
     }
 }
 
-export async function FetchSelectNumeroHarpa() {
+export async function FetchSelectNumeroHarpaServerSide() {
     try {
         const response = await fetch(`${urlApiDev}/hinoharpa/buscanumeroharpa`, {
+            headers: {
+                'Content-Type': 'application/json',
+                'origin': 'http://localhost'
+            }
+        })
+        const data = await response.json()
+        return data
+    } catch (error) {
+        console.log(error)
+        return []
+    }
+}
+
+export async function FetchConteudoHarpaServerSide(value: string) {
+    try {
+        const response = await fetch(`${urlApiDev}/hinoharpa/buscatitulopornumero/${value}`, {
             headers: {
                 'Content-Type': 'application/json',
                 'origin': 'http://localhost'

@@ -2,7 +2,6 @@ import { GetStaticProps, GetStaticPaths } from 'next';
 import { FetchAPICapitulosServerSide, FetchConteudoServerSide } from "@/services/fetch"
 import { IBuscaConteudoLeitura } from "@/entities/interfaces"
 import Head from 'next/head'
-import styles from '@/styles/Home.module.css'
 import NavBar from "../../../../../../components/navbar"
 import ReadingPanel from '@/components/readingPanel';
 import Footer from "../../../../../../components/footer"

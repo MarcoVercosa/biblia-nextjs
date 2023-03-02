@@ -29,7 +29,6 @@ export interface ISelectFieldOptions {
     livro_id: number,
     capitulo: string,
     capitulo_id: number,
-
 }
 
 export interface IBuscaConteudoLeitura {
@@ -47,8 +46,7 @@ export interface IProps {
     preRenderVersaoOpcoes: IresultVersao[]
     preRenderTestamentoOpcoes: IresultTestamento[]
 }
-export interface IHarpaNumeros {
-    data: {
-        numero: number
-    }
+
+export interface IHinoPorNumero {
+
 }
