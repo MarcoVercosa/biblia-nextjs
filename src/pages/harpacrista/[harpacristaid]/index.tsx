@@ -13,6 +13,7 @@ export default function HarpaCrista({ numerosHinosCreateSeletectTag, conteudoHin
         <>
             <NavBar />
             <ReadingPanelHarpaCrista numerosHinosCreateSeletectTag={numerosHinosCreateSeletectTag} conteudoHinoPageCurrent={conteudoHinoPageCurrent} idCanticoURL={idCanticoURL} />
+            <Footer />
         </>
     )
 }

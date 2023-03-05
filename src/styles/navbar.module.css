@@ -15,8 +15,9 @@
     background-color: rgb(54, 54, 54);
     height: 10vh;
     color: white;
-    box-shadow: 0px 5px 12px rgb(99, 99, 99);
+    box-shadow: 10px 5px 20px rgb(99, 99, 99);
     margin: 0 auto;
+    padding: 0;
 }
 
 .menuBotton {

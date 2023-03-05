@@ -60,7 +60,8 @@
     box-shadow: 0px 10px 10px rgb(99, 99, 99);
     background: rgba(0, 0, 0, 0.6);
     padding: 13px;
-    overflow: auto;
+    overflow: scroll;
+
 }
 
 @supports (-webkit-backdrop-filter: none) or (backdrop-filter: none) {

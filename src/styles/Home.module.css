@@ -1,6 +1,6 @@
 .backgroundanimation {
     /* overflow: hidden; */
-    overflow: scroll;
+    /* overflow: scroll; */
     height: 100vh;
     animation: scroll 130s linear infinite;
     /* background: url("https://images.unsplash.com/photo-1465146633011-14f8e0781093?ixlib=rb-1.2.1&ixid=eyJhcHBfaWQiOjEyMDd9&auto=format&fit=crop&w=3450&q=80"), #111111; */

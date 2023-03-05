@@ -10,12 +10,13 @@
 .main {
     background-image: url("../../public/images/backgroundReading/background.jpg");
     width: 98vw;
+    min-height: 85vh;
     margin: 0 auto;
     margin-top: 1rem;
     border-radius: 30px;
     animation-duration: 2s;
     animation-name: slidein;
-    min-height: 80vh;
+
 }
 
 @keyframes slidein {

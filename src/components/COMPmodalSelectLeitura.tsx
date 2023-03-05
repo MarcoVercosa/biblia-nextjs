@@ -24,11 +24,6 @@ export default function ModalSelectLeitura({ OpenCloseModal, preRenderVersaoOpco
     })
     const router = useRouter()
 
-    // useEffect(() => {//assim q a pagina é aberta ele puxa as versões e testamentos disponíveis
-    //     FetchAPIVersao().then((data) => setVersao(data))
-    //     FetchAPITestamento().then((data) => setTestamento(data))
-    // }, [])
-
     function UpdateSelectedFields(field: string, value: string, keyName: string, keyValue: string) {
         setSelectedField(prevState => { return { ...prevState, [field]: value, [keyName]: keyValue } })
     }

@@ -1,11 +1,11 @@
 import { GetStaticProps, GetStaticPaths } from 'next';
-import { FetchAPICapitulosServerSide, FetchConteudoServerSide } from "@/services/fetch"
-import { IBuscaConteudoLeitura } from "@/entities/interfaces"
+import { FetchAPICapitulosServerSide, FetchAPITestamentoServerSide, FetchAPIVersaoServerSide, FetchConteudoServerSide } from "@/services/fetch"
+import { IBuscaConteudoLeitura, IresultTestamento, IresultVersao } from "@/entities/interfaces"
 import Head from 'next/head'
 import NavBar from "../../../../../../components/COMPnavbar"
-import ReadingPanel from '@/components/readingPanel';
+import ReadingPanel from '@/components/COMPreadingPanel';
 import Footer from "../../../../../../components/COMPfooter"
-import Loading from '@/components/loading';
+import Loading from '@/components/COMPloading';
 
 
 
@@ -26,13 +26,14 @@ interface IGetStaticProps {
 }
 
 
-export default function LeituraBiblia({ data }: IBuscaConteudoLeitura) {
+export default function LeituraBiblia({ data }: { data: IBuscaConteudoLeitura }) {
 
     if (!data) {
         return (
             <>
                 <NavBar />
                 <Loading />
+                <Footer />
             </>
         )
     }
@@ -47,9 +48,8 @@ export default function LeituraBiblia({ data }: IBuscaConteudoLeitura) {
                 </Head>
                 <NavBar />
             </div>
-            {/* <Footer /> */}
-
             <ReadingPanel data={data} />
+            <Footer />
         </>
     )
 }
@@ -75,11 +75,30 @@ export const getStaticPaths: GetStaticPaths = async () => {
 
 export const getStaticProps: GetStaticProps = async ({ params }: any) => {
     const { versaoid, testamentoid, livroid, capitulo } = params as IGetStaticProps
-    let response = await FetchConteudoServerSide(versaoid, testamentoid, livroid, capitulo) as IBuscaConteudoLeitura
-    return {
-        props: {
-            data: response
+    try {
+        let response = await FetchConteudoServerSide(versaoid, testamentoid, livroid, capitulo) as IBuscaConteudoLeitura //busca conteudo conforme url da página
+        return {
+            props: {
+                data: response
+            }
+        }
+    } catch (error) {
+        console.log(error)
+        return {
+            props: {
+                data: []
+            }
         }
     }
+
 }
+// export async function getServerSideProps() {
+//     console.log("getServerSideProps")
+//     console.log("getServerSideProps")
+//     console.log("getServerSideProps")
+//     let preRenderVersaoOpcoes: IresultVersao[] = await FetchAPIVersaoServerSide()
+//     let preRenderTestamentoOpcoes: IresultTestamento[] = await FetchAPITestamentoServerSide()
+//     // Fetch data from external API on time build
+//     return { props: { preRenderVersaoOpcoes, preRenderTestamentoOpcoes } }
+// }
 

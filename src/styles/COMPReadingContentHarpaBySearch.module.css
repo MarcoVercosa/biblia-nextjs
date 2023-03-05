@@ -13,6 +13,18 @@
     justify-content: center;
     width: 90vw;
     margin: 0 auto;
+    animation-duration: 2s;
+    animation-name: slidein;
+}
+
+@keyframes slidein {
+    from {
+        opacity: 0;
+    }
+
+    to {
+        opacity: 1;
+    }
 }
 
 .container {
@@ -27,15 +39,18 @@
     font-size: 1.5rem;
     font-weight: bold;
     color: white;
-}
-
-.container {
     padding: 2rem;
     margin-top: 2rem;
     justify-content: center;
     text-align: center;
     transition: all 1s;
     cursor: pointer;
+
+}
+
+.container a {
+    text-decoration: none;
+    color: white
 }
 
 .container:hover {

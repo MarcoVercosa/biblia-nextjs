@@ -3,8 +3,9 @@ import styles from "@/styles/readingPanel.module.css"
 import { useEffect, useState } from "react"
 import Image from "next/image"
 import { useRouter } from "next/router"
+import ContentBibleNotFound from "./COMPReadingContentBibleNotFound"
 
-export default function ReadingPanel({ data }: IBuscaConteudoLeitura) {
+export default function ReadingPanel({ data }: { data: IBuscaConteudoLeitura }) {
     const [comboBox, setComboBox] = useState<Array<any>>([])
     const [comboBoxSelected, setComboBoxSelected] = useState<number | any>(null)
     const router = useRouter()
@@ -38,8 +39,11 @@ export default function ReadingPanel({ data }: IBuscaConteudoLeitura) {
     }
 
 
-    return (
-        <>
+    // return (
+    //     <>
+
+    if (data.conteudo.length > 1) {
+        return (
             <main className={styles.main}>
                 <div className={styles.nomeversao}><h3>{data?.nomeVersao[0].versao_nome}</h3></div>
                 <div className={styles.livrocapitulo}>
@@ -94,6 +98,13 @@ export default function ReadingPanel({ data }: IBuscaConteudoLeitura) {
                     </div>
                 </article>
             </main>
-        </>
-    )
+        )
+    } else {
+        return (
+            <main className={styles.main}>
+                <ContentBibleNotFound />
+            </main>
+        )
+    }
+
 }

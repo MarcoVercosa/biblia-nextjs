@@ -32,13 +32,13 @@ export interface ISelectFieldOptions {
 }
 
 export interface IBuscaConteudoLeitura {
-    data: {
-        conteudo: Array<{ conteudo: string }>;
-        nomeLivro: Array<{ livro_nome: string, livro_abreviado: string }>;
-        quantidadecapitulo: Array<{ capitulo: number }>;
-        nomeVersao: Array<{ versao_nome: string; }>
-        capituloAtual: number
-    }
+
+    conteudo: Array<{ conteudo: string }>;
+    nomeLivro: Array<{ livro_nome: string, livro_abreviado: string }>;
+    quantidadecapitulo: Array<{ capitulo: number }>;
+    nomeVersao: Array<{ versao_nome: string; }>
+    capituloAtual: number
+
 }
 
 export interface IProps {
