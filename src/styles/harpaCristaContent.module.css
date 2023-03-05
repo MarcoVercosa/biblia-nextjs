@@ -1,0 +1,20 @@
+.tituloEContentHino {
+    padding: 1.3rem;
+    text-align: center;
+
+}
+
+.tituloHino p {
+    font-family: "CardoGaramond";
+    font-size: 2rem;
+    font-weight: bold;
+}
+
+.conteudoHino {
+    margin-top: 2rem;
+}
+
+.conteudoHino p {
+    font-family: "CardoGaramond";
+    font-size: 1.6rem;
+}

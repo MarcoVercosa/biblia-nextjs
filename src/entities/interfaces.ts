@@ -47,6 +47,18 @@ export interface IProps {
     preRenderTestamentoOpcoes: IresultTestamento[]
 }
 
-export interface IHinoPorNumero {
 
+export interface IPropsReadingPanelHarpaCrista {
+    numerosHinosCreateSeletectTag: Array<{ numero: number }>
+    conteudoHinoPageCurrent: boolean | Array<{ titulo: string, letra: string }>
+    idCanticoURL: number | string
+}
+
+export interface IHinoPorPalavra {
+    numero: number;
+    titulo: string
+}
+
+export interface IReadContentHino {
+    conteudoHinos: boolean | Array<{ titulo: string, letra: string }>
 }

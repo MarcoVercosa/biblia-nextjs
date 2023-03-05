@@ -1,8 +1,8 @@
 import Head from 'next/head'
 import styles from '@/styles/Home.module.css'
-import NavBar from "../components/navbar"
-import Footer from "../components/footer"
-import ArticleHome from '../components/articleHomeInfos'
+import NavBar from "../components/COMPnavbar"
+import Footer from "../components/COMPfooter"
+import ArticleHome from '../components/COMParticleHomeInfos'
 import { IProps, IresultTestamento, IresultVersao } from '@/entities/interfaces'
 import { FetchAPITestamentoServerSide, FetchAPIVersaoServerSide } from '@/services/fetch'
 

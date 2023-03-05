@@ -1,7 +1,7 @@
 import Image from 'next/image'
 import { useState } from 'react'
 import styles from '@/styles/navbar.module.css'
-import ModalSelectLeitura from './modalSelectLeitura'
+import ModalSelectLeitura from './COMPmodalSelectLeitura'
 import Link from 'next/link'
 
 export default function NavBar({ preRenderVersaoOpcoes, preRenderTestamentoOpcoes }: any) {
@@ -53,7 +53,7 @@ export default function NavBar({ preRenderVersaoOpcoes, preRenderTestamentoOpcoe
 
                         </li>
                         <li>
-                            <Link href="/harpacrista">
+                            <Link href={`/harpacrista/selecione`}>
                                 <Image
                                     src="/images/iconsMenu/music.png"
                                     alt="biblia"
