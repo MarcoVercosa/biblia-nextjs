@@ -41,10 +41,9 @@ export interface IBuscaConteudoLeitura {
 
 }
 
-export interface IProps {
+export interface IPropsModalSelectLeitura {
     OpenCloseModal: () => void
-    preRenderVersaoOpcoes: IresultVersao[]
-    preRenderTestamentoOpcoes: IresultTestamento[]
+
 }
 
 

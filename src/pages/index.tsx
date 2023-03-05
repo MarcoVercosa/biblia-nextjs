@@ -3,12 +3,9 @@ import styles from '@/styles/Home.module.css'
 import NavBar from "../components/COMPnavbar"
 import Footer from "../components/COMPfooter"
 import ArticleHome from '../components/COMParticleHomeInfos'
-import { IProps, IresultTestamento, IresultVersao } from '@/entities/interfaces'
-import { FetchAPITestamentoServerSide, FetchAPIVersaoServerSide } from '@/services/fetch'
 
 
-
-export default function Home({ preRenderVersaoOpcoes, preRenderTestamentoOpcoes }: IProps) {
+export default function Home() {
   return (
     <>
       <div className={styles.backgroundanimation}>
@@ -18,7 +15,7 @@ export default function Home({ preRenderVersaoOpcoes, preRenderTestamentoOpcoes 
           <meta name="viewport" content="width=device-width, initial-scale=1" />
           <link rel="icon" href="/favicon.ico" />
         </Head>
-        <NavBar preRenderVersaoOpcoes={preRenderVersaoOpcoes} preRenderTestamentoOpcoes={preRenderTestamentoOpcoes} />
+        <NavBar />
         <ArticleHome />
       </div>
       <Footer />
@@ -27,10 +24,10 @@ export default function Home({ preRenderVersaoOpcoes, preRenderTestamentoOpcoes 
 }
 
 
-export async function getServerSideProps() {
-  let preRenderVersaoOpcoes: IresultVersao[] = await FetchAPIVersaoServerSide()
-  let preRenderTestamentoOpcoes: IresultTestamento[] = await FetchAPITestamentoServerSide()
-  // Fetch data from external API on time build
-  return { props: { preRenderVersaoOpcoes, preRenderTestamentoOpcoes } }
-}
+// export async function getServerSideProps() {
+//   let preRenderVersaoOpcoes: IresultVersao[] = await FetchAPIVersaoServerSide()
+//   let preRenderTestamentoOpcoes: IresultTestamento[] = await FetchAPITestamentoServerSide()
+//   // Fetch data from external API on time build
+//   return { props: { preRenderVersaoOpcoes, preRenderTestamentoOpcoes } }
+// }
 

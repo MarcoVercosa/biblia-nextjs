@@ -16,10 +16,10 @@ export default function ReadingPanelHarpaCrista({ numerosHinosCreateSeletectTag,
     const router = useRouter()
 
     useEffect(() => {
-        if (idCanticoURL == 0 || idCanticoURL == "Selecione") { setConteudoHinos(false) } //se o id da url for 0 altere para "selecione"
+        // if (idCanticoURL == 0 || idCanticoURL == "Selecione") { setConteudoHinos(false) } //se o id da url for 0 altere para "selecione"
         setConteudoHinos(conteudoHinoPageCurrent) //atualzia conteudo do hino
         setNumerosHinos(numerosHinosCreateSeletectTag) //atualzia array de numeros dos hinos
-        setSelectedHino(idCanticoURL.toString()) //atualiza o id pesquisado vindo da URL
+        setSelectedHino(idCanticoURL?.toString()) //atualiza o id pesquisado vindo da URL
         setSearchWordResultContentError(false)// false para se houver componente de palavra não encontrada na tela, não renderizar
         setSearchWordResultContent([]) // se houver dados de pesquisa na tela, forçará a não ser renderizado
 
@@ -77,7 +77,7 @@ export default function ReadingPanelHarpaCrista({ numerosHinosCreateSeletectTag,
                     </div>
                     <div>
                         <select name="versao" value={selectedHino} onChange={(evt) => UpdateSelectedFieldHino(evt.target.value)} >
-                            <option value="selecione">Selecione</option>
+                            <option defaultValue={"selecione"} value="selecione">Selecione</option>
                             {numerosHinos && <MountSelectComponent />}
                         </select>
                     </div>

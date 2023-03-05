@@ -6,14 +6,15 @@ import {
 const urlApiDev = 'http://localhost:9000'
 const urlApiProd = 'http://...'
 
-export async function FetchAPIVersaoServerSide(): Promise<IresultVersao[]> {
+export async function FetchAPIVersaoClientSide(): Promise<IresultVersao[]> {
     try {
-        const response = await fetch(`${urlApiDev}/mais/buscaversao`, {
-            headers: {
-                'Content-Type': 'application/json',
-                'origin': 'http://localhost'
-            }
-        })
+        // const response = await fetch(`${urlApiDev}/mais/buscaversao`, {
+        //     headers: {
+        //         'Content-Type': 'application/json',
+        //         'origin': 'http://localhost'
+        //     }
+        // })
+        const response = await fetch(`${urlApiDev}/mais/buscaversao`)
         if (response.status == 200) {
             const data = await response.json()
             return data as IresultVersao[]
@@ -24,15 +25,16 @@ export async function FetchAPIVersaoServerSide(): Promise<IresultVersao[]> {
     }
 }
 
-export async function FetchAPITestamentoServerSide(): Promise<IresultTestamento[]> {
+export async function FetchAPITestamentoClientSide(): Promise<IresultTestamento[]> {
     try {
-        const response = await fetch(`${urlApiDev}/mais/buscatestamento`, {
-            headers: {
-                'Content-Type': 'application/json',
-                'origin': 'http://localhost'
-            }
+        // const response = await fetch(`${urlApiDev}/mais/buscatestamento`, {
+        //     headers: {
+        //         'Content-Type': 'application/json',
+        //         'origin': 'http://localhost'
+        //     }
 
-        })
+        // })
+        const response = await fetch(`${urlApiDev}/mais/buscatestamento`)
         if (response.status == 200) {
             const data = await response.json()
             return data as IresultTestamento[]

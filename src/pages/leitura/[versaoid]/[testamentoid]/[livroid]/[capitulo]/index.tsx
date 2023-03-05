@@ -1,11 +1,12 @@
 import { GetStaticProps, GetStaticPaths } from 'next';
-import { FetchAPICapitulosServerSide, FetchAPITestamentoServerSide, FetchAPIVersaoServerSide, FetchConteudoServerSide } from "@/services/fetch"
+import { FetchAPICapitulosServerSide, FetchConteudoServerSide } from "@/services/fetch"
 import { IBuscaConteudoLeitura, IresultTestamento, IresultVersao } from "@/entities/interfaces"
 import Head from 'next/head'
 import NavBar from "../../../../../../components/COMPnavbar"
 import ReadingPanel from '@/components/COMPreadingPanel';
 import Footer from "../../../../../../components/COMPfooter"
 import Loading from '@/components/COMPloading';
+import { useState } from 'react';
 
 
 
@@ -27,6 +28,9 @@ interface IGetStaticProps {
 
 
 export default function LeituraBiblia({ data }: { data: IBuscaConteudoLeitura }) {
+
+    const [preRenderVersaoOpcoes, setPreRenderVersaoOpcoes] = useState<IresultVersao[]>()
+    const [preRenderTestamentoOpcoes, setPreRenderTestamentoOpcoes] = useState<IresultTestamento[]>()
 
     if (!data) {
         return (
@@ -92,13 +96,4 @@ export const getStaticProps: GetStaticProps = async ({ params }: any) => {
     }
 
 }
-// export async function getServerSideProps() {
-//     console.log("getServerSideProps")
-//     console.log("getServerSideProps")
-//     console.log("getServerSideProps")
-//     let preRenderVersaoOpcoes: IresultVersao[] = await FetchAPIVersaoServerSide()
-//     let preRenderTestamentoOpcoes: IresultTestamento[] = await FetchAPITestamentoServerSide()
-//     // Fetch data from external API on time build
-//     return { props: { preRenderVersaoOpcoes, preRenderTestamentoOpcoes } }
-// }
 

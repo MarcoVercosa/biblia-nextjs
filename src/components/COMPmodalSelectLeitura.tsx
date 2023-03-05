@@ -2,15 +2,25 @@ import { useEffect, useState } from "react";
 import React from "react";
 import { useRouter } from 'next/router'
 import styles from "../styles/modalSelectLeitura.module.css"
-import { FetchAPILivros, FetchAPICapitulos } from "@/services/fetch";
-import { IresultVersao, IresultTestamento, IresultLivros, IresultCapitulos, ISelectFieldOptions, IProps } from "../entities/interfaces";
+import { FetchAPILivros, FetchAPICapitulos, FetchAPIVersaoClientSide, FetchAPITestamentoClientSide } from "@/services/fetch";
+import { IresultVersao, IresultTestamento, IresultLivros, IresultCapitulos, ISelectFieldOptions, IPropsModalSelectLeitura } from "../entities/interfaces";
 
 
-export default function ModalSelectLeitura({ OpenCloseModal, preRenderVersaoOpcoes, preRenderTestamentoOpcoes }: IProps) { //as props preReder são feitas através de fetch via getServerSideProps na page Home, pois a versão e testamento, são sempre os mesmos
-    const [versao, setVersao] = useState<IresultVersao[]>(preRenderVersaoOpcoes);
-    const [testamento, setTestamento] = useState<IresultTestamento[]>(preRenderTestamentoOpcoes);
+export default function ModalSelectLeitura({ OpenCloseModal }: IPropsModalSelectLeitura) { //as props preReder são feitas através de fetch via getServerSideProps na page Home, pois a versão e testamento, são sempre os mesmos
+    const [versao, setVersao] = useState<IresultVersao[]>();
+    const [testamento, setTestamento] = useState<IresultTestamento[]>();
     const [livros, setLivros] = useState<IresultLivros[]>([]);
     const [capitulo, setCapitulo] = useState<any>([]);
+
+    useEffect(() => {
+        async function FindDataAPIModalMenu() {
+            let preRenderVersaoOpcoes: IresultVersao[] = await FetchAPIVersaoClientSide()
+            let preRenderTestamentoOpcoes: IresultTestamento[] = await FetchAPITestamentoClientSide()
+            setVersao(preRenderVersaoOpcoes)
+            setTestamento(preRenderTestamentoOpcoes)
+        }
+        FindDataAPIModalMenu()
+    }, [])
 
     const [selectedField, setSelectedField] = useState<ISelectFieldOptions>({
         versao: "selecione",

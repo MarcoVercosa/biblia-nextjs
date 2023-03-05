@@ -4,7 +4,7 @@ import styles from '@/styles/navbar.module.css'
 import ModalSelectLeitura from './COMPmodalSelectLeitura'
 import Link from 'next/link'
 
-export default function NavBar({ preRenderVersaoOpcoes, preRenderTestamentoOpcoes }: any) {
+export default function NavBar() {
     const [menu, setMenu] = useState<boolean>(false)
     const OpenMenu = () => setMenu(!menu)
     const [modal, setModal] = useState<boolean>(false)
@@ -13,7 +13,7 @@ export default function NavBar({ preRenderVersaoOpcoes, preRenderTestamentoOpcoe
 
     return (
         <>
-            {modal && <ModalSelectLeitura OpenCloseModal={OpenCloseModal} preRenderVersaoOpcoes={preRenderVersaoOpcoes} preRenderTestamentoOpcoes={preRenderTestamentoOpcoes} />}
+            {modal && <ModalSelectLeitura OpenCloseModal={OpenCloseModal} />}
 
             <header className={styles.main}>
 
@@ -53,7 +53,7 @@ export default function NavBar({ preRenderVersaoOpcoes, preRenderTestamentoOpcoe
 
                         </li>
                         <li>
-                            <Link href={`/harpacrista/selecione`}>
+                            <Link href={`/harpacrista/${Math.floor(Math.random() * (524 - 1 + 1)) + 1}`}>
                                 <Image
                                     src="/images/iconsMenu/music.png"
                                     alt="biblia"
