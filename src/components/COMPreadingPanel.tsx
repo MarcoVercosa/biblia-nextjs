@@ -13,7 +13,7 @@ export default function ReadingPanel({ data }: { data: IBuscaConteudoLeitura }) 
 
     useEffect(() => {
         let store = []
-        for (let i = 1; i <= data?.quantidadecapitulo[0].capitulo; i++) {
+        for (let i = 1; i <= data?.quantidadecapitulo[0]?.capitulo; i++) {
             store.push(<option key={i} value={i} >{i}</option>)
         }
         setComboBox(store)//armazena o html <option> criado acima
@@ -21,12 +21,12 @@ export default function ReadingPanel({ data }: { data: IBuscaConteudoLeitura }) 
 
     }, [data])
     useEffect(() => {// useEffetc somente para anchorLink
-        if (!router.isReady) { return }
+        if (!router.isReady) { return }//Se o router ainda não conseguiu carregar os paramns, nao faça nada
+        if (router.asPath.split("#").length < 2) { return setAnchorURLValue("") }//o length será 2 somente se  a url possuir #
         setAnchorURLValue(router.asPath.split("#")[1])
         // o router asPath pega a url e divide se baseando pelo #
         // a array terá 2 indices se achar o #, ficando no 2 indice [1]  somente o valor do link ancora
-    }, [router.isReady])
-
+    }, [router.isReady, data])
     function SelectedComboBox(data: number) {
         setComboBoxSelected(data)
     }

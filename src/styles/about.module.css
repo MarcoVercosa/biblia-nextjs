@@ -1,0 +1,82 @@
+@font-face {
+    font-family: CardoGaramond;
+    /* src: url('../asset/CormorantGaramond/CormorantGaramond-Medium.ttf');
+    src: url('../asset/CormorantGaramond/CormorantGaramond-BoldItalic.ttf'); */
+    src: url('../asset//CardoGaramond//Cardo/Cardo-Regular.ttf');
+    /* font-weight: 400;
+    font-style: normal; */
+}
+
+.sobrearticle {
+    display: flex;
+    justify-content: center;
+    min-height: 100vh;
+    animation: scroll 130s linear infinite;
+    background-image: url("../asset//backgroundDefault/backgoundAnimated.avif");
+    min-width: 360px;
+    width: auto;
+    perspective: 1000px;
+    perspective-origin: 50% 50%;
+    margin-top: 0.2rem
+}
+
+@keyframes scroll {
+    100% {
+        background-position: 0px -3000px;
+    }
+}
+
+@keyframes slidein {
+    from {
+        opacity: 0;
+    }
+
+    to {
+        opacity: 1;
+    }
+}
+
+.sobrearticlediv {
+    width: 60%;
+    background: rgba(255, 255, 255, 0.246);
+    backdrop-filter: blur(4.7px);
+    -webkit-backdrop-filter: blur(4.7px);
+    border-radius: 25px;
+    padding: 15px;
+    height: auto;
+}
+
+.sobrearticlediv p {
+    font-family: "CardoGaramond";
+    font-size: 1.2rem;
+    color: azure;
+    line-height: 2rem;
+}
+
+.sobrearticlediv h2 {
+    font-family: "CardoGaramond";
+    font-size: 1.8rem;
+    color: azure;
+}
+
+.sobrearticlediv h3 {
+    font-family: "CardoGaramond";
+    font-size: 1.2rem;
+    color: azure;
+}
+
+.sobrearticlediv spam {
+    margin-left: 10px;
+}
+
+.diamondimage {
+    display: flex;
+    position: relative;
+    height: 12vh;
+    width: 100%;
+    justify-content: center;
+
+}
+
+
+.diamondimage imageErro {}

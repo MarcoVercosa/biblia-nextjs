@@ -3,12 +3,25 @@ import { useState } from 'react'
 import styles from '@/styles/navbar.module.css'
 import ModalSelectLeitura from './COMPmodalSelectLeitura'
 import Link from 'next/link'
+import { useRouter } from 'next/router'
 
 export default function NavBar() {
     const [menu, setMenu] = useState<boolean>(false)
     const OpenMenu = () => setMenu(!menu)
     const [modal, setModal] = useState<boolean>(false)
     const OpenCloseModal = () => setModal(!modal)
+    const [inputSearch, setInputSearch] = useState<string>("")
+    const router = useRouter()
+
+    function UpdateFieldInput(value: string) {
+        setInputSearch(value)
+    }
+
+    function GoSearchByWord(value: string) {
+        if (value != "Enter") { return }
+        if (inputSearch.length < 2) { return alert("Caracteres insuficientes para a pesquisa") }
+        router.push(`/pesquisabiblia/${inputSearch}`)
+    }
 
 
     return (
@@ -92,7 +105,7 @@ export default function NavBar() {
                 </div>
                 <div className={styles.searchMenu}>
                     <div>
-                        <input className="no-outline" type="text" placeholder='PESQUISAR' name='Digite' />
+                        <input onKeyDown={(evt) => { GoSearchByWord(evt.key) }} onChange={(evt) => { UpdateFieldInput(evt.target.value) }} value={inputSearch} className="no-outline" type="text" placeholder='Press enter to search' name='Digite' />
                     </div>
                 </div>
             </header>

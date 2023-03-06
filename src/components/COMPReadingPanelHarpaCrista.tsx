@@ -50,12 +50,12 @@ export default function ReadingPanelHarpaCrista({ numerosHinosCreateSeletectTag,
                 let response = await fetch(`http://localhost:9000/hinoharpa/buscatituloporpalavra/${searchWordField}`)
                 let data: IHinoPorPalavra[] = await response.json()
                 if (data.length < 1) {// se nada retornar
-                    setConteudoHinos(false)//não renderiza conteudo
+                    setConteudoHinos([])//não renderiza conteudo
                     setSelectedHino("selecione") //altera o combobox para selecione
                     setSearchWordResultContent([]) //zera resultado de pesquisa por palavra
                     setSearchWordResultContentError(searchWordField) //ativa componente de erro
                 } else {
-                    setConteudoHinos(false)
+                    setConteudoHinos([])
                     setSelectedHino("selecione")
                     setSearchWordResultContent(data)
                     setSearchWordResultContentError(false)

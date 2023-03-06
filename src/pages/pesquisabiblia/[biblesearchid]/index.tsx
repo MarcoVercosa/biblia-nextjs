@@ -16,7 +16,7 @@ export default function BibleSearchByWord() {
         }
         if (!router.isReady) return
         FindBibleBySearchAPI()
-    }, [router.isReady])
+    }, [router.isReady, router])
 
     return (
         <>

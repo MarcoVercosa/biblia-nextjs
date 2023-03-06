@@ -11,7 +11,7 @@
     justify-content: space-between;
     position: relative;
     display: flex;
-    width: 99vw;
+    width: auto;
     background-color: rgb(54, 54, 54);
     height: 10vh;
     color: white;

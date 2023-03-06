@@ -5,12 +5,22 @@ import Footer from "../../../components/COMPfooter"
 import { FetchSelectNumeroHarpaServerSide, FetchConteudoHarpaServerSide } from '@/services/fetch'
 import ReadingPanelHarpaCrista from '@/components/COMPReadingPanelHarpaCrista'
 import { GetStaticPaths, GetStaticProps } from 'next'
+import { IPropsReadingPanelHarpaCrista } from '@/entities/interfaces'
 
 
 
-export default function HarpaCrista({ numerosHinosCreateSeletectTag, conteudoHinoPageCurrent, idCanticoURL }: any) {
+export default function HarpaCrista({ numerosHinosCreateSeletectTag, conteudoHinoPageCurrent, idCanticoURL }: IPropsReadingPanelHarpaCrista) {
+
     return (
         <>
+            {conteudoHinoPageCurrent &&
+                <Head>
+                    <title>{conteudoHinoPageCurrent[0]?.titulo} - Hino da Harpa - Vida da fonte</title>
+                    <meta name="description" content={`${conteudoHinoPageCurrent[0]?.titulo} - ${conteudoHinoPageCurrent[0]?.letra.substring(1, 90)}...`} ></meta>
+                    <link rel="icon" href="/favicon.svg" />
+                </Head>
+            }
+
             <NavBar />
             <ReadingPanelHarpaCrista numerosHinosCreateSeletectTag={numerosHinosCreateSeletectTag} conteudoHinoPageCurrent={conteudoHinoPageCurrent} idCanticoURL={idCanticoURL} />
             <Footer />

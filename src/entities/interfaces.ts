@@ -56,7 +56,7 @@ export interface IFindBibleBySearchAPI {
 
 export interface IPropsReadingPanelHarpaCrista {
     numerosHinosCreateSeletectTag: Array<{ numero: number }>
-    conteudoHinoPageCurrent: boolean | Array<{ titulo: string, letra: string }>
+    conteudoHinoPageCurrent: Array<{ titulo: string, letra: string }>
     idCanticoURL: number | string
 }
 

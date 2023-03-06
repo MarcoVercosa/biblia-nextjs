@@ -52,3 +52,7 @@
     font-family: "CardoGaramond";
     font-size: 2.2rem;
 }
+
+.message span {
+    color: red
+}

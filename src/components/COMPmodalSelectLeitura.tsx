@@ -55,6 +55,7 @@ export default function ModalSelectLeitura({ OpenCloseModal }: IPropsModalSelect
     function GoBible() {
         if (selectedField.versao != "selecione" && selectedField.testamento != "selecione"
             && selectedField.livro != "selecione" && selectedField.capitulo != "selecione") {
+            OpenCloseModal()
             router.push(`/leitura/${selectedField.versao_id}/${selectedField.testamento_id}/${selectedField.livro_id}/${selectedField.capitulo_id}`)
         } else { alert("Selecione todos os campos antes de iniciar a leitura") }
     }

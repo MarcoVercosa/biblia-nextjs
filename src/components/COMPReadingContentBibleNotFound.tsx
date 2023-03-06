@@ -2,7 +2,7 @@ import Image from "next/image";
 import styles from "../styles/COMPReadingContentBibleNotFound.module.css"
 
 
-export default function ContentBibleNotFound() {
+export default function ContentBibleNotFound({ value }: { value?: string | any }) {
     return (
         <>
             <article className={styles.errorHinoArticle}>
@@ -16,7 +16,7 @@ export default function ContentBibleNotFound() {
                     />
                 </div>
                 <div className={styles.message}>
-                    <p>Conteúdo solicitado não encontrado.</p>
+                    <p>Conteúdo solicitado não encontrado.<span> - {value} - </span></p>
                 </div>
             </article>
         </>
