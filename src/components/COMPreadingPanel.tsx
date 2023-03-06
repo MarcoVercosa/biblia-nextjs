@@ -8,6 +8,7 @@ import ContentBibleNotFound from "./COMPReadingContentBibleNotFound"
 export default function ReadingPanel({ data }: { data: IBuscaConteudoLeitura }) {
     const [comboBox, setComboBox] = useState<Array<any>>([])
     const [comboBoxSelected, setComboBoxSelected] = useState<number | any>(null)
+    const [anchorURLValue, setAnchorURLValue] = useState<string>("")
     const router = useRouter()
 
     useEffect(() => {
@@ -17,30 +18,32 @@ export default function ReadingPanel({ data }: { data: IBuscaConteudoLeitura }) 
         }
         setComboBox(store)//armazena o html <option> criado acima
         setComboBoxSelected(data?.capituloAtual)//deixa o numero do capitulo atual no combobox
+
     }, [data])
+    useEffect(() => {// useEffetc somente para anchorLink
+        if (!router.isReady) { return }
+        setAnchorURLValue(router.asPath.split("#")[1])
+        // o router asPath pega a url e divide se baseando pelo #
+        // a array terá 2 indices se achar o #, ficando no 2 indice [1]  somente o valor do link ancora
+    }, [router.isReady])
 
     function SelectedComboBox(data: number) {
         setComboBoxSelected(data)
     }
-
     function NextPage() {
         if (data?.capituloAtual == data.quantidadecapitulo[0].capitulo) { return }
-        const { versaoid, testamentoid, livroid } = router.query //onbtem as vars da url dinâmica
+        const { versaoid, testamentoid, livroid } = router.query //obtem as vars da url dinâmica
         router.push(`/leitura/${versaoid}/${testamentoid}/${livroid}/${data.capituloAtual + 1}`)
     }
     function BeforePage() {
         if (data?.capituloAtual == 1) { return }
-        const { versaoid, testamentoid, livroid } = router.query //onbtem as vars da url dinâmica
+        const { versaoid, testamentoid, livroid } = router.query //obtem as vars da url dinâmica
         router.push(`/leitura/${versaoid}/${testamentoid}/${livroid}/${data.capituloAtual - 1}`)
     }
     function SelectPage(page: number) {
-        const { versaoid, testamentoid, livroid } = router.query //onbtem as vars da url dinâmica
+        const { versaoid, testamentoid, livroid } = router.query //obtem as vars da url dinâmica
         router.push(`/leitura/${versaoid}/${testamentoid}/${livroid}/${page}`)
     }
-
-
-    // return (
-    //     <>
 
     if (data.conteudo.length > 1) {
         return (
@@ -51,7 +54,7 @@ export default function ReadingPanel({ data }: { data: IBuscaConteudoLeitura }) 
                 </div>
                 <div className={styles.content}>
                     {data?.conteudo.map((dados: any, index: number) => {
-                        return (<p key={index}><span>{index + 1} </span>  - {dados.conteudo}</p>)
+                        return (<p id={(index + 1).toString()} style={{ color: anchorURLValue == (index + 1).toString() ? "red" : "black" }} key={index}><span>{index + 1} </span>  - {dados.conteudo}</p>)
                     })
                     }
                 </div>
@@ -63,7 +66,6 @@ export default function ReadingPanel({ data }: { data: IBuscaConteudoLeitura }) 
                             <Image
                                 src="/images/arrowsReading/arrowLeft.png"
                                 alt="Logo"
-                                // className={styles.imageButtonMenu}
                                 width={100}
                                 height={50}
                                 priority
@@ -106,5 +108,4 @@ export default function ReadingPanel({ data }: { data: IBuscaConteudoLeitura }) 
             </main>
         )
     }
-
 }

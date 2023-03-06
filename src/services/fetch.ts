@@ -1,6 +1,6 @@
 import {
     IresultVersao, IresultTestamento,
-    IresultLivros, IresultCapitulos, IBuscaConteudoLeitura
+    IresultLivros, IresultCapitulos, IBuscaConteudoLeitura, IFindBibleBySearchAPI
 } from "@/entities/interfaces"
 
 const urlApiDev = 'http://localhost:9000'
@@ -8,12 +8,6 @@ const urlApiProd = 'http://...'
 
 export async function FetchAPIVersaoClientSide(): Promise<IresultVersao[]> {
     try {
-        // const response = await fetch(`${urlApiDev}/mais/buscaversao`, {
-        //     headers: {
-        //         'Content-Type': 'application/json',
-        //         'origin': 'http://localhost'
-        //     }
-        // })
         const response = await fetch(`${urlApiDev}/mais/buscaversao`)
         if (response.status == 200) {
             const data = await response.json()
@@ -25,15 +19,8 @@ export async function FetchAPIVersaoClientSide(): Promise<IresultVersao[]> {
     }
 }
 
-export async function FetchAPITestamentoClientSide(): Promise<IresultTestamento[]> {
+export async function FetchAPITestamentoClientSide(): Promise<IresultTestamento[] | []> {
     try {
-        // const response = await fetch(`${urlApiDev}/mais/buscatestamento`, {
-        //     headers: {
-        //         'Content-Type': 'application/json',
-        //         'origin': 'http://localhost'
-        //     }
-
-        // })
         const response = await fetch(`${urlApiDev}/mais/buscatestamento`)
         if (response.status == 200) {
             const data = await response.json()
@@ -45,7 +32,7 @@ export async function FetchAPITestamentoClientSide(): Promise<IresultTestamento[
     }
 }
 
-export async function FetchAPILivros(testamentoID: number) {
+export async function FetchAPILivros(testamentoID: number): Promise<IresultLivros[] | []> {
     try {
         const response = await fetch(`${urlApiDev}/mais/buscalivros/${testamentoID}`)
         if (response.status == 200) {
@@ -58,7 +45,7 @@ export async function FetchAPILivros(testamentoID: number) {
     }
 }
 
-export async function FetchAPICapitulos(versaoID: string | number, livroID: string | number) {
+export async function FetchAPICapitulos(versaoID: string | number, livroID: string | number): Promise<IresultCapitulos[] | []> {
     console.log("CAPITULOS")
     try {
         const response = await fetch(`${urlApiDev}/mais/buscacapitulo/${versaoID}/${livroID}`)
@@ -72,7 +59,7 @@ export async function FetchAPICapitulos(versaoID: string | number, livroID: stri
     }
 }
 
-export async function FetchConteudo(versaoID: string, testamentoID: string, livroId: string, capitulo: string) {
+export async function FetchConteudo(versaoID: string, testamentoID: string, livroId: string, capitulo: string): Promise<IBuscaConteudoLeitura | []> {
     console.log("FetchConteudo")
     try {
         const response = await fetch(`${urlApiDev}/mais/buscaconteudo/${versaoID}/${testamentoID}/${livroId}/${capitulo}`)
@@ -87,7 +74,7 @@ export async function FetchConteudo(versaoID: string, testamentoID: string, livr
     }
 }
 
-export async function FetchAPICapitulosServerSide(versaoID: string | number, livroID: string | number) {
+export async function FetchAPICapitulosServerSide(versaoID: string | number, livroID: string | number): Promise<IresultCapitulos[] | []> {
     try {
         const response = await fetch(`${urlApiDev}/mais/buscacapitulo/${versaoID}/${livroID}`, {
             headers: {
@@ -105,7 +92,7 @@ export async function FetchAPICapitulosServerSide(versaoID: string | number, liv
     }
 }
 
-export async function FetchConteudoServerSide(versaoID: string, testamentoID: string, livroId: string, capitulo: string) {
+export async function FetchConteudoServerSide(versaoID: string, testamentoID: string, livroId: string, capitulo: string): Promise<IBuscaConteudoLeitura | []> {
     try {
         const response = await fetch(`${urlApiDev}/mais/buscaconteudo/${versaoID}/${testamentoID}/${livroId}/${capitulo}`, {
             headers: {
@@ -124,6 +111,15 @@ export async function FetchConteudoServerSide(versaoID: string, testamentoID: st
     }
 }
 
+export async function FindBibleBySearchAPIClientSide(value: string): Promise<IFindBibleBySearchAPI[] | []> {
+    try {
+        const response = await fetch(`${urlApiDev}/mais/pesquisa/${value}`)
+        let data = await response.json()
+        return data as IFindBibleBySearchAPI[]
+    } catch (error) {
+        return []
+    }
+}
 export async function FetchSelectNumeroHarpaServerSide() {
     try {
         const response = await fetch(`${urlApiDev}/hinoharpa/buscanumeroharpa`, {

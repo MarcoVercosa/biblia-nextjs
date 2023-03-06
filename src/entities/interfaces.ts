@@ -32,18 +32,25 @@ export interface ISelectFieldOptions {
 }
 
 export interface IBuscaConteudoLeitura {
-
     conteudo: Array<{ conteudo: string }>;
     nomeLivro: Array<{ livro_nome: string, livro_abreviado: string }>;
     quantidadecapitulo: Array<{ capitulo: number }>;
     nomeVersao: Array<{ versao_nome: string; }>
     capituloAtual: number
-
 }
 
 export interface IPropsModalSelectLeitura {
     OpenCloseModal: () => void
-
+}
+export interface IFindBibleBySearchAPI {
+    capitulo: number;
+    livro_abreviado: string;
+    versao_id: number;
+    livro_id: number;
+    livro_nome: string;
+    livro_testamento_id: number
+    conteudo: string;
+    versiculo: number
 }
 
 

@@ -43,6 +43,7 @@
     position: absolute;
     animation-duration: 0.7s;
     animation-name: slidein;
+    z-index: 200;
 }
 
 @keyframes slidein {
