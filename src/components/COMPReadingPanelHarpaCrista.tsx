@@ -16,7 +16,6 @@ export default function ReadingPanelHarpaCrista({ numerosHinosCreateSeletectTag,
     const router = useRouter()
 
     useEffect(() => {
-        // if (idCanticoURL == 0 || idCanticoURL == "Selecione") { setConteudoHinos(false) } //se o id da url for 0 altere para "selecione"
         setConteudoHinos(conteudoHinoPageCurrent) //atualzia conteudo do hino
         setNumerosHinos(numerosHinosCreateSeletectTag) //atualzia array de numeros dos hinos
         setSelectedHino(idCanticoURL?.toString()) //atualiza o id pesquisado vindo da URL
