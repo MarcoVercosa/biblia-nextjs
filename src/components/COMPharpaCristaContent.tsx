@@ -1,4 +1,4 @@
-import { IReadContentHino } from "@/entities/interfaces"
+import { IReadContentHino } from "@/interfaces/interfaces"
 import styles from "../styles/harpaCristaContent.module.css"
 
 export default function ReadContentHino({ conteudoHinos }: IReadContentHino[] | any) {

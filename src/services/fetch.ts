@@ -1,9 +1,9 @@
 import {
     IresultVersao, IresultTestamento,
-    IresultLivros, IresultCapitulos, IBuscaConteudoLeitura, IFindBibleBySearchAPI
-} from "@/entities/interfaces"
+    IresultLivros, IresultCapitulos, IBuscaConteudoLeitura, IFindBibleBySearchAPI, IHinoPorPalavra
+} from "@/interfaces/interfaces"
 
-const urlApiDev = 'http://localhost:9000'
+const urlApiDev = 'http://192.168.15.143:9000'
 const urlApiProd = 'http://...'
 
 export async function FetchAPIVersaoClientSide(): Promise<IresultVersao[]> {
@@ -46,7 +46,6 @@ export async function FetchAPILivros(testamentoID: number): Promise<IresultLivro
 }
 
 export async function FetchAPICapitulos(versaoID: string | number, livroID: string | number): Promise<IresultCapitulos[] | []> {
-    console.log("CAPITULOS")
     try {
         const response = await fetch(`${urlApiDev}/mais/buscacapitulo/${versaoID}/${livroID}`)
         if (response.status == 200) {
@@ -60,7 +59,6 @@ export async function FetchAPICapitulos(versaoID: string | number, livroID: stri
 }
 
 export async function FetchConteudo(versaoID: string, testamentoID: string, livroId: string, capitulo: string): Promise<IBuscaConteudoLeitura | []> {
-    console.log("FetchConteudo")
     try {
         const response = await fetch(`${urlApiDev}/mais/buscaconteudo/${versaoID}/${testamentoID}/${livroId}/${capitulo}`)
 
@@ -148,6 +146,16 @@ export async function FetchConteudoHarpaServerSide(value: string) {
         return data
     } catch (error) {
         console.log(error)
+        return []
+    }
+}
+
+export async function FetchConteudoHinoBySearchClientSide(searchWordField: string) {
+    try {
+        const response = await fetch(`${urlApiDev}/hinoharpa/buscatituloporpalavra/${searchWordField}`)
+        let data = await response.json()
+        return data as IHinoPorPalavra[]
+    } catch (error) {
         return []
     }
 }

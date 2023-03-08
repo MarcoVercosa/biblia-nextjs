@@ -5,7 +5,7 @@ import Footer from "../../../components/COMPfooter"
 import { FetchSelectNumeroHarpaServerSide, FetchConteudoHarpaServerSide } from '@/services/fetch'
 import ReadingPanelHarpaCrista from '@/components/COMPReadingPanelHarpaCrista'
 import { GetStaticPaths, GetStaticProps } from 'next'
-import { IPropsReadingPanelHarpaCrista } from '@/entities/interfaces'
+import { IPropsReadingPanelHarpaCrista } from '@/interfaces/interfaces'
 
 
 

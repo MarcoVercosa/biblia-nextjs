@@ -7,10 +7,10 @@ import { useRouter } from 'next/router'
 
 export default function NavBar() {
     const [menu, setMenu] = useState<boolean>(false)
-    const OpenMenu = () => setMenu(!menu)
     const [modal, setModal] = useState<boolean>(false)
-    const OpenCloseModal = () => setModal(!modal)
     const [inputSearch, setInputSearch] = useState<string>("")
+    const OpenMenu = () => setMenu(!menu)
+    const OpenCloseModal = () => setModal(!modal)
     const router = useRouter()
 
     function UpdateFieldInput(value: string) {
@@ -33,14 +33,14 @@ export default function NavBar() {
                 <div className={styles.menuBotton} onClick={() => OpenMenu()}>
                     <Image
                         src="/images/iconsMenu/menuBotton.svg"
-                        alt="Logo"
+                        alt="menu"
                         className={styles.imageButtonMenu}
                         width={70}
                         height={50}
                         priority
                     />
                 </div>
-                <div className={styles.menu} style={{ display: menu ? "block" : "none" }}>
+                <div className={styles.menu} style={{ display: menu ? "block" : "none" }} onClick={() => OpenMenu()}>
                     <ul className={styles.menuIcons}>
                         <li>
                             <Link href="/">
@@ -96,7 +96,7 @@ export default function NavBar() {
                     <div className={styles.imagediv} >
                         <Image
                             src="/images/menu/image.png"
-                            alt="Logo"
+                            alt="Logoleaodejuda"
                             className={styles.imagedivimage}
                             fill
                             priority
@@ -104,9 +104,9 @@ export default function NavBar() {
                     </div>
                 </div>
                 <div className={styles.searchMenu}>
-                    <div>
-                        <input onKeyDown={(evt) => { GoSearchByWord(evt.key) }} onChange={(evt) => { UpdateFieldInput(evt.target.value) }} value={inputSearch} className="no-outline" type="text" placeholder='Press enter to search' name='Digite' />
-                    </div>
+
+                    <input type="text" name='Digite' value={inputSearch} minLength={2} maxLength={10} placeholder='Press enter to search' onKeyDown={(evt) => { GoSearchByWord(evt.key) }} onChange={(evt) => { UpdateFieldInput(evt.target.value) }} ></input>
+
                 </div>
             </header>
         </>

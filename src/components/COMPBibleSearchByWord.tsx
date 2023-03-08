@@ -1,4 +1,4 @@
-import { IFindBibleBySearchAPI } from "@/entities/interfaces"; import { Content } from "@next/font/google";
+import { IFindBibleBySearchAPI } from "@/interfaces/interfaces"; import { Content } from "@next/font/google";
 import Link from "next/link";
 import { useRouter } from "next/router";
 ;

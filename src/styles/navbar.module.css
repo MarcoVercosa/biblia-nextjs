@@ -13,7 +13,7 @@
     display: flex;
     width: auto;
     background-color: rgb(54, 54, 54);
-    height: 10vh;
+    height: 5.2rem;
     color: white;
     box-shadow: 10px 5px 20px rgb(99, 99, 99);
     margin: 0 auto;
@@ -32,7 +32,10 @@
     margin-left: 2rem;
 }
 
-.imageButtonMenu {}
+.imageButtonMenu {
+    max-width: 100%;
+    max-height: 100%;
+}
 
 .menu {
     top: 8rem;
@@ -117,13 +120,14 @@
 }
 
 .imagediv {
-    width: 5vw;
+    min-width: 5vw;
     height: 90%;
     position: relative;
 }
 
 .imagedivimage {
     border-radius: 25px;
+    min-width: 5vw;
 }
 
 .contentLeft h1 {
@@ -139,7 +143,8 @@
 }
 
 .searchMenu input {
-    width: 80%;
+    max-width: 80%;
+    max-height: 100%;
     margin: 0 auto;
     padding: 10px;
     border: none;
@@ -151,4 +156,15 @@
 
 .searchMenu input:hover {
     transform: scale(1.1);
+}
+
+
+@media screen and (max-width: 850px) {
+    .contentLeft h1 {
+        display: none;
+    }
+
+    .imagediv {
+        width: 11vw;
+    }
 }

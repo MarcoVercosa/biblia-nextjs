@@ -1,4 +1,4 @@
-import { IHinoPorPalavra } from "@/entities/interfaces"
+import { IHinoPorPalavra } from "@/interfaces/interfaces"
 import styles from "../styles/COMPReadingContentHarpaBySearch.module.css"
 import Image from "next/image"
 import { useRouter } from "next/router"

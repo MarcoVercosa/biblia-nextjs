@@ -1,10 +1,11 @@
 import { useEffect, useState } from "react"
 import styles from "@/styles/readingPanelHarpaCrista.module.css"
 import { useRouter } from "next/router"
-import { IHinoPorPalavra, IPropsReadingPanelHarpaCrista } from "@/entities/interfaces"
+import { IHinoPorPalavra, IPropsReadingPanelHarpaCrista } from "@/interfaces/interfaces"
 import HinoNotFoundByWord from "./COMPharpaCristaHinoNotFoundByWord"
 import ReadContentHino from "./COMPharpaCristaContent"
 import ReadingContentHarpaBySearch from "./COMPReadingContentHarpaBySearch"
+import { FetchConteudoHinoBySearchClientSide } from "@/services/fetch"
 export default function ReadingPanelHarpaCrista({ numerosHinosCreateSeletectTag, conteudoHinoPageCurrent, idCanticoURL }: IPropsReadingPanelHarpaCrista) {
     const [numerosHinos, setNumerosHinos] = useState(numerosHinosCreateSeletectTag)
     const [conteudoHinos, setConteudoHinos] = useState(conteudoHinoPageCurrent)
@@ -44,12 +45,12 @@ export default function ReadingPanelHarpaCrista({ numerosHinosCreateSeletectTag,
         router.push(`/harpacrista/${selectedHino}`)
     }
 
-    async function GoFindHinoBySearch() {
+    async function GoFindHinoBySearch(value: string) {
+        if (value != "Enter") { return }
         if (searchWordField.length > 1 && searchWordField.length < 11) {
             try {
-                let response = await fetch(`http://localhost:9000/hinoharpa/buscatituloporpalavra/${searchWordField}`)
-                let data: IHinoPorPalavra[] = await response.json()
-                if (data.length < 1) {// se nada retornar
+                let response: IHinoPorPalavra[] = await FetchConteudoHinoBySearchClientSide(searchWordField)
+                if (response.length < 1) {// se nada retornar
                     setConteudoHinos([])//não renderiza conteudo
                     setSelectedHino("selecione") //altera o combobox para selecione
                     setSearchWordResultContent([]) //zera resultado de pesquisa por palavra
@@ -57,7 +58,7 @@ export default function ReadingPanelHarpaCrista({ numerosHinosCreateSeletectTag,
                 } else {
                     setConteudoHinos([])
                     setSelectedHino("selecione")
-                    setSearchWordResultContent(data)
+                    setSearchWordResultContent(response)
                     setSearchWordResultContentError(false)
                 }
 
@@ -72,7 +73,7 @@ export default function ReadingPanelHarpaCrista({ numerosHinosCreateSeletectTag,
             <header>
                 <div className={styles.buscarPorSelect}>
                     <div className={styles.select}>
-                        <p>Número</p>
+                        <p>NÚMERO</p>
                     </div>
                     <div>
                         <select name="versao" value={selectedHino} onChange={(evt) => UpdateSelectedFieldHino(evt.target.value)} >
@@ -89,7 +90,7 @@ export default function ReadingPanelHarpaCrista({ numerosHinosCreateSeletectTag,
                         <p>PALAVRA</p>
                     </div>
                     <div>
-                        <input type="text" name="pesquisahino" minLength={2} maxLength={10} placeholder="Press enter to search" value={searchWordField} onChange={(evt) => { UpdateWordSearchField(evt.target.value) }} onKeyDown={(evt) => { evt.key === "Enter" && GoFindHinoBySearch() }}></input>
+                        <input type="text" name="pesquisahino" minLength={2} maxLength={10} placeholder="Press enter to search" value={searchWordField} onChange={(evt) => { UpdateWordSearchField(evt.target.value) }} onKeyDown={(evt) => { GoFindHinoBySearch(evt.key) }}></input>
                     </div>
                 </div>
             </header>

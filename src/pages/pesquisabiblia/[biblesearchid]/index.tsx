@@ -1,7 +1,7 @@
 import COMPBibleSearchByWord from "@/components/COMPBibleSearchByWord";
 import Footer from "@/components/COMPfooter";
 import NavBar from "@/components/COMPnavbar";
-import { IFindBibleBySearchAPI } from "@/entities/interfaces";
+import { IFindBibleBySearchAPI } from "@/interfaces/interfaces";
 import { FindBibleBySearchAPIClientSide } from "@/services/fetch";
 import { useRouter } from "next/router";
 import { useEffect, useState } from "react";

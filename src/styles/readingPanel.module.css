@@ -81,6 +81,7 @@
     margin: 0 auto;
     width: 40vw;
     display: flex;
+    justify-content: center;
     gap: 2rem;
     margin-top: 2rem;
     padding: 1rem;
@@ -132,3 +133,9 @@
 }
 
 .articlenavegacaoseelct {}
+
+@media (max-width: 850px) {
+    .articlenavegacao {
+        width: 95vw;
+    }
+}

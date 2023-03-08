@@ -7,24 +7,28 @@
 }
 
 .backgroundeffectmodal {
-    display: block;
-    width: 100vw;
-    height: 100%;
+    display: flex;
+    width: 100%;
+    height: 100vh;
     position: fixed;
     /* glassEffect */
     backdrop-filter: blur(5px);
     z-index: 100;
+    align-self: center;
+    align-content: center;
+    justify-content: center;
+    align-items: center;
 }
 
 
 .modalcontainer {
-    width: 35vw;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    width: auto;
     height: auto;
-    margin: 0 auto;
-    margin-top: 20vh;
-    margin-left: 30vw;
     border-radius: 20px;
-    padding: 10px;
+    padding: 1rem;
     /* box-shadow: 6px 4px 4px rgb(165, 165, 165); */
 
     /* glassEffect */
@@ -44,12 +48,6 @@
 
 .modalopcoes {}
 
-.modalopcoes div {
-    display: flex;
-    justify-content: space-between;
-    padding: 10px
-}
-
 
 
 .selectlabel {
@@ -57,6 +55,12 @@
     font-size: 2rem;
     font-weight: bold;
     color: #080808;
+}
+
+.modalopcoes div {
+    display: flex;
+    justify-content: space-between;
+    padding: 10px;
 
 }
 
@@ -109,6 +113,7 @@
 .buttons {
     padding: 20px;
     display: flex;
+    width: 100%;
     justify-content: space-around;
 }
 
@@ -160,8 +165,25 @@
     box-shadow: rgba(255, 0, 0, 0.5) 0 0 0 3px;
 }
 
-@media (max-width: 420px) {
-    .buttons button {
-        height: 48px;
+@media (max-width: 850px) {
+    .modalcontainer {
+        flex-direction: column;
+        margin-top: 5rem;
+        padding: 1rem;
+    }
+
+    .modalTitulo {
+        font-size: 1rem;
+    }
+
+    .modalopcoes div {
+        flex-direction: column;
+    }
+
+    .buttons {
+        padding: 0;
+        padding-top: 1rem;
+        padding-bottom: 0.5rem;
+
     }
 }

@@ -3,7 +3,7 @@ import React from "react";
 import { useRouter } from 'next/router'
 import styles from "../styles/modalSelectLeitura.module.css"
 import { FetchAPILivros, FetchAPICapitulos, FetchAPIVersaoClientSide, FetchAPITestamentoClientSide } from "@/services/fetch";
-import { IresultVersao, IresultTestamento, IresultLivros, IresultCapitulos, ISelectFieldOptions, IPropsModalSelectLeitura } from "../entities/interfaces";
+import { IresultVersao, IresultTestamento, IresultLivros, IresultCapitulos, ISelectFieldOptions, IPropsModalSelectLeitura } from "../interfaces/interfaces";
 
 
 export default function ModalSelectLeitura({ OpenCloseModal }: IPropsModalSelectLeitura) { //as props preReder são feitas através de fetch via getServerSideProps na page Home, pois a versão e testamento, são sempre os mesmos
