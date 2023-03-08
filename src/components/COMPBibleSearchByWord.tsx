@@ -1,22 +1,30 @@
 import { IFindBibleBySearchAPI } from "@/interfaces/interfaces"; import { Content } from "@next/font/google";
 import Link from "next/link";
-import { useRouter } from "next/router";
-;
+import { useRouter } from "next/router";;
 import { useEffect, useState } from "react";
 import styles from "../styles/COMPBibleSearchByWord.module.css"
+import Loading from "./COMPloading";
 import ContentBibleNotFound from "./COMPReadingContentBibleNotFound";
 
-export default function COMPBibleSearchByWord({ data }: { data: IFindBibleBySearchAPI[] }) {
-    const [dataResultSearch, setDataResultSearch] = useState<IFindBibleBySearchAPI[]>([])
+export default function COMPBibleSearchByWord({ data }: { data: IFindBibleBySearchAPI[] | string }) {
+    console.log("COMPBibleSearchByWord")
+    const [dataResultSearch, setDataResultSearch] = useState<IFindBibleBySearchAPI[] | string>([])
     const router = useRouter()
     useEffect(() => {
         setDataResultSearch(data)
     }, [data])
 
-    if (dataResultSearch.length > 1) {
+
+    if (dataResultSearch == "empty") {
         return (
             <section className={styles.main}>
-                {dataResultSearch.map((datas: IFindBibleBySearchAPI, index: number) => {
+                <ContentBibleNotFound value={router.query.biblesearchid} />
+            </section>
+        )
+    } else {
+        return (
+            <section className={styles.main}>
+                {dataResultSearch?.map((datas: IFindBibleBySearchAPI, index: number) => {
                     return (
 
                         <div className={styles.container}>
@@ -34,12 +42,7 @@ export default function COMPBibleSearchByWord({ data }: { data: IFindBibleBySear
                 })}
             </section>
         )
-    } else {
-        return (
-            <section className={styles.main}>
-                <ContentBibleNotFound value={router.query.biblesearchid} />
-            </section>
-        )
     }
+
 
 }

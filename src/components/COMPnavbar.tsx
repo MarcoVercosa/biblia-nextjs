@@ -104,7 +104,6 @@ export default function NavBar() {
                     </div>
                 </div>
                 <div className={styles.searchMenu}>
-
                     <input type="text" name='Digite' value={inputSearch} minLength={2} maxLength={10} placeholder='Press enter to search' onKeyDown={(evt) => { GoSearchByWord(evt.key) }} onChange={(evt) => { UpdateFieldInput(evt.target.value) }} ></input>
 
                 </div>

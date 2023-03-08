@@ -1,8 +1,13 @@
+.article {
+
+    height: 100vh;
+}
+
 .loaderContainerBalls {
-    width: 30vw;
+    width: 60vw;
     height: 20vh;
-    position: absolute;
-    top: 50%;
+    position: relative;
+    top: 40vh;
     left: 50%;
     transform: translate(-50%, -50%);
     background: #080808;

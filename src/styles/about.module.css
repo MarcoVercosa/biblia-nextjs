@@ -79,4 +79,8 @@
 }
 
 
-.diamondimage imageErro {}
+@media (max-width: 850px) {
+    .sobrearticlediv {
+        width: 98vw;
+    }
+}

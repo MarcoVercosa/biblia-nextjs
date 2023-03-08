@@ -6,6 +6,7 @@ import HinoNotFoundByWord from "./COMPharpaCristaHinoNotFoundByWord"
 import ReadContentHino from "./COMPharpaCristaContent"
 import ReadingContentHarpaBySearch from "./COMPReadingContentHarpaBySearch"
 import { FetchConteudoHinoBySearchClientSide } from "@/services/fetch"
+import Loading from "./COMPloading"
 export default function ReadingPanelHarpaCrista({ numerosHinosCreateSeletectTag, conteudoHinoPageCurrent, idCanticoURL }: IPropsReadingPanelHarpaCrista) {
     const [numerosHinos, setNumerosHinos] = useState(numerosHinosCreateSeletectTag)
     const [conteudoHinos, setConteudoHinos] = useState(conteudoHinoPageCurrent)
@@ -13,6 +14,7 @@ export default function ReadingPanelHarpaCrista({ numerosHinosCreateSeletectTag,
     const [searchWordField, setSearchWordField] = useState("")
     const [searchWordResultContent, setSearchWordResultContent] = useState<IHinoPorPalavra[]>([])
     const [searchWordResultContentError, setSearchWordResultContentError] = useState<boolean | string>(false)
+    const [loading, setLoading] = useState<boolean>(false)
 
     const router = useRouter()
 
@@ -22,7 +24,6 @@ export default function ReadingPanelHarpaCrista({ numerosHinosCreateSeletectTag,
         setSelectedHino(idCanticoURL?.toString()) //atualiza o id pesquisado vindo da URL
         setSearchWordResultContentError(false)// false para se houver componente de palavra não encontrada na tela, não renderizar
         setSearchWordResultContent([]) // se houver dados de pesquisa na tela, forçará a não ser renderizado
-
     }, [idCanticoURL, conteudoHinoPageCurrent])
     //USE EFFECT= Se um componente atualizar a URL, os componentes abaixo não atualizam. O useEffect força a atualização dos componente se a url/conteudoHino alterar
     function MountSelectComponent(): any {
@@ -49,17 +50,20 @@ export default function ReadingPanelHarpaCrista({ numerosHinosCreateSeletectTag,
         if (value != "Enter") { return }
         if (searchWordField.length > 1 && searchWordField.length < 11) {
             try {
+                setLoading(true)
                 let response: IHinoPorPalavra[] = await FetchConteudoHinoBySearchClientSide(searchWordField)
                 if (response.length < 1) {// se nada retornar
                     setConteudoHinos([])//não renderiza conteudo
                     setSelectedHino("selecione") //altera o combobox para selecione
                     setSearchWordResultContent([]) //zera resultado de pesquisa por palavra
                     setSearchWordResultContentError(searchWordField) //ativa componente de erro
+                    setLoading(false)
                 } else {
                     setConteudoHinos([])
                     setSelectedHino("selecione")
                     setSearchWordResultContent(response)
                     setSearchWordResultContentError(false)
+                    setLoading(false)
                 }
 
             } catch (error) {
@@ -90,24 +94,29 @@ export default function ReadingPanelHarpaCrista({ numerosHinosCreateSeletectTag,
                         <p>PALAVRA</p>
                     </div>
                     <div>
-                        <input type="text" name="pesquisahino" minLength={2} maxLength={10} placeholder="Press enter to search" value={searchWordField} onChange={(evt) => { UpdateWordSearchField(evt.target.value) }} onKeyDown={(evt) => { GoFindHinoBySearch(evt.key) }}></input>
+                        <input type="text" name="pesquisahino" minLength={2} maxLength={10} placeholder="Press enter to search" value={searchWordField} onKeyDown={(evt) => { GoFindHinoBySearch(evt.key) }} onChange={(evt) => { UpdateWordSearchField(evt.target.value) }}></input>
                     </div>
                 </div>
             </header>
-            <article>
-                {/* conteudo do hino selecionado */}
-                {conteudoHinos && <ReadContentHino conteudoHinos={conteudoHinos} />}
-            </article>
-            <article>
-                {/* Conteudo dos hinos encontrados pela busca por palavra */}
-                {searchWordResultContent.length > 0 && <ReadingContentHarpaBySearch searchWordResultContent={searchWordResultContent} />}
-            </article>
-            <article>
-                {/* Mensagem de erro caso a palvravra não retorne nenhum hino */}
-                {searchWordResultContentError &&
-                    <HinoNotFoundByWord searchWordField={searchWordField} />
-                }
-            </article>
+            {loading ? <Loading /> :
+                <>
+                    <article>
+                        {/* conteudo do hino selecionado */}
+                        {conteudoHinos && <ReadContentHino conteudoHinos={conteudoHinos} />}
+                    </article>
+                    <article>
+                        {/* Conteudo dos hinos encontrados pela busca por palavra */}
+                        {searchWordResultContent.length > 0 && <ReadingContentHarpaBySearch searchWordResultContent={searchWordResultContent} />}
+                    </article>
+                    <article>
+                        {/* Mensagem de erro caso a palvravra não retorne nenhum hino */}
+                        {searchWordResultContentError &&
+                            <HinoNotFoundByWord searchWordField={searchWordField} />
+                        }
+                    </article>
+                </>
+
+            }
 
         </main>
     )
