@@ -2,11 +2,10 @@ import { GetStaticProps, GetStaticPaths } from 'next';
 import { FetchAPICapitulosServerSide, FetchConteudoServerSide } from "@/services/fetch"
 import { IBuscaConteudoLeitura, } from "@/interfaces/interfaces"
 import Head from 'next/head'
-import NavBar from "../../../../../../components/COMPnavbar"
-import ReadingPanel from '@/components/COMPreadingPanel';
-import Footer from "../../../../../../components/COMPfooter"
-import Loading from '@/components/COMPloading';
-import { useState } from 'react';
+import NavBar from "../../../../../../components/navbar/COMPnavbar"
+import ReadingPanel from "@/components/bible/COMPreadingContentBiblePanel"
+import Footer from "../../../../../../components/footer/COMPfooter"
+import Loading from '@/components/loading/COMPloading';
 
 
 

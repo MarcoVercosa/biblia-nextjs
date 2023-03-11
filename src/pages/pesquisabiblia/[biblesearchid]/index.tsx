@@ -1,7 +1,7 @@
-import COMPBibleSearchByWord from "@/components/COMPBibleSearchByWord";
-import Footer from "@/components/COMPfooter";
-import NavBar from "@/components/COMPnavbar";
-import Loading from "@/components/COMPloading";
+import COMPBibleSearchByWord from "@/components/bible/COMPBibleSearchByWord";
+import Footer from "@/components/footer/COMPfooter";
+import NavBar from "@/components/navbar/COMPnavbar";
+import Loading from "@/components/loading/COMPloading";
 import { IFindBibleBySearchAPI } from "@/interfaces/interfaces";
 import { FindBibleBySearchAPIClientSide } from "@/services/fetch";
 import Head from "next/head";

@@ -1,0 +1,80 @@
+@font-face {
+    font-family: CormorantGaramond;
+    /* src: url('../asset/CormorantGaramond/CormorantGaramond-Medium.ttf'); */
+    src: url('../../asset/CormorantGaramond/CormorantGaramond-Light.ttf');
+    /* font-weight: 400;
+    font-style: normal; */
+}
+
+.contentSeachByWord {
+    display: flex;
+    gap: 2rem;
+    flex-wrap: wrap;
+    justify-content: center;
+    width: 90vw;
+    margin: 0 auto;
+    animation-duration: 2s;
+    animation-name: slidein;
+}
+
+@keyframes slidein {
+    from {
+        opacity: 0;
+    }
+
+    to {
+        opacity: 1;
+    }
+}
+
+.container {
+    display: flex;
+    flex-direction: column;
+    height: 25%;
+    /* width: 25%; */
+    border-radius: 30px;
+    box-shadow: 15px 15px 10px rgb(99, 99, 99);
+    background: rgba(0, 0, 0, 0.6);
+    font-family: CormorantGaramond;
+    font-size: 1.5rem;
+    font-weight: bold;
+    color: white;
+    padding: 2rem;
+    margin-top: 2rem;
+    justify-content: center;
+    text-align: center;
+    transition: all 1s;
+    cursor: pointer;
+
+}
+
+.container a {
+    text-decoration: none;
+    color: white
+}
+
+.container:hover {
+    /* opacity: 0.6; */
+    -webkit-filter: drop-shadow(15px 10px 5px rgba(0, 0, 0, .1));
+    filter: drop-shadow(15px 10px 5px rgba(0, 0, 0, .5));
+    transform: scale(1.1);
+}
+
+.imagemHino {
+    min-height: 8vh;
+    position: relative;
+}
+
+.imagemHino {
+    position: relative;
+    bottom: 50px
+}
+
+@media screen and (max-width: 850px) {
+    .contentSeachByWord {}
+
+    .container {
+        width: 80vw;
+        padding: 1rem;
+    }
+}

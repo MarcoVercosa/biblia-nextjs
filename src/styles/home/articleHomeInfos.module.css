@@ -1,0 +1,88 @@
+@font-face {
+    font-family: CormorantGaramond;
+    /* src: url('../asset/CormorantGaramond/CormorantGaramond-Medium.ttf'); */
+    src: url('../../asset/CormorantGaramond/CormorantGaramond-Light.ttf');
+    /* font-weight: 400;
+    font-style: normal; */
+}
+
+
+.artigoArticle {
+    width: 90vw;
+    height: auto;
+    display: flex;
+    gap: 1rem;
+    text-align: center;
+    justify-content: center;
+    margin: 0 auto;
+    margin-top: 4rem;
+    font-family: CormorantGaramond;
+}
+
+.artigoArticle div::-webkit-scrollbar {
+    width: 3px;
+    height: 3px;
+    /* A altura só é vista quando a rolagem é horizontal */
+}
+
+.artigoArticle div::-webkit-scrollbar-track {
+    background: transparent;
+    padding: 2px;
+
+}
+
+.artigoArticle ::-webkit-scrollbar-thumb {
+    background-color: #ffffff;
+    border-radius: 30px;
+    cursor: pointer;
+}
+
+.artigoArticle h3 {
+    margin-bottom: 1rem;
+    font-size: 1.7rem;
+    color: white;
+}
+
+.artigoArticle p {
+    font-size: 1.4rem;
+    color: rgb(255, 255, 255);
+}
+
+.artigoArticleDivUm,
+.artigoArticleDivDois,
+.artigoArticleDivTres {
+    display: flex;
+    flex-direction: column;
+    gap: 15px;
+    width: 30vw;
+    height: 60vh;
+    margin-right: 3px;
+    border-radius: 30px;
+    box-shadow: 0px 10px 10px rgb(99, 99, 99);
+    background: rgba(0, 0, 0, 0.6);
+    padding: 13px;
+    overflow: scroll;
+
+}
+
+@supports (-webkit-backdrop-filter: none) or (backdrop-filter: none) {
+    .container {
+        -webkit-backdrop-filter: blur(10px);
+        backdrop-filter: blur(10px);
+    }
+}
+
+
+@media screen and (max-width: 850px) {
+    .artigoArticle {
+        width: 95vw;
+        flex-wrap: wrap;
+    }
+
+    .artigoArticleDivUm,
+    .artigoArticleDivDois,
+    .artigoArticleDivTres {
+        width: 95vw;
+        height: 35vh;
+    }
+}

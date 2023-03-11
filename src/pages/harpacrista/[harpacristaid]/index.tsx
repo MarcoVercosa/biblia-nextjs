@@ -1,9 +1,9 @@
 import Head from 'next/head'
-import NavBar from "../../../components/COMPnavbar"
-import Footer from "../../../components/COMPfooter"
+import NavBar from "../../../components/navbar/COMPnavbar"
+import Footer from "../../../components/footer/COMPfooter"
 
 import { FetchSelectNumeroHarpaServerSide, FetchConteudoHarpaServerSide } from '@/services/fetch'
-import ReadingPanelHarpaCrista from '@/components/COMPReadingPanelHarpaCrista'
+import ReadingPanelHarpaCrista from '@/components/harpa/COMPReadingPanelHarpaCrista'
 import { GetStaticPaths, GetStaticProps } from 'next'
 import { IPropsReadingPanelHarpaCrista } from '@/interfaces/interfaces'
 

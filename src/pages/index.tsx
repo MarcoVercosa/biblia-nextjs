@@ -1,10 +1,9 @@
 import Head from 'next/head'
-import Image from "next/image";
 
-import styles from '@/styles/Home.module.css'
-import NavBar from "../components/COMPnavbar"
-import Footer from "../components/COMPfooter"
-import ArticleHome from '../components/COMParticleHomeInfos'
+import styles from '@/styles/home/Home.module.css'
+import NavBar from "../components/navbar/COMPnavbar"
+import Footer from "../components/footer/COMPfooter"
+import ArticleHome from '../components/home/COMParticleHomeInfos'
 
 
 export default function Home(): JSX.Element {
