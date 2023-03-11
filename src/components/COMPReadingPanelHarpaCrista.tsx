@@ -7,7 +7,7 @@ import ReadContentHino from "./COMPharpaCristaContent"
 import ReadingContentHarpaBySearch from "./COMPReadingContentHarpaBySearch"
 import { FetchConteudoHinoBySearchClientSide } from "@/services/fetch"
 import Loading from "./COMPloading"
-export default function ReadingPanelHarpaCrista({ numerosHinosCreateSeletectTag, conteudoHinoPageCurrent, idCanticoURL }: IPropsReadingPanelHarpaCrista) {
+export default function ReadingPanelHarpaCrista({ numerosHinosCreateSeletectTag, conteudoHinoPageCurrent, idCanticoURL }: IPropsReadingPanelHarpaCrista): JSX.Element {
     const [numerosHinos, setNumerosHinos] = useState(numerosHinosCreateSeletectTag)
     const [conteudoHinos, setConteudoHinos] = useState(conteudoHinoPageCurrent)
     const [selectedHino, setSelectedHino] = useState("Selecione")

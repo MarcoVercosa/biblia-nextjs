@@ -6,7 +6,7 @@ import { FetchAPILivros, FetchAPICapitulos, FetchAPIVersaoClientSide, FetchAPITe
 import { IresultVersao, IresultTestamento, IresultLivros, IresultCapitulos, ISelectFieldOptions, IPropsModalSelectLeitura } from "../interfaces/interfaces";
 
 
-export default function ModalSelectLeitura({ OpenCloseModal }: IPropsModalSelectLeitura) { //as props preReder são feitas através de fetch via getServerSideProps na page Home, pois a versão e testamento, são sempre os mesmos
+export default function ModalSelectLeitura({ OpenCloseModal }: IPropsModalSelectLeitura): JSX.Element { //as props preReder são feitas através de fetch via getServerSideProps na page Home, pois a versão e testamento, são sempre os mesmos
     const [versao, setVersao] = useState<IresultVersao[]>();
     const [testamento, setTestamento] = useState<IresultTestamento[]>();
     const [livros, setLivros] = useState<IresultLivros[]>([]);

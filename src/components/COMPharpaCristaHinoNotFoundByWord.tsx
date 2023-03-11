@@ -2,7 +2,7 @@ import Image from "next/image";
 import styles from "../styles/harpaCristaHinoNotFoundByWord.module.css"
 
 
-export default function HinoNotFoundByWord({ searchWordField }: { searchWordField: string }) {
+export default function HinoNotFoundByWord({ searchWordField }: { searchWordField: string }): JSX.Element {
     return (
         <>
             <article className={styles.errorHinoArticle}>

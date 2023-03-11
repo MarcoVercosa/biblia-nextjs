@@ -5,7 +5,7 @@ import Image from "next/image"
 import { useRouter } from "next/router"
 import ContentBibleNotFound from "./COMPReadingContentBibleNotFound"
 
-export default function ReadingPanel({ data }: { data: IBuscaConteudoLeitura }) {
+export default function ReadingPanel({ data }: { data: IBuscaConteudoLeitura }): JSX.Element {
     const [comboBox, setComboBox] = useState<Array<any>>([])
     const [comboBoxSelected, setComboBoxSelected] = useState<number | any>(null)
     const [anchorURLValue, setAnchorURLValue] = useState<string>("")
@@ -45,7 +45,7 @@ export default function ReadingPanel({ data }: { data: IBuscaConteudoLeitura }) 
         router.push(`/leitura/${versaoid}/${testamentoid}/${livroid}/${page}`)
     }
 
-    if (data.conteudo.length > 1) {
+    if (data?.conteudo.length > 1) {
         return (
             <main className={styles.main}>
                 <div className={styles.nomeversao}><h3>{data?.nomeVersao[0].versao_nome}</h3></div>

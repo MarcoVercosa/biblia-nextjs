@@ -8,7 +8,7 @@ export default function ReadingContentHarpaBySearch({ searchWordResultContent }:
 
     return (
         <article className={styles.contentSeachByWord}>
-            {searchWordResultContent.map((data: IHinoPorPalavra, index: number) => {
+            {searchWordResultContent.map((data: IHinoPorPalavra, index: number): JSX.Element => {
                 return (
                     <>
 

@@ -5,7 +5,7 @@ import ModalSelectLeitura from './COMPmodalSelectLeitura'
 import Link from 'next/link'
 import { useRouter } from 'next/router'
 
-export default function NavBar() {
+export default function NavBar(): JSX.Element {
     const [menu, setMenu] = useState<boolean>(false)
     const [modal, setModal] = useState<boolean>(false)
     const [inputSearch, setInputSearch] = useState<string>("")

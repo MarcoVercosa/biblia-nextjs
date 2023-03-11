@@ -2,10 +2,14 @@
     /* overflow: hidden; */
     /* overflow: scroll; */
     min-height: 100vh;
-    animation: scroll 130s linear infinite;
+    /* width: 100%; */
+    animation: scroll 100s linear infinite;
     /* background: url("https://images.unsplash.com/photo-1465146633011-14f8e0781093?ixlib=rb-1.2.1&ixid=eyJhcHBfaWQiOjEyMDd9&auto=format&fit=crop&w=3450&q=80"), #111111; */
-    background-image: url("../asset//backgroundDefault/backgoundAnimated.avif");
-    min-width: 360px;
+    background-image: url("../../public/images/backgroundDefault/backgroundAnimated_1.jpeg");
+    background-size: cover;
+    background-position: center center;
+    background-attachment: fixed;
+
 
     perspective: 1000px;
     perspective-origin: 50% 50%;
@@ -16,5 +20,11 @@
 @keyframes scroll {
     100% {
         background-position: 0px -3000px;
+    }
+}
+
+@media (max-width: 850px) {
+    .backgroundanimation {
+        animation: scroll 280s linear infinite;
     }
 }

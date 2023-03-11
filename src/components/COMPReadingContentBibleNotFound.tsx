@@ -2,7 +2,7 @@ import Image from "next/image";
 import styles from "../styles/COMPReadingContentBibleNotFound.module.css"
 
 
-export default function ContentBibleNotFound({ value }: { value?: string | any }) {
+export default function ContentBibleNotFound({ value }: { value?: string | any }): JSX.Element {
     return (
         <>
             <article className={styles.errorHinoArticle}>

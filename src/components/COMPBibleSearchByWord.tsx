@@ -1,15 +1,16 @@
 import { IFindBibleBySearchAPI } from "@/interfaces/interfaces"; import { Content } from "@next/font/google";
 import Link from "next/link";
+import { NextRouter } from "next/router";
 import { useRouter } from "next/router";;
 import { useEffect, useState } from "react";
 import styles from "../styles/COMPBibleSearchByWord.module.css"
 import Loading from "./COMPloading";
 import ContentBibleNotFound from "./COMPReadingContentBibleNotFound";
 
-export default function COMPBibleSearchByWord({ data }: { data: IFindBibleBySearchAPI[] | string }) {
+export default function COMPBibleSearchByWord({ data }: { data: IFindBibleBySearchAPI[] | string }): JSX.Element {
     console.log("COMPBibleSearchByWord")
     const [dataResultSearch, setDataResultSearch] = useState<IFindBibleBySearchAPI[] | string>([])
-    const router = useRouter()
+    const router: NextRouter = useRouter()
     useEffect(() => {
         setDataResultSearch(data)
     }, [data])

@@ -1,6 +1,6 @@
 import styles from "../styles/loading.module.css"
 
-export default function Loading() {
+export default function Loading(): JSX.Element {
     return (
         <article className={styles.article}>
             <div className={styles.loaderContainer}>

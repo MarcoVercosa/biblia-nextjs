@@ -27,8 +27,7 @@ interface IGetStaticProps {
 }
 
 
-export default function LeituraBiblia({ data }: { data: IBuscaConteudoLeitura }) {
-
+export default function LeituraBiblia({ data }: { data: IBuscaConteudoLeitura }): JSX.Element {
     if (!data) {
         return (
             <>

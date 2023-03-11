@@ -1,6 +1,6 @@
 import styles from '../styles/footer.module.css'
 
-export default function Footer() {
+export default function Footer(): JSX.Element {
 
     return (
         <footer className={styles.footerfooter}>

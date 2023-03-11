@@ -160,11 +160,32 @@
 
 
 @media screen and (max-width: 850px) {
+    .main {
+        justify-content: space-between;
+    }
+
     .contentLeft h1 {
         display: none;
     }
 
     .imagediv {
-        width: 11vw;
+        min-width: 6rem;
+    }
+
+    .searchMenu {
+        width: 9rem;
+        margin: 0
+    }
+
+    .searchMenu input {
+        margin: 0 auto;
+    }
+
+    .menuBotton {
+        margin-left: 1rem;
+    }
+
+    .menu {
+        left: 1rem;
     }
 }

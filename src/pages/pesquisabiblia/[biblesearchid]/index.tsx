@@ -8,7 +8,7 @@ import Head from "next/head";
 import { useRouter } from "next/router";
 import { useEffect, useState } from "react";
 
-export default function BibleSearchByWord() {
+export default function BibleSearchByWord(): JSX.Element {
     const [dataResultSearch, setDataResultSearch] = useState<IFindBibleBySearchAPI[] | string>([])
     const [loading, setLoading] = useState<boolean>(false)
     const router = useRouter()

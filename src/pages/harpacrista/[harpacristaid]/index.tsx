@@ -9,7 +9,7 @@ import { IPropsReadingPanelHarpaCrista } from '@/interfaces/interfaces'
 
 
 
-export default function HarpaCrista({ numerosHinosCreateSeletectTag, conteudoHinoPageCurrent, idCanticoURL }: IPropsReadingPanelHarpaCrista) {
+export default function HarpaCrista({ numerosHinosCreateSeletectTag, conteudoHinoPageCurrent, idCanticoURL }: IPropsReadingPanelHarpaCrista): JSX.Element {
 
     return (
         <>
