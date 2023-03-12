@@ -28,60 +28,6 @@
     }
 }
 
-.nomeversao h3 {
-    /* font-family: CormorantGaramond; */
-    font-family: 'CardoGaramond', serif;
-    font-size: 2rem;
-    text-align: center;
-    color: #000000;
-}
-
-.livrocapitulo {
-    display: flex;
-    justify-content: flex-start;
-
-}
-
-.livrocapitulo h1 {
-    font-family: CardoGaramond;
-    font-size: 2rem;
-    padding: 1rem;
-    font-weight: 600;
-    color: #424242;
-}
-
-.content {
-    display: flex;
-    flex-direction: column;
-    margin: 0 auto;
-    width: 93vw;
-}
-
-.content p {
-    font-family: CardoGaramond;
-    font-size: 1.3rem;
-    font-weight: 600;
-    font-style: italic;
-    padding: 0.3rem;
-    cursor: pointer;
-    transition: all 0.5s
-}
-
-.content p:hover {
-    background-color: rgb(233, 233, 233);
-    border-radius: 30px;
-}
-
-.content span {
-    display: inline-block;
-    background-color: rgb(61, 61, 61);
-    border-radius: 30px;
-    color: white;
-    padding-right: 0.4rem;
-    padding-left: 0.2rem;
-    font-weight: bold;
-}
-
 .articlenavegacao {
     margin: 0 auto;
     width: 40vw;

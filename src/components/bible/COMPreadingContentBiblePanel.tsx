@@ -4,6 +4,7 @@ import { useEffect, useState } from "react"
 import Image from "next/image"
 import { useRouter } from "next/router"
 import ContentBibleNotFound from "./COMPReadingContentBibleNotFound"
+import Content from "./COMPContentBible"
 
 export default function ReadingPanel({ data }: { data: IBuscaConteudoLeitura }): JSX.Element {
     const [comboBox, setComboBox] = useState<Array<any>>([])
@@ -12,7 +13,7 @@ export default function ReadingPanel({ data }: { data: IBuscaConteudoLeitura }):
     const router = useRouter()
 
     useEffect(() => {
-        let store = []
+        let store: Array<JSX.Element> = []
         for (let i = 1; i <= data?.quantidadecapitulo[0]?.capitulo; i++) {
             store.push(<option key={i} value={i} >{i}</option>)
         }
@@ -48,20 +49,10 @@ export default function ReadingPanel({ data }: { data: IBuscaConteudoLeitura }):
     if (data?.conteudo.length > 1) {
         return (
             <main className={styles.main}>
-                <div className={styles.nomeversao}><h3>{data?.nomeVersao[0].versao_nome}</h3></div>
-                <div className={styles.livrocapitulo}>
-                    <h1>{data?.nomeLivro[0].livro_nome}: {data?.capituloAtual}</h1>
-                </div>
-                <div className={styles.content}>
-                    {data?.conteudo.map((dados: any, index: number) => {
-                        return (<p id={(index + 1).toString()} style={{ color: anchorURLValue == (index + 1).toString() ? "red" : "black" }} key={index}><span>{index + 1} </span>  - {dados.conteudo}</p>)
-                    })
-                    }
-                </div>
+                <Content data={data} anchorURLValue={anchorURLValue} />
+
                 <article className={styles.articlenavegacao}>
-                    <div className={styles.articlenavegacaoarrow}
-                        onClick={BeforePage}
-                    >
+                    <div className={styles.articlenavegacaoarrow} onClick={BeforePage}>
                         <div>
                             <Image
                                 src="/images/arrowsReading/arrowLeft.png"
@@ -81,9 +72,7 @@ export default function ReadingPanel({ data }: { data: IBuscaConteudoLeitura }):
                             {comboBox}
                         </select>
                     </div>
-                    <div className={styles.articlenavegacaoarrow}
-                        onClick={NextPage}
-                    >
+                    <div className={styles.articlenavegacaoarrow} onClick={NextPage}>
                         <div>
                             {/* Se a página atual for igual a quantidade total de capitulo (ultimo capitulo) não some + 1 */}
                             <p>{data?.capituloAtual == data?.quantidadecapitulo[0].capitulo ? data?.capituloAtual : data?.capituloAtual + 1}</p>

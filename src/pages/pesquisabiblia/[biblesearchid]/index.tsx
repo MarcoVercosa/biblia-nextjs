@@ -1,4 +1,4 @@
-import COMPBibleSearchByWord from "@/components/bible/COMPBibleSearchByWord";
+import COMPBibleSearchByWord from "@/components/bibleSearchByWord/COMPBibleSearchByWord";
 import Footer from "@/components/footer/COMPfooter";
 import NavBar from "@/components/navbar/COMPnavbar";
 import Loading from "@/components/loading/COMPloading";
@@ -9,7 +9,7 @@ import { useRouter } from "next/router";
 import { useEffect, useState } from "react";
 
 export default function BibleSearchByWord(): JSX.Element {
-    const [dataResultSearch, setDataResultSearch] = useState<IFindBibleBySearchAPI[] | string>([])
+    const [dataResultSearch, setDataResultSearch] = useState<IFindBibleBySearchAPI[]>([])
     const [loading, setLoading] = useState<boolean>(false)
     const router = useRouter()
     useEffect(() => {//busca dados da pesquisa conforme o params da URL e encaminha parta o componente filho
@@ -18,7 +18,7 @@ export default function BibleSearchByWord(): JSX.Element {
             const response: IFindBibleBySearchAPI[] = await FindBibleBySearchAPIClientSide(router.query.biblesearchid as any)
             if (response.length < 1) {
                 setLoading(false)
-                setDataResultSearch("empty")
+                setDataResultSearch([])
                 return
             }
             setDataResultSearch(response)

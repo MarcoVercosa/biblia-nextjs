@@ -3,18 +3,18 @@ import Link from "next/link";
 import { NextRouter } from "next/router";
 import { useRouter } from "next/router";;
 import { useEffect, useState } from "react";
-import styles from "../../styles/bible/COMPBibleSearchByWord.module.css"
-import ContentBibleNotFound from "./COMPReadingContentBibleNotFound";
+import styles from "../../styles/bibleSearchByWord/COMPBibleSearchByWord.module.css"
+import ContentBibleNotFound from "../bible/COMPReadingContentBibleNotFound";
 
-export default function COMPBibleSearchByWord({ data }: { data: IFindBibleBySearchAPI[] | string }): JSX.Element {
-    const [dataResultSearch, setDataResultSearch] = useState<IFindBibleBySearchAPI[] | string>([])
+export default function COMPBibleSearchByWord({ data }: { data: IFindBibleBySearchAPI[] }): JSX.Element {
+    const [dataResultSearch, setDataResultSearch] = useState<IFindBibleBySearchAPI[]>([])
     const router: NextRouter = useRouter()
     useEffect(() => {
         setDataResultSearch(data)
     }, [data])
 
 
-    if (dataResultSearch == "empty") {
+    if (dataResultSearch.length < 1) {
         return (
             <section className={styles.main}>
                 <ContentBibleNotFound value={router.query.biblesearchid} />
@@ -43,6 +43,4 @@ export default function COMPBibleSearchByWord({ data }: { data: IFindBibleBySear
             </section>
         )
     }
-
-
 }
