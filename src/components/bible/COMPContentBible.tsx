@@ -15,7 +15,6 @@ export default function Content({ data, anchorURLValue }: { data: IBuscaConteudo
     function OpenCloseModal(word?: string) {
         if (!openCloseModal) { setWordSelectedMenu(word) }//se o openCloseModal já estiver como false, e pq estão solicitando a abertura do modal (para true), então envie o valor do botão selecionado
         setOpenCloseModal(!openCloseModal)
-
     }
     return (
         <>

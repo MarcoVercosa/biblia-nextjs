@@ -35,6 +35,8 @@ export default function ModalMoreInfoIA({ word, OpenCloseModal }: { word: string
                     </div>
                     <div className={styles.titulo}>
                         <h1>{information.title}</h1>
+                        <p>{information.content}</p>
+
                     </div>
 
                 </section>
@@ -42,5 +44,3 @@ export default function ModalMoreInfoIA({ word, OpenCloseModal }: { word: string
         )
     }
 }
-
-// props: versao. livro, capitulo ou curiosidade
