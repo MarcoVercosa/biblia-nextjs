@@ -1,0 +1,49 @@
+@font-face {
+    font-family: CormorantGaramond;
+    src: url('../../asset/CormorantGaramond/CormorantGaramond-Medium.ttf');
+    src: url('../../asset/CormorantGaramond/CormorantGaramond-BoldItalic.ttf');
+    /* font-weight: 400;
+    font-style: normal; */
+}
+
+.article {
+    display: flex;
+    width: 100vw;
+    height: 100vh;
+    position: fixed;
+    justify-content: center;
+    /* glassEffect */
+    background: rgba(255, 255, 255, 0.446);
+    backdrop-filter: blur(4.7px);
+    -webkit-backdrop-filter: blur(4.7px);
+    z-index: 100;
+}
+
+.container {
+    height: 77vh;
+    display: flex;
+    flex-direction: column;
+    overflow: scroll;
+
+}
+
+.buttons {
+    width: 80vw;
+    height: 20vh;
+}
+
+.titulo {
+    padding: 1rem;
+}
+
+.titulo h1 {
+    font-family: CormorantGaramond;
+    font-size: 2rem;
+    font-weight: bold;
+}
+
+.titulo p {
+    font-family: CormorantGaramond;
+    font-size: 1.4rem;
+    font-weight: bold;
+}

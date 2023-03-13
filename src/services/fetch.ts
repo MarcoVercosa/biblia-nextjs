@@ -1,10 +1,11 @@
 import {
     IresultVersao, IresultTestamento,
-    IresultLivros, IresultCapitulos, IBuscaConteudoLeitura, IFindBibleBySearchAPI, IHinoPorPalavra
+    IresultLivros, IresultCapitulos, IBuscaConteudoLeitura, IFindBibleBySearchAPI, IHinoPorPalavra, IGetDataFromIA
 } from "@/interfaces/interfaces"
 
 const urlApiDev = 'http://192.168.15.143:9000'
 const urlApiProd = 'http://...'
+const pass = "we8lBr0X_-7-u80ohi??ap_u2ip?c2"
 
 export async function FetchAPIVersaoClientSide(): Promise<IresultVersao[]> {
     try {
@@ -156,6 +157,29 @@ export async function FetchConteudoHinoBySearchClientSide(searchWordField: strin
         let data = await response.json()
         return data as IHinoPorPalavra[]
     } catch (error) {
+        return []
+    }
+}
+
+export async function GetDataFromIA(word: string | undefined): Promise<IGetDataFromIA | []> {
+    try {
+        const response = await fetch(`${urlApiDev}/ai/dataai`, {
+            method: "POST",
+            body: JSON.stringify({
+                askedToAI: word,
+                pass: pass
+
+            }),
+            headers: {
+                'Accept': 'application/json',
+                'Content-Type': 'application/json; charset=UTF-8'
+            },
+        })
+        let data = await response.json()
+        if (data?.response?.status != 200) { throw new Error(`Resposta da request => ${data?.response?.status} `) }
+        return data as IGetDataFromIA
+    } catch (error) {
+        console.log(error)
         return []
     }
 }

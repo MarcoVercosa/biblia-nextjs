@@ -68,3 +68,10 @@ export interface IHinoPorPalavra {
 export interface IReadContentHino {
     conteudoHinos: boolean | Array<{ titulo: string, letra: string }>
 }
+
+export interface IGetDataFromIA {
+    response: {
+        result: string,
+        status: number
+    }
+}
