@@ -35,9 +35,6 @@ export default function ModalMoreInfoIA({ word, OpenCloseModal }: { word: string
                     </div>
                     <div className={styles.titulo}>
                         <h1>{information.title}</h1>
-                        <p>{information.content}</p>
-                        <p>{information.content}</p>
-                        <p>{information.content}</p>
                     </div>
 
                 </section>
