@@ -7,6 +7,7 @@ import { IresultVersao, IresultTestamento, IresultLivros, IresultCapitulos, ISel
 
 
 export default function ModalSelectLeitura({ OpenCloseModal }: IPropsModalSelectLeitura): JSX.Element { //as props preReder são feitas através de fetch via getServerSideProps na page Home, pois a versão e testamento, são sempre os mesmos
+    console.log("ModalSelectLeitura")
     const [versao, setVersao] = useState<IresultVersao[]>();
     const [testamento, setTestamento] = useState<IresultTestamento[]>();
     const [livros, setLivros] = useState<IresultLivros[]>([]);

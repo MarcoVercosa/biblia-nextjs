@@ -7,6 +7,7 @@ import ContentBibleNotFound from "./COMPReadingContentBibleNotFound"
 import Content from "./COMPContentBible"
 
 export default function ReadingPanel({ data }: { data: IBuscaConteudoLeitura }): JSX.Element {
+    console.log("ReadingPanel")
     const [comboBox, setComboBox] = useState<Array<any>>([])
     const [comboBoxSelected, setComboBoxSelected] = useState<number | any>(null)
     const [anchorURLValue, setAnchorURLValue] = useState<string>("")

@@ -3,6 +3,7 @@ import styles from "../../styles/bible/COMPReadingContentBibleNotFound.module.cs
 
 
 export default function ContentBibleNotFound({ value }: { value?: string | any }): JSX.Element {
+    console.log("ContentBibleNotFound")
     return (
         <>
             <article className={styles.errorHinoArticle}>

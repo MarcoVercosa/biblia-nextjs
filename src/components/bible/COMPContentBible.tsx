@@ -1,7 +1,7 @@
 import { IBuscaConteudoLeitura } from "@/interfaces/interfaces"
 import styles from "@/styles/bible/content.module.css"
 import Image from "next/image";
-import { useState } from "react";
+import { useState, useCallback } from "react";
 import ModalMoreInfoIA from "./modalMoreInfoIA";
 
 export default function Content({ data, anchorURLValue }: { data: IBuscaConteudoLeitura, anchorURLValue: string }): JSX.Element {
@@ -9,13 +9,16 @@ export default function Content({ data, anchorURLValue }: { data: IBuscaConteudo
     const [openCloseModal, setOpenCloseModal] = useState<boolean>(false)
     const [wordSelectedMenu, setWordSelectedMenu] = useState<string | undefined>("")
 
-    function OpenCloseMenuInformation(): void {
+
+    const OpenCloseMenuInformation = useCallback(() => {//Sem o UseCallback ao abrir ou fechar o menu o conteudo é renderizado sem necessidade
         setOpenMenuInformation(!openMenuInformation)
-    }
+    }, [openMenuInformation])
+
     function OpenCloseModal(word?: string) {
         if (!openCloseModal) { setWordSelectedMenu(word) }//se o openCloseModal já estiver como false, e pq estão solicitando a abertura do modal (para true), então envie o valor do botão selecionado
         setOpenCloseModal(!openCloseModal)
     }
+
     return (
         <>
             {openCloseModal && <ModalMoreInfoIA word={wordSelectedMenu} OpenCloseModal={OpenCloseModal} />}

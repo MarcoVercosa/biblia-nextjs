@@ -1,10 +1,10 @@
-import { IGetDataFromIA } from "@/interfaces/interfaces"
 import { GetDataFromIA } from "@/services/fetch"
 import { useEffect, useState } from "react"
 import Loading from "../loading/COMPloading"
 import styles from "../../styles/bible/modalMoreInformationIA.module.css"
 
 export default function ModalMoreInfoIA({ word, OpenCloseModal }: { word: string | undefined, OpenCloseModal: () => void }): JSX.Element {
+    console.log("ModalMoreInfoIA")
     const [information, setInformation] = useState<{ title: string | undefined, content: string | undefined }>({
         title: "",
         content: ""
@@ -13,6 +13,7 @@ export default function ModalMoreInfoIA({ word, OpenCloseModal }: { word: string
     useEffect(() => {
         async function GetDataFromAPI() {
             setLoading(true)
+            console.log("Buscando a palavra" + word)
             let response: any = await GetDataFromIA(word)
             setInformation(prevState => { return { ...prevState, title: word, content: response?.response?.result } })
             setLoading(false)
@@ -44,3 +45,4 @@ export default function ModalMoreInfoIA({ word, OpenCloseModal }: { word: string
         )
     }
 }
+

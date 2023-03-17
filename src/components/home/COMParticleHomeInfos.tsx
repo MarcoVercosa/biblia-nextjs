@@ -1,6 +1,7 @@
 import styles from "../../styles/home/articleHomeInfos.module.css"
 
 export default function ArticleHome(): JSX.Element {
+    console.log("ArticleHome")
 
     return (
 

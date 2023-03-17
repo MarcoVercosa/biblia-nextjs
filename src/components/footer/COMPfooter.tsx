@@ -1,6 +1,7 @@
 import styles from '../../styles/footer/footer.module.css'
 
 export default function Footer(): JSX.Element {
+    console.log("Footer")
 
     return (
         <footer className={styles.footerfooter}>
