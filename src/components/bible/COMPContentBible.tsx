@@ -11,7 +11,7 @@ export default function Content({ data, anchorURLValue }: { data: IBuscaConteudo
 
 
     const OpenCloseMenuInformation = useCallback(() => {//Sem o UseCallback ao abrir ou fechar o menu o conteudo é renderizado sem necessidade
-        setOpenMenuInformation(!openMenuInformation)
+        setOpenMenuInformation((prevState) => !prevState)
     }, [openMenuInformation])
 
     function OpenCloseModal(word?: string) {

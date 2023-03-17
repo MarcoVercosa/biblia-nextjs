@@ -1,7 +1,9 @@
 import { IReadContentHino } from "@/interfaces/interfaces"
+import { memo } from "react"
 import styles from "../../styles/harpa/harpaCristaContent.module.css"
 
-export default function ReadContentHino({ conteudoHinos }: IReadContentHino[] | any): JSX.Element {
+function ReadContentHino({ conteudoHinos }: IReadContentHino[] | any): JSX.Element {
+    console.log("ReadContentHino")
     return (
         <article className={styles.tituloEContentHino}>
             <div className={styles.tituloHino}>
@@ -16,3 +18,5 @@ export default function ReadContentHino({ conteudoHinos }: IReadContentHino[] | 
         </article>
     )
 }
+
+export default memo(ReadContentHino)

@@ -2,8 +2,10 @@ import { IHinoPorPalavra } from "@/interfaces/interfaces"
 import styles from "../../styles/harpa/COMPReadingContentHarpaBySearch.module.css"
 import Image from "next/image"
 import Link from "next/link"
+import { memo } from "react"
 
-export default function ReadingContentHarpaBySearch({ searchWordResultContent }: { searchWordResultContent: IHinoPorPalavra[] }) {
+function ReadingContentHarpaBySearch({ searchWordResultContent }: { searchWordResultContent: IHinoPorPalavra[] }) {
+    console.log("ReadingContentHarpaBySearch")
 
     return (
         <article className={styles.contentSeachByWord}>
@@ -41,3 +43,5 @@ export default function ReadingContentHarpaBySearch({ searchWordResultContent }:
         </article>
     )
 }
+
+export default memo(ReadingContentHarpaBySearch)
