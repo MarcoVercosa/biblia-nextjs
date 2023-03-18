@@ -10,6 +10,7 @@ function ReadingContentHarpaBySearch({ searchWordResultContent }: { searchWordRe
     return (
         <article className={styles.contentSeachByWord}>
             {searchWordResultContent.map((data: IHinoPorPalavra, index: number): JSX.Element => {
+                console.log("MAP ReadingContentHarpaBySearch")
                 return (
                     <>
 

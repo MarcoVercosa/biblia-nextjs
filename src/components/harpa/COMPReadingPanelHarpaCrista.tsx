@@ -1,4 +1,4 @@
-import { useEffect, useState } from "react"
+import { useEffect, useState, useRef } from "react"
 import styles from "@/styles/harpa/readingPanelHarpaCrista.module.css"
 import { useRouter } from "next/router"
 import { IHinoPorPalavra, IPropsReadingPanelHarpaCrista } from "@/interfaces/interfaces"
@@ -12,7 +12,7 @@ export default function ReadingPanelHarpaCrista({ numerosHinosCreateSeletectTag,
     const [numerosHinos, setNumerosHinos] = useState(numerosHinosCreateSeletectTag)
     const [conteudoHinos, setConteudoHinos] = useState(conteudoHinoPageCurrent)
     const [selectedHino, setSelectedHino] = useState("Selecione")
-    const [searchWordField, setSearchWordField] = useState("")
+    const searchWordFieldREF = useRef<HTMLInputElement>()
     const [searchWordResultContent, setSearchWordResultContent] = useState<IHinoPorPalavra[]>([])
     const [searchWordResultContentError, setSearchWordResultContentError] = useState<boolean | string>(false)
     const [loading, setLoading] = useState<boolean>(false)
@@ -37,10 +37,6 @@ export default function ReadingPanelHarpaCrista({ numerosHinosCreateSeletectTag,
     function UpdateSelectedFieldHino(value: string) {
         setSelectedHino(value)
     }
-    function UpdateWordSearchField(value: string) {
-        setSearchWordResultContentError(false) //FALSE para não permitir: se ao digitar na pesquisa, se ja houver mensagem de erro, ele ficará renderizando na mesagem de erro as palavras digitadas
-        setSearchWordField(value)
-    }
 
     function GoHinoSelected() {
         if (selectedHino == "selecione") { return }//se o valor é selecione, nao faça nada
@@ -48,16 +44,18 @@ export default function ReadingPanelHarpaCrista({ numerosHinosCreateSeletectTag,
     }
 
     async function GoFindHinoBySearch(value: string) {
+        let word = searchWordFieldREF.current?.value as string
         if (value != "Enter") { return }
-        if (searchWordField.length > 1 && searchWordField.length < 11) {
+        if (word.length > 1 && word.length < 16) {
+            console.log("Será pesquisado a palavra " + word)
             try {
                 setLoading(true)
-                let response: IHinoPorPalavra[] = await FetchConteudoHinoBySearchClientSide(searchWordField)
+                let response: IHinoPorPalavra[] = await FetchConteudoHinoBySearchClientSide(word)
                 if (response.length < 1) {// se nada retornar
                     setConteudoHinos([])//não renderiza conteudo
                     setSelectedHino("selecione") //altera o combobox para selecione
                     setSearchWordResultContent([]) //zera resultado de pesquisa por palavra
-                    setSearchWordResultContentError(searchWordField) //ativa componente de erro
+                    setSearchWordResultContentError(word) //ativa componente de erro
                     setLoading(false)
                 } else {
                     setConteudoHinos([])
@@ -95,7 +93,8 @@ export default function ReadingPanelHarpaCrista({ numerosHinosCreateSeletectTag,
                         <p>PALAVRA</p>
                     </div>
                     <div>
-                        <input type="text" name="pesquisahino" minLength={2} maxLength={10} placeholder="Press enter to search" value={searchWordField} onKeyDown={(evt) => { GoFindHinoBySearch(evt.key) }} onChange={(evt) => { UpdateWordSearchField(evt.target.value) }}></input>
+                        <input type="text" name="pesquisahino" minLength={2} maxLength={15} placeholder="Press enter to search" ref={searchWordFieldREF as any} onKeyDown={(evt) => { GoFindHinoBySearch(evt.key) }} />
+
                     </div>
                 </div>
             </header>
@@ -112,7 +111,7 @@ export default function ReadingPanelHarpaCrista({ numerosHinosCreateSeletectTag,
                     <article>
                         {/* Mensagem de erro caso a palvravra não retorne nenhum hino */}
                         {searchWordResultContentError &&
-                            <HinoNotFoundByWord searchWordField={searchWordField} />
+                            <HinoNotFoundByWord searchWordField={searchWordFieldREF.current?.value as string} />
                         }
                     </article>
                 </>
