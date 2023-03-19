@@ -1,9 +1,9 @@
 import Image from "next/image";
+import { memo } from "react";
 import styles from "../../styles/bible/COMPReadingContentBibleNotFound.module.css"
 
 
-export default function ContentBibleNotFound({ value }: { value?: string | any }): JSX.Element {
-    console.log("ContentBibleNotFound")
+function ContentBibleNotFound({ value }: { value?: string | any }): JSX.Element {
     return (
         <>
             <article className={styles.errorHinoArticle}>
@@ -23,3 +23,5 @@ export default function ContentBibleNotFound({ value }: { value?: string | any }
         </>
     )
 }
+
+export default memo(ContentBibleNotFound)

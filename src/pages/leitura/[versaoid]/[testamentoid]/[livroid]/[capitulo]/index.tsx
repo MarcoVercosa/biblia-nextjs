@@ -85,7 +85,6 @@ export const getStaticProps: GetStaticProps = async ({ params }: any) => {
     const { versaoid, testamentoid, livroid, capitulo } = params as IGetStaticProps
     try {
         let response = await FetchConteudoServerSide(versaoid, testamentoid, livroid, capitulo) as IBuscaConteudoLeitura //busca conteudo conforme url da página
-        console.log(response)
         return {
             props: {
                 data: response

@@ -1,13 +1,10 @@
+import { memo } from 'react'
 import styles from '../../styles/footer/footer.module.css'
 
-export default function Footer(): JSX.Element {
-    console.log("Footer")
-
+function Footer(): JSX.Element {
     return (
         <footer className={styles.footerfooter}>
-
             <ul className={styles.footerUl}>
-
                 <li className={styles.Mavs}>
                     Developer by: MAVS
                 </li>
@@ -19,9 +16,8 @@ export default function Footer(): JSX.Element {
                 </li>
 
             </ul>
-
-
         </footer>
     )
-
 }
+
+export default memo(Footer)

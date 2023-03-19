@@ -3,7 +3,6 @@ import styles from "../../styles/harpa/harpaCristaHinoNotFoundByWord.module.css"
 
 
 export default function HinoNotFoundByWord({ searchWordField }: { searchWordField: string }): JSX.Element {
-    console.log("HinoNotFoundByWord")
     return (
         <>
             <article className={styles.errorHinoArticle}>

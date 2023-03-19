@@ -10,7 +10,6 @@
     display: flex;
     justify-content: space-between;
     position: relative;
-    display: flex;
     width: auto;
     background-color: rgb(54, 54, 54);
     height: 5.2rem;
@@ -24,9 +23,10 @@
     display: flex;
     align-self: center;
     align-items: center;
+    padding: 0.2rem;
     background-color: rgb(255, 255, 255);
     border-radius: 30px;
-    height: 90%;
+    height: 80%;
     width: 4.2rem;
     cursor: pointer;
     margin-left: 2rem;
@@ -100,16 +100,13 @@
     /* width: 5vw;
     height: 10%; */
     /* position: relative; */
-
 }
-
 
 .contentLeft {
     display: flex;
     /* justify-content: space-between; */
     align-items: center;
     /* width: 50vw; */
-
 }
 
 .contentLeft h1 {
@@ -117,6 +114,20 @@
     font-style: italic;
     font-size: 3rem;
     margin-right: 10px;
+    animation-duration: 1s;
+    animation-name: slideinTitle;
+}
+
+@keyframes slideinTitle {
+    from {
+        margin-top: -15%;
+        /* width: 5% */
+    }
+
+    to {
+        margin-top: 0%;
+        /* width: 10%; */
+    }
 }
 
 .imagediv {
@@ -164,12 +175,21 @@
         justify-content: space-between;
     }
 
+    .menuBotton {
+        margin-left: 1rem;
+    }
+
+    .menu {
+        left: 1rem;
+    }
+
     .contentLeft h1 {
         display: none;
     }
 
     .imagediv {
         min-width: 6rem;
+        margin-left: 1.3rem;
     }
 
     .searchMenu {
@@ -181,11 +201,18 @@
         margin: 0 auto;
     }
 
-    .menuBotton {
-        margin-left: 1rem;
-    }
 
-    .menu {
-        left: 1rem;
+
+
+    @keyframes slidein {
+        from {
+            margin-top: -15%;
+            /* width: 5% */
+        }
+
+        to {
+            margin-top: 0%;
+            /* width: 10%; */
+        }
     }
 }

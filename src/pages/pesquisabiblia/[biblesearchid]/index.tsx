@@ -6,28 +6,36 @@ import { IFindBibleBySearchAPI } from "@/interfaces/interfaces";
 import { FindBibleBySearchAPIClientSide } from "@/services/fetch";
 import Head from "next/head";
 import { useRouter } from "next/router";
-import { useEffect, useState } from "react";
+import { useEffect, useRef, useState } from "react";
 
 export default function BibleSearchByWord(): JSX.Element {
     const [dataResultSearch, setDataResultSearch] = useState<IFindBibleBySearchAPI[]>([])
-    const [loading, setLoading] = useState<boolean>(false)
+    const dataResultSearchRef = useRef<any>([])
+    const [loading, setLoading] = useState<boolean>(true)
     const router = useRouter()
     useEffect(() => {//busca dados da pesquisa conforme o params da URL e encaminha parta o componente filho
         async function FindBibleBySearchAPI(): Promise<void> {
             setLoading(true)
-            const response: IFindBibleBySearchAPI[] = await FindBibleBySearchAPIClientSide(router.query.biblesearchid as any)
-            if (response.length < 1) {
+            try {
+                const response: IFindBibleBySearchAPI[] = await FindBibleBySearchAPIClientSide(router.query.biblesearchid as any)
+                if (response.length < 1) {
+                    dataResultSearchRef.current = []
+                    return
+                }
+                dataResultSearchRef.current = response
+
+            } catch (error) {
+                console.log(error)
+                dataResultSearchRef.current = []
+
+            } finally {
                 setLoading(false)
-                setDataResultSearch([])
-                return
             }
-            setDataResultSearch(response)
-            setLoading(false)
         }
-        if (!router.isReady) return
+        if (!router.isReady) return //se ainda não é possivel pegar os dados da rota
         FindBibleBySearchAPI()
 
-    }, [router.isReady, router])
+    }, [router])
 
     return (
         <>
@@ -36,7 +44,7 @@ export default function BibleSearchByWord(): JSX.Element {
                 <meta name="description" content={"Pesquisa biblia sagrada - Almeida revisada e atualizada - Vida da fonte"}></meta>
             </Head>
             <NavBar />
-            {loading ? <Loading /> : <COMPBibleSearchByWord data={dataResultSearch} />}
+            {loading ? <Loading /> : <COMPBibleSearchByWord data={dataResultSearchRef.current} />}
 
 
             <Footer />

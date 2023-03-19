@@ -1,39 +1,50 @@
 import Image from 'next/image'
-import { useState } from 'react'
+import { memo, useEffect, useRef, useState } from 'react'
 import styles from '@/styles/navbar/navbar.module.css'
 import ModalSelectLeitura from './COMPmodalSelectLeitura'
 import Link from 'next/link'
 import { useRouter } from 'next/router'
 
-export default function NavBar(): JSX.Element {
-    console.log("NavBar")
+function NavBar(): JSX.Element {
     const [menu, setMenu] = useState<boolean>(false)
     const [modal, setModal] = useState<boolean>(false)
-    const [inputSearch, setInputSearch] = useState<string>("")
+    const inputSearchRef = useRef<HTMLInputElement>()
+    const menuRefClickOutSide: any = useRef()
     const OpenMenu = () => setMenu(!menu)
     const OpenCloseModal = () => setModal(!modal)
     const router = useRouter()
 
-    function UpdateFieldInput(value: string) {
-        setInputSearch(value)
-    }
+    useEffect(() => {
+        const checkIfClickedOutside = (e: any) => {
+            // If the menu is open and the clicked target is not within the menu,
+            // then close the menu
+            if (menu && menuRefClickOutSide.current && !menuRefClickOutSide.current.contains(e.target)) {
+                setMenu(false)
+            }
+        }
+        document.addEventListener("mousedown", checkIfClickedOutside)
+        return () => {
+            // Cleanup the event listener
+            document.removeEventListener("mousedown", checkIfClickedOutside)
+        }
+    }, [menu])
 
     function GoSearchByWord(value: string) {
         if (value != "Enter") { return }
-        if (inputSearch.length < 2) { return alert("Caracteres insuficientes para a pesquisa") }
-        router.push(`/pesquisabiblia/${inputSearch}`)
+        let word = inputSearchRef.current?.value as string
+        if (word.length < 2 || word.length > 15) { return alert("Caracteres: min 2 e max 15") }
+        router.push(`/pesquisabiblia/${word}`)
     }
-
 
     return (
         <>
             {modal && <ModalSelectLeitura OpenCloseModal={OpenCloseModal} />}
 
-            <header className={styles.main}>
+            <header className={styles.main} ref={menuRefClickOutSide} >
 
                 <div className={styles.menuBotton} onClick={() => OpenMenu()}>
                     <Image
-                        src="/images/iconsMenu/menuBotton.svg"
+                        src={menu ? "/images/iconsMenu/closeMenu.png" : "/images/iconsMenu/openMenu.png"}
                         alt="menu"
                         className={styles.imageButtonMenu}
                         width={70}
@@ -64,7 +75,6 @@ export default function NavBar(): JSX.Element {
                                 height={60}
                                 priority
                             />
-
                         </li>
                         <li>
                             <Link href={`/harpacrista/${Math.floor(Math.random() * (524 - 1 + 1)) + 1}`}>
@@ -105,10 +115,11 @@ export default function NavBar(): JSX.Element {
                     </div>
                 </div>
                 <div className={styles.searchMenu}>
-                    <input type="text" name='Digite' value={inputSearch} minLength={2} maxLength={10} placeholder='Press enter to search' onKeyDown={(evt) => { GoSearchByWord(evt.key) }} onChange={(evt) => { UpdateFieldInput(evt.target.value) }} ></input>
+                    <input type="text" name='Digite' ref={inputSearchRef as any} minLength={2} maxLength={15} placeholder='Press enter to search' onKeyDown={(evt) => { GoSearchByWord(evt.key) }} ></input>
 
                 </div>
             </header>
         </>
     )
 }
+export default memo(NavBar)

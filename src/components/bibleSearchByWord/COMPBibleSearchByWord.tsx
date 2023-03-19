@@ -7,7 +7,7 @@ import styles from "../../styles/bibleSearchByWord/COMPBibleSearchByWord.module.
 import ContentBibleNotFound from "../bible/COMPReadingContentBibleNotFound";
 
 export default function COMPBibleSearchByWord({ data }: { data: IFindBibleBySearchAPI[] }): JSX.Element {
-    const [dataResultSearch, setDataResultSearch] = useState<IFindBibleBySearchAPI[]>([])
+    const [dataResultSearch, setDataResultSearch] = useState<IFindBibleBySearchAPI[]>(data)
     const router: NextRouter = useRouter()
     useEffect(() => {
         setDataResultSearch(data)
@@ -37,7 +37,6 @@ export default function COMPBibleSearchByWord({ data }: { data: IFindBibleBySear
                                 </div>
                             </Link>
                         </div>
-
                     )
                 })}
             </section>

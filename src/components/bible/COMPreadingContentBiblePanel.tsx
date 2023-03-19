@@ -7,7 +7,6 @@ import ContentBibleNotFound from "./COMPReadingContentBibleNotFound"
 import Content from "./COMPContentBible"
 
 export default function ReadingPanel({ data }: { data: IBuscaConteudoLeitura }): JSX.Element {
-    console.log("ReadingPanel")
     const [comboBox, setComboBox] = useState<Array<any>>([])
     const [comboBoxSelected, setComboBoxSelected] = useState<number | any>(null)
     const [anchorURLValue, setAnchorURLValue] = useState<string>("")
@@ -50,8 +49,7 @@ export default function ReadingPanel({ data }: { data: IBuscaConteudoLeitura }):
     if (data?.conteudo.length > 1) {
         return (
             <main className={styles.main}>
-                <Content data={data} anchorURLValue={anchorURLValue} />
-
+                <Content data={data} anchorURLValue={anchorURLValue} />{/* Renderiza os capitulos e o menu IA */}
                 <article className={styles.articlenavegacao}>
                     <div className={styles.articlenavegacaoarrow} onClick={BeforePage}>
                         <div>

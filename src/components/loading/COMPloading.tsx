@@ -1,6 +1,7 @@
+import { memo } from "react"
 import styles from "../../styles/loading/loading.module.css"
 
-export default function Loading(): JSX.Element {
+function Loading(): JSX.Element {
     return (
         <article className={styles.article}>
             <div className={styles.loaderContainer}>
@@ -11,7 +12,7 @@ export default function Loading(): JSX.Element {
                 </div>
             </div>
         </article>
-
-
     )
 }
+
+export default memo(Loading)

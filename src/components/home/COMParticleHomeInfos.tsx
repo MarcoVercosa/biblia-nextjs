@@ -1,12 +1,8 @@
 import styles from "../../styles/home/articleHomeInfos.module.css"
 
 export default function ArticleHome(): JSX.Element {
-    console.log("ArticleHome")
-
     return (
-
         <article className={styles.artigoArticle}>
-
             <div className={styles.artigoArticleDivUm}>
                 <h3>13 versões disponíveis para você ! </h3>
                 <div className={styles.artigoArticleDivVersoes}>
@@ -56,6 +52,9 @@ export default function ArticleHome(): JSX.Element {
                 <h3>Onde você estiver e sem fins lucrativos !</h3>
                 <p>O Site FONTE DE VIDA foi criado para que você possa achar de modo fácil e prático
                     a palavra de Deus.
+                </p>
+                <p>
+                    Uso da inteligência artificial para melhorar ainda mais seu entendimento sobre a palavra de Deus.
                 </p>
             </div>
 

@@ -10,7 +10,6 @@ import { IPropsReadingPanelHarpaCrista } from '@/interfaces/interfaces'
 
 
 export default function HarpaCrista({ numerosHinosCreateSeletectTag, conteudoHinoPageCurrent, idCanticoURL }: IPropsReadingPanelHarpaCrista): JSX.Element {
-
     return (
         <>
             {conteudoHinoPageCurrent &&
@@ -20,7 +19,6 @@ export default function HarpaCrista({ numerosHinosCreateSeletectTag, conteudoHin
                     <link rel="icon" href="/favicon.svg" />
                 </Head>
             }
-
             <NavBar />
             <ReadingPanelHarpaCrista numerosHinosCreateSeletectTag={numerosHinosCreateSeletectTag} conteudoHinoPageCurrent={conteudoHinoPageCurrent} idCanticoURL={idCanticoURL} />
             <Footer />
@@ -63,7 +61,6 @@ export const getStaticProps: GetStaticProps = async ({ params }: any) => {
             throw new Error("Regras regex getStaticProps Hino harpa não aceita ou erro desconhecido");
         }
     } catch (error: any) {
-        console.log(error.message)
         return {
             props: {
                 idCanticoURL: "selecione",

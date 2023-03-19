@@ -1,14 +1,14 @@
 import { IBuscaConteudoLeitura } from "@/interfaces/interfaces"
 import styles from "@/styles/bible/content.module.css"
 import Image from "next/image";
-import { useState, useCallback } from "react";
+import { useState, useCallback, useEffect, useRef } from "react";
 import ModalMoreInfoIA from "./modalMoreInfoIA";
 
 export default function Content({ data, anchorURLValue }: { data: IBuscaConteudoLeitura, anchorURLValue: string }): JSX.Element {
     const [openMenuInformation, setOpenMenuInformation] = useState<boolean>(false)
     const [openCloseModal, setOpenCloseModal] = useState<boolean>(false)
     const [wordSelectedMenu, setWordSelectedMenu] = useState<string | undefined>("")
-
+    const menuRefClickOutSide: any = useRef()
 
     const OpenCloseMenuInformation = useCallback(() => {//Sem o UseCallback ao abrir ou fechar o menu o conteudo é renderizado sem necessidade
         setOpenMenuInformation((prevState) => !prevState)
@@ -19,16 +19,33 @@ export default function Content({ data, anchorURLValue }: { data: IBuscaConteudo
         setOpenCloseModal(!openCloseModal)
     }
 
+
+    useEffect(() => {
+        const checkIfClickedOutside = (e: any) => {
+            // If the menu is open and the clicked target is not within the menu,
+            // then close the menu
+            if (openMenuInformation && menuRefClickOutSide.current && !menuRefClickOutSide.current.contains(e.target)) {
+                setOpenMenuInformation(false)
+            }
+        }
+        document.addEventListener("mousedown", checkIfClickedOutside)
+        return () => {
+            // Cleanup the event listener
+            document.removeEventListener("mousedown", checkIfClickedOutside)
+        }
+    }, [openMenuInformation])
+
     return (
         <>
             {openCloseModal && <ModalMoreInfoIA word={wordSelectedMenu} OpenCloseModal={OpenCloseModal} />}
+            {/* abre modal renderizando o conteudo respondido pela IA */}
 
             <div className={styles.nomeversao}><h3>{data?.nomeVersao[0].versao_nome}</h3></div>
-            <div className={styles.livrocapitulo}>
+            <div className={styles.livrocapitulo} ref={menuRefClickOutSide}>
                 <h1>{data?.nomeLivro[0].livro_nome}: {data?.capituloAtual}</h1>
                 <div className={styles.divimagemia} onClick={OpenCloseMenuInformation}>
                     <Image
-                        src="/images/moreinformationIA/information.svg"
+                        src="/images/moreinformationIA/information.png"
                         alt="Sobre esse capítulo"
                         className={styles.imageMoreInformation}
                         fill

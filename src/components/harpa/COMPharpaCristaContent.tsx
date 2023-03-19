@@ -3,7 +3,6 @@ import { memo } from "react"
 import styles from "../../styles/harpa/harpaCristaContent.module.css"
 
 function ReadContentHino({ conteudoHinos }: IReadContentHino[] | any): JSX.Element {
-    console.log("ReadContentHino")
     return (
         <article className={styles.tituloEContentHino}>
             <div className={styles.tituloHino}>
