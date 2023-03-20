@@ -21,17 +21,34 @@
     color: #424242;
 }
 
+.imagevoice {
+    /* position: absolute;
+    top: 7rem; */
+    height: 3rem;
+    margin-top: 1rem;
+    cursor: pointer;
+    transition: all 0.5s;
+}
+
+.imagevoice:hover {
+    opacity: 0.5;
+}
+
+
 .divimagemia {
     width: 7rem;
     display: flex;
     position: relative;
     cursor: pointer;
     margin-right: 1rem;
+    transition: all 0.5s;
 }
 
-.imageMoreInformation {
-    /* position: relative; */
+.divimagemia img:hover {
+    opacity: 0.5;
 }
+
+
 
 .containermenuinformation {
     position: absolute;
@@ -125,7 +142,25 @@
         max-width: 90vw;
     }
 
-    .menuinformationimage {}
+    .livrocapitulo {
+        /* display: flex;
+        justify-content: space-evenly; */
+    }
+
+    .livrocapitulo h1 {
+        padding: 0.5rem;
+        margin-left: 0.5rem;
+    }
+
+    .imagevoice {
+        margin-top: 0.6rem;
+        height: 2.5rem;
+    }
+
+    .divimagemia {
+        margin-right: 0;
+    }
+
 
     .menuinformationimage img {
         min-width: 5rem;

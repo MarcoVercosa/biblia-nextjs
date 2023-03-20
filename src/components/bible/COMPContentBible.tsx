@@ -20,6 +20,35 @@ export default function Content({ data, anchorURLValue }: { data: IBuscaConteudo
     }
 
 
+    function SpeechText() {
+
+        if (speechSynthesis.speaking) {//Se já estiver falando, cancele !
+            speechSynthesis.cancel()
+            return
+        }
+
+        let text = data?.conteudo.map((data, _) => data.conteudo)
+        let utterance = new SpeechSynthesisUtterance()
+        utterance.pitch = 1
+        utterance.volume = 0.5
+        utterance.rate = 1;
+        utterance.text = text.toString()
+        utterance.lang = 'pt-BR';
+        speechSynthesis.cancel();
+        speechSynthesis.speak(utterance)
+        //devido limitação do speech ele fala poucas palavras e para. o interval de 10s vai pausar
+        //manualmente e rapidamento voltar de onde parou, praticamente inperceptível. Sempre renovando o ciclo
+        alert("Iniciando áudio em instantes")
+        let intervalRefresh = setInterval(() => {
+            if (!speechSynthesis.speaking) {
+                clearInterval(intervalRefresh);
+            } else {
+                speechSynthesis.pause()
+                speechSynthesis.resume();
+            }
+        }, 10000)
+    }
+
     useEffect(() => {
         const checkIfClickedOutside = (e: any) => {
             // If the menu is open and the clicked target is not within the menu,
@@ -43,10 +72,12 @@ export default function Content({ data, anchorURLValue }: { data: IBuscaConteudo
             <div className={styles.nomeversao}><h3>{data?.nomeVersao[0].versao_nome}</h3></div>
             <div className={styles.livrocapitulo} ref={menuRefClickOutSide}>
                 <h1>{data?.nomeLivro[0].livro_nome}: {data?.capituloAtual}</h1>
+                <img className={styles.imagevoice} src={"/images/readingBible/voice.png"} onClick={SpeechText} />
+
                 <div className={styles.divimagemia} onClick={OpenCloseMenuInformation}>
                     <Image
                         src="/images/moreinformationIA/information.png"
-                        alt="Sobre esse capítulo"
+                        alt="Menu IA"
                         className={styles.imageMoreInformation}
                         fill
                         priority
