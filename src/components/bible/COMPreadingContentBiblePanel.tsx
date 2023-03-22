@@ -8,7 +8,7 @@ import Content from "./COMPContentBible"
 
 export default function ReadingPanel({ data }: { data: IBuscaConteudoLeitura }): JSX.Element {
     const [comboBox, setComboBox] = useState<Array<any>>([])
-    const [comboBoxSelected, setComboBoxSelected] = useState<number | any>(null)
+    const [comboBoxSelected, setComboBoxSelected] = useState<number | any>(0)
     const [anchorURLValue, setAnchorURLValue] = useState<string>("")
     const router = useRouter()
 

@@ -10,43 +10,13 @@ export default function Content({ data, anchorURLValue }: { data: IBuscaConteudo
     const [wordSelectedMenu, setWordSelectedMenu] = useState<string | undefined>("")
     const menuRefClickOutSide: any = useRef()
 
-    const OpenCloseMenuInformation = useCallback(() => {//Sem o UseCallback ao abrir ou fechar o menu o conteudo é renderizado sem necessidade
+    const OpenCloseMenuInformation = () => {//Sem o UseCallback ao abrir ou fechar o menu o conteudo é renderizado sem necessidade
         setOpenMenuInformation((prevState) => !prevState)
-    }, [openMenuInformation])
+    }
 
     function OpenCloseModal(word?: string) {
         if (!openCloseModal) { setWordSelectedMenu(word) }//se o openCloseModal já estiver como false, e pq estão solicitando a abertura do modal (para true), então envie o valor do botão selecionado
         setOpenCloseModal(!openCloseModal)
-    }
-
-
-    function SpeechText() {
-
-        if (speechSynthesis.speaking) {//Se já estiver falando, cancele !
-            speechSynthesis.cancel()
-            return
-        }
-
-        let text = data?.conteudo.map((data, _) => data.conteudo)
-        let utterance = new SpeechSynthesisUtterance()
-        utterance.pitch = 1
-        utterance.volume = 0.5
-        utterance.rate = 1;
-        utterance.text = text.toString()
-        utterance.lang = 'pt-BR';
-        speechSynthesis.cancel();
-        speechSynthesis.speak(utterance)
-        //devido limitação do speech ele fala poucas palavras e para. o interval de 10s vai pausar
-        //manualmente e rapidamento voltar de onde parou, praticamente inperceptível. Sempre renovando o ciclo
-        alert("Iniciando áudio em instantes")
-        let intervalRefresh = setInterval(() => {
-            if (!speechSynthesis.speaking) {
-                clearInterval(intervalRefresh);
-            } else {
-                speechSynthesis.pause()
-                speechSynthesis.resume();
-            }
-        }, 10000)
     }
 
     useEffect(() => {
@@ -72,8 +42,6 @@ export default function Content({ data, anchorURLValue }: { data: IBuscaConteudo
             <div className={styles.nomeversao}><h3>{data?.nomeVersao[0].versao_nome}</h3></div>
             <div className={styles.livrocapitulo} ref={menuRefClickOutSide}>
                 <h1>{data?.nomeLivro[0].livro_nome}: {data?.capituloAtual}</h1>
-                <img className={styles.imagevoice} src={"/images/readingBible/voice.png"} onClick={SpeechText} />
-
                 <div className={styles.divimagemia} onClick={OpenCloseMenuInformation}>
                     <Image
                         src="/images/moreinformationIA/information.png"

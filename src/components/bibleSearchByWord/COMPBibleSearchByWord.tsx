@@ -26,11 +26,11 @@ export default function COMPBibleSearchByWord({ data }: { data: IFindBibleBySear
                 {dataResultSearch?.map((datas: IFindBibleBySearchAPI, index: number): JSX.Element => {
                     return (
 
-                        <div className={styles.container}>
+                        <div key={index} className={styles.container}>
                             {/* O link já direciona com link ancora */}
-                            <Link target="_blank" href={`/leitura/${1}/${datas.livro_testamento_id}/${datas.livro_id}/${datas.capitulo}#${datas.versiculo}`}>
+                            <Link key={index} target="_blank" href={`/leitura/${1}/${datas.livro_testamento_id}/${datas.livro_id}/${datas.capitulo}#${datas.versiculo}`}>
                                 <div className={styles.info}>
-                                    <p>{datas.livro_nome} - "{datas.livro_abreviado}" / Cap: {datas.capitulo} Ver: {datas.versiculo}</p>
+                                    <p>{datas.livro_nome} - {datas.livro_abreviado} / Cap: {datas.capitulo} Ver: {datas.versiculo}</p>
                                 </div>
                                 <div className={styles.content}>
                                     <p>{datas.conteudo}</p>
