@@ -42,7 +42,7 @@
     -webkit-backdrop-filter: blur(1.7px);
 }
 
-.articlenavegacao select {
+.articlenavegacaoseelct select {
     background-color: #242424;
     color: rgb(255, 255, 255);
     padding: 1.4rem;
@@ -57,7 +57,7 @@
     cursor: pointer;
 }
 
-.articlenavegacao select option {
+.articlenavegacaoseelct select option {
     padding: 30px;
 }
 

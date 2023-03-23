@@ -10,22 +10,27 @@ interface IProps {
 
 export default function ModalFavorite({ data, OpenCloseModal }: IProps): JSX.Element {
     const [versiculoSelected, setVersiculoSelected] = useState<number>(1)
+    const [backGoundColorSelected, setBackGoundColorSelected] = useState<string>("rgb(255, 255, 255)")
 
     function CreateSelectOptions(): JSX.Element {
-        console.log(data)
         let store: Array<JSX.Element> = []
         for (let count = 1; count <= data.conteudo.length; count++) {
             store.push(<option key={count} value={count}>{count}</option>)
         }
         return store as any
     }
+    function ChangeBackGroundColor(value: string) {
+        setBackGoundColorSelected((prevState) => prevState = value)
+    }
+
+
     return (
         <article className={styles.article}>
-            <section className={styles.container}>
-                <div className={styles.buttons} onClick={OpenCloseModal}>
+            <section className={styles.container} style={{ backgroundColor: backGoundColorSelected }}>
+                <div className={styles.buttonClose} onClick={OpenCloseModal}>
                     <img alt="Fechar" src="/images/moreinformationIA/iconsMenu/closeInfos.png"></img>
                 </div>
-                <div>
+                <div className={styles.main}>
                     <div className={styles.nomeVersao}>
                         <h1>{data.nomeVersao[0].versao_nome}</h1>
                     </div>
@@ -35,16 +40,46 @@ export default function ModalFavorite({ data, OpenCloseModal }: IProps): JSX.Ele
                     <div className={styles.content}>
                         <p>{data.conteudo[versiculoSelected - 1].conteudo}</p>
                     </div>
-                    <div className={styles.titulo}>
+                    <div className={styles.selectCapitulos}>
                         <select name="versiculos" value={versiculoSelected} onChange={(evt) => setVersiculoSelected((prevState) => prevState = Number(evt.target.value))}>
                             <CreateSelectOptions />
                         </select>
-
                     </div>
+                </div>
+                <div className={styles.selectColorContainer}>
+                    <p>Adicione uma cor</p>
+                    <div className={styles.selectColor}>
+                        <div className={styles.selectColorWhite} style={{ backgroundColor: "rgba(255, 255, 255, 0.446)" }}
+                            onClick={() => ChangeBackGroundColor("rgba(255, 255, 255, 0.446)")}
+                        >
+                        </div>
+                        <div className={styles.selectColorGreen} style={{ backgroundColor: "rgb(42, 240, 42)" }}
+                            onClick={() => ChangeBackGroundColor("rgb(42, 240, 42)")}
+                        >
+                        </div>
+                        <div className={styles.selectColorBlue} style={{ backgroundColor: "rgb(69, 69, 252)" }}
+                            onClick={() => ChangeBackGroundColor("rgb(69, 69, 252)")}
+                        >
+                        </div>
+                        <div className={styles.selectColorRed} style={{ backgroundColor: "rgb(255, 75, 75)" }}
+                            onClick={() => ChangeBackGroundColor("rgb(255, 75, 75)")}
+                        >
+                        </div>
+                        <div className={styles.selectColorOrange} style={{ backgroundColor: "rgb(247, 176, 45)" }}
+                            onClick={() => ChangeBackGroundColor("rgb(247, 176, 45)")}
+                        >
+                        </div>
+                    </div>
+
+                </div>
+                <div className={styles.buttons}>
+                    <button className={styles.buttonsok} onClick={() => { }} ><img src="/images/modaFavorite/favorite.svg"></img></button>
+                    <button className={styles.buttonsfechar} onClick={OpenCloseModal}>FECHAR </button>
                 </div>
 
             </section>
         </article>
+
     )
 
 }
