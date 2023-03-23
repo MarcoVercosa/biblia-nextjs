@@ -61,6 +61,7 @@ export const getStaticProps: GetStaticProps = async ({ params }: any) => {
             throw new Error("Regras regex getStaticProps Hino harpa não aceita ou erro desconhecido");
         }
     } catch (error: any) {
+        console.log(error)
         return {
             props: {
                 idCanticoURL: "selecione",
