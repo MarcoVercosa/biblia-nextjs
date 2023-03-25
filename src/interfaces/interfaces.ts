@@ -75,3 +75,14 @@ export interface IGetDataFromIA {
         status: number
     }
 }
+
+export interface IFavoritesSaveLocalStorage {
+    versaoNome: string;
+    livroNome: string;
+    selectedCapitulo: string
+    selectectVersiculo: string;
+    contentSelected: string;
+    colorNotes: string;
+    notes: string;
+    path: string;
+}

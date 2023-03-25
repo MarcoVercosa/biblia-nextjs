@@ -1,5 +1,6 @@
-import { IBuscaConteudoLeitura } from "@/interfaces/interfaces"
-import { useEffect, useState, useRef } from "react"
+import { IBuscaConteudoLeitura, IFavoritesSaveLocalStorage } from "@/interfaces/interfaces"
+import { useState, useRef } from "react"
+import { useRouter } from 'next/router'
 import styles from "../../styles/bible/modalFavorite.module.css"
 
 interface IProps {
@@ -9,8 +10,11 @@ interface IProps {
 
 
 export default function ModalFavorite({ data, OpenCloseModal }: IProps): JSX.Element {
+    console.log("ModalFavorite")
     const [versiculoSelected, setVersiculoSelected] = useState<number>(1)
     const [backGoundColorSelected, setBackGoundColorSelected] = useState<string>("rgb(255, 255, 255)")
+    const inputNotes = useRef<HTMLInputElement>()
+    const router = useRouter()
 
     function CreateSelectOptions(): JSX.Element {
         let store: Array<JSX.Element> = []
@@ -21,6 +25,37 @@ export default function ModalFavorite({ data, OpenCloseModal }: IProps): JSX.Ele
     }
     function ChangeBackGroundColor(value: string) {
         setBackGoundColorSelected((prevState) => prevState = value)
+    }
+
+    function SaveFavorite() {
+        let valueStorageLocal = JSON.parse(localStorage.getItem('favorites') as string)
+        if (valueStorageLocal) {
+            valueStorageLocal.push(
+                {
+                    versaoNome: data.nomeVersao[0].versao_nome,
+                    livroNome: data.nomeLivro[0].livro_nome,
+                    selectedCapitulo: String(data.capituloAtual),
+                    selectectVersiculo: String(versiculoSelected),
+                    contentSelected: data.conteudo[versiculoSelected - 1].conteudo,
+                    colorNotes: backGoundColorSelected,
+                    notes: inputNotes.current?.value as string,
+                    path: router.asPath,
+                }
+            )
+            localStorage.setItem("favorites", JSON.stringify(valueStorageLocal))
+        } else {
+            const favorite: IFavoritesSaveLocalStorage[] = [{
+                versaoNome: data.nomeVersao[0].versao_nome,
+                livroNome: data.nomeLivro[0].livro_nome,
+                selectedCapitulo: String(data.capituloAtual),
+                selectectVersiculo: String(versiculoSelected),
+                contentSelected: data.conteudo[versiculoSelected - 1].conteudo,
+                colorNotes: backGoundColorSelected,
+                notes: inputNotes.current?.value as string,
+                path: router.asPath,
+            }]
+            localStorage.setItem("favorites", JSON.stringify(favorite))
+        }
     }
 
 
@@ -46,14 +81,18 @@ export default function ModalFavorite({ data, OpenCloseModal }: IProps): JSX.Ele
                         </select>
                     </div>
                 </div>
+
+                <div className={styles.inputNotes}>
+                    <textarea name='Digite' ref={inputNotes as any} minLength={2} maxLength={200} wrap="soft" placeholder='Nota sobre o versiculo acima'></textarea>
+                </div>
                 <div className={styles.selectColorContainer}>
                     <p>Adicione uma cor</p>
                     <div className={styles.selectColor}>
-                        <div className={styles.selectColorWhite} style={{ backgroundColor: "rgba(255, 255, 255, 0.446)" }}
+                        <div className={styles.selectColorWhite} style={{ backgroundColor: "rgba(255, 255, 255)" }}
                             onClick={() => ChangeBackGroundColor("rgba(255, 255, 255, 0.446)")}
                         >
                         </div>
-                        <div className={styles.selectColorGreen} style={{ backgroundColor: "rgb(42, 240, 42)" }}
+                        <div className={styles.selectColorGreen} style={{ backgroundColor: "rgba(42, 240, 42)" }}
                             onClick={() => ChangeBackGroundColor("rgb(42, 240, 42)")}
                         >
                         </div>
@@ -73,7 +112,7 @@ export default function ModalFavorite({ data, OpenCloseModal }: IProps): JSX.Ele
 
                 </div>
                 <div className={styles.buttons}>
-                    <button className={styles.buttonsok} onClick={() => { }} ><img src="/images/modaFavorite/favorite.svg"></img></button>
+                    <button className={styles.buttonsok} onClick={SaveFavorite} ><img src="/images/modaFavorite/favorite.svg"></img></button>
                     <button className={styles.buttonsfechar} onClick={OpenCloseModal}>FECHAR </button>
                 </div>
 
