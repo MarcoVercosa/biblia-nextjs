@@ -1,6 +1,7 @@
 import { IBuscaConteudoLeitura, IFavoritesSaveLocalStorage } from "@/interfaces/interfaces"
 import { useState, useRef } from "react"
 import { useRouter } from 'next/router'
+import { SaveFavoriteClass } from "@/services/saveFavoriteLocalStorage"
 import styles from "../../styles/bible/modalFavorite.module.css"
 
 interface IProps {
@@ -12,7 +13,7 @@ interface IProps {
 export default function ModalFavorite({ data, OpenCloseModal }: IProps): JSX.Element {
     console.log("ModalFavorite")
     const [versiculoSelected, setVersiculoSelected] = useState<number>(1)
-    const [backGoundColorSelected, setBackGoundColorSelected] = useState<string>("rgb(255, 255, 255)")
+    const [colorNotes, setColorNotes] = useState<string>("rgb(255, 255, 255)")
     const inputNotes = useRef<HTMLInputElement>()
     const router = useRouter()
 
@@ -24,44 +25,21 @@ export default function ModalFavorite({ data, OpenCloseModal }: IProps): JSX.Ele
         return store as any
     }
     function ChangeBackGroundColor(value: string) {
-        setBackGoundColorSelected((prevState) => prevState = value)
+        setColorNotes((prevState) => prevState = value)
     }
 
-    function SaveFavorite() {
-        let valueStorageLocal = JSON.parse(localStorage.getItem('favorites') as string)
-        if (valueStorageLocal) {
-            valueStorageLocal.push(
-                {
-                    versaoNome: data.nomeVersao[0].versao_nome,
-                    livroNome: data.nomeLivro[0].livro_nome,
-                    selectedCapitulo: String(data.capituloAtual),
-                    selectectVersiculo: String(versiculoSelected),
-                    contentSelected: data.conteudo[versiculoSelected - 1].conteudo,
-                    colorNotes: backGoundColorSelected,
-                    notes: inputNotes.current?.value as string,
-                    path: router.asPath,
-                }
-            )
-            localStorage.setItem("favorites", JSON.stringify(valueStorageLocal))
-        } else {
-            const favorite: IFavoritesSaveLocalStorage[] = [{
-                versaoNome: data.nomeVersao[0].versao_nome,
-                livroNome: data.nomeLivro[0].livro_nome,
-                selectedCapitulo: String(data.capituloAtual),
-                selectectVersiculo: String(versiculoSelected),
-                contentSelected: data.conteudo[versiculoSelected - 1].conteudo,
-                colorNotes: backGoundColorSelected,
-                notes: inputNotes.current?.value as string,
-                path: router.asPath,
-            }]
-            localStorage.setItem("favorites", JSON.stringify(favorite))
-        }
+    function Save() {
+        const notes = inputNotes.current?.value as string
+        let saveData = new SaveFavoriteClass({ data, versiculoSelected, colorNotes, notes, path: `${router.asPath}#${versiculoSelected}` })
+        let result: string = saveData.SaveDataStorage()
+        alert(result)
+
     }
 
 
     return (
         <article className={styles.article}>
-            <section className={styles.container} style={{ backgroundColor: backGoundColorSelected }}>
+            <section className={styles.container} style={{ backgroundColor: colorNotes }}>
                 <div className={styles.buttonClose} onClick={OpenCloseModal}>
                     <img alt="Fechar" src="/images/moreinformationIA/iconsMenu/closeInfos.png"></img>
                 </div>
@@ -112,7 +90,7 @@ export default function ModalFavorite({ data, OpenCloseModal }: IProps): JSX.Ele
 
                 </div>
                 <div className={styles.buttons}>
-                    <button className={styles.buttonsok} onClick={SaveFavorite} ><img src="/images/modaFavorite/favorite.svg"></img></button>
+                    <button className={styles.buttonsok} onClick={Save} ><img src="/images/modaFavorite/favorite.svg"></img></button>
                     <button className={styles.buttonsfechar} onClick={OpenCloseModal}>FECHAR </button>
                 </div>
 
