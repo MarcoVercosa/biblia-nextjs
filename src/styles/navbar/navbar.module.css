@@ -42,7 +42,7 @@
     left: 2rem;
     /* margin: 80px; */
     width: 70px;
-    height: 320px;
+    height: 25.2rem;
     position: absolute;
     animation-duration: 0.7s;
     animation-name: slidein;
@@ -68,7 +68,7 @@
     /* position: absolute; */
     box-shadow: 0px 8px 16px 0px rgba(0, 0, 0, 0.2);
     padding: 8px 10px;
-    background-color: rgba(247, 246, 245, 0.5);
+    background-color: rgb(255, 255, 255);
     border-radius: 200px;
 }
 

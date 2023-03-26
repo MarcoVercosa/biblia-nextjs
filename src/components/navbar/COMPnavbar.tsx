@@ -89,6 +89,18 @@ function NavBar(): JSX.Element {
                             </Link>
                         </li>
                         <li>
+                            <Link href="/favoritos">
+                                <Image
+                                    src="/images/iconsMenu/favorite.png"
+                                    alt="favoritos"
+                                    className={styles.imageMenu}
+                                    width={80}
+                                    height={60}
+                                    priority
+                                />
+                            </Link>
+                        </li>
+                        <li>
                             <Link href="/about">
                                 <Image
                                     src="/images/iconsMenu/about.png"

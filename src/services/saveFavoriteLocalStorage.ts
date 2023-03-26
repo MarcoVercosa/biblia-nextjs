@@ -61,17 +61,18 @@ export class SaveFavoriteClass {
 
     SaveDataStorage(): string {
         try {
-            this.currentValueStorage = this.GetDataLocalStorage()
-            if (!this.currentValueStorage) {
-                this.CreateKeyAndSave()
+            this.currentValueStorage = this.GetDataLocalStorage()//Obtem os dados
+            if (!this.currentValueStorage) {                     //Verifica se há dados no local storage
+                this.CreateKeyAndSave()                          //Se não existir, então crie
                 return "Conteudo criado ! Verifique seu painel 'Favoritos'"
             } else {
-                if (this.CheckDuplicate()) { return "Esse conteúdo já está em seus favoritos !" }
-                this.GrowKeyAndSave()
-                return "Conteudo adicionado junto som seus favoritos. ! Verifique seu painel 'Favoritos'"
+                if (this.CheckDuplicate()) { return "Esse conteúdo já está em seus favoritos !" } //Verifique se nos dados encontrados já existe o valor a ser adicionado
+                this.GrowKeyAndSave()                                                             //se false, adicione o valor na key já criada                                                  
+                return "Conteudo adicionado junto com seus favoritos existentes. ! Verifique seu painel 'Favoritos'"
             }
         } catch (error) {
-            return "Ocorreu algum erro ao salvar deus favoritos. Tente novamente em instantes " + error
+            console.log(error)
+            return "Ocorreu algum erro ao salvar seus favoritos. Tente novamente em instantes"
         }
     }
 }
