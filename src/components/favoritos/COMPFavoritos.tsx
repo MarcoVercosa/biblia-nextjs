@@ -2,6 +2,8 @@ import styles from '@/styles/favoritos/favoritos.module.css'
 import { useEffect, useRef, useState } from 'react'
 import { IFavoritesSaveLocalStorage } from '@/interfaces/interfaces'
 import ModalFavorite from './modalFavorite'
+import SemFavorites from './Semfavoritos'
+import Link from 'next/link'
 
 export default function RenderFavoritos() {
 
@@ -10,25 +12,27 @@ export default function RenderFavoritos() {
     let indexLocationArray = useRef<IFavoritesSaveLocalStorage>()
 
     useEffect((): void => {
-        if (window) {
-            console.log("useEffect")
-            setDataFromLocalStorage(JSON.parse(localStorage.getItem("favorites") as string))
-            console.log(JSON.parse(localStorage.getItem("favorites") as string))
-        }
+        if (window) { setDataFromLocalStorage(JSON.parse(localStorage.getItem("favorites") as string)) }
     }, [openCloseModalFavorito])
     function OpenCloseModalFavorito(indexArray?: number) {
-        if (!isNaN(indexArray as number)) {//se houver número, foi solicitado abertura do menu
-            // let data: any = dataFromLocalStorage
-            // indexLocationArray.current = data[indexArray as number]
+        if (!isNaN(indexArray as number)) {//se houver número, então foi solicitado abertura do menu
             indexLocationArray.current = indexArray as any
             setOpenCloseModalFavorito((prevState) => !prevState)
         } else {
             setOpenCloseModalFavorito((prevState) => !prevState)
         }
     }
+
+    if (!dataFromLocalStorage || dataFromLocalStorage.length < 1) {
+        return (
+            <SemFavorites />
+        )
+    }
+    console.log(dataFromLocalStorage)
     return (
         <>
             {openCloseModalFavorito && <ModalFavorite OpenCloseModalFavorito={OpenCloseModalFavorito} indexLocationArray={indexLocationArray.current as any} data={dataFromLocalStorage as IFavoritesSaveLocalStorage[]} />}
+
             <main className={styles.main}>
                 <div className={styles.content}>
                     {dataFromLocalStorage?.map((data: IFavoritesSaveLocalStorage, index: number) => {
@@ -57,16 +61,19 @@ export default function RenderFavoritos() {
 
                                 <div className={styles.buttons}>
                                     <button className={styles.buttonsEdit} onClick={() => OpenCloseModalFavorito(index)} ><img src="/images/favorite/edit.svg"></img></button>
-                                    <button className={styles.buttonsfechar} onClick={() => ""}>FECHAR </button>
+                                    <Link
+                                        key={index}
+                                        href={data.path}
+                                    >
+                                        <button className={styles.buttonsGoURL} onClick={() => OpenCloseModalFavorito(index)} ><img src="/images/favorite/goURL.svg"></img></button>
+                                    </Link>
                                 </div>
                             </div>
 
                         )
                     })}
-
                 </div>
             </main>
         </>
-
     )
 }

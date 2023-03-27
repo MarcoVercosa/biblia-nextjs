@@ -25,7 +25,6 @@
     max-width: 60vw;
     display: flex;
     flex-direction: column;
-    background-color: rgb(255, 255, 255);
     border-radius: 30px;
     overflow-x: hidden;
     align-self: center;
@@ -242,8 +241,14 @@
 
 
 @media (max-width: 850px) {
-    /* .container {
+
+    .article {
+        margin: 0 auto
+    }
+
+    .container {
         max-height: 85vh;
-        max-width: 97vw;
-    } */
+        max-width: 98vw;
+
+    }
 }

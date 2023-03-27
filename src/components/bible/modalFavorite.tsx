@@ -1,4 +1,4 @@
-import { IBuscaConteudoLeitura, IFavoritesSaveLocalStorage } from "@/interfaces/interfaces"
+import { IBuscaConteudoLeitura } from "@/interfaces/interfaces"
 import { useState, useRef } from "react"
 import { useRouter } from 'next/router'
 import { SaveFavoriteClass } from "@/services/saveFavoriteLocalStorage"
@@ -29,8 +29,9 @@ export default function ModalFavorite({ data, OpenCloseModal }: IProps): JSX.Ele
     }
 
     function Save() {
+        console.log(router)
         const notes = inputNotes.current?.value as string
-        let saveData = new SaveFavoriteClass({ data, versiculoSelected, colorNotes, notes, path: `${router.asPath}#${versiculoSelected}` })
+        let saveData = new SaveFavoriteClass({ data, versiculoSelected, colorNotes, notes, path: `/leitura/${router.query.versaoid}/${router.query.testamentoid}/${router.query.livroid}/${router.query.capitulo}#${versiculoSelected}` })
         let result: string = saveData.SaveDataStorage()
         alert(result)
 
@@ -90,7 +91,7 @@ export default function ModalFavorite({ data, OpenCloseModal }: IProps): JSX.Ele
 
                 </div>
                 <div className={styles.buttons}>
-                    <button className={styles.buttonsok} onClick={Save} ><img src="/images/modaFavorite/favorite.svg"></img></button>
+                    <button className={styles.buttonsok} onClick={Save} ><img src="/images/modalFavorite/favorite.svg"></img></button>
                     <button className={styles.buttonsfechar} onClick={OpenCloseModal}>FECHAR </button>
                 </div>
 

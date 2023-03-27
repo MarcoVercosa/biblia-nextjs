@@ -62,7 +62,7 @@ export class SaveFavoriteClass {
     SaveDataStorage(): string {
         try {
             this.currentValueStorage = this.GetDataLocalStorage()//Obtem os dados
-            if (!this.currentValueStorage) {                     //Verifica se há dados no local storage
+            if (!this.currentValueStorage || this.currentValueStorage.length < 1) {                     //Verifica se há dados no local storage
                 this.CreateKeyAndSave()                          //Se não existir, então crie
                 return "Conteudo criado ! Verifique seu painel 'Favoritos'"
             } else {

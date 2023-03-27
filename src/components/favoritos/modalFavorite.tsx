@@ -13,7 +13,7 @@ export default function ModalFavorite({ OpenCloseModalFavorito, indexLocationArr
     const [dataLocalStortage, setDataLocalStorage] = useState<IFavoritesSaveLocalStorage>()
 
     useEffect(() => {
-        setDataLocalStorage((prevSate) => prevSate = data[indexLocationArray])
+        setDataLocalStorage((prevSate) => prevSate = data[indexLocationArray])//armazene somente o index da array solicitado
     }, [])
 
     function ChangeBackGroundColor(value: string) {
@@ -38,19 +38,33 @@ export default function ModalFavorite({ OpenCloseModalFavorito, indexLocationArr
             OpenCloseModalFavorito()
         }
     }
+    function DeleteFavorito() {
+        try {
+            let change = data.filter((_v: IFavoritesSaveLocalStorage, index: number) => index != indexLocationArray)
+            //retorne somente os index diferente do solicitado (props desse componente) para deletar
+
+            localStorage.setItem("favorites", JSON.stringify(change))
+        } catch (error) {
+            console.log(error)
+            alert("Houve um erro inesperado. Por favor, tente em instantes")
+        } finally {
+            alert("Favorito deletado !")
+            OpenCloseModalFavorito()
+        }
+    }
     return (
         <article className={styles.article}>
             <section className={styles.container} style={{ backgroundColor: dataLocalStortage?.colorNotes }}>
-                <h1>MODAL FAVORITOS</h1>
-
-                <div className={styles.versaoNome}>
-                    <p>{dataLocalStortage?.versaoNome}</p>
-                </div>
-                <div className={styles.selectedCapitulo}>
-                    <p>{dataLocalStortage?.livroNome}: {dataLocalStortage?.selectedCapitulo}</p>
-                </div>
-                <div className={styles.contentSelected}>
-                    <p><span>{dataLocalStortage?.selectectVersiculo} -&gt; </span>{dataLocalStortage?.contentSelected}</p>
+                <div className={styles.content}>
+                    <div className={styles.versaoNome}>
+                        <p>{dataLocalStortage?.versaoNome}</p>
+                    </div>
+                    <div className={styles.selectedCapitulo}>
+                        <p>{dataLocalStortage?.livroNome}: {dataLocalStortage?.selectedCapitulo}</p>
+                    </div>
+                    <div className={styles.contentSelected}>
+                        <p><span>{dataLocalStortage?.selectectVersiculo} -&gt; </span>{dataLocalStortage?.contentSelected}</p>
+                    </div>
                 </div>
                 <div className={styles.notas}>
                     <textarea name='notas' minLength={2} maxLength={200} wrap="soft" placeholder='Não há notas' onChange={(evt) => ChangeNotes(evt.target.value)} value={dataLocalStortage?.notes}>{dataLocalStortage?.notes}</textarea>
@@ -78,8 +92,10 @@ export default function ModalFavorite({ OpenCloseModalFavorito, indexLocationArr
                     </div>
                 </div>
                 <div className={styles.buttons}>
-                    <button className={styles.buttonsEdit} onClick={UpdateDataLocalStorage} >Salvar</button>
+                    <button className={styles.buttonsSave} onClick={UpdateDataLocalStorage} ><img src="/images/modalFavorite/save.svg" alt="guardar"></img></button>
                     <button className={styles.buttonsfechar} onClick={OpenCloseModalFavorito}>FECHAR </button>
+                    <button className={styles.buttonsDelete} onClick={DeleteFavorito}  ><img src="/images/modalFavorite/remove.svg" alt="apagar"></img></button>
+
                 </div>
 
             </section>
