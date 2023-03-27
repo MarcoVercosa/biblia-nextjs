@@ -1,5 +1,5 @@
 import { IFavoritesSaveLocalStorage } from "@/interfaces/interfaces"
-import { useEffect, useRef, useState } from "react"
+import { useEffect, useState } from "react"
 import styles from "../../styles/favoritos/modalFavorite.module.css"
 
 interface IProps {
@@ -8,12 +8,11 @@ interface IProps {
     data: IFavoritesSaveLocalStorage[]
 }
 
-
 export default function ModalFavorite({ OpenCloseModalFavorito, indexLocationArray, data }: IProps): JSX.Element {
     const [dataLocalStortage, setDataLocalStorage] = useState<IFavoritesSaveLocalStorage>()
 
     useEffect(() => {
-        setDataLocalStorage((prevSate) => prevSate = data[indexLocationArray])//armazene somente o index da array solicitado
+        setDataLocalStorage((prevSate) => prevSate = data[indexLocationArray])//armazene somente os dados conforme o index da array solicitado (indexLocationArray)
     }, [])
 
     function ChangeBackGroundColor(value: string) {
@@ -95,13 +94,8 @@ export default function ModalFavorite({ OpenCloseModalFavorito, indexLocationArr
                     <button className={styles.buttonsSave} onClick={UpdateDataLocalStorage} ><img src="/images/modalFavorite/save.svg" alt="guardar"></img></button>
                     <button className={styles.buttonsfechar} onClick={OpenCloseModalFavorito}>FECHAR </button>
                     <button className={styles.buttonsDelete} onClick={DeleteFavorito}  ><img src="/images/modalFavorite/remove.svg" alt="apagar"></img></button>
-
                 </div>
-
             </section>
-
         </article>
-
     )
-
 }

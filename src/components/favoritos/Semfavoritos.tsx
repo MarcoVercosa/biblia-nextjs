@@ -1,6 +1,7 @@
 import styles from '@/styles/favoritos/noFavoritos.module.css'
+import { memo } from 'react'
 
-export default function SemFavorites() {
+function SemFavorites() {
     return (
         <main className={styles.main}>
             <div className={styles.divImage}>
@@ -10,3 +11,5 @@ export default function SemFavorites() {
         </main>
     )
 }
+
+export default memo(SemFavorites)

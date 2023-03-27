@@ -7,12 +7,21 @@ import Link from 'next/link'
 
 export default function RenderFavoritos() {
 
-    const [dataFromLocalStorage, setDataFromLocalStorage] = useState<IFavoritesSaveLocalStorage[]>()
-    const [openCloseModalFavorito, setOpenCloseModalFavorito] = useState<boolean>(false)
+    const [dataFromLocalStorage, setDataFromLocalStorage] = useState<IFavoritesSaveLocalStorage[]>([])
+    const [semFavoritos, setSemFavoritos] = useState<boolean>(false)
+    const [openCloseModalFavorito, setOpenCloseModalFavorito] = useState<boolean>()
     let indexLocationArray = useRef<IFavoritesSaveLocalStorage>()
 
     useEffect((): void => {
-        if (window) { setDataFromLocalStorage(JSON.parse(localStorage.getItem("favorites") as string)) }
+        // if (openCloseModalFavorito) { return }
+        if (window) {
+            let dataLocal = JSON.parse(localStorage.getItem("favorites") as string)
+            if (!dataLocal || dataLocal.length < 1) { setSemFavoritos((prevState) => prevState = true) }//se não houver dados no localStorage
+            else {
+                setSemFavoritos((prevState) => prevState = false)
+            }
+            setDataFromLocalStorage((prevState) => prevState = dataLocal)
+        }
     }, [openCloseModalFavorito])
     function OpenCloseModalFavorito(indexArray?: number) {
         if (!isNaN(indexArray as number)) {//se houver número, então foi solicitado abertura do menu
@@ -23,12 +32,11 @@ export default function RenderFavoritos() {
         }
     }
 
-    if (!dataFromLocalStorage || dataFromLocalStorage.length < 1) {
+    if (semFavoritos) {
         return (
             <SemFavorites />
         )
     }
-    console.log(dataFromLocalStorage)
     return (
         <>
             {openCloseModalFavorito && <ModalFavorite OpenCloseModalFavorito={OpenCloseModalFavorito} indexLocationArray={indexLocationArray.current as any} data={dataFromLocalStorage as IFavoritesSaveLocalStorage[]} />}
@@ -37,7 +45,7 @@ export default function RenderFavoritos() {
                 <div className={styles.content}>
                     {dataFromLocalStorage?.map((data: IFavoritesSaveLocalStorage, index: number) => {
                         return (
-                            <div className={styles.container} style={{ backgroundColor: data.colorNotes }}>
+                            <div key={index} className={styles.container} style={{ backgroundColor: data.colorNotes }}>
                                 <div className={styles.starImage} >
                                     <img src="images/favorite/favorite.svg" ></img>
                                 </div>

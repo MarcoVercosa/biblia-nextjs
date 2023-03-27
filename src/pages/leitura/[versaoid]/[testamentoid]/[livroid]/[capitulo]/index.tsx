@@ -27,7 +27,7 @@ export default function LeituraBiblia({ data }: { data: IBuscaConteudoLeitura })
     const router: NextRouter = useRouter()
     if (!data || router.isFallback) {
         //mesmo se não houver dados , será respondido um objecto com a pesquisa solicitada, só q com a key "conteudo" vazia
-        //fazendo com q mesmo  não havendo conteudo, o data fique verdadeiro
+        //fazendo com q mesmo  não havendo conteudo, com a resposta o data fique verdadeiro
         return (
             <>
                 <NavBar />
