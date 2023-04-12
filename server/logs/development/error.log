@@ -1,0 +1,4 @@
+{"level":"error","message": "Error with OpenAI API request: Request failed with status code 502","Date":"19-03-2023 12:19:15"}
+{"level":"error","message": "Error with OpenAI API request: read ECONNRESET","Date":"19-03-2023 19:28:29"}
+{"level":"error","message": "An error occurred during your request: read ECONNRESET","Date":"19-03-2023 19:28:29"}
+{"level":"error","message": "OPENIA: Not authorized => x?-re_3k4wrO#*zadEsp+pho+i!lswut_@f!suben2c9u4r$9es2&r666ath_0oysp+pho+i!lswut_x?-re_3k4wrO#*zadEsp+pho+i!lswut_-re_3k4wrO#*zadEsp+pho+i!lswut","Date":"12-04-2023 12:17:02"}

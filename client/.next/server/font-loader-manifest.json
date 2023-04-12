@@ -1,0 +1,8 @@
+{
+  "pages": {
+    "/": [],
+    "/pesquisabiblia/[biblesearchid]": [],
+    "/harpacrista/[harpacristaid]": []
+  },
+  "app": {}
+}
