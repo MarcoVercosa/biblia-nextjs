@@ -3,7 +3,8 @@ import {
     IresultLivros, IresultCapitulos, IBuscaConteudoLeitura, IFindBibleBySearchAPI, IHinoPorPalavra, IGetDataFromIA
 } from "@/interfaces/interfaces"
 
-const urlApiDev = 'http://192.168.15.143:9000'
+//const urlApiDev = 'http://192.168.15.143:9000'
+const urlApiDev = 'http://172.20.0.3:9000'
 const urlApiProd = 'http://...'
 const pass = "x?-re_3k4wrO#*zadEsp+pho+i!lswut_@f!suben2c9u4r$9es2&r666ath_0oysp+pho+i!lswut_x?-re_3k4wrO#*zadEsp+pho+i!lswut_-re_3k4wrO#*zadEsp+pho+i!lswut"
 

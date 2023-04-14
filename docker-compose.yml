@@ -1,4 +1,4 @@
-version: '3'
+version: '3.5'
 
 services:
   mysqlsrv:
@@ -9,7 +9,7 @@ services:
     volumes:
       #- /volumes_containers/proj_biblia/vol_mysql:/var/lib/mysql/
 
-      - ${VOLUME-DATABASE="- /volumes_containers/proj_biblia/vol_mysql/biblias13v.sql.sql:/docker-entrypoint-initdb.d/hinoHarpa.sql"}
+      - ${VOLUME-DATABASE}
       #arquivos com extensões .sh, .sqle .sql.gzque são que encontrados em /docker-entrypoint-initdb.d dentro do container são executados
       # automaticamente pelo proprio mysql em ordem alfabética..
 
@@ -23,10 +23,11 @@ services:
     restart: unless-stopped
 
     networks:
-      - network-mysql-nodejs
+      network-mysql-nodejs:
+        ipv4_address: ${IP_ADDRESS_MYSQL}
 
-  node:
-    image: "node:8"
+  nodeapi:
+    image: "node:16"
     working_dir: ${WORK_DIR}
     environment:
       - NODE_env=production
@@ -35,14 +36,32 @@ services:
     restart: unless-stopped
     depends_on:
       - mysqlsrv
-    networks:
-      - network-mysql-nodejs
     volumes:
       - ${VOLUME_APP}
       - ${VOLUME_LOGS}
     command: ${NODE_PROD_START}
+    networks:
+      network-mysql-nodejs:
+        ipv4_address: ${IP_ADDRESS_NODE}
 
-  nginxreact:
+  nodenext:
+    image: "node:16"
+    working_dir: ${WORK_DIR_NEXT}
+    environment:
+      - NODE_env=production
+    ports:
+      - ${PORTS_NODE}
+    restart: unless-stopped
+    depends_on:
+      - nodeapi
+    volumes:
+      - ${VOLUME_APP}
+    command: ${NODE_NEXT_PROD_START}
+    networks:
+      network-mysql-nodejs:
+        ipv4_address: ${IP_ADDRESS_NODE_NEXT}
+
+  nginxnext:
     image: nginx
     volumes:
       - ${VOLUME_SITE}
@@ -52,9 +71,10 @@ services:
     ports:
       - ${PORTS_NGINX}
     depends_on:
-      - node
+      - nodeapi
     networks:
-      - network-mysql-nodejs
+      network-mysql-nodejs:
+        ipv4_address: ${IP_ADDRESS_NGINX}
 
 networks:
   network-mysql-nodejs:
