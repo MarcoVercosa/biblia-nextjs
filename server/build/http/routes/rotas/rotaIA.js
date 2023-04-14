@@ -9,22 +9,12 @@ var __awaiter = (this && this.__awaiter) || function (thisArg, _arguments, P, ge
     });
 };
 Object.defineProperty(exports, "__esModule", { value: true });
-exports.BibliaLivrosController = void 0;
-class BibliaLivrosController {
-    constructor(bibliaLivrosUseCase) {
-        this.bibliaLivrosUseCase = bibliaLivrosUseCase;
-    }
-    Handle(request, response) {
-        return __awaiter(this, void 0, void 0, function* () {
-            let testamento_id = parseInt(request.params.testamento_id);
-            try {
-                let resultado = yield this.bibliaLivrosUseCase.Execute(testamento_id);
-                return response.status(200).json(resultado);
-            }
-            catch (err) {
-                return response.status(400).json(err.message);
-            }
-        });
-    }
-}
-exports.BibliaLivrosController = BibliaLivrosController;
+exports.OpenAI = void 0;
+const OpenAI = require("express").Router();
+exports.OpenAI = OpenAI;
+const index_1 = require("../../../useCases/dadosIA/index");
+const createLogs_1 = require("../../../services/logs/createLogs");
+OpenAI.post("/dataai", (request, response) => __awaiter(void 0, void 0, void 0, function* () {
+    createLogs_1.Logger.http("Solicitado IA  na rota /dataai");
+    index_1.dadosIAController.Handle(request, response);
+}));

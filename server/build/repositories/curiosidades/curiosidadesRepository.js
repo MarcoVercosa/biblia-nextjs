@@ -5,7 +5,6 @@ const conexao_1 = require("../../infrabd/conexao");
 class CuriosidadesRepository {
     constructor() { }
     BuscaCuriosidade(palavra) {
-        console.log(palavra);
         return new Promise((resolve, reject) => {
             const sql = `SELECT livro, conteudo FROM biblias13v.curiosidades WHERE livro = "${palavra}"`;
             conexao_1.conectaBD.query(sql, (erro, resultado) => {

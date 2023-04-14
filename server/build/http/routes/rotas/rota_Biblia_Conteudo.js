@@ -10,7 +10,7 @@ var __awaiter = (this && this.__awaiter) || function (thisArg, _arguments, P, ge
 };
 Object.defineProperty(exports, "__esModule", { value: true });
 exports.RotasBibliaConteudo = void 0;
-const checkorigem_1 = require("./midware/checkorigem");
+const checkorigem_1 = require("../../../services/middleware/checkorigem");
 //MIDWARE CHECA E PERMITE SE A ORIGEM SOLICITANTE É O SITE VIDADAFONTE.COM.BR E SE A SOLICITAÇÃO É GET   
 const RotasBibliaConteudo = require("express").Router();
 exports.RotasBibliaConteudo = RotasBibliaConteudo;
@@ -20,27 +20,34 @@ const index_2 = require("../../../useCases/biblia/bibliaLivros/index");
 const index_3 = require("../../../useCases/biblia/bibliaCapitulos/index");
 const index_4 = require("../../../useCases/biblia/bibliaConteudo/index");
 const index_5 = require("../../../useCases/biblia/bibliaBuscaPorPlavra/index");
+const createLogs_1 = require("../../../services/logs/createLogs");
 RotasBibliaConteudo.get("/buscaversao", checkorigem_1.LiberaOrigemRegistraLog, (request, response) => __awaiter(void 0, void 0, void 0, function* () {
     //busca versões disponíveis da biblia
+    createLogs_1.Logger.http("Solicitado BIBLIA na rota /buscaversao");
     bibliaVersao_1.bibliaVersaoController.Handle(response);
 }));
 RotasBibliaConteudo.get("/buscatestamento", checkorigem_1.LiberaOrigemRegistraLog, (request, response) => __awaiter(void 0, void 0, void 0, function* () {
     //busca os testamentos
+    createLogs_1.Logger.http("Solicitado BIBLIA na rota /buscatestamento");
     index_1.bibliaTestamentoController.Handle(response);
 }));
 RotasBibliaConteudo.get("/buscalivros/:testamento_id", checkorigem_1.LiberaOrigemRegistraLog, (request, response) => __awaiter(void 0, void 0, void 0, function* () {
     //busca os livros de acordo com o testamento solicitado
+    createLogs_1.Logger.http("Solicitado BIBLIA na rota /buscalivros/:testamento_id");
     index_2.bibliaLivrosController.Handle(request, response);
 }));
 RotasBibliaConteudo.get("/buscacapitulo/:versao_id/:livro_id", checkorigem_1.LiberaOrigemRegistraLog, (request, response) => __awaiter(void 0, void 0, void 0, function* () {
     //busca os capitulos, conforme a versao e o livro
+    createLogs_1.Logger.http("Solicitado BIBLIA na rota /buscacapitulo/:versao_id/:livro_id");
     index_3.bibliaCapitulosController.Handle(request, response);
 }));
 RotasBibliaConteudo.get("/buscaconteudo/:versao_id/:testamento_id/:livro_id/:capitulo", checkorigem_1.LiberaOrigemRegistraLog, (request, response) => __awaiter(void 0, void 0, void 0, function* () {
     //busca o conteudo,conforme a versao , testamento, livro e o capitulo 
+    createLogs_1.Logger.http("Solicitado BIBLIA na rota /buscaconteudo/:versao_id/:testamento_id/:livro_id/:capitulo");
     index_4.bibliaConteudoController.Handle(request, response);
 }));
 RotasBibliaConteudo.get("/pesquisa/:palavra", checkorigem_1.LiberaOrigemRegistraLog, (request, response) => __awaiter(void 0, void 0, void 0, function* () {
     //busca  os versiculos conforme a palavra solicitada
+    createLogs_1.Logger.http("Solicitado BIBLIA na rota /pesquisa/:palavra");
     index_5.bibliaBuscaPorPalavraController.Handle(request, response);
 }));

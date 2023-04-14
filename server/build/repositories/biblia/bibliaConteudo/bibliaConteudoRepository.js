@@ -15,7 +15,7 @@ class BibliaConteudoRepository {
     BuscaConteudo(versao_id, livro_id, testamento_id, capitulo) {
         return __awaiter(this, void 0, void 0, function* () {
             const promessa1 = new Promise((resolve, reject) => {
-                //busca os versículos do capitulo, dado a versao o identificador do livro e o capitulo
+                //busca os versículos do capitulo, dado a versao, o identificador do livro e o capitulo
                 const sql = `SELECT conteudo FROM  biblias13v.versiculos WHERE versao_id=${versao_id} AND livro_id=${livro_id} AND capitulo=${capitulo} `;
                 conexao_1.conectaBD.query(sql, (erro, resultado) => {
                     if (erro) {
