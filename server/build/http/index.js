@@ -21,8 +21,9 @@ function StartServerWEB() {
                     createLogs_1.Logger.warn("Conectado no banco de dados com sucesso");
                     app.use(express.json());
                     app.use(index_routes_1.router);
-                    const server = app.listen(port, '192.168.15.143', () => {
-                        createLogs_1.Logger.warn(`Servidor rodando na porta ${port} !`);
+                    createLogs_1.Logger.warn(`Inciando tentativa de start da API na  ${port} com o ip ${node_process_1.default.env.IP_LISTENING}!`);
+                    const server = app.listen(port, node_process_1.default.env.IP_LISTENING, () => {
+                        createLogs_1.Logger.warn(`Servidor rodando na porta ${port} com o ip ${node_process_1.default.env.IP_LISTENING}!`);
                         createLogs_1.Logger.warn(`Servidor rodando na porta ${port} on process ${node_process_1.default.pid} !`);
                     });
                     node_process_1.default.on('SIGINT', () => {

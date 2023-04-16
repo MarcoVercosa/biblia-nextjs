@@ -6,8 +6,8 @@
   "scripts": {
     "dev": "NODE_ENV=development ts-node-dev --transpile-only --ignore-watch node_modules src/startServer.ts",
     "devjs": "nodemon src/startServer.ts",
-    "build": "npx tsc",
-    "prod": "NODE_ENV=production sudo docker-compose up -d"
+    "build": "NODE_ENV=production npx tsc && node build/startServer.js",
+    "prodDocker": "NODE_ENV=production && node build/startServer.js"
   },
   "author": "MAVS",
   "license": "ISC",

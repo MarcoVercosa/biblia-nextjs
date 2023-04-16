@@ -6,7 +6,9 @@ function LiberaOrigemRegistraLog(request: Request, response: Response, next: Nex
 
     const origem: string = request.headers.origin || "indefinido"
     Logger.http("Solicitação recebida da origem " + origem)
-    let originHeader: string = process.env.headersOrigin as string
+    let headersOriginExternal: string = process.env.headersOriginExternal as string
+    let headersOriginNext: string = process.env.headersOriginNext as string
+    let headersOriginNextExtern: string = process.env.headersOriginNextExtern as string
 
     if (process.env.NODE_ENV === "development") {
         if (origem.match(/192.168/) || origem.match(/indefi/) || origem.includes("localhost")) {
@@ -16,9 +18,10 @@ function LiberaOrigemRegistraLog(request: Request, response: Response, next: Nex
         }
 
     } else {
-        if (origem.includes(originHeader)) {
+        if (origem.includes(headersOriginExternal) || origem.includes(headersOriginNext) || origem.includes("fontedevida.app.br")) {
             next()
         } else {
+            Logger.warn(`${origem} não permitido`)
             response.status(403).send("Não permitido")
         }
     }

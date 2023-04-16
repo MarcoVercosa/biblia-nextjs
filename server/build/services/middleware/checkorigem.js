@@ -6,7 +6,9 @@ const createLogs_1 = require("../logs/createLogs");
 function LiberaOrigemRegistraLog(request, response, next) {
     const origem = request.headers.origin || "indefinido";
     createLogs_1.Logger.http("Solicitação recebida da origem " + origem);
-    let originHeader = process.env.headersOrigin;
+    let headersOriginExternal = process.env.headersOriginExternal;
+    let headersOriginNext = process.env.headersOriginNext;
+    let headersOriginNextExtern = process.env.headersOriginNextExtern;
     if (process.env.NODE_ENV === "development") {
         if (origem.match(/192.168/) || origem.match(/indefi/) || origem.includes("localhost")) {
             next();
@@ -16,10 +18,11 @@ function LiberaOrigemRegistraLog(request, response, next) {
         }
     }
     else {
-        if (origem.includes(originHeader)) {
+        if (origem.includes(headersOriginExternal) || origem.includes(headersOriginNext) || origem.includes("fontedevida.app.br")) {
             next();
         }
         else {
+            createLogs_1.Logger.warn(`${origem} não permitido`);
             response.status(403).send("Não permitido");
         }
     }

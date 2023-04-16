@@ -2,7 +2,12 @@
   "/_app": "pages/_app.js",
   "/_error": "pages/_error.js",
   "/_document": "pages/_document.js",
-  "/": "pages/index.js",
-  "/pesquisabiblia/[biblesearchid]": "pages/pesquisabiblia/[biblesearchid].js",
-  "/harpacrista/[harpacristaid]": "pages/harpacrista/[harpacristaid].js"
+  "/about": "pages/about.html",
+  "/api/hello": "pages/api/hello.js",
+  "/favoritos": "pages/favoritos.html",
+  "/pesquisabiblia/[biblesearchid]": "pages/pesquisabiblia/[biblesearchid].html",
+  "/harpacrista/[harpacristaid]": "pages/harpacrista/[harpacristaid].js",
+  "/": "pages/index.html",
+  "/leitura/[versaoid]/[testamentoid]/[livroid]/[capitulo]": "pages/leitura/[versaoid]/[testamentoid]/[livroid]/[capitulo].js",
+  "/404": "pages/404.html"
 }

@@ -18,8 +18,9 @@ function StartServerWEB(): Promise<string> {
                     Logger.warn("Conectado no banco de dados com sucesso")
                     app.use(express.json())
                     app.use(router)
-                    const server: any = app.listen(port, '192.168.15.143', () => {
-                        Logger.warn(`Servidor rodando na porta ${port} !`)
+                    Logger.warn(`Inciando tentativa de start da API na  ${port} com o ip ${process.env.IP_LISTENING}!`)
+                    const server: any = app.listen(port, process.env.IP_LISTENING, () => {
+                        Logger.warn(`Servidor rodando na porta ${port} com o ip ${process.env.IP_LISTENING}!`)
                         Logger.warn(`Servidor rodando na porta ${port} on process ${process.pid} !`)
                     })
 

@@ -1,8 +1,1 @@
-self.__FONT_LOADER_MANIFEST={
-  "pages": {
-    "/": [],
-    "/pesquisabiblia/[biblesearchid]": [],
-    "/harpacrista/[harpacristaid]": []
-  },
-  "app": {}
-}
+self.__FONT_LOADER_MANIFEST={pages:{"/about":[],"/favoritos":[],"/pesquisabiblia/[biblesearchid]":[],"/harpacrista/[harpacristaid]":[],"/":[],"/leitura/[versaoid]/[testamentoid]/[livroid]/[capitulo]":[]},app:{}};

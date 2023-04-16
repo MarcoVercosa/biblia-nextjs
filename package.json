@@ -1,0 +1,22 @@
+{
+    "name": "root",
+    "version": "1.0.0",
+    "description": "root project",
+    "main": "index.js",
+    "scripts": {
+        "createDockerAplicationPROD": "sudo docker-compose up -d",
+        "startDockerAplicationPROD": "sudo docker-compose start",
+        "stopDockerAplicationPROD": "sudo docker-compose stop",
+        "downDockerAplicationPROD": "sudo docker-compose down"
+    },
+    "repository": {
+        "type": "git",
+        "url": "git+https://github.com/MarcoVercosa/biblia-nextjs.git"
+    },
+    "author": "MAVS",
+    "license": "ISC",
+    "bugs": {
+        "url": "https://github.com/MarcoVercosa/biblia-nextjs/issues"
+    },
+    "homepage": "https://github.com/MarcoVercosa/biblia-nextjs#readme"
+}
