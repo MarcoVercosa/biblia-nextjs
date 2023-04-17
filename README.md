@@ -85,6 +85,6 @@ Utiliza componentização, renderização condicional e um código com responsab
 ## O Front-End e BackEnd estão hospedados na nuvem (VPS). Ambos estão rodando dentro de containers Docker isolados e automatizados.
 
 - Front-End: Docker (next - node) 
-- Front-End? Docker Nginx
+- Front-End: Docker Nginx
 - Back-End: Docker Node
 - MySQL: Docker Mysql
