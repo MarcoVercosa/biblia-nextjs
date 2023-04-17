@@ -9,8 +9,11 @@ const node_process_1 = __importDefault(require("node:process"));
 const conexao_1 = require("../infrabd/conexao");
 const createLogs_1 = require("../services/logs/createLogs");
 const index_routes_1 = require("./routes/index_routes");
+const fs = require('fs');
+const path = require('path');
 const express = require("express");
 const app = express();
+const https = require("https");
 let port = node_process_1.default.env.portHTTP;
 function StartServerWEB() {
     createLogs_1.Logger.warn("Servidor inciando tentativa de conexão ao banco de dados");
@@ -19,13 +22,21 @@ function StartServerWEB() {
             try {
                 if (!erro) {
                     createLogs_1.Logger.warn("Conectado no banco de dados com sucesso");
+                    createLogs_1.Logger.warn(`Inciando tentativa de start da API na  ${port} com o ip ${node_process_1.default.env.IP_LISTENING}!`);
                     app.use(express.json());
                     app.use(index_routes_1.router);
-                    createLogs_1.Logger.warn(`Inciando tentativa de start da API na  ${port} com o ip ${node_process_1.default.env.IP_LISTENING}!`);
-                    const server = app.listen(port, node_process_1.default.env.IP_LISTENING, () => {
-                        createLogs_1.Logger.warn(`Servidor rodando na porta ${port} com o ip ${node_process_1.default.env.IP_LISTENING}!`);
-                        createLogs_1.Logger.warn(`Servidor rodando na porta ${port} on process ${node_process_1.default.pid} !`);
-                    });
+                    // const server: any = app.listen(port, process.env.IP_LISTENING, () => {
+                    // Logger.warn(`Servidor rodando na porta ${port} com o ip ${process.env.IP_LISTENING}!`)
+                    // Logger.warn(`Servidor rodando na porta ${port} on process ${process.pid} !`)
+                    // })
+                    const server = https.createServer({
+                        key: fs.readFileSync(path.resolve("certificates", "key.key")),
+                        cert: fs.readFileSync(path.resolve("certificates", "cert.crt")),
+                        passphrase: 'fontedevida',
+                        requestCert: false,
+                        rejectUnauthorized: false
+                    }, app)
+                        .listen(9000, node_process_1.default.env.IP_LISTENING);
                     node_process_1.default.on('SIGINT', () => {
                         server.close(() => {
                             createLogs_1.Logger.warn('SIGTERM signal received: closing HTTP server and process' + node_process_1.default.pid);

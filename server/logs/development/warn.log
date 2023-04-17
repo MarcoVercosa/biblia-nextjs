@@ -1,908 +1,208 @@
-{"level":"warn","message": "7334 is started","Date":"16-04-2023 02:16:49"}
-{"level":"warn","message": "7334 is started","Date":"16-04-2023 02:16:49"}
-{"level":"warn","message": "7334 is started","Date":"16-04-2023 02:16:49"}
-{"level":"warn","message": "7334 is started","Date":"16-04-2023 02:16:49"}
-{"level":"warn","message": "Servidor inciando tentativa de conexão ao banco de dados","Date":"16-04-2023 02:16:50"}
-{"level":"warn","message": "Servidor inciando tentativa de conexão ao banco de dados","Date":"16-04-2023 02:16:50"}
-{"level":"warn","message": "Servidor inciando tentativa de conexão ao banco de dados","Date":"16-04-2023 02:16:50"}
-{"level":"warn","message": "Servidor inciando tentativa de conexão ao banco de dados","Date":"16-04-2023 02:16:50"}
-{"level":"warn","message": "Solicitando nova tentativa","Date":"16-04-2023 02:17:00"}
-{"level":"warn","message": "Solicitando nova tentativa","Date":"16-04-2023 02:17:00"}
-{"level":"warn","message": "Solicitando nova tentativa","Date":"16-04-2023 02:17:00"}
-{"level":"warn","message": "Solicitando nova tentativa","Date":"16-04-2023 02:17:00"}
-{"level":"warn","message": "Servidor inciando tentativa de conexão ao banco de dados","Date":"16-04-2023 02:17:05"}
-{"level":"warn","message": "Servidor inciando tentativa de conexão ao banco de dados","Date":"16-04-2023 02:17:05"}
-{"level":"warn","message": "Servidor inciando tentativa de conexão ao banco de dados","Date":"16-04-2023 02:17:05"}
-{"level":"warn","message": "Servidor inciando tentativa de conexão ao banco de dados","Date":"16-04-2023 02:17:05"}
-{"level":"warn","message": "Solicitando nova tentativa","Date":"16-04-2023 02:17:15"}
-{"level":"warn","message": "Solicitando nova tentativa","Date":"16-04-2023 02:17:15"}
-{"level":"warn","message": "Solicitando nova tentativa","Date":"16-04-2023 02:17:15"}
-{"level":"warn","message": "Solicitando nova tentativa","Date":"16-04-2023 02:17:15"}
-{"level":"warn","message": "Servidor inciando tentativa de conexão ao banco de dados","Date":"16-04-2023 02:17:20"}
-{"level":"warn","message": "Servidor inciando tentativa de conexão ao banco de dados","Date":"16-04-2023 02:17:20"}
-{"level":"warn","message": "Servidor inciando tentativa de conexão ao banco de dados","Date":"16-04-2023 02:17:20"}
-{"level":"warn","message": "Servidor inciando tentativa de conexão ao banco de dados","Date":"16-04-2023 02:17:20"}
-{"level":"warn","message": "Solicitando nova tentativa","Date":"16-04-2023 02:17:30"}
-{"level":"warn","message": "Solicitando nova tentativa","Date":"16-04-2023 02:17:30"}
-{"level":"warn","message": "Solicitando nova tentativa","Date":"16-04-2023 02:17:30"}
-{"level":"warn","message": "Solicitando nova tentativa","Date":"16-04-2023 02:17:30"}
-{"level":"warn","message": "Servidor inciando tentativa de conexão ao banco de dados","Date":"16-04-2023 02:17:35"}
-{"level":"warn","message": "Servidor inciando tentativa de conexão ao banco de dados","Date":"16-04-2023 02:17:35"}
-{"level":"warn","message": "Servidor inciando tentativa de conexão ao banco de dados","Date":"16-04-2023 02:17:35"}
-{"level":"warn","message": "Servidor inciando tentativa de conexão ao banco de dados","Date":"16-04-2023 02:17:35"}
-{"level":"warn","message": "Solicitando nova tentativa","Date":"16-04-2023 02:17:45"}
-{"level":"warn","message": "Solicitando nova tentativa","Date":"16-04-2023 02:17:45"}
-{"level":"warn","message": "Solicitando nova tentativa","Date":"16-04-2023 02:17:45"}
-{"level":"warn","message": "Solicitando nova tentativa","Date":"16-04-2023 02:17:46"}
-{"level":"warn","message": "Servidor inciando tentativa de conexão ao banco de dados","Date":"16-04-2023 02:17:50"}
-{"level":"warn","message": "Servidor inciando tentativa de conexão ao banco de dados","Date":"16-04-2023 02:17:50"}
-{"level":"warn","message": "Servidor inciando tentativa de conexão ao banco de dados","Date":"16-04-2023 02:17:50"}
-{"level":"warn","message": "Servidor inciando tentativa de conexão ao banco de dados","Date":"16-04-2023 02:17:51"}
-{"level":"warn","message": "Solicitando nova tentativa","Date":"16-04-2023 02:18:00"}
-{"level":"warn","message": "Solicitando nova tentativa","Date":"16-04-2023 02:18:00"}
-{"level":"warn","message": "Solicitando nova tentativa","Date":"16-04-2023 02:18:00"}
-{"level":"warn","message": "Solicitando nova tentativa","Date":"16-04-2023 02:18:01"}
-{"level":"warn","message": "Servidor inciando tentativa de conexão ao banco de dados","Date":"16-04-2023 02:18:05"}
-{"level":"warn","message": "Servidor inciando tentativa de conexão ao banco de dados","Date":"16-04-2023 02:18:05"}
-{"level":"warn","message": "Servidor inciando tentativa de conexão ao banco de dados","Date":"16-04-2023 02:18:05"}
-{"level":"warn","message": "Servidor inciando tentativa de conexão ao banco de dados","Date":"16-04-2023 02:18:06"}
-{"level":"warn","message": "Solicitando nova tentativa","Date":"16-04-2023 02:18:15"}
-{"level":"warn","message": "Solicitando nova tentativa","Date":"16-04-2023 02:18:15"}
-{"level":"warn","message": "Solicitando nova tentativa","Date":"16-04-2023 02:18:16"}
-{"level":"warn","message": "Solicitando nova tentativa","Date":"16-04-2023 02:18:16"}
-{"level":"warn","message": "Servidor inciando tentativa de conexão ao banco de dados","Date":"16-04-2023 02:18:20"}
-{"level":"warn","message": "Servidor inciando tentativa de conexão ao banco de dados","Date":"16-04-2023 02:18:20"}
-{"level":"warn","message": "Servidor inciando tentativa de conexão ao banco de dados","Date":"16-04-2023 02:18:21"}
-{"level":"warn","message": "Servidor inciando tentativa de conexão ao banco de dados","Date":"16-04-2023 02:18:21"}
-{"level":"warn","message": "Solicitando nova tentativa","Date":"16-04-2023 02:18:30"}
-{"level":"warn","message": "Solicitando nova tentativa","Date":"16-04-2023 02:18:30"}
-{"level":"warn","message": "Solicitando nova tentativa","Date":"16-04-2023 02:18:31"}
-{"level":"warn","message": "Solicitando nova tentativa","Date":"16-04-2023 02:18:31"}
-{"level":"warn","message": "Servidor inciando tentativa de conexão ao banco de dados","Date":"16-04-2023 02:18:35"}
-{"level":"warn","message": "Servidor inciando tentativa de conexão ao banco de dados","Date":"16-04-2023 02:18:36"}
-{"level":"warn","message": "Servidor inciando tentativa de conexão ao banco de dados","Date":"16-04-2023 02:18:36"}
-{"level":"warn","message": "Servidor inciando tentativa de conexão ao banco de dados","Date":"16-04-2023 02:18:36"}
-{"level":"warn","message": "Solicitando nova tentativa","Date":"16-04-2023 02:18:46"}
-{"level":"warn","message": "Solicitando nova tentativa","Date":"16-04-2023 02:18:46"}
-{"level":"warn","message": "Solicitando nova tentativa","Date":"16-04-2023 02:18:46"}
-{"level":"warn","message": "Solicitando nova tentativa","Date":"16-04-2023 02:18:46"}
-{"level":"warn","message": "Servidor inciando tentativa de conexão ao banco de dados","Date":"16-04-2023 02:18:51"}
-{"level":"warn","message": "Servidor inciando tentativa de conexão ao banco de dados","Date":"16-04-2023 02:18:51"}
-{"level":"warn","message": "Servidor inciando tentativa de conexão ao banco de dados","Date":"16-04-2023 02:18:51"}
-{"level":"warn","message": "Servidor inciando tentativa de conexão ao banco de dados","Date":"16-04-2023 02:18:51"}
-{"level":"warn","message": "Solicitando nova tentativa","Date":"16-04-2023 02:19:01"}
-{"level":"warn","message": "Solicitando nova tentativa","Date":"16-04-2023 02:19:01"}
-{"level":"warn","message": "Solicitando nova tentativa","Date":"16-04-2023 02:19:01"}
-{"level":"warn","message": "Solicitando nova tentativa","Date":"16-04-2023 02:19:01"}
-{"level":"warn","message": "Servidor inciando tentativa de conexão ao banco de dados","Date":"16-04-2023 02:19:06"}
-{"level":"warn","message": "Servidor inciando tentativa de conexão ao banco de dados","Date":"16-04-2023 02:19:06"}
-{"level":"warn","message": "Servidor inciando tentativa de conexão ao banco de dados","Date":"16-04-2023 02:19:06"}
-{"level":"warn","message": "Servidor inciando tentativa de conexão ao banco de dados","Date":"16-04-2023 02:19:06"}
-{"level":"warn","message": "Solicitando nova tentativa","Date":"16-04-2023 02:19:16"}
-{"level":"warn","message": "Solicitando nova tentativa","Date":"16-04-2023 02:19:16"}
-{"level":"warn","message": "Solicitando nova tentativa","Date":"16-04-2023 02:19:16"}
-{"level":"warn","message": "Solicitando nova tentativa","Date":"16-04-2023 02:19:16"}
-{"level":"warn","message": "Servidor inciando tentativa de conexão ao banco de dados","Date":"16-04-2023 02:19:21"}
-{"level":"warn","message": "Servidor inciando tentativa de conexão ao banco de dados","Date":"16-04-2023 02:19:21"}
-{"level":"warn","message": "Servidor inciando tentativa de conexão ao banco de dados","Date":"16-04-2023 02:19:21"}
-{"level":"warn","message": "Servidor inciando tentativa de conexão ao banco de dados","Date":"16-04-2023 02:19:21"}
-{"level":"warn","message": "Solicitando nova tentativa","Date":"16-04-2023 02:19:31"}
-{"level":"warn","message": "Solicitando nova tentativa","Date":"16-04-2023 02:19:31"}
-{"level":"warn","message": "Solicitando nova tentativa","Date":"16-04-2023 02:19:31"}
-{"level":"warn","message": "Solicitando nova tentativa","Date":"16-04-2023 02:19:31"}
-{"level":"warn","message": "Servidor inciando tentativa de conexão ao banco de dados","Date":"16-04-2023 02:19:36"}
-{"level":"warn","message": "Servidor inciando tentativa de conexão ao banco de dados","Date":"16-04-2023 02:19:36"}
-{"level":"warn","message": "Servidor inciando tentativa de conexão ao banco de dados","Date":"16-04-2023 02:19:36"}
-{"level":"warn","message": "Servidor inciando tentativa de conexão ao banco de dados","Date":"16-04-2023 02:19:36"}
-{"level":"warn","message": "7821 is started","Date":"16-04-2023 02:21:35"}
-{"level":"warn","message": "7821 is started","Date":"16-04-2023 02:21:36"}
-{"level":"warn","message": "7821 is started","Date":"16-04-2023 02:21:36"}
-{"level":"warn","message": "7821 is started","Date":"16-04-2023 02:21:36"}
-{"level":"warn","message": "Servidor inciando tentativa de conexão ao banco de dados","Date":"16-04-2023 02:21:37"}
-{"level":"warn","message": "Servidor inciando tentativa de conexão ao banco de dados","Date":"16-04-2023 02:21:37"}
-{"level":"warn","message": "Servidor inciando tentativa de conexão ao banco de dados","Date":"16-04-2023 02:21:37"}
-{"level":"warn","message": "Servidor inciando tentativa de conexão ao banco de dados","Date":"16-04-2023 02:21:37"}
-{"level":"warn","message": "Solicitando nova tentativa","Date":"16-04-2023 02:21:47"}
-{"level":"warn","message": "Solicitando nova tentativa","Date":"16-04-2023 02:21:47"}
-{"level":"warn","message": "Solicitando nova tentativa","Date":"16-04-2023 02:21:47"}
-{"level":"warn","message": "Solicitando nova tentativa","Date":"16-04-2023 02:21:47"}
-{"level":"warn","message": "Servidor inciando tentativa de conexão ao banco de dados","Date":"16-04-2023 02:21:52"}
-{"level":"warn","message": "Servidor inciando tentativa de conexão ao banco de dados","Date":"16-04-2023 02:21:52"}
-{"level":"warn","message": "Servidor inciando tentativa de conexão ao banco de dados","Date":"16-04-2023 02:21:52"}
-{"level":"warn","message": "Servidor inciando tentativa de conexão ao banco de dados","Date":"16-04-2023 02:21:52"}
-{"level":"warn","message": "Solicitando nova tentativa","Date":"16-04-2023 02:22:02"}
-{"level":"warn","message": "Solicitando nova tentativa","Date":"16-04-2023 02:22:02"}
-{"level":"warn","message": "Solicitando nova tentativa","Date":"16-04-2023 02:22:02"}
-{"level":"warn","message": "Solicitando nova tentativa","Date":"16-04-2023 02:22:02"}
-{"level":"warn","message": "Servidor inciando tentativa de conexão ao banco de dados","Date":"16-04-2023 02:22:07"}
-{"level":"warn","message": "Servidor inciando tentativa de conexão ao banco de dados","Date":"16-04-2023 02:22:07"}
-{"level":"warn","message": "Servidor inciando tentativa de conexão ao banco de dados","Date":"16-04-2023 02:22:07"}
-{"level":"warn","message": "Servidor inciando tentativa de conexão ao banco de dados","Date":"16-04-2023 02:22:07"}
-{"level":"warn","message": "Solicitando nova tentativa","Date":"16-04-2023 02:22:17"}
-{"level":"warn","message": "Solicitando nova tentativa","Date":"16-04-2023 02:22:17"}
-{"level":"warn","message": "Solicitando nova tentativa","Date":"16-04-2023 02:22:17"}
-{"level":"warn","message": "Solicitando nova tentativa","Date":"16-04-2023 02:22:17"}
-{"level":"warn","message": "Servidor inciando tentativa de conexão ao banco de dados","Date":"16-04-2023 02:22:22"}
-{"level":"warn","message": "Servidor inciando tentativa de conexão ao banco de dados","Date":"16-04-2023 02:22:22"}
-{"level":"warn","message": "Servidor inciando tentativa de conexão ao banco de dados","Date":"16-04-2023 02:22:22"}
-{"level":"warn","message": "Servidor inciando tentativa de conexão ao banco de dados","Date":"16-04-2023 02:22:22"}
-{"level":"warn","message": "Solicitando nova tentativa","Date":"16-04-2023 02:22:32"}
-{"level":"warn","message": "Solicitando nova tentativa","Date":"16-04-2023 02:22:32"}
-{"level":"warn","message": "Solicitando nova tentativa","Date":"16-04-2023 02:22:32"}
-{"level":"warn","message": "Solicitando nova tentativa","Date":"16-04-2023 02:22:32"}
-{"level":"warn","message": "Servidor inciando tentativa de conexão ao banco de dados","Date":"16-04-2023 02:22:37"}
-{"level":"warn","message": "Servidor inciando tentativa de conexão ao banco de dados","Date":"16-04-2023 02:22:37"}
-{"level":"warn","message": "Servidor inciando tentativa de conexão ao banco de dados","Date":"16-04-2023 02:22:37"}
-{"level":"warn","message": "Servidor inciando tentativa de conexão ao banco de dados","Date":"16-04-2023 02:22:37"}
-{"level":"warn","message": "Solicitando nova tentativa","Date":"16-04-2023 02:22:47"}
-{"level":"warn","message": "Solicitando nova tentativa","Date":"16-04-2023 02:22:47"}
-{"level":"warn","message": "Solicitando nova tentativa","Date":"16-04-2023 02:22:47"}
-{"level":"warn","message": "Solicitando nova tentativa","Date":"16-04-2023 02:22:47"}
-{"level":"warn","message": "Servidor inciando tentativa de conexão ao banco de dados","Date":"16-04-2023 02:22:52"}
-{"level":"warn","message": "Servidor inciando tentativa de conexão ao banco de dados","Date":"16-04-2023 02:22:52"}
-{"level":"warn","message": "Servidor inciando tentativa de conexão ao banco de dados","Date":"16-04-2023 02:22:52"}
-{"level":"warn","message": "Servidor inciando tentativa de conexão ao banco de dados","Date":"16-04-2023 02:22:52"}
-{"level":"warn","message": "Solicitando nova tentativa","Date":"16-04-2023 02:23:02"}
-{"level":"warn","message": "Solicitando nova tentativa","Date":"16-04-2023 02:23:02"}
-{"level":"warn","message": "Solicitando nova tentativa","Date":"16-04-2023 02:23:02"}
-{"level":"warn","message": "Solicitando nova tentativa","Date":"16-04-2023 02:23:02"}
-{"level":"warn","message": "Servidor inciando tentativa de conexão ao banco de dados","Date":"16-04-2023 02:23:07"}
-{"level":"warn","message": "Servidor inciando tentativa de conexão ao banco de dados","Date":"16-04-2023 02:23:07"}
-{"level":"warn","message": "Servidor inciando tentativa de conexão ao banco de dados","Date":"16-04-2023 02:23:07"}
-{"level":"warn","message": "Servidor inciando tentativa de conexão ao banco de dados","Date":"16-04-2023 02:23:07"}
-{"level":"warn","message": "Solicitando nova tentativa","Date":"16-04-2023 02:23:17"}
-{"level":"warn","message": "Solicitando nova tentativa","Date":"16-04-2023 02:23:17"}
-{"level":"warn","message": "Solicitando nova tentativa","Date":"16-04-2023 02:23:17"}
-{"level":"warn","message": "Solicitando nova tentativa","Date":"16-04-2023 02:23:17"}
-{"level":"warn","message": "Servidor inciando tentativa de conexão ao banco de dados","Date":"16-04-2023 02:23:22"}
-{"level":"warn","message": "Servidor inciando tentativa de conexão ao banco de dados","Date":"16-04-2023 02:23:22"}
-{"level":"warn","message": "Servidor inciando tentativa de conexão ao banco de dados","Date":"16-04-2023 02:23:22"}
-{"level":"warn","message": "Servidor inciando tentativa de conexão ao banco de dados","Date":"16-04-2023 02:23:22"}
-{"level":"warn","message": "Solicitando nova tentativa","Date":"16-04-2023 02:23:32"}
-{"level":"warn","message": "Solicitando nova tentativa","Date":"16-04-2023 02:23:32"}
-{"level":"warn","message": "Solicitando nova tentativa","Date":"16-04-2023 02:23:32"}
-{"level":"warn","message": "Solicitando nova tentativa","Date":"16-04-2023 02:23:32"}
-{"level":"warn","message": "Servidor inciando tentativa de conexão ao banco de dados","Date":"16-04-2023 02:23:37"}
-{"level":"warn","message": "Servidor inciando tentativa de conexão ao banco de dados","Date":"16-04-2023 02:23:37"}
-{"level":"warn","message": "Servidor inciando tentativa de conexão ao banco de dados","Date":"16-04-2023 02:23:37"}
-{"level":"warn","message": "Servidor inciando tentativa de conexão ao banco de dados","Date":"16-04-2023 02:23:37"}
-{"level":"warn","message": "Solicitando nova tentativa","Date":"16-04-2023 02:23:47"}
-{"level":"warn","message": "Solicitando nova tentativa","Date":"16-04-2023 02:23:47"}
-{"level":"warn","message": "Solicitando nova tentativa","Date":"16-04-2023 02:23:47"}
-{"level":"warn","message": "Solicitando nova tentativa","Date":"16-04-2023 02:23:47"}
-{"level":"warn","message": "Servidor inciando tentativa de conexão ao banco de dados","Date":"16-04-2023 02:23:52"}
-{"level":"warn","message": "Servidor inciando tentativa de conexão ao banco de dados","Date":"16-04-2023 02:23:52"}
-{"level":"warn","message": "Servidor inciando tentativa de conexão ao banco de dados","Date":"16-04-2023 02:23:52"}
-{"level":"warn","message": "Servidor inciando tentativa de conexão ao banco de dados","Date":"16-04-2023 02:23:52"}
-{"level":"warn","message": "Solicitando nova tentativa","Date":"16-04-2023 02:24:02"}
-{"level":"warn","message": "Solicitando nova tentativa","Date":"16-04-2023 02:24:02"}
-{"level":"warn","message": "Solicitando nova tentativa","Date":"16-04-2023 02:24:02"}
-{"level":"warn","message": "Solicitando nova tentativa","Date":"16-04-2023 02:24:02"}
-{"level":"warn","message": "Servidor inciando tentativa de conexão ao banco de dados","Date":"16-04-2023 02:24:07"}
-{"level":"warn","message": "Servidor inciando tentativa de conexão ao banco de dados","Date":"16-04-2023 02:24:07"}
-{"level":"warn","message": "Servidor inciando tentativa de conexão ao banco de dados","Date":"16-04-2023 02:24:07"}
-{"level":"warn","message": "Servidor inciando tentativa de conexão ao banco de dados","Date":"16-04-2023 02:24:07"}
-{"level":"warn","message": "Solicitando nova tentativa","Date":"16-04-2023 02:24:17"}
-{"level":"warn","message": "Solicitando nova tentativa","Date":"16-04-2023 02:24:17"}
-{"level":"warn","message": "Solicitando nova tentativa","Date":"16-04-2023 02:24:17"}
-{"level":"warn","message": "Solicitando nova tentativa","Date":"16-04-2023 02:24:17"}
-{"level":"warn","message": "Servidor inciando tentativa de conexão ao banco de dados","Date":"16-04-2023 02:24:22"}
-{"level":"warn","message": "Servidor inciando tentativa de conexão ao banco de dados","Date":"16-04-2023 02:24:22"}
-{"level":"warn","message": "Servidor inciando tentativa de conexão ao banco de dados","Date":"16-04-2023 02:24:22"}
-{"level":"warn","message": "Servidor inciando tentativa de conexão ao banco de dados","Date":"16-04-2023 02:24:22"}
-{"level":"warn","message": "Solicitando nova tentativa","Date":"16-04-2023 02:24:32"}
-{"level":"warn","message": "Solicitando nova tentativa","Date":"16-04-2023 02:24:32"}
-{"level":"warn","message": "Solicitando nova tentativa","Date":"16-04-2023 02:24:32"}
-{"level":"warn","message": "Solicitando nova tentativa","Date":"16-04-2023 02:24:32"}
-{"level":"warn","message": "Servidor inciando tentativa de conexão ao banco de dados","Date":"16-04-2023 02:24:37"}
-{"level":"warn","message": "Servidor inciando tentativa de conexão ao banco de dados","Date":"16-04-2023 02:24:37"}
-{"level":"warn","message": "Servidor inciando tentativa de conexão ao banco de dados","Date":"16-04-2023 02:24:37"}
-{"level":"warn","message": "Servidor inciando tentativa de conexão ao banco de dados","Date":"16-04-2023 02:24:37"}
-{"level":"warn","message": "Solicitando nova tentativa","Date":"16-04-2023 02:24:47"}
-{"level":"warn","message": "Solicitando nova tentativa","Date":"16-04-2023 02:24:47"}
-{"level":"warn","message": "Solicitando nova tentativa","Date":"16-04-2023 02:24:47"}
-{"level":"warn","message": "Solicitando nova tentativa","Date":"16-04-2023 02:24:47"}
-{"level":"warn","message": "Servidor inciando tentativa de conexão ao banco de dados","Date":"16-04-2023 02:24:52"}
-{"level":"warn","message": "Servidor inciando tentativa de conexão ao banco de dados","Date":"16-04-2023 02:24:52"}
-{"level":"warn","message": "Servidor inciando tentativa de conexão ao banco de dados","Date":"16-04-2023 02:24:52"}
-{"level":"warn","message": "Servidor inciando tentativa de conexão ao banco de dados","Date":"16-04-2023 02:24:52"}
-{"level":"warn","message": "Solicitando nova tentativa","Date":"16-04-2023 02:25:02"}
-{"level":"warn","message": "Solicitando nova tentativa","Date":"16-04-2023 02:25:02"}
-{"level":"warn","message": "Solicitando nova tentativa","Date":"16-04-2023 02:25:02"}
-{"level":"warn","message": "Solicitando nova tentativa","Date":"16-04-2023 02:25:02"}
-{"level":"warn","message": "Servidor inciando tentativa de conexão ao banco de dados","Date":"16-04-2023 02:25:07"}
-{"level":"warn","message": "Servidor inciando tentativa de conexão ao banco de dados","Date":"16-04-2023 02:25:07"}
-{"level":"warn","message": "Servidor inciando tentativa de conexão ao banco de dados","Date":"16-04-2023 02:25:07"}
-{"level":"warn","message": "Servidor inciando tentativa de conexão ao banco de dados","Date":"16-04-2023 02:25:07"}
-{"level":"warn","message": "Solicitando nova tentativa","Date":"16-04-2023 02:25:17"}
-{"level":"warn","message": "Solicitando nova tentativa","Date":"16-04-2023 02:25:17"}
-{"level":"warn","message": "Solicitando nova tentativa","Date":"16-04-2023 02:25:17"}
-{"level":"warn","message": "Solicitando nova tentativa","Date":"16-04-2023 02:25:17"}
-{"level":"warn","message": "Servidor inciando tentativa de conexão ao banco de dados","Date":"16-04-2023 02:25:22"}
-{"level":"warn","message": "Servidor inciando tentativa de conexão ao banco de dados","Date":"16-04-2023 02:25:22"}
-{"level":"warn","message": "Servidor inciando tentativa de conexão ao banco de dados","Date":"16-04-2023 02:25:22"}
-{"level":"warn","message": "Servidor inciando tentativa de conexão ao banco de dados","Date":"16-04-2023 02:25:22"}
-{"level":"warn","message": "Solicitando nova tentativa","Date":"16-04-2023 02:25:32"}
-{"level":"warn","message": "Solicitando nova tentativa","Date":"16-04-2023 02:25:32"}
-{"level":"warn","message": "Solicitando nova tentativa","Date":"16-04-2023 02:25:32"}
-{"level":"warn","message": "Solicitando nova tentativa","Date":"16-04-2023 02:25:32"}
-{"level":"warn","message": "Servidor inciando tentativa de conexão ao banco de dados","Date":"16-04-2023 02:25:37"}
-{"level":"warn","message": "Servidor inciando tentativa de conexão ao banco de dados","Date":"16-04-2023 02:25:37"}
-{"level":"warn","message": "Servidor inciando tentativa de conexão ao banco de dados","Date":"16-04-2023 02:25:37"}
-{"level":"warn","message": "Servidor inciando tentativa de conexão ao banco de dados","Date":"16-04-2023 02:25:37"}
-{"level":"warn","message": "Solicitando nova tentativa","Date":"16-04-2023 02:25:47"}
-{"level":"warn","message": "Solicitando nova tentativa","Date":"16-04-2023 02:25:47"}
-{"level":"warn","message": "Solicitando nova tentativa","Date":"16-04-2023 02:25:47"}
-{"level":"warn","message": "Solicitando nova tentativa","Date":"16-04-2023 02:25:47"}
-{"level":"warn","message": "Servidor inciando tentativa de conexão ao banco de dados","Date":"16-04-2023 02:25:52"}
-{"level":"warn","message": "Servidor inciando tentativa de conexão ao banco de dados","Date":"16-04-2023 02:25:52"}
-{"level":"warn","message": "Servidor inciando tentativa de conexão ao banco de dados","Date":"16-04-2023 02:25:52"}
-{"level":"warn","message": "Servidor inciando tentativa de conexão ao banco de dados","Date":"16-04-2023 02:25:52"}
-{"level":"warn","message": "Solicitando nova tentativa","Date":"16-04-2023 02:26:02"}
-{"level":"warn","message": "Solicitando nova tentativa","Date":"16-04-2023 02:26:02"}
-{"level":"warn","message": "Solicitando nova tentativa","Date":"16-04-2023 02:26:02"}
-{"level":"warn","message": "Solicitando nova tentativa","Date":"16-04-2023 02:26:02"}
-{"level":"warn","message": "Servidor inciando tentativa de conexão ao banco de dados","Date":"16-04-2023 02:26:07"}
-{"level":"warn","message": "Servidor inciando tentativa de conexão ao banco de dados","Date":"16-04-2023 02:26:07"}
-{"level":"warn","message": "Servidor inciando tentativa de conexão ao banco de dados","Date":"16-04-2023 02:26:07"}
-{"level":"warn","message": "Servidor inciando tentativa de conexão ao banco de dados","Date":"16-04-2023 02:26:07"}
-{"level":"warn","message": "Solicitando nova tentativa","Date":"16-04-2023 02:26:17"}
-{"level":"warn","message": "Solicitando nova tentativa","Date":"16-04-2023 02:26:17"}
-{"level":"warn","message": "Solicitando nova tentativa","Date":"16-04-2023 02:26:17"}
-{"level":"warn","message": "Solicitando nova tentativa","Date":"16-04-2023 02:26:17"}
-{"level":"warn","message": "Servidor inciando tentativa de conexão ao banco de dados","Date":"16-04-2023 02:26:22"}
-{"level":"warn","message": "Servidor inciando tentativa de conexão ao banco de dados","Date":"16-04-2023 02:26:22"}
-{"level":"warn","message": "Servidor inciando tentativa de conexão ao banco de dados","Date":"16-04-2023 02:26:22"}
-{"level":"warn","message": "Servidor inciando tentativa de conexão ao banco de dados","Date":"16-04-2023 02:26:22"}
-{"level":"warn","message": "Solicitando nova tentativa","Date":"16-04-2023 02:26:32"}
-{"level":"warn","message": "Solicitando nova tentativa","Date":"16-04-2023 02:26:32"}
-{"level":"warn","message": "Solicitando nova tentativa","Date":"16-04-2023 02:26:32"}
-{"level":"warn","message": "Solicitando nova tentativa","Date":"16-04-2023 02:26:32"}
-{"level":"warn","message": "Servidor inciando tentativa de conexão ao banco de dados","Date":"16-04-2023 02:26:37"}
-{"level":"warn","message": "Servidor inciando tentativa de conexão ao banco de dados","Date":"16-04-2023 02:26:37"}
-{"level":"warn","message": "Servidor inciando tentativa de conexão ao banco de dados","Date":"16-04-2023 02:26:37"}
-{"level":"warn","message": "Servidor inciando tentativa de conexão ao banco de dados","Date":"16-04-2023 02:26:37"}
-{"level":"warn","message": "Solicitando nova tentativa","Date":"16-04-2023 02:26:47"}
-{"level":"warn","message": "Solicitando nova tentativa","Date":"16-04-2023 02:26:47"}
-{"level":"warn","message": "Solicitando nova tentativa","Date":"16-04-2023 02:26:47"}
-{"level":"warn","message": "Solicitando nova tentativa","Date":"16-04-2023 02:26:47"}
-{"level":"warn","message": "Servidor inciando tentativa de conexão ao banco de dados","Date":"16-04-2023 02:26:52"}
-{"level":"warn","message": "Servidor inciando tentativa de conexão ao banco de dados","Date":"16-04-2023 02:26:52"}
-{"level":"warn","message": "Servidor inciando tentativa de conexão ao banco de dados","Date":"16-04-2023 02:26:52"}
-{"level":"warn","message": "Servidor inciando tentativa de conexão ao banco de dados","Date":"16-04-2023 02:26:52"}
-{"level":"warn","message": "Solicitando nova tentativa","Date":"16-04-2023 02:27:02"}
-{"level":"warn","message": "Solicitando nova tentativa","Date":"16-04-2023 02:27:02"}
-{"level":"warn","message": "Solicitando nova tentativa","Date":"16-04-2023 02:27:02"}
-{"level":"warn","message": "Solicitando nova tentativa","Date":"16-04-2023 02:27:02"}
-{"level":"warn","message": "Servidor inciando tentativa de conexão ao banco de dados","Date":"16-04-2023 02:27:07"}
-{"level":"warn","message": "Servidor inciando tentativa de conexão ao banco de dados","Date":"16-04-2023 02:27:07"}
-{"level":"warn","message": "Servidor inciando tentativa de conexão ao banco de dados","Date":"16-04-2023 02:27:07"}
-{"level":"warn","message": "Servidor inciando tentativa de conexão ao banco de dados","Date":"16-04-2023 02:27:07"}
-{"level":"warn","message": "Solicitando nova tentativa","Date":"16-04-2023 02:27:17"}
-{"level":"warn","message": "Solicitando nova tentativa","Date":"16-04-2023 02:27:17"}
-{"level":"warn","message": "Solicitando nova tentativa","Date":"16-04-2023 02:27:17"}
-{"level":"warn","message": "Solicitando nova tentativa","Date":"16-04-2023 02:27:17"}
-{"level":"warn","message": "Servidor inciando tentativa de conexão ao banco de dados","Date":"16-04-2023 02:27:22"}
-{"level":"warn","message": "Servidor inciando tentativa de conexão ao banco de dados","Date":"16-04-2023 02:27:22"}
-{"level":"warn","message": "Servidor inciando tentativa de conexão ao banco de dados","Date":"16-04-2023 02:27:22"}
-{"level":"warn","message": "Servidor inciando tentativa de conexão ao banco de dados","Date":"16-04-2023 02:27:22"}
-{"level":"warn","message": "Solicitando nova tentativa","Date":"16-04-2023 02:27:32"}
-{"level":"warn","message": "Solicitando nova tentativa","Date":"16-04-2023 02:27:32"}
-{"level":"warn","message": "Solicitando nova tentativa","Date":"16-04-2023 02:27:32"}
-{"level":"warn","message": "Solicitando nova tentativa","Date":"16-04-2023 02:27:32"}
-{"level":"warn","message": "Servidor inciando tentativa de conexão ao banco de dados","Date":"16-04-2023 02:27:37"}
-{"level":"warn","message": "Servidor inciando tentativa de conexão ao banco de dados","Date":"16-04-2023 02:27:37"}
-{"level":"warn","message": "Servidor inciando tentativa de conexão ao banco de dados","Date":"16-04-2023 02:27:37"}
-{"level":"warn","message": "Servidor inciando tentativa de conexão ao banco de dados","Date":"16-04-2023 02:27:37"}
-{"level":"warn","message": "Solicitando nova tentativa","Date":"16-04-2023 02:27:47"}
-{"level":"warn","message": "Solicitando nova tentativa","Date":"16-04-2023 02:27:47"}
-{"level":"warn","message": "Solicitando nova tentativa","Date":"16-04-2023 02:27:48"}
-{"level":"warn","message": "Solicitando nova tentativa","Date":"16-04-2023 02:27:48"}
-{"level":"warn","message": "Servidor inciando tentativa de conexão ao banco de dados","Date":"16-04-2023 02:27:52"}
-{"level":"warn","message": "Servidor inciando tentativa de conexão ao banco de dados","Date":"16-04-2023 02:27:52"}
-{"level":"warn","message": "Servidor inciando tentativa de conexão ao banco de dados","Date":"16-04-2023 02:27:53"}
-{"level":"warn","message": "Servidor inciando tentativa de conexão ao banco de dados","Date":"16-04-2023 02:27:53"}
-{"level":"warn","message": "Solicitando nova tentativa","Date":"16-04-2023 02:28:02"}
-{"level":"warn","message": "Solicitando nova tentativa","Date":"16-04-2023 02:28:02"}
-{"level":"warn","message": "Solicitando nova tentativa","Date":"16-04-2023 02:28:03"}
-{"level":"warn","message": "Solicitando nova tentativa","Date":"16-04-2023 02:28:03"}
-{"level":"warn","message": "Servidor inciando tentativa de conexão ao banco de dados","Date":"16-04-2023 02:28:07"}
-{"level":"warn","message": "Servidor inciando tentativa de conexão ao banco de dados","Date":"16-04-2023 02:28:07"}
-{"level":"warn","message": "Servidor inciando tentativa de conexão ao banco de dados","Date":"16-04-2023 02:28:08"}
-{"level":"warn","message": "Servidor inciando tentativa de conexão ao banco de dados","Date":"16-04-2023 02:28:08"}
-{"level":"warn","message": "Solicitando nova tentativa","Date":"16-04-2023 02:28:17"}
-{"level":"warn","message": "Solicitando nova tentativa","Date":"16-04-2023 02:28:17"}
-{"level":"warn","message": "Solicitando nova tentativa","Date":"16-04-2023 02:28:18"}
-{"level":"warn","message": "Solicitando nova tentativa","Date":"16-04-2023 02:28:18"}
-{"level":"warn","message": "Servidor inciando tentativa de conexão ao banco de dados","Date":"16-04-2023 02:28:23"}
-{"level":"warn","message": "Servidor inciando tentativa de conexão ao banco de dados","Date":"16-04-2023 02:28:23"}
-{"level":"warn","message": "Servidor inciando tentativa de conexão ao banco de dados","Date":"16-04-2023 02:28:23"}
-{"level":"warn","message": "Servidor inciando tentativa de conexão ao banco de dados","Date":"16-04-2023 02:28:23"}
-{"level":"warn","message": "Solicitando nova tentativa","Date":"16-04-2023 02:28:33"}
-{"level":"warn","message": "Solicitando nova tentativa","Date":"16-04-2023 02:28:33"}
-{"level":"warn","message": "Solicitando nova tentativa","Date":"16-04-2023 02:28:33"}
-{"level":"warn","message": "Solicitando nova tentativa","Date":"16-04-2023 02:28:33"}
-{"level":"warn","message": "Servidor inciando tentativa de conexão ao banco de dados","Date":"16-04-2023 02:28:38"}
-{"level":"warn","message": "Servidor inciando tentativa de conexão ao banco de dados","Date":"16-04-2023 02:28:38"}
-{"level":"warn","message": "Servidor inciando tentativa de conexão ao banco de dados","Date":"16-04-2023 02:28:38"}
-{"level":"warn","message": "Servidor inciando tentativa de conexão ao banco de dados","Date":"16-04-2023 02:28:38"}
-{"level":"warn","message": "Solicitando nova tentativa","Date":"16-04-2023 02:28:48"}
-{"level":"warn","message": "Solicitando nova tentativa","Date":"16-04-2023 02:28:48"}
-{"level":"warn","message": "Solicitando nova tentativa","Date":"16-04-2023 02:28:48"}
-{"level":"warn","message": "Solicitando nova tentativa","Date":"16-04-2023 02:28:48"}
-{"level":"warn","message": "Servidor inciando tentativa de conexão ao banco de dados","Date":"16-04-2023 02:28:53"}
-{"level":"warn","message": "Servidor inciando tentativa de conexão ao banco de dados","Date":"16-04-2023 02:28:53"}
-{"level":"warn","message": "Servidor inciando tentativa de conexão ao banco de dados","Date":"16-04-2023 02:28:53"}
-{"level":"warn","message": "Servidor inciando tentativa de conexão ao banco de dados","Date":"16-04-2023 02:28:53"}
-{"level":"warn","message": "Solicitando nova tentativa","Date":"16-04-2023 02:29:03"}
-{"level":"warn","message": "Solicitando nova tentativa","Date":"16-04-2023 02:29:03"}
-{"level":"warn","message": "Solicitando nova tentativa","Date":"16-04-2023 02:29:03"}
-{"level":"warn","message": "Solicitando nova tentativa","Date":"16-04-2023 02:29:03"}
-{"level":"warn","message": "Servidor inciando tentativa de conexão ao banco de dados","Date":"16-04-2023 02:29:08"}
-{"level":"warn","message": "Servidor inciando tentativa de conexão ao banco de dados","Date":"16-04-2023 02:29:08"}
-{"level":"warn","message": "Servidor inciando tentativa de conexão ao banco de dados","Date":"16-04-2023 02:29:08"}
-{"level":"warn","message": "Servidor inciando tentativa de conexão ao banco de dados","Date":"16-04-2023 02:29:08"}
-{"level":"warn","message": "Solicitando nova tentativa","Date":"16-04-2023 02:29:18"}
-{"level":"warn","message": "Solicitando nova tentativa","Date":"16-04-2023 02:29:18"}
-{"level":"warn","message": "Solicitando nova tentativa","Date":"16-04-2023 02:29:18"}
-{"level":"warn","message": "Solicitando nova tentativa","Date":"16-04-2023 02:29:18"}
-{"level":"warn","message": "Servidor inciando tentativa de conexão ao banco de dados","Date":"16-04-2023 02:29:23"}
-{"level":"warn","message": "Servidor inciando tentativa de conexão ao banco de dados","Date":"16-04-2023 02:29:23"}
-{"level":"warn","message": "Servidor inciando tentativa de conexão ao banco de dados","Date":"16-04-2023 02:29:23"}
-{"level":"warn","message": "Servidor inciando tentativa de conexão ao banco de dados","Date":"16-04-2023 02:29:23"}
-{"level":"warn","message": "Solicitando nova tentativa","Date":"16-04-2023 02:29:33"}
-{"level":"warn","message": "Solicitando nova tentativa","Date":"16-04-2023 02:29:33"}
-{"level":"warn","message": "Solicitando nova tentativa","Date":"16-04-2023 02:29:33"}
-{"level":"warn","message": "Solicitando nova tentativa","Date":"16-04-2023 02:29:33"}
-{"level":"warn","message": "Servidor inciando tentativa de conexão ao banco de dados","Date":"16-04-2023 02:29:38"}
-{"level":"warn","message": "Servidor inciando tentativa de conexão ao banco de dados","Date":"16-04-2023 02:29:38"}
-{"level":"warn","message": "Servidor inciando tentativa de conexão ao banco de dados","Date":"16-04-2023 02:29:38"}
-{"level":"warn","message": "Servidor inciando tentativa de conexão ao banco de dados","Date":"16-04-2023 02:29:38"}
-{"level":"warn","message": "Solicitando nova tentativa","Date":"16-04-2023 02:29:48"}
-{"level":"warn","message": "Solicitando nova tentativa","Date":"16-04-2023 02:29:48"}
-{"level":"warn","message": "Solicitando nova tentativa","Date":"16-04-2023 02:29:48"}
-{"level":"warn","message": "Solicitando nova tentativa","Date":"16-04-2023 02:29:48"}
-{"level":"warn","message": "Servidor inciando tentativa de conexão ao banco de dados","Date":"16-04-2023 02:29:53"}
-{"level":"warn","message": "Servidor inciando tentativa de conexão ao banco de dados","Date":"16-04-2023 02:29:53"}
-{"level":"warn","message": "Servidor inciando tentativa de conexão ao banco de dados","Date":"16-04-2023 02:29:53"}
-{"level":"warn","message": "Servidor inciando tentativa de conexão ao banco de dados","Date":"16-04-2023 02:29:53"}
-{"level":"warn","message": "Solicitando nova tentativa","Date":"16-04-2023 02:30:03"}
-{"level":"warn","message": "Solicitando nova tentativa","Date":"16-04-2023 02:30:03"}
-{"level":"warn","message": "Solicitando nova tentativa","Date":"16-04-2023 02:30:03"}
-{"level":"warn","message": "Solicitando nova tentativa","Date":"16-04-2023 02:30:03"}
-{"level":"warn","message": "Servidor inciando tentativa de conexão ao banco de dados","Date":"16-04-2023 02:30:08"}
-{"level":"warn","message": "Servidor inciando tentativa de conexão ao banco de dados","Date":"16-04-2023 02:30:08"}
-{"level":"warn","message": "Servidor inciando tentativa de conexão ao banco de dados","Date":"16-04-2023 02:30:08"}
-{"level":"warn","message": "Servidor inciando tentativa de conexão ao banco de dados","Date":"16-04-2023 02:30:08"}
-{"level":"warn","message": "Solicitando nova tentativa","Date":"16-04-2023 02:30:18"}
-{"level":"warn","message": "Solicitando nova tentativa","Date":"16-04-2023 02:30:18"}
-{"level":"warn","message": "Solicitando nova tentativa","Date":"16-04-2023 02:30:18"}
-{"level":"warn","message": "Solicitando nova tentativa","Date":"16-04-2023 02:30:18"}
-{"level":"warn","message": "Servidor inciando tentativa de conexão ao banco de dados","Date":"16-04-2023 02:30:23"}
-{"level":"warn","message": "Servidor inciando tentativa de conexão ao banco de dados","Date":"16-04-2023 02:30:23"}
-{"level":"warn","message": "Servidor inciando tentativa de conexão ao banco de dados","Date":"16-04-2023 02:30:23"}
-{"level":"warn","message": "Servidor inciando tentativa de conexão ao banco de dados","Date":"16-04-2023 02:30:23"}
-{"level":"warn","message": "Solicitando nova tentativa","Date":"16-04-2023 02:30:33"}
-{"level":"warn","message": "Solicitando nova tentativa","Date":"16-04-2023 02:30:33"}
-{"level":"warn","message": "Solicitando nova tentativa","Date":"16-04-2023 02:30:33"}
-{"level":"warn","message": "Solicitando nova tentativa","Date":"16-04-2023 02:30:33"}
-{"level":"warn","message": "Servidor inciando tentativa de conexão ao banco de dados","Date":"16-04-2023 02:30:38"}
-{"level":"warn","message": "Servidor inciando tentativa de conexão ao banco de dados","Date":"16-04-2023 02:30:38"}
-{"level":"warn","message": "Servidor inciando tentativa de conexão ao banco de dados","Date":"16-04-2023 02:30:38"}
-{"level":"warn","message": "Servidor inciando tentativa de conexão ao banco de dados","Date":"16-04-2023 02:30:38"}
-{"level":"warn","message": "Solicitando nova tentativa","Date":"16-04-2023 02:30:48"}
-{"level":"warn","message": "Solicitando nova tentativa","Date":"16-04-2023 02:30:48"}
-{"level":"warn","message": "Solicitando nova tentativa","Date":"16-04-2023 02:30:48"}
-{"level":"warn","message": "Solicitando nova tentativa","Date":"16-04-2023 02:30:48"}
-{"level":"warn","message": "Servidor inciando tentativa de conexão ao banco de dados","Date":"16-04-2023 02:30:53"}
-{"level":"warn","message": "Servidor inciando tentativa de conexão ao banco de dados","Date":"16-04-2023 02:30:53"}
-{"level":"warn","message": "Servidor inciando tentativa de conexão ao banco de dados","Date":"16-04-2023 02:30:53"}
-{"level":"warn","message": "Servidor inciando tentativa de conexão ao banco de dados","Date":"16-04-2023 02:30:53"}
-{"level":"warn","message": "Solicitando nova tentativa","Date":"16-04-2023 02:31:03"}
-{"level":"warn","message": "Solicitando nova tentativa","Date":"16-04-2023 02:31:03"}
-{"level":"warn","message": "Solicitando nova tentativa","Date":"16-04-2023 02:31:03"}
-{"level":"warn","message": "Solicitando nova tentativa","Date":"16-04-2023 02:31:03"}
-{"level":"warn","message": "Servidor inciando tentativa de conexão ao banco de dados","Date":"16-04-2023 02:31:08"}
-{"level":"warn","message": "Servidor inciando tentativa de conexão ao banco de dados","Date":"16-04-2023 02:31:08"}
-{"level":"warn","message": "Servidor inciando tentativa de conexão ao banco de dados","Date":"16-04-2023 02:31:08"}
-{"level":"warn","message": "Servidor inciando tentativa de conexão ao banco de dados","Date":"16-04-2023 02:31:08"}
-{"level":"warn","message": "Solicitando nova tentativa","Date":"16-04-2023 02:31:18"}
-{"level":"warn","message": "Solicitando nova tentativa","Date":"16-04-2023 02:31:18"}
-{"level":"warn","message": "Solicitando nova tentativa","Date":"16-04-2023 02:31:18"}
-{"level":"warn","message": "Solicitando nova tentativa","Date":"16-04-2023 02:31:18"}
-{"level":"warn","message": "Servidor inciando tentativa de conexão ao banco de dados","Date":"16-04-2023 02:31:23"}
-{"level":"warn","message": "Servidor inciando tentativa de conexão ao banco de dados","Date":"16-04-2023 02:31:23"}
-{"level":"warn","message": "Servidor inciando tentativa de conexão ao banco de dados","Date":"16-04-2023 02:31:23"}
-{"level":"warn","message": "Servidor inciando tentativa de conexão ao banco de dados","Date":"16-04-2023 02:31:23"}
-{"level":"warn","message": "Solicitando nova tentativa","Date":"16-04-2023 02:31:33"}
-{"level":"warn","message": "Solicitando nova tentativa","Date":"16-04-2023 02:31:33"}
-{"level":"warn","message": "Solicitando nova tentativa","Date":"16-04-2023 02:31:33"}
-{"level":"warn","message": "Solicitando nova tentativa","Date":"16-04-2023 02:31:33"}
-{"level":"warn","message": "Servidor inciando tentativa de conexão ao banco de dados","Date":"16-04-2023 02:31:38"}
-{"level":"warn","message": "Servidor inciando tentativa de conexão ao banco de dados","Date":"16-04-2023 02:31:38"}
-{"level":"warn","message": "Servidor inciando tentativa de conexão ao banco de dados","Date":"16-04-2023 02:31:38"}
-{"level":"warn","message": "Servidor inciando tentativa de conexão ao banco de dados","Date":"16-04-2023 02:31:38"}
-{"level":"warn","message": "Solicitando nova tentativa","Date":"16-04-2023 02:31:48"}
-{"level":"warn","message": "Solicitando nova tentativa","Date":"16-04-2023 02:31:48"}
-{"level":"warn","message": "Solicitando nova tentativa","Date":"16-04-2023 02:31:48"}
-{"level":"warn","message": "Solicitando nova tentativa","Date":"16-04-2023 02:31:48"}
-{"level":"warn","message": "Servidor inciando tentativa de conexão ao banco de dados","Date":"16-04-2023 02:31:53"}
-{"level":"warn","message": "Servidor inciando tentativa de conexão ao banco de dados","Date":"16-04-2023 02:31:53"}
-{"level":"warn","message": "Servidor inciando tentativa de conexão ao banco de dados","Date":"16-04-2023 02:31:53"}
-{"level":"warn","message": "Servidor inciando tentativa de conexão ao banco de dados","Date":"16-04-2023 02:31:53"}
-{"level":"warn","message": "Solicitando nova tentativa","Date":"16-04-2023 02:32:03"}
-{"level":"warn","message": "Solicitando nova tentativa","Date":"16-04-2023 02:32:03"}
-{"level":"warn","message": "Solicitando nova tentativa","Date":"16-04-2023 02:32:03"}
-{"level":"warn","message": "Solicitando nova tentativa","Date":"16-04-2023 02:32:03"}
-{"level":"warn","message": "Servidor inciando tentativa de conexão ao banco de dados","Date":"16-04-2023 02:32:08"}
-{"level":"warn","message": "Servidor inciando tentativa de conexão ao banco de dados","Date":"16-04-2023 02:32:08"}
-{"level":"warn","message": "Servidor inciando tentativa de conexão ao banco de dados","Date":"16-04-2023 02:32:08"}
-{"level":"warn","message": "Servidor inciando tentativa de conexão ao banco de dados","Date":"16-04-2023 02:32:08"}
-{"level":"warn","message": "Solicitando nova tentativa","Date":"16-04-2023 02:32:18"}
-{"level":"warn","message": "Solicitando nova tentativa","Date":"16-04-2023 02:32:18"}
-{"level":"warn","message": "Solicitando nova tentativa","Date":"16-04-2023 02:32:18"}
-{"level":"warn","message": "Solicitando nova tentativa","Date":"16-04-2023 02:32:18"}
-{"level":"warn","message": "Servidor inciando tentativa de conexão ao banco de dados","Date":"16-04-2023 02:32:23"}
-{"level":"warn","message": "Servidor inciando tentativa de conexão ao banco de dados","Date":"16-04-2023 02:32:23"}
-{"level":"warn","message": "Servidor inciando tentativa de conexão ao banco de dados","Date":"16-04-2023 02:32:23"}
-{"level":"warn","message": "Servidor inciando tentativa de conexão ao banco de dados","Date":"16-04-2023 02:32:23"}
-{"level":"warn","message": "Solicitando nova tentativa","Date":"16-04-2023 02:32:33"}
-{"level":"warn","message": "Solicitando nova tentativa","Date":"16-04-2023 02:32:33"}
-{"level":"warn","message": "Solicitando nova tentativa","Date":"16-04-2023 02:32:33"}
-{"level":"warn","message": "Solicitando nova tentativa","Date":"16-04-2023 02:32:33"}
-{"level":"warn","message": "Servidor inciando tentativa de conexão ao banco de dados","Date":"16-04-2023 02:32:38"}
-{"level":"warn","message": "Servidor inciando tentativa de conexão ao banco de dados","Date":"16-04-2023 02:32:38"}
-{"level":"warn","message": "Servidor inciando tentativa de conexão ao banco de dados","Date":"16-04-2023 02:32:38"}
-{"level":"warn","message": "Servidor inciando tentativa de conexão ao banco de dados","Date":"16-04-2023 02:32:38"}
-{"level":"warn","message": "Solicitando nova tentativa","Date":"16-04-2023 02:32:48"}
-{"level":"warn","message": "Solicitando nova tentativa","Date":"16-04-2023 02:32:48"}
-{"level":"warn","message": "Solicitando nova tentativa","Date":"16-04-2023 02:32:48"}
-{"level":"warn","message": "Solicitando nova tentativa","Date":"16-04-2023 02:32:48"}
-{"level":"warn","message": "Servidor inciando tentativa de conexão ao banco de dados","Date":"16-04-2023 02:32:53"}
-{"level":"warn","message": "Servidor inciando tentativa de conexão ao banco de dados","Date":"16-04-2023 02:32:53"}
-{"level":"warn","message": "Servidor inciando tentativa de conexão ao banco de dados","Date":"16-04-2023 02:32:53"}
-{"level":"warn","message": "Servidor inciando tentativa de conexão ao banco de dados","Date":"16-04-2023 02:32:53"}
-{"level":"warn","message": "Solicitando nova tentativa","Date":"16-04-2023 02:33:03"}
-{"level":"warn","message": "Solicitando nova tentativa","Date":"16-04-2023 02:33:03"}
-{"level":"warn","message": "Solicitando nova tentativa","Date":"16-04-2023 02:33:03"}
-{"level":"warn","message": "Solicitando nova tentativa","Date":"16-04-2023 02:33:03"}
-{"level":"warn","message": "Servidor inciando tentativa de conexão ao banco de dados","Date":"16-04-2023 02:33:08"}
-{"level":"warn","message": "Servidor inciando tentativa de conexão ao banco de dados","Date":"16-04-2023 02:33:08"}
-{"level":"warn","message": "Servidor inciando tentativa de conexão ao banco de dados","Date":"16-04-2023 02:33:08"}
-{"level":"warn","message": "Servidor inciando tentativa de conexão ao banco de dados","Date":"16-04-2023 02:33:08"}
-{"level":"warn","message": "Solicitando nova tentativa","Date":"16-04-2023 02:33:18"}
-{"level":"warn","message": "Solicitando nova tentativa","Date":"16-04-2023 02:33:18"}
-{"level":"warn","message": "Solicitando nova tentativa","Date":"16-04-2023 02:33:18"}
-{"level":"warn","message": "Solicitando nova tentativa","Date":"16-04-2023 02:33:18"}
-{"level":"warn","message": "Servidor inciando tentativa de conexão ao banco de dados","Date":"16-04-2023 02:33:23"}
-{"level":"warn","message": "Servidor inciando tentativa de conexão ao banco de dados","Date":"16-04-2023 02:33:23"}
-{"level":"warn","message": "Servidor inciando tentativa de conexão ao banco de dados","Date":"16-04-2023 02:33:23"}
-{"level":"warn","message": "Servidor inciando tentativa de conexão ao banco de dados","Date":"16-04-2023 02:33:23"}
-{"level":"warn","message": "Solicitando nova tentativa","Date":"16-04-2023 02:33:33"}
-{"level":"warn","message": "Solicitando nova tentativa","Date":"16-04-2023 02:33:33"}
-{"level":"warn","message": "Solicitando nova tentativa","Date":"16-04-2023 02:33:33"}
-{"level":"warn","message": "Solicitando nova tentativa","Date":"16-04-2023 02:33:33"}
-{"level":"warn","message": "Servidor inciando tentativa de conexão ao banco de dados","Date":"16-04-2023 02:33:38"}
-{"level":"warn","message": "Servidor inciando tentativa de conexão ao banco de dados","Date":"16-04-2023 02:33:38"}
-{"level":"warn","message": "Servidor inciando tentativa de conexão ao banco de dados","Date":"16-04-2023 02:33:38"}
-{"level":"warn","message": "Servidor inciando tentativa de conexão ao banco de dados","Date":"16-04-2023 02:33:38"}
-{"level":"warn","message": "Solicitando nova tentativa","Date":"16-04-2023 02:33:48"}
-{"level":"warn","message": "Solicitando nova tentativa","Date":"16-04-2023 02:33:48"}
-{"level":"warn","message": "Solicitando nova tentativa","Date":"16-04-2023 02:33:48"}
-{"level":"warn","message": "Solicitando nova tentativa","Date":"16-04-2023 02:33:48"}
-{"level":"warn","message": "Servidor inciando tentativa de conexão ao banco de dados","Date":"16-04-2023 02:33:53"}
-{"level":"warn","message": "Servidor inciando tentativa de conexão ao banco de dados","Date":"16-04-2023 02:33:53"}
-{"level":"warn","message": "Servidor inciando tentativa de conexão ao banco de dados","Date":"16-04-2023 02:33:53"}
-{"level":"warn","message": "Servidor inciando tentativa de conexão ao banco de dados","Date":"16-04-2023 02:33:53"}
-{"level":"warn","message": "Solicitando nova tentativa","Date":"16-04-2023 02:34:03"}
-{"level":"warn","message": "Solicitando nova tentativa","Date":"16-04-2023 02:34:03"}
-{"level":"warn","message": "Solicitando nova tentativa","Date":"16-04-2023 02:34:03"}
-{"level":"warn","message": "Solicitando nova tentativa","Date":"16-04-2023 02:34:03"}
-{"level":"warn","message": "Servidor inciando tentativa de conexão ao banco de dados","Date":"16-04-2023 02:34:08"}
-{"level":"warn","message": "Servidor inciando tentativa de conexão ao banco de dados","Date":"16-04-2023 02:34:08"}
-{"level":"warn","message": "Servidor inciando tentativa de conexão ao banco de dados","Date":"16-04-2023 02:34:08"}
-{"level":"warn","message": "Servidor inciando tentativa de conexão ao banco de dados","Date":"16-04-2023 02:34:08"}
-{"level":"warn","message": "Solicitando nova tentativa","Date":"16-04-2023 02:34:18"}
-{"level":"warn","message": "Solicitando nova tentativa","Date":"16-04-2023 02:34:18"}
-{"level":"warn","message": "Solicitando nova tentativa","Date":"16-04-2023 02:34:18"}
-{"level":"warn","message": "Solicitando nova tentativa","Date":"16-04-2023 02:34:18"}
-{"level":"warn","message": "Servidor inciando tentativa de conexão ao banco de dados","Date":"16-04-2023 02:34:23"}
-{"level":"warn","message": "Servidor inciando tentativa de conexão ao banco de dados","Date":"16-04-2023 02:34:23"}
-{"level":"warn","message": "Servidor inciando tentativa de conexão ao banco de dados","Date":"16-04-2023 02:34:23"}
-{"level":"warn","message": "Servidor inciando tentativa de conexão ao banco de dados","Date":"16-04-2023 02:34:23"}
-{"level":"warn","message": "Solicitando nova tentativa","Date":"16-04-2023 02:34:33"}
-{"level":"warn","message": "Solicitando nova tentativa","Date":"16-04-2023 02:34:33"}
-{"level":"warn","message": "Solicitando nova tentativa","Date":"16-04-2023 02:34:33"}
-{"level":"warn","message": "Solicitando nova tentativa","Date":"16-04-2023 02:34:33"}
-{"level":"warn","message": "Servidor inciando tentativa de conexão ao banco de dados","Date":"16-04-2023 02:34:38"}
-{"level":"warn","message": "Servidor inciando tentativa de conexão ao banco de dados","Date":"16-04-2023 02:34:38"}
-{"level":"warn","message": "Servidor inciando tentativa de conexão ao banco de dados","Date":"16-04-2023 02:34:38"}
-{"level":"warn","message": "Servidor inciando tentativa de conexão ao banco de dados","Date":"16-04-2023 02:34:38"}
-{"level":"warn","message": "Solicitando nova tentativa","Date":"16-04-2023 02:34:48"}
-{"level":"warn","message": "Solicitando nova tentativa","Date":"16-04-2023 02:34:48"}
-{"level":"warn","message": "Solicitando nova tentativa","Date":"16-04-2023 02:34:48"}
-{"level":"warn","message": "Solicitando nova tentativa","Date":"16-04-2023 02:34:48"}
-{"level":"warn","message": "Servidor inciando tentativa de conexão ao banco de dados","Date":"16-04-2023 02:34:53"}
-{"level":"warn","message": "Servidor inciando tentativa de conexão ao banco de dados","Date":"16-04-2023 02:34:53"}
-{"level":"warn","message": "Servidor inciando tentativa de conexão ao banco de dados","Date":"16-04-2023 02:34:53"}
-{"level":"warn","message": "Servidor inciando tentativa de conexão ao banco de dados","Date":"16-04-2023 02:34:53"}
-{"level":"warn","message": "Solicitando nova tentativa","Date":"16-04-2023 02:35:03"}
-{"level":"warn","message": "Solicitando nova tentativa","Date":"16-04-2023 02:35:03"}
-{"level":"warn","message": "Solicitando nova tentativa","Date":"16-04-2023 02:35:03"}
-{"level":"warn","message": "Solicitando nova tentativa","Date":"16-04-2023 02:35:03"}
-{"level":"warn","message": "Servidor inciando tentativa de conexão ao banco de dados","Date":"16-04-2023 02:35:08"}
-{"level":"warn","message": "Servidor inciando tentativa de conexão ao banco de dados","Date":"16-04-2023 02:35:08"}
-{"level":"warn","message": "Servidor inciando tentativa de conexão ao banco de dados","Date":"16-04-2023 02:35:08"}
-{"level":"warn","message": "Servidor inciando tentativa de conexão ao banco de dados","Date":"16-04-2023 02:35:08"}
-{"level":"warn","message": "Solicitando nova tentativa","Date":"16-04-2023 02:35:18"}
-{"level":"warn","message": "Solicitando nova tentativa","Date":"16-04-2023 02:35:18"}
-{"level":"warn","message": "Solicitando nova tentativa","Date":"16-04-2023 02:35:18"}
-{"level":"warn","message": "Solicitando nova tentativa","Date":"16-04-2023 02:35:18"}
-{"level":"warn","message": "Servidor inciando tentativa de conexão ao banco de dados","Date":"16-04-2023 02:35:23"}
-{"level":"warn","message": "Servidor inciando tentativa de conexão ao banco de dados","Date":"16-04-2023 02:35:23"}
-{"level":"warn","message": "Servidor inciando tentativa de conexão ao banco de dados","Date":"16-04-2023 02:35:23"}
-{"level":"warn","message": "Servidor inciando tentativa de conexão ao banco de dados","Date":"16-04-2023 02:35:23"}
-{"level":"warn","message": "Solicitando nova tentativa","Date":"16-04-2023 02:35:33"}
-{"level":"warn","message": "Solicitando nova tentativa","Date":"16-04-2023 02:35:33"}
-{"level":"warn","message": "Solicitando nova tentativa","Date":"16-04-2023 02:35:33"}
-{"level":"warn","message": "Solicitando nova tentativa","Date":"16-04-2023 02:35:33"}
-{"level":"warn","message": "Servidor inciando tentativa de conexão ao banco de dados","Date":"16-04-2023 02:35:38"}
-{"level":"warn","message": "Servidor inciando tentativa de conexão ao banco de dados","Date":"16-04-2023 02:35:38"}
-{"level":"warn","message": "Servidor inciando tentativa de conexão ao banco de dados","Date":"16-04-2023 02:35:38"}
-{"level":"warn","message": "Servidor inciando tentativa de conexão ao banco de dados","Date":"16-04-2023 02:35:38"}
-{"level":"warn","message": "Solicitando nova tentativa","Date":"16-04-2023 02:35:48"}
-{"level":"warn","message": "Solicitando nova tentativa","Date":"16-04-2023 02:35:48"}
-{"level":"warn","message": "Solicitando nova tentativa","Date":"16-04-2023 02:35:48"}
-{"level":"warn","message": "Solicitando nova tentativa","Date":"16-04-2023 02:35:48"}
-{"level":"warn","message": "Servidor inciando tentativa de conexão ao banco de dados","Date":"16-04-2023 02:35:53"}
-{"level":"warn","message": "Servidor inciando tentativa de conexão ao banco de dados","Date":"16-04-2023 02:35:53"}
-{"level":"warn","message": "Servidor inciando tentativa de conexão ao banco de dados","Date":"16-04-2023 02:35:53"}
-{"level":"warn","message": "Servidor inciando tentativa de conexão ao banco de dados","Date":"16-04-2023 02:35:53"}
-{"level":"warn","message": "Solicitando nova tentativa","Date":"16-04-2023 02:36:03"}
-{"level":"warn","message": "Solicitando nova tentativa","Date":"16-04-2023 02:36:03"}
-{"level":"warn","message": "Solicitando nova tentativa","Date":"16-04-2023 02:36:03"}
-{"level":"warn","message": "Solicitando nova tentativa","Date":"16-04-2023 02:36:03"}
-{"level":"warn","message": "Servidor inciando tentativa de conexão ao banco de dados","Date":"16-04-2023 02:36:08"}
-{"level":"warn","message": "Servidor inciando tentativa de conexão ao banco de dados","Date":"16-04-2023 02:36:08"}
-{"level":"warn","message": "Servidor inciando tentativa de conexão ao banco de dados","Date":"16-04-2023 02:36:08"}
-{"level":"warn","message": "Servidor inciando tentativa de conexão ao banco de dados","Date":"16-04-2023 02:36:08"}
-{"level":"warn","message": "Solicitando nova tentativa","Date":"16-04-2023 02:36:18"}
-{"level":"warn","message": "Solicitando nova tentativa","Date":"16-04-2023 02:36:18"}
-{"level":"warn","message": "Solicitando nova tentativa","Date":"16-04-2023 02:36:18"}
-{"level":"warn","message": "Solicitando nova tentativa","Date":"16-04-2023 02:36:18"}
-{"level":"warn","message": "Servidor inciando tentativa de conexão ao banco de dados","Date":"16-04-2023 02:36:23"}
-{"level":"warn","message": "Servidor inciando tentativa de conexão ao banco de dados","Date":"16-04-2023 02:36:23"}
-{"level":"warn","message": "Servidor inciando tentativa de conexão ao banco de dados","Date":"16-04-2023 02:36:23"}
-{"level":"warn","message": "Servidor inciando tentativa de conexão ao banco de dados","Date":"16-04-2023 02:36:23"}
-{"level":"warn","message": "Solicitando nova tentativa","Date":"16-04-2023 02:36:33"}
-{"level":"warn","message": "Solicitando nova tentativa","Date":"16-04-2023 02:36:33"}
-{"level":"warn","message": "Solicitando nova tentativa","Date":"16-04-2023 02:36:33"}
-{"level":"warn","message": "Solicitando nova tentativa","Date":"16-04-2023 02:36:33"}
-{"level":"warn","message": "Servidor inciando tentativa de conexão ao banco de dados","Date":"16-04-2023 02:36:38"}
-{"level":"warn","message": "Servidor inciando tentativa de conexão ao banco de dados","Date":"16-04-2023 02:36:38"}
-{"level":"warn","message": "Servidor inciando tentativa de conexão ao banco de dados","Date":"16-04-2023 02:36:38"}
-{"level":"warn","message": "Servidor inciando tentativa de conexão ao banco de dados","Date":"16-04-2023 02:36:38"}
-{"level":"warn","message": "Solicitando nova tentativa","Date":"16-04-2023 02:36:48"}
-{"level":"warn","message": "Solicitando nova tentativa","Date":"16-04-2023 02:36:48"}
-{"level":"warn","message": "Solicitando nova tentativa","Date":"16-04-2023 02:36:48"}
-{"level":"warn","message": "Solicitando nova tentativa","Date":"16-04-2023 02:36:48"}
-{"level":"warn","message": "Servidor inciando tentativa de conexão ao banco de dados","Date":"16-04-2023 02:36:53"}
-{"level":"warn","message": "Servidor inciando tentativa de conexão ao banco de dados","Date":"16-04-2023 02:36:53"}
-{"level":"warn","message": "Servidor inciando tentativa de conexão ao banco de dados","Date":"16-04-2023 02:36:53"}
-{"level":"warn","message": "Servidor inciando tentativa de conexão ao banco de dados","Date":"16-04-2023 02:36:53"}
-{"level":"warn","message": "Solicitando nova tentativa","Date":"16-04-2023 02:37:03"}
-{"level":"warn","message": "Solicitando nova tentativa","Date":"16-04-2023 02:37:03"}
-{"level":"warn","message": "Solicitando nova tentativa","Date":"16-04-2023 02:37:03"}
-{"level":"warn","message": "Solicitando nova tentativa","Date":"16-04-2023 02:37:03"}
-{"level":"warn","message": "Servidor inciando tentativa de conexão ao banco de dados","Date":"16-04-2023 02:37:08"}
-{"level":"warn","message": "Servidor inciando tentativa de conexão ao banco de dados","Date":"16-04-2023 02:37:08"}
-{"level":"warn","message": "Servidor inciando tentativa de conexão ao banco de dados","Date":"16-04-2023 02:37:08"}
-{"level":"warn","message": "Servidor inciando tentativa de conexão ao banco de dados","Date":"16-04-2023 02:37:08"}
-{"level":"warn","message": "Solicitando nova tentativa","Date":"16-04-2023 02:37:18"}
-{"level":"warn","message": "Solicitando nova tentativa","Date":"16-04-2023 02:37:18"}
-{"level":"warn","message": "Solicitando nova tentativa","Date":"16-04-2023 02:37:18"}
-{"level":"warn","message": "Solicitando nova tentativa","Date":"16-04-2023 02:37:18"}
-{"level":"warn","message": "Servidor inciando tentativa de conexão ao banco de dados","Date":"16-04-2023 02:37:23"}
-{"level":"warn","message": "Servidor inciando tentativa de conexão ao banco de dados","Date":"16-04-2023 02:37:23"}
-{"level":"warn","message": "Servidor inciando tentativa de conexão ao banco de dados","Date":"16-04-2023 02:37:23"}
-{"level":"warn","message": "Servidor inciando tentativa de conexão ao banco de dados","Date":"16-04-2023 02:37:23"}
-{"level":"warn","message": "Solicitando nova tentativa","Date":"16-04-2023 02:37:33"}
-{"level":"warn","message": "Solicitando nova tentativa","Date":"16-04-2023 02:37:33"}
-{"level":"warn","message": "Solicitando nova tentativa","Date":"16-04-2023 02:37:33"}
-{"level":"warn","message": "Solicitando nova tentativa","Date":"16-04-2023 02:37:33"}
-{"level":"warn","message": "Servidor inciando tentativa de conexão ao banco de dados","Date":"16-04-2023 02:37:38"}
-{"level":"warn","message": "Servidor inciando tentativa de conexão ao banco de dados","Date":"16-04-2023 02:37:38"}
-{"level":"warn","message": "Servidor inciando tentativa de conexão ao banco de dados","Date":"16-04-2023 02:37:38"}
-{"level":"warn","message": "Servidor inciando tentativa de conexão ao banco de dados","Date":"16-04-2023 02:37:38"}
-{"level":"warn","message": "Solicitando nova tentativa","Date":"16-04-2023 02:37:48"}
-{"level":"warn","message": "Solicitando nova tentativa","Date":"16-04-2023 02:37:48"}
-{"level":"warn","message": "Solicitando nova tentativa","Date":"16-04-2023 02:37:48"}
-{"level":"warn","message": "Solicitando nova tentativa","Date":"16-04-2023 02:37:48"}
-{"level":"warn","message": "Servidor inciando tentativa de conexão ao banco de dados","Date":"16-04-2023 02:37:53"}
-{"level":"warn","message": "Servidor inciando tentativa de conexão ao banco de dados","Date":"16-04-2023 02:37:53"}
-{"level":"warn","message": "Servidor inciando tentativa de conexão ao banco de dados","Date":"16-04-2023 02:37:53"}
-{"level":"warn","message": "Servidor inciando tentativa de conexão ao banco de dados","Date":"16-04-2023 02:37:53"}
-{"level":"warn","message": "Solicitando nova tentativa","Date":"16-04-2023 02:38:03"}
-{"level":"warn","message": "Solicitando nova tentativa","Date":"16-04-2023 02:38:03"}
-{"level":"warn","message": "Solicitando nova tentativa","Date":"16-04-2023 02:38:03"}
-{"level":"warn","message": "Solicitando nova tentativa","Date":"16-04-2023 02:38:03"}
-{"level":"warn","message": "Servidor inciando tentativa de conexão ao banco de dados","Date":"16-04-2023 02:38:08"}
-{"level":"warn","message": "Servidor inciando tentativa de conexão ao banco de dados","Date":"16-04-2023 02:38:08"}
-{"level":"warn","message": "Servidor inciando tentativa de conexão ao banco de dados","Date":"16-04-2023 02:38:08"}
-{"level":"warn","message": "Servidor inciando tentativa de conexão ao banco de dados","Date":"16-04-2023 02:38:08"}
-{"level":"warn","message": "Solicitando nova tentativa","Date":"16-04-2023 02:38:18"}
-{"level":"warn","message": "Solicitando nova tentativa","Date":"16-04-2023 02:38:18"}
-{"level":"warn","message": "Solicitando nova tentativa","Date":"16-04-2023 02:38:18"}
-{"level":"warn","message": "Solicitando nova tentativa","Date":"16-04-2023 02:38:18"}
-{"level":"warn","message": "Servidor inciando tentativa de conexão ao banco de dados","Date":"16-04-2023 02:38:23"}
-{"level":"warn","message": "Servidor inciando tentativa de conexão ao banco de dados","Date":"16-04-2023 02:38:23"}
-{"level":"warn","message": "Servidor inciando tentativa de conexão ao banco de dados","Date":"16-04-2023 02:38:23"}
-{"level":"warn","message": "Servidor inciando tentativa de conexão ao banco de dados","Date":"16-04-2023 02:38:23"}
-{"level":"warn","message": "Solicitando nova tentativa","Date":"16-04-2023 02:38:33"}
-{"level":"warn","message": "Solicitando nova tentativa","Date":"16-04-2023 02:38:33"}
-{"level":"warn","message": "Solicitando nova tentativa","Date":"16-04-2023 02:38:33"}
-{"level":"warn","message": "Solicitando nova tentativa","Date":"16-04-2023 02:38:33"}
-{"level":"warn","message": "Servidor inciando tentativa de conexão ao banco de dados","Date":"16-04-2023 02:38:38"}
-{"level":"warn","message": "Servidor inciando tentativa de conexão ao banco de dados","Date":"16-04-2023 02:38:38"}
-{"level":"warn","message": "Servidor inciando tentativa de conexão ao banco de dados","Date":"16-04-2023 02:38:38"}
-{"level":"warn","message": "Servidor inciando tentativa de conexão ao banco de dados","Date":"16-04-2023 02:38:38"}
-{"level":"warn","message": "Solicitando nova tentativa","Date":"16-04-2023 02:38:48"}
-{"level":"warn","message": "Solicitando nova tentativa","Date":"16-04-2023 02:38:48"}
-{"level":"warn","message": "Solicitando nova tentativa","Date":"16-04-2023 02:38:48"}
-{"level":"warn","message": "Solicitando nova tentativa","Date":"16-04-2023 02:38:48"}
-{"level":"warn","message": "Servidor inciando tentativa de conexão ao banco de dados","Date":"16-04-2023 02:38:53"}
-{"level":"warn","message": "Servidor inciando tentativa de conexão ao banco de dados","Date":"16-04-2023 02:38:53"}
-{"level":"warn","message": "Servidor inciando tentativa de conexão ao banco de dados","Date":"16-04-2023 02:38:53"}
-{"level":"warn","message": "Servidor inciando tentativa de conexão ao banco de dados","Date":"16-04-2023 02:38:53"}
-{"level":"warn","message": "Solicitando nova tentativa","Date":"16-04-2023 02:39:03"}
-{"level":"warn","message": "Solicitando nova tentativa","Date":"16-04-2023 02:39:03"}
-{"level":"warn","message": "Solicitando nova tentativa","Date":"16-04-2023 02:39:03"}
-{"level":"warn","message": "Solicitando nova tentativa","Date":"16-04-2023 02:39:03"}
-{"level":"warn","message": "Servidor inciando tentativa de conexão ao banco de dados","Date":"16-04-2023 02:39:08"}
-{"level":"warn","message": "Servidor inciando tentativa de conexão ao banco de dados","Date":"16-04-2023 02:39:08"}
-{"level":"warn","message": "Servidor inciando tentativa de conexão ao banco de dados","Date":"16-04-2023 02:39:08"}
-{"level":"warn","message": "Servidor inciando tentativa de conexão ao banco de dados","Date":"16-04-2023 02:39:08"}
-{"level":"warn","message": "Solicitando nova tentativa","Date":"16-04-2023 02:39:18"}
-{"level":"warn","message": "Solicitando nova tentativa","Date":"16-04-2023 02:39:18"}
-{"level":"warn","message": "Solicitando nova tentativa","Date":"16-04-2023 02:39:18"}
-{"level":"warn","message": "Solicitando nova tentativa","Date":"16-04-2023 02:39:18"}
-{"level":"warn","message": "9413 is started","Date":"16-04-2023 02:39:28"}
-{"level":"warn","message": "9413 is started","Date":"16-04-2023 02:39:28"}
-{"level":"warn","message": "9413 is started","Date":"16-04-2023 02:39:28"}
-{"level":"warn","message": "9413 is started","Date":"16-04-2023 02:39:28"}
-{"level":"warn","message": "9661 is started","Date":"16-04-2023 02:40:58"}
-{"level":"warn","message": "9661 is started","Date":"16-04-2023 02:40:58"}
-{"level":"warn","message": "9661 is started","Date":"16-04-2023 02:40:58"}
-{"level":"warn","message": "9661 is started","Date":"16-04-2023 02:40:58"}
-{"level":"warn","message": "Servidor inciando tentativa de conexão ao banco de dados","Date":"16-04-2023 02:40:59"}
-{"level":"warn","message": "Servidor inciando tentativa de conexão ao banco de dados","Date":"16-04-2023 02:40:59"}
-{"level":"warn","message": "Servidor inciando tentativa de conexão ao banco de dados","Date":"16-04-2023 02:40:59"}
-{"level":"warn","message": "Servidor inciando tentativa de conexão ao banco de dados","Date":"16-04-2023 02:40:59"}
-{"level":"warn","message": "10531 is started","Date":"16-04-2023 02:57:08"}
-{"level":"warn","message": "10531 is started","Date":"16-04-2023 02:57:08"}
-{"level":"warn","message": "10531 is started","Date":"16-04-2023 02:57:08"}
-{"level":"warn","message": "10531 is started","Date":"16-04-2023 02:57:08"}
-{"level":"warn","message": "Servidor inciando tentativa de conexão ao banco de dados","Date":"16-04-2023 02:57:10"}
-{"level":"warn","message": "Servidor inciando tentativa de conexão ao banco de dados","Date":"16-04-2023 02:57:10"}
-{"level":"warn","message": "Servidor inciando tentativa de conexão ao banco de dados","Date":"16-04-2023 02:57:10"}
-{"level":"warn","message": "Servidor inciando tentativa de conexão ao banco de dados","Date":"16-04-2023 02:57:10"}
-{"level":"warn","message": "Solicitando nova tentativa","Date":"16-04-2023 02:57:20"}
-{"level":"warn","message": "Solicitando nova tentativa","Date":"16-04-2023 02:57:20"}
-{"level":"warn","message": "Solicitando nova tentativa","Date":"16-04-2023 02:57:20"}
-{"level":"warn","message": "Solicitando nova tentativa","Date":"16-04-2023 02:57:20"}
-{"level":"warn","message": "Servidor inciando tentativa de conexão ao banco de dados","Date":"16-04-2023 02:57:25"}
-{"level":"warn","message": "Servidor inciando tentativa de conexão ao banco de dados","Date":"16-04-2023 02:57:25"}
-{"level":"warn","message": "Servidor inciando tentativa de conexão ao banco de dados","Date":"16-04-2023 02:57:25"}
-{"level":"warn","message": "Servidor inciando tentativa de conexão ao banco de dados","Date":"16-04-2023 02:57:25"}
-{"level":"warn","message": "Solicitando nova tentativa","Date":"16-04-2023 02:57:35"}
-{"level":"warn","message": "Solicitando nova tentativa","Date":"16-04-2023 02:57:35"}
-{"level":"warn","message": "Solicitando nova tentativa","Date":"16-04-2023 02:57:35"}
-{"level":"warn","message": "Solicitando nova tentativa","Date":"16-04-2023 02:57:35"}
-{"level":"warn","message": "10847 is started","Date":"16-04-2023 02:58:04"}
-{"level":"warn","message": "10847 is started","Date":"16-04-2023 02:58:04"}
-{"level":"warn","message": "10847 is started","Date":"16-04-2023 02:58:04"}
-{"level":"warn","message": "10847 is started","Date":"16-04-2023 02:58:04"}
-{"level":"warn","message": "Servidor inciando tentativa de conexão ao banco de dados","Date":"16-04-2023 02:58:06"}
-{"level":"warn","message": "Servidor inciando tentativa de conexão ao banco de dados","Date":"16-04-2023 02:58:06"}
-{"level":"warn","message": "Servidor inciando tentativa de conexão ao banco de dados","Date":"16-04-2023 02:58:06"}
-{"level":"warn","message": "Servidor inciando tentativa de conexão ao banco de dados","Date":"16-04-2023 02:58:06"}
-{"level":"warn","message": "Solicitando nova tentativa","Date":"16-04-2023 02:58:16"}
-{"level":"warn","message": "Solicitando nova tentativa","Date":"16-04-2023 02:58:16"}
-{"level":"warn","message": "Solicitando nova tentativa","Date":"16-04-2023 02:58:16"}
-{"level":"warn","message": "Solicitando nova tentativa","Date":"16-04-2023 02:58:16"}
-{"level":"warn","message": "Servidor inciando tentativa de conexão ao banco de dados","Date":"16-04-2023 02:58:21"}
-{"level":"warn","message": "Servidor inciando tentativa de conexão ao banco de dados","Date":"16-04-2023 02:58:21"}
-{"level":"warn","message": "Servidor inciando tentativa de conexão ao banco de dados","Date":"16-04-2023 02:58:21"}
-{"level":"warn","message": "Servidor inciando tentativa de conexão ao banco de dados","Date":"16-04-2023 02:58:21"}
-{"level":"warn","message": "Solicitando nova tentativa","Date":"16-04-2023 02:58:31"}
-{"level":"warn","message": "Solicitando nova tentativa","Date":"16-04-2023 02:58:31"}
-{"level":"warn","message": "Solicitando nova tentativa","Date":"16-04-2023 02:58:31"}
-{"level":"warn","message": "Solicitando nova tentativa","Date":"16-04-2023 02:58:31"}
-{"level":"warn","message": "Servidor inciando tentativa de conexão ao banco de dados","Date":"16-04-2023 02:58:36"}
-{"level":"warn","message": "Servidor inciando tentativa de conexão ao banco de dados","Date":"16-04-2023 02:58:36"}
-{"level":"warn","message": "Servidor inciando tentativa de conexão ao banco de dados","Date":"16-04-2023 02:58:36"}
-{"level":"warn","message": "Servidor inciando tentativa de conexão ao banco de dados","Date":"16-04-2023 02:58:36"}
-{"level":"warn","message": "Solicitando nova tentativa","Date":"16-04-2023 02:58:46"}
-{"level":"warn","message": "Solicitando nova tentativa","Date":"16-04-2023 02:58:46"}
-{"level":"warn","message": "Solicitando nova tentativa","Date":"16-04-2023 02:58:46"}
-{"level":"warn","message": "Solicitando nova tentativa","Date":"16-04-2023 02:58:46"}
-{"level":"warn","message": "Servidor inciando tentativa de conexão ao banco de dados","Date":"16-04-2023 02:58:51"}
-{"level":"warn","message": "Servidor inciando tentativa de conexão ao banco de dados","Date":"16-04-2023 02:58:51"}
-{"level":"warn","message": "Servidor inciando tentativa de conexão ao banco de dados","Date":"16-04-2023 02:58:51"}
-{"level":"warn","message": "Servidor inciando tentativa de conexão ao banco de dados","Date":"16-04-2023 02:58:51"}
-{"level":"warn","message": "Solicitando nova tentativa","Date":"16-04-2023 02:59:01"}
-{"level":"warn","message": "Solicitando nova tentativa","Date":"16-04-2023 02:59:01"}
-{"level":"warn","message": "Solicitando nova tentativa","Date":"16-04-2023 02:59:01"}
-{"level":"warn","message": "Solicitando nova tentativa","Date":"16-04-2023 02:59:01"}
-{"level":"warn","message": "11209 is started","Date":"16-04-2023 02:59:06"}
-{"level":"warn","message": "11209 is started","Date":"16-04-2023 02:59:06"}
-{"level":"warn","message": "11209 is started","Date":"16-04-2023 02:59:06"}
-{"level":"warn","message": "11209 is started","Date":"16-04-2023 02:59:06"}
-{"level":"warn","message": "Servidor inciando tentativa de conexão ao banco de dados","Date":"16-04-2023 02:59:07"}
-{"level":"warn","message": "Servidor inciando tentativa de conexão ao banco de dados","Date":"16-04-2023 02:59:07"}
-{"level":"warn","message": "Servidor inciando tentativa de conexão ao banco de dados","Date":"16-04-2023 02:59:07"}
-{"level":"warn","message": "Servidor inciando tentativa de conexão ao banco de dados","Date":"16-04-2023 02:59:07"}
-{"level":"warn","message": "Solicitando nova tentativa","Date":"16-04-2023 02:59:17"}
-{"level":"warn","message": "Solicitando nova tentativa","Date":"16-04-2023 02:59:17"}
-{"level":"warn","message": "Solicitando nova tentativa","Date":"16-04-2023 02:59:17"}
-{"level":"warn","message": "Solicitando nova tentativa","Date":"16-04-2023 02:59:17"}
-{"level":"warn","message": "Servidor inciando tentativa de conexão ao banco de dados","Date":"16-04-2023 02:59:22"}
-{"level":"warn","message": "Servidor inciando tentativa de conexão ao banco de dados","Date":"16-04-2023 02:59:22"}
-{"level":"warn","message": "Servidor inciando tentativa de conexão ao banco de dados","Date":"16-04-2023 02:59:22"}
-{"level":"warn","message": "Servidor inciando tentativa de conexão ao banco de dados","Date":"16-04-2023 02:59:22"}
-{"level":"warn","message": "11431 is started","Date":"16-04-2023 02:59:30"}
-{"level":"warn","message": "11431 is started","Date":"16-04-2023 02:59:30"}
-{"level":"warn","message": "11431 is started","Date":"16-04-2023 02:59:30"}
-{"level":"warn","message": "11431 is started","Date":"16-04-2023 02:59:30"}
-{"level":"warn","message": "Servidor inciando tentativa de conexão ao banco de dados","Date":"16-04-2023 02:59:32"}
-{"level":"warn","message": "Servidor inciando tentativa de conexão ao banco de dados","Date":"16-04-2023 02:59:32"}
-{"level":"warn","message": "Servidor inciando tentativa de conexão ao banco de dados","Date":"16-04-2023 02:59:32"}
-{"level":"warn","message": "Servidor inciando tentativa de conexão ao banco de dados","Date":"16-04-2023 02:59:32"}
-{"level":"warn","message": "11592 is started","Date":"16-04-2023 02:59:43"}
-{"level":"warn","message": "11592 is started","Date":"16-04-2023 02:59:43"}
-{"level":"warn","message": "11592 is started","Date":"16-04-2023 02:59:43"}
-{"level":"warn","message": "11592 is started","Date":"16-04-2023 02:59:43"}
-{"level":"warn","message": "Servidor inciando tentativa de conexão ao banco de dados","Date":"16-04-2023 02:59:44"}
-{"level":"warn","message": "Servidor inciando tentativa de conexão ao banco de dados","Date":"16-04-2023 02:59:44"}
-{"level":"warn","message": "Servidor inciando tentativa de conexão ao banco de dados","Date":"16-04-2023 02:59:44"}
-{"level":"warn","message": "Servidor inciando tentativa de conexão ao banco de dados","Date":"16-04-2023 02:59:44"}
-{"level":"warn","message": "Solicitando nova tentativa","Date":"16-04-2023 02:59:54"}
-{"level":"warn","message": "Solicitando nova tentativa","Date":"16-04-2023 02:59:54"}
-{"level":"warn","message": "Solicitando nova tentativa","Date":"16-04-2023 02:59:54"}
-{"level":"warn","message": "Solicitando nova tentativa","Date":"16-04-2023 02:59:54"}
-{"level":"warn","message": "Servidor inciando tentativa de conexão ao banco de dados","Date":"16-04-2023 02:59:59"}
-{"level":"warn","message": "Servidor inciando tentativa de conexão ao banco de dados","Date":"16-04-2023 02:59:59"}
-{"level":"warn","message": "Servidor inciando tentativa de conexão ao banco de dados","Date":"16-04-2023 02:59:59"}
-{"level":"warn","message": "Servidor inciando tentativa de conexão ao banco de dados","Date":"16-04-2023 02:59:59"}
-{"level":"warn","message": "11859 is started","Date":"16-04-2023 03:00:06"}
-{"level":"warn","message": "11859 is started","Date":"16-04-2023 03:00:06"}
-{"level":"warn","message": "11859 is started","Date":"16-04-2023 03:00:06"}
-{"level":"warn","message": "11859 is started","Date":"16-04-2023 03:00:06"}
-{"level":"warn","message": "Servidor inciando tentativa de conexão ao banco de dados","Date":"16-04-2023 03:00:07"}
-{"level":"warn","message": "Servidor inciando tentativa de conexão ao banco de dados","Date":"16-04-2023 03:00:07"}
-{"level":"warn","message": "Servidor inciando tentativa de conexão ao banco de dados","Date":"16-04-2023 03:00:07"}
-{"level":"warn","message": "Servidor inciando tentativa de conexão ao banco de dados","Date":"16-04-2023 03:00:07"}
-{"level":"warn","message": "Solicitando nova tentativa","Date":"16-04-2023 03:00:17"}
-{"level":"warn","message": "Solicitando nova tentativa","Date":"16-04-2023 03:00:17"}
-{"level":"warn","message": "Solicitando nova tentativa","Date":"16-04-2023 03:00:17"}
-{"level":"warn","message": "Solicitando nova tentativa","Date":"16-04-2023 03:00:17"}
-{"level":"warn","message": "Servidor inciando tentativa de conexão ao banco de dados","Date":"16-04-2023 03:00:22"}
-{"level":"warn","message": "Servidor inciando tentativa de conexão ao banco de dados","Date":"16-04-2023 03:00:22"}
-{"level":"warn","message": "Servidor inciando tentativa de conexão ao banco de dados","Date":"16-04-2023 03:00:22"}
-{"level":"warn","message": "Servidor inciando tentativa de conexão ao banco de dados","Date":"16-04-2023 03:00:22"}
-{"level":"warn","message": "Solicitando nova tentativa","Date":"16-04-2023 03:00:32"}
-{"level":"warn","message": "Solicitando nova tentativa","Date":"16-04-2023 03:00:32"}
-{"level":"warn","message": "Solicitando nova tentativa","Date":"16-04-2023 03:00:32"}
-{"level":"warn","message": "Solicitando nova tentativa","Date":"16-04-2023 03:00:32"}
-{"level":"warn","message": "Servidor inciando tentativa de conexão ao banco de dados","Date":"16-04-2023 03:00:37"}
-{"level":"warn","message": "Servidor inciando tentativa de conexão ao banco de dados","Date":"16-04-2023 03:00:37"}
-{"level":"warn","message": "Servidor inciando tentativa de conexão ao banco de dados","Date":"16-04-2023 03:00:37"}
-{"level":"warn","message": "Servidor inciando tentativa de conexão ao banco de dados","Date":"16-04-2023 03:00:37"}
-{"level":"warn","message": "12101 is started","Date":"16-04-2023 03:00:41"}
-{"level":"warn","message": "12101 is started","Date":"16-04-2023 03:00:41"}
-{"level":"warn","message": "12101 is started","Date":"16-04-2023 03:00:41"}
-{"level":"warn","message": "12101 is started","Date":"16-04-2023 03:00:41"}
-{"level":"warn","message": "Servidor inciando tentativa de conexão ao banco de dados","Date":"16-04-2023 03:00:43"}
-{"level":"warn","message": "Servidor inciando tentativa de conexão ao banco de dados","Date":"16-04-2023 03:00:43"}
-{"level":"warn","message": "Servidor inciando tentativa de conexão ao banco de dados","Date":"16-04-2023 03:00:43"}
-{"level":"warn","message": "Servidor inciando tentativa de conexão ao banco de dados","Date":"16-04-2023 03:00:43"}
-{"level":"warn","message": "Solicitando nova tentativa","Date":"16-04-2023 03:00:53"}
-{"level":"warn","message": "Solicitando nova tentativa","Date":"16-04-2023 03:00:53"}
-{"level":"warn","message": "Solicitando nova tentativa","Date":"16-04-2023 03:00:53"}
-{"level":"warn","message": "Solicitando nova tentativa","Date":"16-04-2023 03:00:53"}
-{"level":"warn","message": "Servidor inciando tentativa de conexão ao banco de dados","Date":"16-04-2023 03:00:58"}
-{"level":"warn","message": "Servidor inciando tentativa de conexão ao banco de dados","Date":"16-04-2023 03:00:58"}
-{"level":"warn","message": "Servidor inciando tentativa de conexão ao banco de dados","Date":"16-04-2023 03:00:58"}
-{"level":"warn","message": "Servidor inciando tentativa de conexão ao banco de dados","Date":"16-04-2023 03:00:58"}
-{"level":"warn","message": "Solicitando nova tentativa","Date":"16-04-2023 03:01:08"}
-{"level":"warn","message": "Solicitando nova tentativa","Date":"16-04-2023 03:01:08"}
-{"level":"warn","message": "Solicitando nova tentativa","Date":"16-04-2023 03:01:08"}
-{"level":"warn","message": "Solicitando nova tentativa","Date":"16-04-2023 03:01:08"}
-{"level":"warn","message": "Servidor inciando tentativa de conexão ao banco de dados","Date":"16-04-2023 03:01:13"}
-{"level":"warn","message": "Servidor inciando tentativa de conexão ao banco de dados","Date":"16-04-2023 03:01:13"}
-{"level":"warn","message": "Servidor inciando tentativa de conexão ao banco de dados","Date":"16-04-2023 03:01:13"}
-{"level":"warn","message": "Servidor inciando tentativa de conexão ao banco de dados","Date":"16-04-2023 03:01:13"}
-{"level":"warn","message": "Solicitando nova tentativa","Date":"16-04-2023 03:01:23"}
-{"level":"warn","message": "Solicitando nova tentativa","Date":"16-04-2023 03:01:23"}
-{"level":"warn","message": "Solicitando nova tentativa","Date":"16-04-2023 03:01:23"}
-{"level":"warn","message": "Solicitando nova tentativa","Date":"16-04-2023 03:01:23"}
-{"level":"warn","message": "Servidor inciando tentativa de conexão ao banco de dados","Date":"16-04-2023 03:01:28"}
-{"level":"warn","message": "Servidor inciando tentativa de conexão ao banco de dados","Date":"16-04-2023 03:01:28"}
-{"level":"warn","message": "Servidor inciando tentativa de conexão ao banco de dados","Date":"16-04-2023 03:01:28"}
-{"level":"warn","message": "Servidor inciando tentativa de conexão ao banco de dados","Date":"16-04-2023 03:01:28"}
-{"level":"warn","message": "Solicitando nova tentativa","Date":"16-04-2023 03:01:38"}
-{"level":"warn","message": "Solicitando nova tentativa","Date":"16-04-2023 03:01:38"}
-{"level":"warn","message": "Solicitando nova tentativa","Date":"16-04-2023 03:01:38"}
-{"level":"warn","message": "Solicitando nova tentativa","Date":"16-04-2023 03:01:38"}
-{"level":"warn","message": "Servidor inciando tentativa de conexão ao banco de dados","Date":"16-04-2023 03:01:43"}
-{"level":"warn","message": "Servidor inciando tentativa de conexão ao banco de dados","Date":"16-04-2023 03:01:43"}
-{"level":"warn","message": "Servidor inciando tentativa de conexão ao banco de dados","Date":"16-04-2023 03:01:43"}
-{"level":"warn","message": "Servidor inciando tentativa de conexão ao banco de dados","Date":"16-04-2023 03:01:43"}
-{"level":"warn","message": "Solicitando nova tentativa","Date":"16-04-2023 03:01:53"}
-{"level":"warn","message": "Solicitando nova tentativa","Date":"16-04-2023 03:01:53"}
-{"level":"warn","message": "Solicitando nova tentativa","Date":"16-04-2023 03:01:53"}
-{"level":"warn","message": "Solicitando nova tentativa","Date":"16-04-2023 03:01:53"}
-{"level":"warn","message": "Servidor inciando tentativa de conexão ao banco de dados","Date":"16-04-2023 03:01:58"}
-{"level":"warn","message": "Servidor inciando tentativa de conexão ao banco de dados","Date":"16-04-2023 03:01:58"}
-{"level":"warn","message": "Servidor inciando tentativa de conexão ao banco de dados","Date":"16-04-2023 03:01:58"}
-{"level":"warn","message": "Servidor inciando tentativa de conexão ao banco de dados","Date":"16-04-2023 03:01:58"}
-{"level":"warn","message": "Solicitando nova tentativa","Date":"16-04-2023 03:02:08"}
-{"level":"warn","message": "Solicitando nova tentativa","Date":"16-04-2023 03:02:08"}
-{"level":"warn","message": "Solicitando nova tentativa","Date":"16-04-2023 03:02:08"}
-{"level":"warn","message": "Solicitando nova tentativa","Date":"16-04-2023 03:02:08"}
-{"level":"warn","message": "Servidor inciando tentativa de conexão ao banco de dados","Date":"16-04-2023 03:02:13"}
-{"level":"warn","message": "Servidor inciando tentativa de conexão ao banco de dados","Date":"16-04-2023 03:02:13"}
-{"level":"warn","message": "Servidor inciando tentativa de conexão ao banco de dados","Date":"16-04-2023 03:02:13"}
-{"level":"warn","message": "Servidor inciando tentativa de conexão ao banco de dados","Date":"16-04-2023 03:02:13"}
-{"level":"warn","message": "Solicitando nova tentativa","Date":"16-04-2023 03:02:23"}
-{"level":"warn","message": "Solicitando nova tentativa","Date":"16-04-2023 03:02:23"}
-{"level":"warn","message": "Solicitando nova tentativa","Date":"16-04-2023 03:02:23"}
-{"level":"warn","message": "Solicitando nova tentativa","Date":"16-04-2023 03:02:23"}
-{"level":"warn","message": "Servidor inciando tentativa de conexão ao banco de dados","Date":"16-04-2023 03:02:28"}
-{"level":"warn","message": "Servidor inciando tentativa de conexão ao banco de dados","Date":"16-04-2023 03:02:28"}
-{"level":"warn","message": "Servidor inciando tentativa de conexão ao banco de dados","Date":"16-04-2023 03:02:28"}
-{"level":"warn","message": "Servidor inciando tentativa de conexão ao banco de dados","Date":"16-04-2023 03:02:28"}
-{"level":"warn","message": "Solicitando nova tentativa","Date":"16-04-2023 03:02:38"}
-{"level":"warn","message": "Solicitando nova tentativa","Date":"16-04-2023 03:02:38"}
-{"level":"warn","message": "Solicitando nova tentativa","Date":"16-04-2023 03:02:38"}
-{"level":"warn","message": "Solicitando nova tentativa","Date":"16-04-2023 03:02:38"}
-{"level":"warn","message": "Servidor inciando tentativa de conexão ao banco de dados","Date":"16-04-2023 03:02:43"}
-{"level":"warn","message": "Servidor inciando tentativa de conexão ao banco de dados","Date":"16-04-2023 03:02:43"}
-{"level":"warn","message": "Servidor inciando tentativa de conexão ao banco de dados","Date":"16-04-2023 03:02:43"}
-{"level":"warn","message": "Servidor inciando tentativa de conexão ao banco de dados","Date":"16-04-2023 03:02:43"}
-{"level":"warn","message": "Solicitando nova tentativa","Date":"16-04-2023 03:02:53"}
-{"level":"warn","message": "Solicitando nova tentativa","Date":"16-04-2023 03:02:53"}
-{"level":"warn","message": "Solicitando nova tentativa","Date":"16-04-2023 03:02:53"}
-{"level":"warn","message": "Solicitando nova tentativa","Date":"16-04-2023 03:02:53"}
-{"level":"warn","message": "Servidor inciando tentativa de conexão ao banco de dados","Date":"16-04-2023 03:02:58"}
-{"level":"warn","message": "Servidor inciando tentativa de conexão ao banco de dados","Date":"16-04-2023 03:02:58"}
-{"level":"warn","message": "Servidor inciando tentativa de conexão ao banco de dados","Date":"16-04-2023 03:02:58"}
-{"level":"warn","message": "Servidor inciando tentativa de conexão ao banco de dados","Date":"16-04-2023 03:02:58"}
-{"level":"warn","message": "Solicitando nova tentativa","Date":"16-04-2023 03:03:08"}
-{"level":"warn","message": "Solicitando nova tentativa","Date":"16-04-2023 03:03:08"}
-{"level":"warn","message": "Solicitando nova tentativa","Date":"16-04-2023 03:03:08"}
-{"level":"warn","message": "Solicitando nova tentativa","Date":"16-04-2023 03:03:08"}
-{"level":"warn","message": "12792 is started","Date":"16-04-2023 03:03:12"}
-{"level":"warn","message": "12792 is started","Date":"16-04-2023 03:03:12"}
-{"level":"warn","message": "12792 is started","Date":"16-04-2023 03:03:12"}
-{"level":"warn","message": "12792 is started","Date":"16-04-2023 03:03:12"}
-{"level":"warn","message": "Servidor inciando tentativa de conexão ao banco de dados","Date":"16-04-2023 03:03:14"}
-{"level":"warn","message": "Servidor inciando tentativa de conexão ao banco de dados","Date":"16-04-2023 03:03:14"}
-{"level":"warn","message": "Servidor inciando tentativa de conexão ao banco de dados","Date":"16-04-2023 03:03:14"}
-{"level":"warn","message": "Servidor inciando tentativa de conexão ao banco de dados","Date":"16-04-2023 03:03:14"}
-{"level":"warn","message": "Solicitando nova tentativa","Date":"16-04-2023 03:03:24"}
-{"level":"warn","message": "Solicitando nova tentativa","Date":"16-04-2023 03:03:24"}
-{"level":"warn","message": "Solicitando nova tentativa","Date":"16-04-2023 03:03:24"}
-{"level":"warn","message": "Solicitando nova tentativa","Date":"16-04-2023 03:03:24"}
-{"level":"warn","message": "Servidor inciando tentativa de conexão ao banco de dados","Date":"16-04-2023 03:03:29"}
-{"level":"warn","message": "Servidor inciando tentativa de conexão ao banco de dados","Date":"16-04-2023 03:03:29"}
-{"level":"warn","message": "Servidor inciando tentativa de conexão ao banco de dados","Date":"16-04-2023 03:03:29"}
-{"level":"warn","message": "Servidor inciando tentativa de conexão ao banco de dados","Date":"16-04-2023 03:03:29"}
-{"level":"warn","message": "Solicitando nova tentativa","Date":"16-04-2023 03:03:39"}
-{"level":"warn","message": "Solicitando nova tentativa","Date":"16-04-2023 03:03:39"}
-{"level":"warn","message": "Solicitando nova tentativa","Date":"16-04-2023 03:03:39"}
-{"level":"warn","message": "Solicitando nova tentativa","Date":"16-04-2023 03:03:39"}
-{"level":"warn","message": "14198 is started","Date":"16-04-2023 03:25:35"}
-{"level":"warn","message": "14198 is started","Date":"16-04-2023 03:25:35"}
-{"level":"warn","message": "14198 is started","Date":"16-04-2023 03:25:35"}
-{"level":"warn","message": "14198 is started","Date":"16-04-2023 03:25:35"}
+{"level":"warn","message": "SIGTERM signal received: closing HTTP server and process4562","Date":"16-04-2023 20:37:45"}
+{"level":"warn","message": "SIGTERM signal received: closing HTTP server and process4561","Date":"16-04-2023 20:37:45"}
+{"level":"warn","message": "SIGTERM signal received: closing HTTP server and process4568","Date":"16-04-2023 20:37:45"}
+{"level":"warn","message": "SIGTERM signal received: closing HTTP server and process4574","Date":"16-04-2023 20:37:45"}
+{"level":"warn","message": "4802 is started","Date":"16-04-2023 20:37:48"}
+{"level":"warn","message": "4802 is started","Date":"16-04-2023 20:37:48"}
+{"level":"warn","message": "4802 is started","Date":"16-04-2023 20:37:48"}
+{"level":"warn","message": "4802 is started","Date":"16-04-2023 20:37:48"}
+{"level":"warn","message": "Servidor inciando tentativa de conexão ao banco de dados","Date":"16-04-2023 20:37:50"}
+{"level":"warn","message": "Servidor inciando tentativa de conexão ao banco de dados","Date":"16-04-2023 20:37:50"}
+{"level":"warn","message": "Conectado no banco de dados com sucesso","Date":"16-04-2023 20:37:50"}
+{"level":"warn","message": "Conectado no banco de dados com sucesso","Date":"16-04-2023 20:37:50"}
+{"level":"warn","message": "Inciando tentativa de start da API na  9000 com o ip 0.0.0.0!","Date":"16-04-2023 20:37:50"}
+{"level":"warn","message": "Server is started on process 4833","Date":"16-04-2023 20:37:50"}
+{"level":"warn","message": "Inciando tentativa de start da API na  9000 com o ip 0.0.0.0!","Date":"16-04-2023 20:37:50"}
+{"level":"warn","message": "Server is started on process 4839","Date":"16-04-2023 20:37:50"}
+{"level":"warn","message": "Servidor inciando tentativa de conexão ao banco de dados","Date":"16-04-2023 20:37:50"}
+{"level":"warn","message": "Servidor inciando tentativa de conexão ao banco de dados","Date":"16-04-2023 20:37:50"}
+{"level":"warn","message": "Conectado no banco de dados com sucesso","Date":"16-04-2023 20:37:50"}
+{"level":"warn","message": "Inciando tentativa de start da API na  9000 com o ip 0.0.0.0!","Date":"16-04-2023 20:37:50"}
+{"level":"warn","message": "Server is started on process 4845","Date":"16-04-2023 20:37:50"}
+{"level":"warn","message": "Conectado no banco de dados com sucesso","Date":"16-04-2023 20:37:50"}
+{"level":"warn","message": "Inciando tentativa de start da API na  9000 com o ip 0.0.0.0!","Date":"16-04-2023 20:37:50"}
+{"level":"warn","message": "Server is started on process 4832","Date":"16-04-2023 20:37:50"}
+{"level":"warn","message": "8354 is started","Date":"16-04-2023 21:04:18"}
+{"level":"warn","message": "8354 is started","Date":"16-04-2023 21:04:18"}
+{"level":"warn","message": "8354 is started","Date":"16-04-2023 21:04:18"}
+{"level":"warn","message": "8354 is started","Date":"16-04-2023 21:04:18"}
+{"level":"warn","message": "Servidor inciando tentativa de conexão ao banco de dados","Date":"16-04-2023 21:04:20"}
+{"level":"warn","message": "Servidor inciando tentativa de conexão ao banco de dados","Date":"16-04-2023 21:04:20"}
+{"level":"warn","message": "Servidor inciando tentativa de conexão ao banco de dados","Date":"16-04-2023 21:04:20"}
+{"level":"warn","message": "Conectado no banco de dados com sucesso","Date":"16-04-2023 21:04:20"}
+{"level":"warn","message": "Conectado no banco de dados com sucesso","Date":"16-04-2023 21:04:20"}
+{"level":"warn","message": "Inciando tentativa de start da API na  9000 com o ip 0.0.0.0!","Date":"16-04-2023 21:04:20"}
+{"level":"warn","message": "Server is started on process 8410","Date":"16-04-2023 21:04:20"}
+{"level":"warn","message": "Inciando tentativa de start da API na  9000 com o ip 0.0.0.0!","Date":"16-04-2023 21:04:20"}
+{"level":"warn","message": "Server is started on process 8375","Date":"16-04-2023 21:04:20"}
+{"level":"warn","message": "Conectado no banco de dados com sucesso","Date":"16-04-2023 21:04:20"}
+{"level":"warn","message": "Inciando tentativa de start da API na  9000 com o ip 0.0.0.0!","Date":"16-04-2023 21:04:20"}
+{"level":"warn","message": "Server is started on process 8377","Date":"16-04-2023 21:04:20"}
+{"level":"warn","message": "Servidor inciando tentativa de conexão ao banco de dados","Date":"16-04-2023 21:04:20"}
+{"level":"warn","message": "Conectado no banco de dados com sucesso","Date":"16-04-2023 21:04:20"}
+{"level":"warn","message": "Inciando tentativa de start da API na  9000 com o ip 0.0.0.0!","Date":"16-04-2023 21:04:20"}
+{"level":"warn","message": "Server is started on process 8384","Date":"16-04-2023 21:04:20"}
+{"level":"warn","message": "SIGTERM signal received: closing HTTP server and process8375","Date":"16-04-2023 21:05:34"}
+{"level":"warn","message": "SIGTERM signal received: closing HTTP server and process8377","Date":"16-04-2023 21:05:34"}
+{"level":"warn","message": "SIGTERM signal received: closing HTTP server and process8384","Date":"16-04-2023 21:05:34"}
+{"level":"warn","message": "SIGTERM signal received: closing HTTP server and process8410","Date":"16-04-2023 21:05:34"}
+{"level":"warn","message": "8551 is started","Date":"16-04-2023 21:05:37"}
+{"level":"warn","message": "8551 is started","Date":"16-04-2023 21:05:37"}
+{"level":"warn","message": "8551 is started","Date":"16-04-2023 21:05:37"}
+{"level":"warn","message": "8551 is started","Date":"16-04-2023 21:05:37"}
+{"level":"warn","message": "Servidor inciando tentativa de conexão ao banco de dados","Date":"16-04-2023 21:05:39"}
+{"level":"warn","message": "Servidor inciando tentativa de conexão ao banco de dados","Date":"16-04-2023 21:05:39"}
+{"level":"warn","message": "Servidor inciando tentativa de conexão ao banco de dados","Date":"16-04-2023 21:05:39"}
+{"level":"warn","message": "Conectado no banco de dados com sucesso","Date":"16-04-2023 21:05:39"}
+{"level":"warn","message": "Conectado no banco de dados com sucesso","Date":"16-04-2023 21:05:39"}
+{"level":"warn","message": "Conectado no banco de dados com sucesso","Date":"16-04-2023 21:05:39"}
+{"level":"warn","message": "Inciando tentativa de start da API na  9000 com o ip 0.0.0.0!","Date":"16-04-2023 21:05:39"}
+{"level":"warn","message": "Server is started on process 8592","Date":"16-04-2023 21:05:39"}
+{"level":"warn","message": "Inciando tentativa de start da API na  9000 com o ip 0.0.0.0!","Date":"16-04-2023 21:05:39"}
+{"level":"warn","message": "Server is started on process 8593","Date":"16-04-2023 21:05:39"}
+{"level":"warn","message": "Servidor inciando tentativa de conexão ao banco de dados","Date":"16-04-2023 21:05:39"}
+{"level":"warn","message": "Inciando tentativa de start da API na  9000 com o ip 0.0.0.0!","Date":"16-04-2023 21:05:39"}
+{"level":"warn","message": "Server is started on process 8599","Date":"16-04-2023 21:05:39"}
+{"level":"warn","message": "Conectado no banco de dados com sucesso","Date":"16-04-2023 21:05:39"}
+{"level":"warn","message": "Inciando tentativa de start da API na  9000 com o ip 0.0.0.0!","Date":"16-04-2023 21:05:39"}
+{"level":"warn","message": "Server is started on process 8605","Date":"16-04-2023 21:05:39"}
+{"level":"warn","message": "9358 is started","Date":"16-04-2023 21:08:31"}
+{"level":"warn","message": "9358 is started","Date":"16-04-2023 21:08:31"}
+{"level":"warn","message": "9358 is started","Date":"16-04-2023 21:08:31"}
+{"level":"warn","message": "9358 is started","Date":"16-04-2023 21:08:31"}
+{"level":"warn","message": "9550 is started","Date":"16-04-2023 21:08:39"}
+{"level":"warn","message": "9550 is started","Date":"16-04-2023 21:08:39"}
+{"level":"warn","message": "9550 is started","Date":"16-04-2023 21:08:39"}
+{"level":"warn","message": "9550 is started","Date":"16-04-2023 21:08:39"}
+{"level":"warn","message": "Servidor inciando tentativa de conexão ao banco de dados","Date":"16-04-2023 21:08:41"}
+{"level":"warn","message": "Conectado no banco de dados com sucesso","Date":"16-04-2023 21:08:41"}
+{"level":"warn","message": "Servidor inciando tentativa de conexão ao banco de dados","Date":"16-04-2023 21:08:41"}
+{"level":"warn","message": "Inciando tentativa de start da API na  9000 com o ip 0.0.0.0!","Date":"16-04-2023 21:08:41"}
+{"level":"warn","message": "Server is started on process 9580","Date":"16-04-2023 21:08:42"}
+{"level":"warn","message": "Servidor inciando tentativa de conexão ao banco de dados","Date":"16-04-2023 21:08:42"}
+{"level":"warn","message": "Conectado no banco de dados com sucesso","Date":"16-04-2023 21:08:42"}
+{"level":"warn","message": "Inciando tentativa de start da API na  9000 com o ip 0.0.0.0!","Date":"16-04-2023 21:08:42"}
+{"level":"warn","message": "Server is started on process 9581","Date":"16-04-2023 21:08:42"}
+{"level":"warn","message": "Conectado no banco de dados com sucesso","Date":"16-04-2023 21:08:42"}
+{"level":"warn","message": "Servidor inciando tentativa de conexão ao banco de dados","Date":"16-04-2023 21:08:42"}
+{"level":"warn","message": "Inciando tentativa de start da API na  9000 com o ip 0.0.0.0!","Date":"16-04-2023 21:08:42"}
+{"level":"warn","message": "Server is started on process 9587","Date":"16-04-2023 21:08:42"}
+{"level":"warn","message": "Conectado no banco de dados com sucesso","Date":"16-04-2023 21:08:42"}
+{"level":"warn","message": "Inciando tentativa de start da API na  9000 com o ip 0.0.0.0!","Date":"16-04-2023 21:08:42"}
+{"level":"warn","message": "Server is started on process 9593","Date":"16-04-2023 21:08:42"}
+{"level":"warn","message": "10819 is started","Date":"16-04-2023 21:24:35"}
+{"level":"warn","message": "10819 is started","Date":"16-04-2023 21:24:35"}
+{"level":"warn","message": "10819 is started","Date":"16-04-2023 21:24:35"}
+{"level":"warn","message": "10819 is started","Date":"16-04-2023 21:24:35"}
+{"level":"warn","message": "Servidor inciando tentativa de conexão ao banco de dados","Date":"16-04-2023 21:24:37"}
+{"level":"warn","message": "Servidor inciando tentativa de conexão ao banco de dados","Date":"16-04-2023 21:24:37"}
+{"level":"warn","message": "Servidor inciando tentativa de conexão ao banco de dados","Date":"16-04-2023 21:24:37"}
+{"level":"warn","message": "Conectado no banco de dados com sucesso","Date":"16-04-2023 21:24:37"}
+{"level":"warn","message": "Servidor inciando tentativa de conexão ao banco de dados","Date":"16-04-2023 21:24:37"}
+{"level":"warn","message": "Conectado no banco de dados com sucesso","Date":"16-04-2023 21:24:37"}
+{"level":"warn","message": "Inciando tentativa de start da API na  9000 com o ip 0.0.0.0!","Date":"16-04-2023 21:24:37"}
+{"level":"warn","message": "Server is started on process 10836","Date":"16-04-2023 21:24:37"}
+{"level":"warn","message": "Inciando tentativa de start da API na  9000 com o ip 0.0.0.0!","Date":"16-04-2023 21:24:37"}
+{"level":"warn","message": "Server is started on process 10844","Date":"16-04-2023 21:24:37"}
+{"level":"warn","message": "Conectado no banco de dados com sucesso","Date":"16-04-2023 21:24:37"}
+{"level":"warn","message": "Conectado no banco de dados com sucesso","Date":"16-04-2023 21:24:37"}
+{"level":"warn","message": "Inciando tentativa de start da API na  9000 com o ip 0.0.0.0!","Date":"16-04-2023 21:24:37"}
+{"level":"warn","message": "Server is started on process 10835","Date":"16-04-2023 21:24:37"}
+{"level":"warn","message": "Inciando tentativa de start da API na  9000 com o ip 0.0.0.0!","Date":"16-04-2023 21:24:37"}
+{"level":"warn","message": "Server is started on process 10854","Date":"16-04-2023 21:24:37"}
+{"level":"warn","message": "10915 is started","Date":"16-04-2023 21:24:41"}
+{"level":"warn","message": "10915 is started","Date":"16-04-2023 21:24:41"}
+{"level":"warn","message": "10915 is started","Date":"16-04-2023 21:24:41"}
+{"level":"warn","message": "10915 is started","Date":"16-04-2023 21:24:41"}
+{"level":"warn","message": "11031 is started","Date":"16-04-2023 21:24:46"}
+{"level":"warn","message": "11031 is started","Date":"16-04-2023 21:24:46"}
+{"level":"warn","message": "11031 is started","Date":"16-04-2023 21:24:46"}
+{"level":"warn","message": "11031 is started","Date":"16-04-2023 21:24:46"}
+{"level":"warn","message": "Servidor inciando tentativa de conexão ao banco de dados","Date":"16-04-2023 21:24:48"}
+{"level":"warn","message": "Servidor inciando tentativa de conexão ao banco de dados","Date":"16-04-2023 21:24:48"}
+{"level":"warn","message": "Conectado no banco de dados com sucesso","Date":"16-04-2023 21:24:48"}
+{"level":"warn","message": "Inciando tentativa de start da API na  9000 com o ip 0.0.0.0!","Date":"16-04-2023 21:24:48"}
+{"level":"warn","message": "Server is started on process 11062","Date":"16-04-2023 21:24:48"}
+{"level":"warn","message": "Conectado no banco de dados com sucesso","Date":"16-04-2023 21:24:48"}
+{"level":"warn","message": "Inciando tentativa de start da API na  9000 com o ip 0.0.0.0!","Date":"16-04-2023 21:24:48"}
+{"level":"warn","message": "Server is started on process 11071","Date":"16-04-2023 21:24:48"}
+{"level":"warn","message": "Servidor inciando tentativa de conexão ao banco de dados","Date":"16-04-2023 21:24:48"}
+{"level":"warn","message": "Servidor inciando tentativa de conexão ao banco de dados","Date":"16-04-2023 21:24:48"}
+{"level":"warn","message": "Conectado no banco de dados com sucesso","Date":"16-04-2023 21:24:48"}
+{"level":"warn","message": "Conectado no banco de dados com sucesso","Date":"16-04-2023 21:24:48"}
+{"level":"warn","message": "Inciando tentativa de start da API na  9000 com o ip 0.0.0.0!","Date":"16-04-2023 21:24:48"}
+{"level":"warn","message": "Server is started on process 11065","Date":"16-04-2023 21:24:48"}
+{"level":"warn","message": "Inciando tentativa de start da API na  9000 com o ip 0.0.0.0!","Date":"16-04-2023 21:24:48"}
+{"level":"warn","message": "Server is started on process 11077","Date":"16-04-2023 21:24:48"}
+{"level":"warn","message": "SIGTERM signal received: closing HTTP server and process11071","Date":"16-04-2023 21:27:01"}
+{"level":"warn","message": "SIGTERM signal received: closing HTTP server and process11062","Date":"16-04-2023 21:27:01"}
+{"level":"warn","message": "SIGTERM signal received: closing HTTP server and process11065","Date":"16-04-2023 21:27:01"}
+{"level":"warn","message": "SIGTERM signal received: closing HTTP server and process11077","Date":"16-04-2023 21:27:01"}
+{"level":"warn","message": "11460 is started","Date":"16-04-2023 21:27:11"}
+{"level":"warn","message": "11460 is started","Date":"16-04-2023 21:27:11"}
+{"level":"warn","message": "11460 is started","Date":"16-04-2023 21:27:11"}
+{"level":"warn","message": "11460 is started","Date":"16-04-2023 21:27:11"}
+{"level":"warn","message": "Servidor inciando tentativa de conexão ao banco de dados","Date":"16-04-2023 21:27:13"}
+{"level":"warn","message": "Servidor inciando tentativa de conexão ao banco de dados","Date":"16-04-2023 21:27:13"}
+{"level":"warn","message": "Servidor inciando tentativa de conexão ao banco de dados","Date":"16-04-2023 21:27:13"}
+{"level":"warn","message": "Servidor inciando tentativa de conexão ao banco de dados","Date":"16-04-2023 21:27:13"}
+{"level":"warn","message": "Conectado no banco de dados com sucesso","Date":"16-04-2023 21:27:13"}
+{"level":"warn","message": "Conectado no banco de dados com sucesso","Date":"16-04-2023 21:27:13"}
+{"level":"warn","message": "Conectado no banco de dados com sucesso","Date":"16-04-2023 21:27:13"}
+{"level":"warn","message": "Inciando tentativa de start da API na  9000 com o ip 0.0.0.0!","Date":"16-04-2023 21:27:13"}
+{"level":"warn","message": "Server is started on process 11508","Date":"16-04-2023 21:27:13"}
+{"level":"warn","message": "Inciando tentativa de start da API na  9000 com o ip 0.0.0.0!","Date":"16-04-2023 21:27:13"}
+{"level":"warn","message": "Server is started on process 11514","Date":"16-04-2023 21:27:13"}
+{"level":"warn","message": "Conectado no banco de dados com sucesso","Date":"16-04-2023 21:27:13"}
+{"level":"warn","message": "Inciando tentativa de start da API na  9000 com o ip 0.0.0.0!","Date":"16-04-2023 21:27:13"}
+{"level":"warn","message": "Server is started on process 11507","Date":"16-04-2023 21:27:13"}
+{"level":"warn","message": "Inciando tentativa de start da API na  9000 com o ip 0.0.0.0!","Date":"16-04-2023 21:27:13"}
+{"level":"warn","message": "Server is started on process 11519","Date":"16-04-2023 21:27:13"}
+{"level":"warn","message": "SIGTERM signal received: closing HTTP server and process11508","Date":"16-04-2023 21:27:15"}
+{"level":"warn","message": "SIGTERM signal received: closing HTTP server and process11519","Date":"16-04-2023 21:27:15"}
+{"level":"warn","message": "SIGTERM signal received: closing HTTP server and process11507","Date":"16-04-2023 21:27:15"}
+{"level":"warn","message": "SIGTERM signal received: closing HTTP server and process11514","Date":"16-04-2023 21:27:15"}
+{"level":"warn","message": "3887 is started","Date":"17-04-2023 11:39:36"}
+{"level":"warn","message": "3887 is started","Date":"17-04-2023 11:39:36"}
+{"level":"warn","message": "3887 is started","Date":"17-04-2023 11:39:36"}
+{"level":"warn","message": "3887 is started","Date":"17-04-2023 11:39:36"}
+{"level":"warn","message": "Servidor inciando tentativa de conexão ao banco de dados","Date":"17-04-2023 11:39:38"}
+{"level":"warn","message": "Servidor inciando tentativa de conexão ao banco de dados","Date":"17-04-2023 11:39:38"}
+{"level":"warn","message": "Solicitando nova tentativa","Date":"17-04-2023 11:39:38"}
+{"level":"warn","message": "Servidor inciando tentativa de conexão ao banco de dados","Date":"17-04-2023 11:39:38"}
+{"level":"warn","message": "Solicitando nova tentativa","Date":"17-04-2023 11:39:38"}
+{"level":"warn","message": "Servidor inciando tentativa de conexão ao banco de dados","Date":"17-04-2023 11:39:38"}
+{"level":"warn","message": "Solicitando nova tentativa","Date":"17-04-2023 11:39:38"}
+{"level":"warn","message": "Solicitando nova tentativa","Date":"17-04-2023 11:39:38"}
+{"level":"warn","message": "Servidor inciando tentativa de conexão ao banco de dados","Date":"17-04-2023 11:39:43"}
+{"level":"warn","message": "Solicitando nova tentativa","Date":"17-04-2023 11:39:43"}
+{"level":"warn","message": "Servidor inciando tentativa de conexão ao banco de dados","Date":"17-04-2023 11:39:43"}
+{"level":"warn","message": "Solicitando nova tentativa","Date":"17-04-2023 11:39:43"}
+{"level":"warn","message": "Servidor inciando tentativa de conexão ao banco de dados","Date":"17-04-2023 11:39:43"}
+{"level":"warn","message": "Solicitando nova tentativa","Date":"17-04-2023 11:39:43"}
+{"level":"warn","message": "Servidor inciando tentativa de conexão ao banco de dados","Date":"17-04-2023 11:39:43"}
+{"level":"warn","message": "Solicitando nova tentativa","Date":"17-04-2023 11:39:43"}
+{"level":"warn","message": "Servidor inciando tentativa de conexão ao banco de dados","Date":"17-04-2023 11:39:48"}
+{"level":"warn","message": "Solicitando nova tentativa","Date":"17-04-2023 11:39:48"}
+{"level":"warn","message": "Servidor inciando tentativa de conexão ao banco de dados","Date":"17-04-2023 11:39:48"}
+{"level":"warn","message": "Solicitando nova tentativa","Date":"17-04-2023 11:39:48"}
+{"level":"warn","message": "Servidor inciando tentativa de conexão ao banco de dados","Date":"17-04-2023 11:39:48"}
+{"level":"warn","message": "Solicitando nova tentativa","Date":"17-04-2023 11:39:48"}
+{"level":"warn","message": "Servidor inciando tentativa de conexão ao banco de dados","Date":"17-04-2023 11:39:48"}
+{"level":"warn","message": "Solicitando nova tentativa","Date":"17-04-2023 11:39:48"}
+{"level":"warn","message": "Servidor inciando tentativa de conexão ao banco de dados","Date":"17-04-2023 11:39:53"}
+{"level":"warn","message": "Solicitando nova tentativa","Date":"17-04-2023 11:39:53"}
+{"level":"warn","message": "Servidor inciando tentativa de conexão ao banco de dados","Date":"17-04-2023 11:39:53"}
+{"level":"warn","message": "Solicitando nova tentativa","Date":"17-04-2023 11:39:53"}
+{"level":"warn","message": "Servidor inciando tentativa de conexão ao banco de dados","Date":"17-04-2023 11:39:53"}
+{"level":"warn","message": "Solicitando nova tentativa","Date":"17-04-2023 11:39:53"}
+{"level":"warn","message": "Servidor inciando tentativa de conexão ao banco de dados","Date":"17-04-2023 11:39:53"}
+{"level":"warn","message": "Solicitando nova tentativa","Date":"17-04-2023 11:39:53"}
+{"level":"warn","message": "Servidor inciando tentativa de conexão ao banco de dados","Date":"17-04-2023 11:39:58"}
+{"level":"warn","message": "Servidor inciando tentativa de conexão ao banco de dados","Date":"17-04-2023 11:39:58"}
+{"level":"warn","message": "Solicitando nova tentativa","Date":"17-04-2023 11:39:58"}
+{"level":"warn","message": "Solicitando nova tentativa","Date":"17-04-2023 11:39:58"}
+{"level":"warn","message": "Servidor inciando tentativa de conexão ao banco de dados","Date":"17-04-2023 11:39:58"}
+{"level":"warn","message": "Servidor inciando tentativa de conexão ao banco de dados","Date":"17-04-2023 11:39:58"}
+{"level":"warn","message": "Solicitando nova tentativa","Date":"17-04-2023 11:39:58"}
+{"level":"warn","message": "Solicitando nova tentativa","Date":"17-04-2023 11:39:58"}

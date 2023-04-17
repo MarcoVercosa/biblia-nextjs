@@ -7,8 +7,7 @@ function LiberaOrigemRegistraLog(request, response, next) {
     const origem = request.headers.origin || "indefinido";
     createLogs_1.Logger.http("Solicitação recebida da origem " + origem);
     let headersOriginExternal = process.env.headersOriginExternal;
-    let headersOriginNext = process.env.headersOriginNext;
-    let headersOriginNextExtern = process.env.headersOriginNextExtern;
+    let headersOriginNextExternal = process.env.headersOriginNextExternal;
     if (process.env.NODE_ENV === "development") {
         if (origem.match(/192.168/) || origem.match(/indefi/) || origem.includes("localhost")) {
             next();
@@ -18,7 +17,7 @@ function LiberaOrigemRegistraLog(request, response, next) {
         }
     }
     else {
-        if (origem.includes(headersOriginExternal) || origem.includes(headersOriginNext) || origem.includes("fontedevida.app.br")) {
+        if (origem.includes(headersOriginExternal) || origem.includes(headersOriginNextExternal)) {
             next();
         }
         else {

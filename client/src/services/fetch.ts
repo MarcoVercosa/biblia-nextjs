@@ -3,8 +3,8 @@ import {
     IresultLivros, IresultCapitulos, IBuscaConteudoLeitura, IFindBibleBySearchAPI, IHinoPorPalavra, IGetDataFromIA
 } from "@/interfaces/interfaces"
 
-//const urlApiDev = 'http://192.168.15.143:9000'
-const urlApiDev = 'http://191.252.204.239:9000'
+//const urlApiDev = 'https://192.168.15.143:9000'
+const urlApiDev = 'https://vps45754.publiccloud.com.br:9000'
 const urlApiProd = 'http://...'
 const pass = "x?-re_3k4wrO#*zadEsp+pho+i!lswut_@f!suben2c9u4r$9es2&r666ath_0oysp+pho+i!lswut_x?-re_3k4wrO#*zadEsp+pho+i!lswut_-re_3k4wrO#*zadEsp+pho+i!lswut"
 
@@ -97,7 +97,7 @@ export async function FetchConteudoServerSide(versaoID: string, testamentoID: st
         const response = await fetch(`${urlApiDev}/mais/buscaconteudo/${versaoID}/${testamentoID}/${livroId}/${capitulo}`, {
             headers: {
                 'Content-Type': 'application/json',
-                'origin': 'http://localhost'
+                'origin': 'http://nextfetchbuild'
             }
         })
 
@@ -125,7 +125,7 @@ export async function FetchSelectNumeroHarpaServerSide() {
         const response = await fetch(`${urlApiDev}/hinoharpa/buscanumeroharpa`, {
             headers: {
                 'Content-Type': 'application/json',
-                'origin': 'http://localhost'
+                'origin': 'http://nextfetchbuild'
             }
         })
         const data = await response.json()
@@ -141,7 +141,7 @@ export async function FetchConteudoHarpaServerSide(value: string) {
         const response = await fetch(`${urlApiDev}/hinoharpa/buscatitulopornumero/${value}`, {
             headers: {
                 'Content-Type': 'application/json',
-                'origin': 'http://localhost'
+                'origin': 'http://nextfetchbuild'
             }
         })
         const data = await response.json()

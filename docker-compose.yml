@@ -70,11 +70,12 @@ services:
     container_name: ${NGINX_PROD_ENV}
     volumes:
       # - ${VOLUME_SITE}
-      # - ${VOLUME_NGINX_CONF}
-      # - ${VOLUME_HTML}
+      - ${VOLUME_SSL_CRT}
+      - ${VOLUME_SSL_KEY}
       - ${VOLUME_DEFAULT_CONF}
     ports:
       - ${PORTS_NGINX}
+      - ${PORTS_NGINX_SSL}
     depends_on:
       - nodeapi
     networks:

@@ -1,11 +1,6 @@
 {
   "pages": {
-    "/about": [],
-    "/favoritos": [],
-    "/pesquisabiblia/[biblesearchid]": [],
-    "/harpacrista/[harpacristaid]": [],
-    "/": [],
-    "/leitura/[versaoid]/[testamentoid]/[livroid]/[capitulo]": []
+    "/": []
   },
   "app": {}
 }

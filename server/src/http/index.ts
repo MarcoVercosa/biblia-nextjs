@@ -3,10 +3,13 @@ import process from "node:process"
 import { conectaBD } from "../infrabd/conexao"
 import { Logger } from "../services/logs/createLogs"
 import { router } from "./routes/index_routes"
+const fs = require('fs');
+const path = require('path')
 
 
 const express = require("express")
 const app = express()
+const https = require("https")
 let port = process.env.portHTTP
 
 function StartServerWEB(): Promise<string> {
@@ -16,13 +19,23 @@ function StartServerWEB(): Promise<string> {
             try {
                 if (!erro) {
                     Logger.warn("Conectado no banco de dados com sucesso")
+                    Logger.warn(`Inciando tentativa de start da API na  ${port} com o ip ${process.env.IP_LISTENING}!`)
+
+
                     app.use(express.json())
                     app.use(router)
-                    Logger.warn(`Inciando tentativa de start da API na  ${port} com o ip ${process.env.IP_LISTENING}!`)
-                    const server: any = app.listen(port, process.env.IP_LISTENING, () => {
-                        Logger.warn(`Servidor rodando na porta ${port} com o ip ${process.env.IP_LISTENING}!`)
-                        Logger.warn(`Servidor rodando na porta ${port} on process ${process.pid} !`)
-                    })
+                    // const server: any = app.listen(port, process.env.IP_LISTENING, () => {
+                    // Logger.warn(`Servidor rodando na porta ${port} com o ip ${process.env.IP_LISTENING}!`)
+                    // Logger.warn(`Servidor rodando na porta ${port} on process ${process.pid} !`)
+                    // })
+                    const server = https.createServer({
+                        key: fs.readFileSync(path.resolve("certificates", "key.key")),
+                        cert: fs.readFileSync(path.resolve("certificates", "cert.crt")),
+                        passphrase: 'fontedevida',
+                        requestCert: false,
+                        rejectUnauthorized: false
+                    }, app)
+                        .listen(9000, process.env.IP_LISTENING);
 
                     process.on('SIGINT', (): void => {
                         server.close((): void => {
