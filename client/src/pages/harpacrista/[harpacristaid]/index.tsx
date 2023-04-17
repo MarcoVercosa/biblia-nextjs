@@ -14,7 +14,7 @@ export default function HarpaCrista({ numerosHinosCreateSeletectTag, conteudoHin
         <>
             {conteudoHinoPageCurrent &&
                 <Head>
-                    <title>{conteudoHinoPageCurrent[0]?.titulo} - Hino da Harpa - Vida da fonte</title>
+                    <title>{conteudoHinoPageCurrent[0]?.titulo} - Hino da Harpa - Fonte de vida</title>
                     <meta name="description" content={`${conteudoHinoPageCurrent[0]?.titulo} - ${conteudoHinoPageCurrent[0]?.letra.substring(1, 90)}...`} ></meta>
 
                 </Head>

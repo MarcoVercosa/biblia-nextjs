@@ -40,7 +40,7 @@ export default function LeituraBiblia({ data }: { data: IBuscaConteudoLeitura })
         <>
             {data?.conteudo?.length > 0 &&
                 <Head>
-                    <title>{data?.nomeLivro[0]?.livro_nome} {data?.capituloAtual} - {data?.nomeVersao[0].versao_nome} - Vida da fonte</title>
+                    <title>{data?.nomeLivro[0]?.livro_nome} {data?.capituloAtual} - {data?.nomeVersao[0].versao_nome} - Fonte de vida</title>
                     <meta name="description" content={`${data?.conteudo[0]?.conteudo.substring(0, 115)} ...`}></meta>
                 </Head>
             }
