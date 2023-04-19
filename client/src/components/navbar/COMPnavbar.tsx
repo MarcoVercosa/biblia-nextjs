@@ -65,7 +65,9 @@ function NavBar(): JSX.Element {
                                     priority
                                 />
                             </Link>
+                            <p>HOME</p>
                         </li>
+
                         <li onClick={OpenCloseModal}>
                             <Image
                                 src="/images/iconsMenu/bible.png"
@@ -75,6 +77,7 @@ function NavBar(): JSX.Element {
                                 height={60}
                                 priority
                             />
+                            <p>LEITURA</p>
                         </li>
                         <li>
                             <Link href={`/harpacrista/${Math.floor(Math.random() * (524 - 1 + 1)) + 1}`}>
@@ -87,6 +90,7 @@ function NavBar(): JSX.Element {
                                     priority
                                 />
                             </Link>
+                            <p>HINOS</p>
                         </li>
                         <li>
                             <Link href="/favoritos">
@@ -99,6 +103,7 @@ function NavBar(): JSX.Element {
                                     priority
                                 />
                             </Link>
+                            <p>FAVORITOS</p>
                         </li>
                         <li>
                             <Link href="/about">
@@ -111,6 +116,7 @@ function NavBar(): JSX.Element {
                                     priority
                                 />
                             </Link>
+                            <p>SOBRE</p>
                         </li>
                     </ul>
                 </div>
@@ -127,7 +133,7 @@ function NavBar(): JSX.Element {
                     </div>
                 </div>
                 <div className={styles.searchMenu}>
-                    <input type="text" name='Digite' ref={inputSearchRef as any} minLength={2} maxLength={15} placeholder='Press enter to search' onKeyDown={(evt) => { GoSearchByWord(evt.key) }} ></input>
+                    <input type="text" name='Digite' ref={inputSearchRef as any} minLength={2} maxLength={15} placeholder='Enter para buscar' onKeyDown={(evt) => { GoSearchByWord(evt.key) }} ></input>
 
                 </div>
             </header>

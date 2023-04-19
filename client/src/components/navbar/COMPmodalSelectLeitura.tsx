@@ -103,8 +103,8 @@ export default function ModalSelectLeitura({ OpenCloseModal }: IPropsModalSelect
                         </div>
                     </div>
                     <div className={styles.buttons}>
-                        <button className={styles.buttonsok} onClick={GoBible} >OK</button>
                         <button className={styles.buttonsfechar} onClick={OpenCloseModal}>FECHAR </button>
+                        <button className={styles.buttonsok} onClick={GoBible} >BUSCAR</button>
                     </div>
                 </div>
             </article>

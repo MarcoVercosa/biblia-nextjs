@@ -43,8 +43,8 @@
 
 .sobrearticlediv {
     width: 60%;
-    background: rgba(255, 255, 255, 0.246);
-    backdrop-filter: blur(4.7px);
+    background: rgba(74, 106, 105, 0.246);
+    backdrop-filter: blur(2.7px);
     -webkit-backdrop-filter: blur(4.7px);
     border-radius: 25px;
     padding: 15px;

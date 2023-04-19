@@ -1,6 +1,7 @@
 {
   "pages": {
-    "/": []
+    "/about": [],
+    "/favoritos": []
   },
   "app": {}
 }
