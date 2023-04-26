@@ -1,43 +1,24 @@
-<<<<<<< HEAD
-{"level":"error","message": "Error: bind EADDRINUSE null:9000 -- uncaughtException on process 21152","Date":"26-04-2023 14:42:57"}
-{"level":"error","message": "Error: bind EADDRINUSE null:9000 -- uncaughtException on process 21153","Date":"26-04-2023 14:42:57"}
-{"level":"error","message": "Error: bind EADDRINUSE null:9000 -- uncaughtException on process 21159","Date":"26-04-2023 14:42:58"}
-{"level":"error","message": "Error: bind EADDRINUSE null:9000 -- uncaughtException on process 21165","Date":"26-04-2023 14:42:58"}
-{"level":"error","message": "Error: bind EADDRINUSE null:9000 -- uncaughtException on process 21232","Date":"26-04-2023 14:43:00"}
-{"level":"error","message": "Error: bind EADDRINUSE null:9000 -- uncaughtException on process 21233","Date":"26-04-2023 14:43:00"}
-{"level":"error","message": "Error: bind EADDRINUSE null:9000 -- uncaughtException on process 21247","Date":"26-04-2023 14:43:00"}
-{"level":"error","message": "Error: bind EADDRINUSE null:9000 -- uncaughtException on process 21246","Date":"26-04-2023 14:43:00"}
-{"level":"error","message": "Error: bind EADDRINUSE null:9000 -- uncaughtException on process 21290","Date":"26-04-2023 14:43:02"}
-{"level":"error","message": "Error: bind EADDRINUSE null:9000 -- uncaughtException on process 21296","Date":"26-04-2023 14:43:02"}
-{"level":"error","message": "Error: bind EADDRINUSE null:9000 -- uncaughtException on process 21304","Date":"26-04-2023 14:43:02"}
-{"level":"error","message": "Error: bind EADDRINUSE null:9000 -- uncaughtException on process 21310","Date":"26-04-2023 14:43:02"}
-{"level":"error","message": "Error: bind EADDRINUSE null:9000 -- uncaughtException on process 21334","Date":"26-04-2023 14:43:04"}
-{"level":"error","message": "Error: bind EADDRINUSE null:9000 -- uncaughtException on process 21343","Date":"26-04-2023 14:43:04"}
-{"level":"error","message": "Error: bind EADDRINUSE null:9000 -- uncaughtException on process 21360","Date":"26-04-2023 14:43:05"}
-{"level":"error","message": "Error: bind EADDRINUSE null:9000 -- uncaughtException on process 21371","Date":"26-04-2023 14:43:05"}
-{"level":"error","message": "Error: bind EADDRINUSE null:9000 -- uncaughtException on process 21405","Date":"26-04-2023 14:43:07"}
-{"level":"error","message": "Error: bind EADDRINUSE null:9000 -- uncaughtException on process 21412","Date":"26-04-2023 14:43:07"}
-{"level":"error","message": "Error: bind EADDRINUSE null:9000 -- uncaughtException on process 21419","Date":"26-04-2023 14:43:07"}
-{"level":"error","message": "Error: bind EADDRINUSE null:9000 -- uncaughtException on process 21426","Date":"26-04-2023 14:43:07"}
-{"level":"error","message": "Error: bind EADDRINUSE null:9000 -- uncaughtException on process 21624","Date":"26-04-2023 14:43:37"}
-{"level":"error","message": "Error: bind EADDRINUSE null:9000 -- uncaughtException on process 21631","Date":"26-04-2023 14:43:37"}
-{"level":"error","message": "Error: bind EADDRINUSE null:9000 -- uncaughtException on process 21625","Date":"26-04-2023 14:43:37"}
-{"level":"error","message": "Error: bind EADDRINUSE null:9000 -- uncaughtException on process 21637","Date":"26-04-2023 14:43:37"}
-{"level":"error","message": "Error: bind EADDRINUSE null:9000 -- uncaughtException on process 21670","Date":"26-04-2023 14:43:40"}
-{"level":"error","message": "Error: bind EADDRINUSE null:9000 -- uncaughtException on process 21676","Date":"26-04-2023 14:43:40"}
-{"level":"error","message": "Error: bind EADDRINUSE null:9000 -- uncaughtException on process 21688","Date":"26-04-2023 14:43:40"}
-{"level":"error","message": "Error: bind EADDRINUSE null:9000 -- uncaughtException on process 21669","Date":"26-04-2023 14:43:40"}
-{"level":"error","message": "Error: bind EADDRINUSE null:9000 -- uncaughtException on process 21745","Date":"26-04-2023 14:43:42"}
-{"level":"error","message": "Error: bind EADDRINUSE null:9000 -- uncaughtException on process 21746","Date":"26-04-2023 14:43:42"}
-{"level":"error","message": "Error: bind EADDRINUSE null:9000 -- uncaughtException on process 21757","Date":"26-04-2023 14:43:42"}
-{"level":"error","message": "Error: bind EADDRINUSE null:9000 -- uncaughtException on process 21759","Date":"26-04-2023 14:43:42"}
-{"level":"error","message": "Error: bind EADDRINUSE null:9000 -- uncaughtException on process 21798","Date":"26-04-2023 14:43:44"}
-{"level":"error","message": "Error: bind EADDRINUSE null:9000 -- uncaughtException on process 21806","Date":"26-04-2023 14:43:45"}
-{"level":"error","message": "Error: bind EADDRINUSE null:9000 -- uncaughtException on process 21791","Date":"26-04-2023 14:43:45"}
-{"level":"error","message": "Error: bind EADDRINUSE null:9000 -- uncaughtException on process 21805","Date":"26-04-2023 14:43:45"}
-{"level":"error","message": "Error: bind EADDRINUSE null:9000 -- uncaughtException on process 21863","Date":"26-04-2023 14:43:47"}
-{"level":"error","message": "Error: bind EADDRINUSE null:9000 -- uncaughtException on process 21870","Date":"26-04-2023 14:43:47"}
-{"level":"error","message": "Error: bind EADDRINUSE null:9000 -- uncaughtException on process 21883","Date":"26-04-2023 14:43:47"}
-{"level":"error","message": "Error: bind EADDRINUSE null:9000 -- uncaughtException on process 21871","Date":"26-04-2023 14:43:47"}
-=======
->>>>>>> master
+{"level":"error","message": "TypeError: server.close is not a function -- uncaughtException on process 29749","Date":"26-04-2023 15:14:03"}
+{"level":"error","message": "TypeError: server.close is not a function -- uncaughtException on process 29750","Date":"26-04-2023 15:14:03"}
+{"level":"error","message": "TypeError: server.close is not a function -- uncaughtException on process 29762","Date":"26-04-2023 15:14:03"}
+{"level":"error","message": "TypeError: server.close is not a function -- uncaughtException on process 29756","Date":"26-04-2023 15:14:03"}
+{"level":"error","message": "Erro ao iniciar o servidor Error: connect ETIMEDOUT","Date":"26-04-2023 15:14:38"}
+{"level":"error","message": "Erro ao iniciar o servidor Error: connect ETIMEDOUT","Date":"26-04-2023 15:14:38"}
+{"level":"error","message": "Erro ao iniciar o servidor Error: connect ETIMEDOUT","Date":"26-04-2023 15:14:38"}
+{"level":"error","message": "Erro ao iniciar o servidor Error: connect ETIMEDOUT","Date":"26-04-2023 15:14:38"}
+{"level":"error","message": "Erro ao iniciar o servidor Error: connect ETIMEDOUT","Date":"26-04-2023 15:14:53"}
+{"level":"error","message": "Erro ao iniciar o servidor Error: connect ETIMEDOUT","Date":"26-04-2023 15:14:53"}
+{"level":"error","message": "Erro ao iniciar o servidor Error: connect ETIMEDOUT","Date":"26-04-2023 15:14:53"}
+{"level":"error","message": "Erro ao iniciar o servidor Error: connect ETIMEDOUT","Date":"26-04-2023 15:14:53"}
+{"level":"error","message": "Erro ao iniciar o servidor Error: connect ETIMEDOUT","Date":"26-04-2023 15:15:08"}
+{"level":"error","message": "Erro ao iniciar o servidor Error: connect ETIMEDOUT","Date":"26-04-2023 15:15:08"}
+{"level":"error","message": "Erro ao iniciar o servidor Error: connect ETIMEDOUT","Date":"26-04-2023 15:15:08"}
+{"level":"error","message": "Erro ao iniciar o servidor Error: connect ETIMEDOUT","Date":"26-04-2023 15:15:08"}
+{"level":"error","message": "Erro ao iniciar o servidor Error: connect ETIMEDOUT","Date":"26-04-2023 15:15:23"}
+{"level":"error","message": "Erro ao iniciar o servidor Error: connect ETIMEDOUT","Date":"26-04-2023 15:15:23"}
+{"level":"error","message": "Erro ao iniciar o servidor Error: connect ETIMEDOUT","Date":"26-04-2023 15:15:23"}
+{"level":"error","message": "Erro ao iniciar o servidor Error: connect ETIMEDOUT","Date":"26-04-2023 15:15:23"}
+{"level":"error","message": "TypeError: server.close is not a function -- uncaughtException on process 30844","Date":"26-04-2023 15:16:41"}
+{"level":"error","message": "TypeError: server.close is not a function -- uncaughtException on process 30857","Date":"26-04-2023 15:16:41"}
+{"level":"error","message": "TypeError: server.close is not a function -- uncaughtException on process 30845","Date":"26-04-2023 15:16:41"}
+{"level":"error","message": "TypeError: server.close is not a function -- uncaughtException on process 30851","Date":"26-04-2023 15:16:41"}

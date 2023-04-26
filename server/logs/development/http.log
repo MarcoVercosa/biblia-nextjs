@@ -1,77 +1,15 @@
-<<<<<<< HEAD
-{"level":"http","message": "Swagger ON","Date":"26-04-2023 14:42:52"}
-{"level":"http","message": "Swagger ON","Date":"26-04-2023 14:42:53"}
-{"level":"http","message": "Swagger ON","Date":"26-04-2023 14:42:53"}
-{"level":"http","message": "Swagger ON","Date":"26-04-2023 14:42:53"}
-{"level":"http","message": "Swagger ON","Date":"26-04-2023 14:42:53"}
-{"level":"http","message": "Swagger ON","Date":"26-04-2023 14:42:55"}
-{"level":"http","message": "Swagger ON","Date":"26-04-2023 14:42:56"}
-{"level":"http","message": "Swagger ON","Date":"26-04-2023 14:42:56"}
-{"level":"http","message": "Swagger ON","Date":"26-04-2023 14:42:57"}
-{"level":"http","message": "Swagger ON","Date":"26-04-2023 14:42:57"}
-{"level":"http","message": "Swagger ON","Date":"26-04-2023 14:42:59"}
-{"level":"http","message": "Swagger ON","Date":"26-04-2023 14:42:59"}
-{"level":"http","message": "Swagger ON","Date":"26-04-2023 14:42:59"}
-{"level":"http","message": "Swagger ON","Date":"26-04-2023 14:42:59"}
-{"level":"http","message": "Swagger ON","Date":"26-04-2023 14:43:01"}
-{"level":"http","message": "Swagger ON","Date":"26-04-2023 14:43:01"}
-{"level":"http","message": "Swagger ON","Date":"26-04-2023 14:43:01"}
-{"level":"http","message": "Swagger ON","Date":"26-04-2023 14:43:01"}
-{"level":"http","message": "Swagger ON","Date":"26-04-2023 14:43:03"}
-{"level":"http","message": "Swagger ON","Date":"26-04-2023 14:43:03"}
-{"level":"http","message": "Swagger ON","Date":"26-04-2023 14:43:03"}
-{"level":"http","message": "Swagger ON","Date":"26-04-2023 14:43:04"}
-{"level":"http","message": "Swagger ON","Date":"26-04-2023 14:43:05"}
-{"level":"http","message": "Swagger ON","Date":"26-04-2023 14:43:06"}
-{"level":"http","message": "Swagger ON","Date":"26-04-2023 14:43:06"}
-{"level":"http","message": "Swagger ON","Date":"26-04-2023 14:43:06"}
-{"level":"http","message": "Swagger ON","Date":"26-04-2023 14:43:35"}
-{"level":"http","message": "Swagger ON","Date":"26-04-2023 14:43:36"}
-{"level":"http","message": "Swagger ON","Date":"26-04-2023 14:43:36"}
-{"level":"http","message": "Swagger ON","Date":"26-04-2023 14:43:36"}
-{"level":"http","message": "Swagger ON","Date":"26-04-2023 14:43:36"}
-{"level":"http","message": "Swagger ON","Date":"26-04-2023 14:43:39"}
-{"level":"http","message": "Swagger ON","Date":"26-04-2023 14:43:39"}
-{"level":"http","message": "Swagger ON","Date":"26-04-2023 14:43:39"}
-{"level":"http","message": "Swagger ON","Date":"26-04-2023 14:43:39"}
-{"level":"http","message": "Swagger ON","Date":"26-04-2023 14:43:41"}
-{"level":"http","message": "Swagger ON","Date":"26-04-2023 14:43:41"}
-{"level":"http","message": "Swagger ON","Date":"26-04-2023 14:43:41"}
-{"level":"http","message": "Swagger ON","Date":"26-04-2023 14:43:41"}
-{"level":"http","message": "Swagger ON","Date":"26-04-2023 14:43:43"}
-{"level":"http","message": "Swagger ON","Date":"26-04-2023 14:43:43"}
-{"level":"http","message": "Swagger ON","Date":"26-04-2023 14:43:43"}
-{"level":"http","message": "Swagger ON","Date":"26-04-2023 14:43:43"}
-{"level":"http","message": "Swagger ON","Date":"26-04-2023 14:43:46"}
-{"level":"http","message": "Swagger ON","Date":"26-04-2023 14:43:46"}
-{"level":"http","message": "Swagger ON","Date":"26-04-2023 14:43:46"}
-{"level":"http","message": "Swagger ON","Date":"26-04-2023 14:43:46"}
-{"level":"http","message": "Swagger ON","Date":"26-04-2023 14:43:56"}
-{"level":"http","message": "Swagger ON","Date":"26-04-2023 14:43:57"}
-{"level":"http","message": "Swagger ON","Date":"26-04-2023 14:43:57"}
-{"level":"http","message": "Swagger ON","Date":"26-04-2023 14:43:57"}
-{"level":"http","message": "Swagger ON","Date":"26-04-2023 14:43:57"}
-=======
-{"level":"http","message": "Swagger ON","Date":"19-04-2023 12:31:03"}
-{"level":"http","message": "Swagger ON","Date":"19-04-2023 12:31:04"}
-{"level":"http","message": "Swagger ON","Date":"19-04-2023 12:31:04"}
-{"level":"http","message": "Swagger ON","Date":"19-04-2023 12:31:04"}
-{"level":"http","message": "Swagger ON","Date":"19-04-2023 12:31:04"}
-{"level":"http","message": "Solicitação recebida da origem http://localhost:3000","Date":"19-04-2023 12:31:40"}
-{"level":"http","message": "Solicitado BIBLIA na rota /buscaversao","Date":"19-04-2023 12:31:40"}
-{"level":"http","message": "Solicitação recebida da origem http://localhost:3000","Date":"19-04-2023 12:31:40"}
-{"level":"http","message": "Solicitado BIBLIA na rota /buscatestamento","Date":"19-04-2023 12:31:40"}
-{"level":"http","message": "Solicitação recebida da origem http://localhost:3000","Date":"19-04-2023 12:36:57"}
-{"level":"http","message": "Solicitado BIBLIA na rota /buscaversao","Date":"19-04-2023 12:36:57"}
-{"level":"http","message": "Solicitação recebida da origem http://localhost:3000","Date":"19-04-2023 12:36:57"}
-{"level":"http","message": "Solicitado BIBLIA na rota /buscatestamento","Date":"19-04-2023 12:36:57"}
-{"level":"http","message": "Solicitação recebida da origem http://localhost:3000","Date":"19-04-2023 12:37:11"}
-{"level":"http","message": "Solicitado BIBLIA na rota /buscaversao","Date":"19-04-2023 12:37:11"}
-{"level":"http","message": "Solicitação recebida da origem http://localhost:3000","Date":"19-04-2023 12:37:11"}
-{"level":"http","message": "Solicitado BIBLIA na rota /buscatestamento","Date":"19-04-2023 12:37:11"}
-{"level":"http","message": "Swagger OFF","Date":"19-04-2023 13:16:00"}
-{"level":"http","message": "Swagger OFF","Date":"19-04-2023 13:16:00"}
-{"level":"http","message": "Swagger OFF","Date":"19-04-2023 13:16:00"}
-{"level":"http","message": "Swagger OFF","Date":"19-04-2023 13:16:00"}
-{"level":"http","message": "Swagger OFF","Date":"19-04-2023 13:16:00"}
->>>>>>> master
+{"level":"http","message": "Swagger ON","Date":"26-04-2023 15:13:51"}
+{"level":"http","message": "Swagger ON","Date":"26-04-2023 15:13:52"}
+{"level":"http","message": "Swagger ON","Date":"26-04-2023 15:13:52"}
+{"level":"http","message": "Swagger ON","Date":"26-04-2023 15:13:52"}
+{"level":"http","message": "Swagger ON","Date":"26-04-2023 15:13:52"}
+{"level":"http","message": "Swagger OFF","Date":"26-04-2023 15:14:26"}
+{"level":"http","message": "Swagger OFF","Date":"26-04-2023 15:14:27"}
+{"level":"http","message": "Swagger OFF","Date":"26-04-2023 15:14:27"}
+{"level":"http","message": "Swagger OFF","Date":"26-04-2023 15:14:27"}
+{"level":"http","message": "Swagger OFF","Date":"26-04-2023 15:14:27"}
+{"level":"http","message": "Swagger ON","Date":"26-04-2023 15:16:11"}
+{"level":"http","message": "Swagger ON","Date":"26-04-2023 15:16:12"}
+{"level":"http","message": "Swagger ON","Date":"26-04-2023 15:16:12"}
+{"level":"http","message": "Swagger ON","Date":"26-04-2023 15:16:12"}
+{"level":"http","message": "Swagger ON","Date":"26-04-2023 15:16:12"}

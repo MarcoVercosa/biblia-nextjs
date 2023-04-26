@@ -26,18 +26,25 @@ function StartServerWEB() {
                     createLogs_1.Logger.warn(`Inciando tentativa de start da API na  ${port} com o ip ${ipListening}!`);
                     app.use(express.json());
                     app.use(index_routes_1.router);
-                    // const server: any = app.listen(port, process.env.IP_LISTENING, () => {
-                    // Logger.warn(`Servidor rodando na porta ${port} com o ip ${process.env.IP_LISTENING}!`)
-                    // Logger.warn(`Servidor rodando na porta ${port} on process ${process.pid} !`)
-                    // })
-                    const server = https.createServer({
-                        key: fs.readFileSync(path.resolve("certificates", "key.key")),
-                        cert: fs.readFileSync(path.resolve("certificates", "cert.crt")),
-                        passphrase: 'fontedevida',
-                        requestCert: false,
-                        rejectUnauthorized: false
-                    }, app)
-                        .listen(9000, ipListening);
+                    const server = app;
+                    if (node_process_1.default.env.NODE_ENV == "development") {
+                        const server = app.listen(port, node_process_1.default.env.IP_LISTENING, () => {
+                            createLogs_1.Logger.warn(`Servidor rodando na porta ${port} com o ip ${node_process_1.default.env.IP_LISTENING}! --- HTTP`);
+                            createLogs_1.Logger.warn(`Servidor rodando na porta ${port} on process ${node_process_1.default.pid} !`);
+                        });
+                    }
+                    else {
+                        const server = https.createServer({
+                            key: fs.readFileSync(path.resolve("certificates", "key.key")),
+                            cert: fs.readFileSync(path.resolve("certificates", "cert.crt")),
+                            passphrase: 'fontedevida',
+                            requestCert: false,
+                            rejectUnauthorized: false
+                        }, app)
+                            .listen(9000, ipListening);
+                        createLogs_1.Logger.warn(`Servidor rodando na porta ${port} com o ip ${node_process_1.default.env.IP_LISTENING}! --- HTTPS`);
+                        createLogs_1.Logger.warn(`Servidor rodando na porta ${port} on process ${node_process_1.default.pid} !`);
+                    }
                     node_process_1.default.on('SIGINT', () => {
                         server.close(() => {
                             createLogs_1.Logger.warn('SIGTERM signal received: closing HTTP server and process' + node_process_1.default.pid);
