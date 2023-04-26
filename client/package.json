@@ -7,6 +7,7 @@
     "build": "next build",
     "start": "NODE_ENV=production next start",
     "prod": "npm install && npm run build &&  npm run start",
+    "siteMapCreate": "npx tsc src/siteMapCreate.ts && node src/siteMapCreate.js",
     "lint": "next lint"
   },
   "dependencies": {

@@ -10,7 +10,7 @@ function LiberaOrigemRegistraLog(request: Request, response: Response, next: Nex
     let headersOriginNextExternal: string = process.env.headersOriginNextExternal as string
 
     if (process.env.NODE_ENV === "development") {
-        if (origem.match(/192.168/) || origem.match(/indefi/) || origem.includes("localhost")) {
+        if (origem.match(/192.168/) || origem.match(/indefi/) || origem.includes("localhost") || origem.includes("nextfetchbuild")) {
             next()
         } else {
             response.status(403).send("Não permitido")

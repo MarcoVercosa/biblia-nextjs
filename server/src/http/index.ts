@@ -21,22 +21,27 @@ function StartServerWEB(): Promise<string> {
                 if (!erro) {
                     Logger.warn("Conectado no banco de dados com sucesso")
                     Logger.warn(`Inciando tentativa de start da API na  ${port} com o ip ${ipListening}!`)
-
-
                     app.use(express.json())
                     app.use(router)
-                    // const server: any = app.listen(port, process.env.IP_LISTENING, () => {
-                    // Logger.warn(`Servidor rodando na porta ${port} com o ip ${process.env.IP_LISTENING}!`)
-                    // Logger.warn(`Servidor rodando na porta ${port} on process ${process.pid} !`)
-                    // })
-                    const server = https.createServer({
-                        key: fs.readFileSync(path.resolve("certificates", "key.key")),
-                        cert: fs.readFileSync(path.resolve("certificates", "cert.crt")),
-                        passphrase: 'fontedevida',
-                        requestCert: false,
-                        rejectUnauthorized: false
-                    }, app)
-                        .listen(9000, ipListening);
+
+                    const server: any = app
+                    if (process.env.NODE_ENV == "development") {
+                        const server: any = app.listen(port, process.env.IP_LISTENING, () => {
+                            Logger.warn(`Servidor rodando na porta ${port} com o ip ${process.env.IP_LISTENING}! --- HTTP`)
+                            Logger.warn(`Servidor rodando na porta ${port} on process ${process.pid} !`)
+                        })
+                    } else {
+                        const server = https.createServer({
+                            key: fs.readFileSync(path.resolve("certificates", "key.key")),
+                            cert: fs.readFileSync(path.resolve("certificates", "cert.crt")),
+                            passphrase: 'fontedevida',
+                            requestCert: false,
+                            rejectUnauthorized: false
+                        }, app)
+                            .listen(9000, ipListening);
+                        Logger.warn(`Servidor rodando na porta ${port} com o ip ${process.env.IP_LISTENING}! --- HTTPS`)
+                        Logger.warn(`Servidor rodando na porta ${port} on process ${process.pid} !`)
+                    }
 
                     process.on('SIGINT', (): void => {
                         server.close((): void => {

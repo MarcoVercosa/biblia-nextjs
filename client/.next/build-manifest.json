@@ -29,6 +29,16 @@
       "static/chunks/webpack.js",
       "static/chunks/main.js",
       "static/chunks/pages/_error.js"
+    ],
+    "/harpacrista/[harpacristaid]": [
+      "static/chunks/webpack.js",
+      "static/chunks/main.js",
+      "static/chunks/pages/harpacrista/[harpacristaid].js"
+    ],
+    "/leitura/[versaoid]/[testamentoid]/[livroid]/[capitulo]": [
+      "static/chunks/webpack.js",
+      "static/chunks/main.js",
+      "static/chunks/pages/leitura/[versaoid]/[testamentoid]/[livroid]/[capitulo].js"
     ]
   },
   "ampFirstPages": []
