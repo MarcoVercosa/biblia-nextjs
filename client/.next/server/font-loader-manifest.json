@@ -1,8 +1,6 @@
 {
   "pages": {
-    "/": [],
-    "/harpacrista/[harpacristaid]": [],
-    "/leitura/[versaoid]/[testamentoid]/[livroid]/[capitulo]": []
+    "/": []
   },
   "app": {}
 }
