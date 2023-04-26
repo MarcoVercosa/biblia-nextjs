@@ -40,5 +40,5 @@ next-env.d.ts
 /dataBase
 
 #log server
-*.log
-!events/
+/events/development/*
+/events/logs/*
