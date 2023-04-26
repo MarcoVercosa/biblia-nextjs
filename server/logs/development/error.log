@@ -1,4 +1,0 @@
-{"level":"error","message": "TypeError: server.close is not a function -- uncaughtException on process 15560","Date":"26-04-2023 17:55:28"}
-{"level":"error","message": "TypeError: server.close is not a function -- uncaughtException on process 15554","Date":"26-04-2023 17:55:28"}
-{"level":"error","message": "TypeError: server.close is not a function -- uncaughtException on process 15548","Date":"26-04-2023 17:55:28"}
-{"level":"error","message": "TypeError: server.close is not a function -- uncaughtException on process 15547","Date":"26-04-2023 17:55:28"}
