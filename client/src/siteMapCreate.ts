@@ -32,6 +32,11 @@ export async function FetchAPICapitulosServerSide(versaoID: string | number, liv
 }
 
 async function MountFileSiteMap() {
+
+    fs.writeFile("siteMapFonteDeVida.xml", `\n<?xml version="1.0"'}'encoding="UTF-8"?>\n<urlset xmlns="http://www.sitemaps.org/schemas/sitemap/0.9">`, (err: any) => {
+        if (err) console.log(err);
+    })
+
     try {//cria paths do ANTIGO testamento
         for (let testamento = 1; testamento <= antigoTestamento; testamento++) {//somente 1 (antigo testamento)
             for (var livros = 1; livros <= livrosAntigoTestamento; livros++) {//para cada livro do antigo testamento
@@ -56,6 +61,9 @@ async function MountFileSiteMap() {
                 }
             }
         }
+        fs.writeFile("siteMapFonteDeVida.xml", "\n</urlset>", { flag: "a" }, (err: any) => {
+            if (err) console.log(err);
+        })
 
     } catch (err) {
         console.log(err)
