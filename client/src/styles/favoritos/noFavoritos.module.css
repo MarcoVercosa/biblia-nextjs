@@ -1,0 +1,20 @@
+.main {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    text-align: center;
+    min-height: 90vh;
+
+}
+
+.divImage {
+    height: 20rem;
+    width: 20rem;
+}
+
+.divImage {
+    font-family: 'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;
+    font-size: 1.5rem;
+    font-weight: bold;
+    color: #000000;
+}

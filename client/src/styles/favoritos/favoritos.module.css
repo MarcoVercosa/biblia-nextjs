@@ -1,0 +1,189 @@
+@font-face {
+    font-family: CormorantGaramond;
+    src: url('../../asset/CormorantGaramond/CormorantGaramond-Medium.ttf');
+    src: url('../../asset/CormorantGaramond/CormorantGaramond-BoldItalic.ttf');
+    /* font-weight: 400;
+    font-style: normal; */
+}
+
+.main {
+    display: flex;
+    justify-content: center;
+    min-height: 90vh;
+}
+
+.content {
+    margin-top: 2.5rem;
+    width: 60vw;
+    display: flex;
+    flex-direction: column;
+    gap: 2.5rem;
+}
+
+.container {
+    display: flex;
+    flex-direction: column;
+    height: auto;
+    gap: 1rem;
+    border-radius: 15px;
+    padding: 1rem;
+    position: relative;
+    border: 1px solid black;
+
+}
+
+.starImage {
+    width: 4rem;
+    align-items: center;
+    justify-content: center;
+    align-content: center;
+    align-self: center;
+    position: absolute;
+    top: -2.3rem;
+}
+
+.starImage img {}
+
+.versaoNome {
+    text-align: center;
+}
+
+.versaoNome p {
+    font-family: CormorantGaramond;
+    font-size: 2.5rem;
+    font-weight: bold;
+    color: #000000;
+}
+
+.selectedCapitulo {
+    text-align: left;
+}
+
+.selectedCapitulo p {
+    font-family: CormorantGaramond;
+    font-size: 2rem;
+    font-weight: bold;
+    color: #000000;
+}
+
+.contentSelected {
+    text-align: left
+}
+
+.contentSelected span {
+    background-color: black;
+    color: white;
+    padding: 0.2rem;
+    border-radius: 10px;
+    margin-right: 0.5rem;
+    font-size: 1.2rem;
+    font-family: 'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;
+}
+
+.contentSelected p {
+    font-family: CormorantGaramond;
+    font-size: 1.4rem;
+    font-weight: 200;
+    color: #000000;
+}
+
+.notas {
+    /* margin-top: 4rem; */
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    align-content: center;
+    width: 98%;
+
+}
+
+.notas textarea {
+    display: inline-block;
+    background-color: rgb(219, 219, 219);
+    width: 90%;
+    max-height: 100%;
+    margin: 0 auto;
+    padding: 10px;
+    border: none;
+    border-radius: 15px;
+    transition: all 0.5s;
+    font-size: 1.4rem;
+}
+
+.notas textarea:hover {
+    transform: scale(1.1);
+}
+
+.buttons {
+    /* padding: 20px; */
+    display: flex;
+    width: 100%;
+    justify-content: space-around;
+}
+
+.buttons button {
+    align-items: center;
+    background-color: initial;
+    border-radius: 8px;
+    border-width: 0;
+    color: #fff;
+    cursor: pointer;
+    font-size: 18px;
+    height: 3rem;
+    width: 8rem;
+    justify-content: center;
+    line-height: 1;
+    outline: none;
+    padding: 0 32px;
+    text-align: center;
+    text-decoration: none;
+    transition: all 150ms;
+    touch-action: manipulation;
+}
+
+.buttonsEdit {
+    background-image: linear-gradient(#d2d2d2, #ffffff);
+    /* box-shadow: 0 10px 20px rgba(255, 255, 255, 0.1), 0 3px 6px rgba(255, 255, 255, 0.05); */
+    display: flex;
+}
+
+.buttonsEdit img {
+    height: 100%;
+
+}
+
+.buttonsEdit:hover {
+    box-shadow: rgba(0, 1, 0, .2) 0 2px 8px;
+    opacity: .85;
+}
+
+.buttonsEdit:focus {
+    box-shadow: rgba(0, 0, 0, .5) 0 0 0 3px;
+}
+
+
+.buttonsGoURL {
+    background-image: linear-gradient(#d2d2d2, #ffffff);
+    /* box-shadow: 0 10px 20px rgba(255, 255, 255, 0.1), 0 3px 6px rgba(255, 255, 255, 0.05); */
+    display: flex;
+}
+
+.buttonsGoURL img {
+    height: 100%;
+
+}
+
+.buttonsGoURL:hover {
+    box-shadow: rgba(0, 1, 0, .2) 0 2px 8px;
+    opacity: .85;
+}
+
+.buttonsGoURL:focus {
+    box-shadow: rgba(0, 0, 0, .5) 0 0 0 3px;
+}
+
+@media screen and (max-width: 850px) {
+    .content {
+        width: 98vw;
+    }
+}

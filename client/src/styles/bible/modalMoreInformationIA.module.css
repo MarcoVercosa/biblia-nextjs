@@ -1,0 +1,87 @@
+@font-face {
+    font-family: CormorantGaramond;
+    src: url('../../asset/CormorantGaramond/CormorantGaramond-Medium.ttf');
+    src: url('../../asset/CormorantGaramond/CormorantGaramond-BoldItalic.ttf');
+    /* font-weight: 400;
+    font-style: normal; */
+}
+
+.article {
+    display: flex;
+    width: 100vw;
+    height: 100vh;
+    position: fixed;
+    top: 0rem;
+    justify-content: center;
+    /* glassEffect */
+    background: rgba(255, 255, 255, 0.446);
+    backdrop-filter: blur(4.7px);
+    -webkit-backdrop-filter: blur(4.7px);
+    z-index: 100;
+}
+
+.container {
+    max-height: 77vh;
+    max-width: 60vw;
+    display: flex;
+    flex-direction: column;
+    background-color: rgb(255, 255, 255);
+    border-radius: 30px;
+    overflow-x: hidden;
+    align-self: center;
+    padding: 1rem;
+}
+
+.article section::-webkit-scrollbar {
+    width: 3px;
+    height: 3px;
+    /* A altura só é vista quando a rolagem é horizontal */
+}
+
+.article section::-webkit-scrollbar-track {
+    background: transparent;
+    padding: 2px;
+
+}
+
+.article ::-webkit-scrollbar-thumb {
+    background-color: #070707;
+    border-radius: 30px;
+    cursor: pointer;
+}
+
+.buttons {
+    width: 80vw;
+    height: 5vh;
+    cursor: pointer;
+}
+
+.titulo {
+    width: 50vw;
+    padding: 1rem;
+    justify-content: center;
+    align-items: center;
+    text-align: center;
+    align-self: center;
+    width: 100%;
+}
+
+.titulo h1 {
+    font-family: CormorantGaramond;
+    font-size: 2rem;
+    font-weight: bold;
+}
+
+.titulo p {
+    font-family: CormorantGaramond;
+    font-size: 1.6rem;
+    font-weight: bold;
+    margin-top: 2rem;
+}
+
+@media (max-width: 850px) {
+    .container {
+        max-height: 85vh;
+        max-width: 97vw;
+    }
+}

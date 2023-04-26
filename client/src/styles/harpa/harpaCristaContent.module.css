@@ -1,0 +1,31 @@
+.tituloEContentHino {
+    padding: 1.3rem;
+    text-align: center;
+    animation-duration: 2s;
+    animation-name: slidein;
+}
+
+@keyframes slidein {
+    from {
+        opacity: 0;
+    }
+
+    to {
+        opacity: 1;
+    }
+}
+
+.tituloHino p {
+    font-family: "CardoGaramond";
+    font-size: 2rem;
+    font-weight: bold;
+}
+
+.conteudoHino {
+    margin-top: 2rem;
+}
+
+.conteudoHino p {
+    font-family: "CardoGaramond";
+    font-size: 1.6rem;
+}
