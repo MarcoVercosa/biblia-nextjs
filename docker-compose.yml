@@ -5,23 +5,18 @@ services:
     container_name: ${DATABASE_PROD_ENV}
     image: mysql
     command: --default-authentication-plugin=mysql_native_password
-
     volumes:
       #- /volumes_containers/proj_biblia/vol_mysql:/var/lib/mysql/
-
       - ${VOLUME_DATABASE}:/var/lib/mysql
       - ${VOLUME_DATABASE_SQL}:/docker-entrypoint-initdb.d/biblias13v.sql
       #arquivos com extensões .sh, .sqle .sql.gzque são que encontrados em /docker-entrypoint-initdb.d dentro do container são executados
       # automaticamente pelo proprio mysql em ordem alfabética..
-
-
     environment:
       MYSQL_ROOT_PASSWORD: ${ROOT_PASSWORD}
       MYSQL_DATABASE: "biblias13v"
+    restart: always
     ports:
       - ${PORTS_MYSQL}
-    restart: unless-stopped
-
     networks:
       network-mysql-nodejs:
         ipv4_address: ${IP_ADDRESS_MYSQL}
@@ -35,7 +30,7 @@ services:
     user: node
     ports:
       - ${PORTS_NODE}
-    restart: unless-stopped
+    restart: always
     depends_on:
       - mysqlsrv
     volumes:
@@ -55,7 +50,7 @@ services:
       - NODE_env=production
     ports:
       - ${PORTS_NODE_NEXT}
-    restart: unless-stopped
+    restart: always
     depends_on:
       - nodeapi
     volumes:
@@ -76,6 +71,7 @@ services:
     ports:
       - ${PORTS_NGINX}
       - ${PORTS_NGINX_SSL}
+    restart: always
     depends_on:
       - nodeapi
     networks:

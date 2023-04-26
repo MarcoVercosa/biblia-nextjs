@@ -11,6 +11,7 @@ const express = require("express")
 const app = express()
 const https = require("https")
 let port = process.env.portHTTP
+let ipListening = process.env.NODE_ENV == "development" ? process.env.IP_LISTENING_DEV : process.env.IP_LISTENING_PROD
 
 function StartServerWEB(): Promise<string> {
     Logger.warn("Servidor inciando tentativa de conexão ao banco de dados")
@@ -19,7 +20,7 @@ function StartServerWEB(): Promise<string> {
             try {
                 if (!erro) {
                     Logger.warn("Conectado no banco de dados com sucesso")
-                    Logger.warn(`Inciando tentativa de start da API na  ${port} com o ip ${process.env.IP_LISTENING}!`)
+                    Logger.warn(`Inciando tentativa de start da API na  ${port} com o ip ${ipListening}!`)
 
 
                     app.use(express.json())
@@ -35,7 +36,7 @@ function StartServerWEB(): Promise<string> {
                         requestCert: false,
                         rejectUnauthorized: false
                     }, app)
-                        .listen(9000, process.env.IP_LISTENING);
+                        .listen(9000, ipListening);
 
                     process.on('SIGINT', (): void => {
                         server.close((): void => {

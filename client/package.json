@@ -5,7 +5,7 @@
   "scripts": {
     "dev": "NODE_ENV=development next dev",
     "build": "next build",
-    "start": "NODE_ENV=pruduction next start",
+    "start": "NODE_ENV=production next start",
     "prod": "npm install && npm run build &&  npm run start",
     "lint": "next lint"
   },

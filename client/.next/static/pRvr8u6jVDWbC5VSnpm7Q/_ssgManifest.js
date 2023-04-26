@@ -1,0 +1,1 @@
+self.__SSG_MANIFEST=new Set(["\u002Fharpacrista\u002F[harpacristaid]","\u002Fleitura\u002F[versaoid]\u002F[testamentoid]\u002F[livroid]\u002F[capitulo]"]);self.__SSG_MANIFEST_CB&&self.__SSG_MANIFEST_CB()

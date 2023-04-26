@@ -1,39 +1,81 @@
 {
   "polyfillFiles": [
-    "static/chunks/polyfills.js"
+    "static/chunks/polyfills-c67a75d1b6f99dc8.js"
   ],
-  "devFiles": [
-    "static/chunks/react-refresh.js"
-  ],
-  "ampDevFiles": [
-    "static/chunks/webpack.js",
-    "static/chunks/amp.js"
-  ],
+  "devFiles": [],
+  "ampDevFiles": [],
   "lowPriorityFiles": [
-    "static/development/_buildManifest.js",
-    "static/development/_ssgManifest.js"
+    "static/pRvr8u6jVDWbC5VSnpm7Q/_buildManifest.js",
+    "static/pRvr8u6jVDWbC5VSnpm7Q/_ssgManifest.js"
   ],
   "rootMainFiles": [],
   "pages": {
+    "/": [
+      "static/chunks/webpack-8fa1640cc84ba8fe.js",
+      "static/chunks/framework-2c79e2a64abdb08b.js",
+      "static/chunks/main-a0dca5a2ff5035f1.js",
+      "static/chunks/640-579d8d4f2386c4d1.js",
+      "static/chunks/675-75e2afb7ec16462e.js",
+      "static/css/ed96041a4ed0d27c.css",
+      "static/chunks/pages/index-949cb18b1278c22a.js"
+    ],
     "/_app": [
-      "static/chunks/webpack.js",
-      "static/chunks/main.js",
-      "static/chunks/pages/_app.js"
+      "static/chunks/webpack-8fa1640cc84ba8fe.js",
+      "static/chunks/framework-2c79e2a64abdb08b.js",
+      "static/chunks/main-a0dca5a2ff5035f1.js",
+      "static/css/4f63d100a2e1f7d1.css",
+      "static/chunks/pages/_app-5d302008b2e273a5.js"
     ],
     "/_error": [
-      "static/chunks/webpack.js",
-      "static/chunks/main.js",
-      "static/chunks/pages/_error.js"
+      "static/chunks/webpack-8fa1640cc84ba8fe.js",
+      "static/chunks/framework-2c79e2a64abdb08b.js",
+      "static/chunks/main-a0dca5a2ff5035f1.js",
+      "static/chunks/pages/_error-8353112a01355ec2.js"
     ],
     "/about": [
-      "static/chunks/webpack.js",
-      "static/chunks/main.js",
-      "static/chunks/pages/about.js"
+      "static/chunks/webpack-8fa1640cc84ba8fe.js",
+      "static/chunks/framework-2c79e2a64abdb08b.js",
+      "static/chunks/main-a0dca5a2ff5035f1.js",
+      "static/chunks/640-579d8d4f2386c4d1.js",
+      "static/chunks/675-75e2afb7ec16462e.js",
+      "static/css/dfff8266b460ed58.css",
+      "static/chunks/pages/about-b5ac55d3f69aa962.js"
     ],
     "/favoritos": [
-      "static/chunks/webpack.js",
-      "static/chunks/main.js",
-      "static/chunks/pages/favoritos.js"
+      "static/chunks/webpack-8fa1640cc84ba8fe.js",
+      "static/chunks/framework-2c79e2a64abdb08b.js",
+      "static/chunks/main-a0dca5a2ff5035f1.js",
+      "static/chunks/640-579d8d4f2386c4d1.js",
+      "static/chunks/675-75e2afb7ec16462e.js",
+      "static/css/823962bf31064363.css",
+      "static/chunks/pages/favoritos-494eaaa40ca2514d.js"
+    ],
+    "/harpacrista/[harpacristaid]": [
+      "static/chunks/webpack-8fa1640cc84ba8fe.js",
+      "static/chunks/framework-2c79e2a64abdb08b.js",
+      "static/chunks/main-a0dca5a2ff5035f1.js",
+      "static/chunks/640-579d8d4f2386c4d1.js",
+      "static/chunks/675-75e2afb7ec16462e.js",
+      "static/css/411ed0bfb7bb35f5.css",
+      "static/chunks/pages/harpacrista/[harpacristaid]-c8d3f2e49349b32a.js"
+    ],
+    "/leitura/[versaoid]/[testamentoid]/[livroid]/[capitulo]": [
+      "static/chunks/webpack-8fa1640cc84ba8fe.js",
+      "static/chunks/framework-2c79e2a64abdb08b.js",
+      "static/chunks/main-a0dca5a2ff5035f1.js",
+      "static/chunks/640-579d8d4f2386c4d1.js",
+      "static/chunks/675-75e2afb7ec16462e.js",
+      "static/css/ecf19f4ebe28b130.css",
+      "static/chunks/pages/leitura/[versaoid]/[testamentoid]/[livroid]/[capitulo]-877c845b7ee620a4.js"
+    ],
+    "/pesquisabiblia/[biblesearchid]": [
+      "static/chunks/webpack-8fa1640cc84ba8fe.js",
+      "static/chunks/framework-2c79e2a64abdb08b.js",
+      "static/chunks/main-a0dca5a2ff5035f1.js",
+      "static/chunks/640-579d8d4f2386c4d1.js",
+      "static/chunks/675-75e2afb7ec16462e.js",
+      "static/css/35cc7d0d03ad3897.css",
+      "static/chunks/pages/pesquisabiblia/[biblesearchid]-c2942a3c69a113c0.js"
     ]
   },
   "ampFirstPages": []
