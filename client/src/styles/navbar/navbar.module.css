@@ -39,10 +39,10 @@
 
 .menu {
     top: 8rem;
-    left: 2rem;
+    left: 1.7rem;
     /* margin: 80px; */
-    width: 70px;
-    height: 25.2rem;
+    width: 80px;
+    height: 32rem;
     position: absolute;
     animation-duration: 0.7s;
     animation-name: slidein;
@@ -62,7 +62,8 @@
 }
 
 .menuIcons {
-    display: block;
+    display: flex;
+    flex-direction: column;
     width: 100%;
     height: 100%;
     /* position: absolute; */
@@ -85,7 +86,7 @@
 }
 
 .menuIcons li {
-    margin-bottom: 20px;
+    margin-bottom: 2px;
     list-style-type: none;
     cursor: pointer;
     transition: all 0.5s;
@@ -93,6 +94,14 @@
 
 .menuIcons li:hover {
     transform: scale(1.1);
+}
+
+.menuIcons li p {
+    color: rgb(36, 36, 36);
+    justify-content: center;
+    align-items: center;
+    align-self: center;
+    text-align: center;
 }
 
 .imageMenu {

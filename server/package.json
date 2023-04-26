@@ -5,7 +5,7 @@
   "main": "http/index.js",
   "scripts": {
     "dev": "NODE_ENV=development ts-node-dev --transpile-only --ignore-watch node_modules src/startServer.ts",
-    "devjs": "nodemon src/startServer.ts",
+    "devjs": "NODE_ENV=development nodemon src/startServer.ts",
     "build": "NODE_ENV=production npx tsc && node build/startServer.js",
     "prodDocker": "NODE_ENV=production && node build/startServer.js"
   },

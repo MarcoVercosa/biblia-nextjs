@@ -3,14 +3,13 @@ import {
     IresultLivros, IresultCapitulos, IBuscaConteudoLeitura, IFindBibleBySearchAPI, IHinoPorPalavra, IGetDataFromIA
 } from "@/interfaces/interfaces"
 
-//const urlApiDev = 'https://192.168.15.143:9000'
-const urlApiDev = 'https://vps45754.publiccloud.com.br:9000'
-const urlApiProd = 'http://...'
+let urlAPI: string = ""
+process.env.NODE_ENV == "development" ? urlAPI = "https://192.168.15.143:9000" : urlAPI = "https://vps45754.publiccloud.com.br:9000"
 const pass = "x?-re_3k4wrO#*zadEsp+pho+i!lswut_@f!suben2c9u4r$9es2&r666ath_0oysp+pho+i!lswut_x?-re_3k4wrO#*zadEsp+pho+i!lswut_-re_3k4wrO#*zadEsp+pho+i!lswut"
 
 export async function FetchAPIVersaoClientSide(): Promise<IresultVersao[]> {
     try {
-        const response = await fetch(`${urlApiDev}/mais/buscaversao`)
+        const response = await fetch(`${urlAPI}/mais/buscaversao`)
         if (response.status == 200) {
             const data = await response.json()
             return data as IresultVersao[]
@@ -23,7 +22,7 @@ export async function FetchAPIVersaoClientSide(): Promise<IresultVersao[]> {
 
 export async function FetchAPITestamentoClientSide(): Promise<IresultTestamento[] | []> {
     try {
-        const response = await fetch(`${urlApiDev}/mais/buscatestamento`)
+        const response = await fetch(`${urlAPI}/mais/buscatestamento`)
         if (response.status == 200) {
             const data = await response.json()
             return data as IresultTestamento[]
@@ -36,7 +35,7 @@ export async function FetchAPITestamentoClientSide(): Promise<IresultTestamento[
 
 export async function FetchAPILivros(testamentoID: number): Promise<IresultLivros[] | []> {
     try {
-        const response = await fetch(`${urlApiDev}/mais/buscalivros/${testamentoID}`)
+        const response = await fetch(`${urlAPI}/mais/buscalivros/${testamentoID}`)
         if (response.status == 200) {
             const data = await response.json()
             return data as IresultLivros[]
@@ -49,7 +48,7 @@ export async function FetchAPILivros(testamentoID: number): Promise<IresultLivro
 
 export async function FetchAPICapitulos(versaoID: string | number, livroID: string | number): Promise<IresultCapitulos[] | []> {
     try {
-        const response = await fetch(`${urlApiDev}/mais/buscacapitulo/${versaoID}/${livroID}`)
+        const response = await fetch(`${urlAPI}/mais/buscacapitulo/${versaoID}/${livroID}`)
         if (response.status == 200) {
             const data = await response.json()
             return data as IresultCapitulos[]
@@ -62,7 +61,7 @@ export async function FetchAPICapitulos(versaoID: string | number, livroID: stri
 
 export async function FetchConteudo(versaoID: string, testamentoID: string, livroId: string, capitulo: string): Promise<IBuscaConteudoLeitura | []> {
     try {
-        const response = await fetch(`${urlApiDev}/mais/buscaconteudo/${versaoID}/${testamentoID}/${livroId}/${capitulo}`)
+        const response = await fetch(`${urlAPI}/mais/buscaconteudo/${versaoID}/${testamentoID}/${livroId}/${capitulo}`)
 
         if (response.status == 200) {
             const data = await response.json()
@@ -76,7 +75,7 @@ export async function FetchConteudo(versaoID: string, testamentoID: string, livr
 
 export async function FetchAPICapitulosServerSide(versaoID: string | number, livroID: string | number): Promise<IresultCapitulos[] | []> {
     try {
-        const response = await fetch(`${urlApiDev}/mais/buscacapitulo/${versaoID}/${livroID}`, {
+        const response = await fetch(`${urlAPI}/mais/buscacapitulo/${versaoID}/${livroID}`, {
             headers: {
                 'Content-Type': 'application/json',
                 'origin': 'http://nextfetchbuild'
@@ -94,7 +93,7 @@ export async function FetchAPICapitulosServerSide(versaoID: string | number, liv
 
 export async function FetchConteudoServerSide(versaoID: string, testamentoID: string, livroId: string, capitulo: string): Promise<IBuscaConteudoLeitura | []> {
     try {
-        const response = await fetch(`${urlApiDev}/mais/buscaconteudo/${versaoID}/${testamentoID}/${livroId}/${capitulo}`, {
+        const response = await fetch(`${urlAPI}/mais/buscaconteudo/${versaoID}/${testamentoID}/${livroId}/${capitulo}`, {
             headers: {
                 'Content-Type': 'application/json',
                 'origin': 'http://nextfetchbuild'
@@ -113,7 +112,7 @@ export async function FetchConteudoServerSide(versaoID: string, testamentoID: st
 
 export async function FindBibleBySearchAPIClientSide(value: string): Promise<IFindBibleBySearchAPI[] | []> {
     try {
-        const response = await fetch(`${urlApiDev}/mais/pesquisa/${value}`)
+        const response = await fetch(`${urlAPI}/mais/pesquisa/${value}`)
         let data = await response.json()
         return data as IFindBibleBySearchAPI[]
     } catch (error) {
@@ -122,7 +121,7 @@ export async function FindBibleBySearchAPIClientSide(value: string): Promise<IFi
 }
 export async function FetchSelectNumeroHarpaServerSide() {
     try {
-        const response = await fetch(`${urlApiDev}/hinoharpa/buscanumeroharpa`, {
+        const response = await fetch(`${urlAPI}/hinoharpa/buscanumeroharpa`, {
             headers: {
                 'Content-Type': 'application/json',
                 'origin': 'http://nextfetchbuild'
@@ -138,7 +137,7 @@ export async function FetchSelectNumeroHarpaServerSide() {
 
 export async function FetchConteudoHarpaServerSide(value: string) {
     try {
-        const response = await fetch(`${urlApiDev}/hinoharpa/buscatitulopornumero/${value}`, {
+        const response = await fetch(`${urlAPI}/hinoharpa/buscatitulopornumero/${value}`, {
             headers: {
                 'Content-Type': 'application/json',
                 'origin': 'http://nextfetchbuild'
@@ -154,7 +153,7 @@ export async function FetchConteudoHarpaServerSide(value: string) {
 
 export async function FetchConteudoHinoBySearchClientSide(searchWordField: string) {
     try {
-        const response = await fetch(`${urlApiDev}/hinoharpa/buscatituloporpalavra/${searchWordField}`)
+        const response = await fetch(`${urlAPI}/hinoharpa/buscatituloporpalavra/${searchWordField}`)
         let data = await response.json()
         return data as IHinoPorPalavra[]
     } catch (error) {
@@ -164,7 +163,7 @@ export async function FetchConteudoHinoBySearchClientSide(searchWordField: strin
 
 export async function GetDataFromIA(word: string | undefined): Promise<IGetDataFromIA | []> {
     try {
-        const response = await fetch(`${urlApiDev}/ai/dataai`, {
+        const response = await fetch(`${urlAPI}/ai/dataai`, {
             method: "POST",
             body: JSON.stringify({
                 askedToAI: word,

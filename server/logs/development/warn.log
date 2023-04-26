@@ -1,3 +1,4 @@
+<<<<<<< HEAD
 {"level":"warn","message": "21012 is started","Date":"26-04-2023 14:42:52"}
 {"level":"warn","message": "21012 is started","Date":"26-04-2023 14:42:52"}
 {"level":"warn","message": "21012 is started","Date":"26-04-2023 14:42:52"}
@@ -254,3 +255,37 @@
 {"level":"warn","message": "SIGTERM signal received: closing HTTP server and process22047","Date":"26-04-2023 14:44:58"}
 {"level":"warn","message": "SIGTERM signal received: closing HTTP server and process22053","Date":"26-04-2023 14:44:58"}
 {"level":"warn","message": "SIGTERM signal received: closing HTTP server and process22046","Date":"26-04-2023 14:44:58"}
+=======
+{"level":"warn","message": "7630 is started","Date":"19-04-2023 12:31:03"}
+{"level":"warn","message": "7630 is started","Date":"19-04-2023 12:31:03"}
+{"level":"warn","message": "7630 is started","Date":"19-04-2023 12:31:03"}
+{"level":"warn","message": "7630 is started","Date":"19-04-2023 12:31:03"}
+{"level":"warn","message": "Servidor inciando tentativa de conexão ao banco de dados","Date":"19-04-2023 12:31:05"}
+{"level":"warn","message": "Servidor inciando tentativa de conexão ao banco de dados","Date":"19-04-2023 12:31:05"}
+{"level":"warn","message": "Conectado no banco de dados com sucesso","Date":"19-04-2023 12:31:05"}
+{"level":"warn","message": "Conectado no banco de dados com sucesso","Date":"19-04-2023 12:31:05"}
+{"level":"warn","message": "Inciando tentativa de start da API na  9000 com o ip 0.0.0.0!","Date":"19-04-2023 12:31:05"}
+{"level":"warn","message": "Server is started on process 7660","Date":"19-04-2023 12:31:05"}
+{"level":"warn","message": "Servidor inciando tentativa de conexão ao banco de dados","Date":"19-04-2023 12:31:05"}
+{"level":"warn","message": "Inciando tentativa de start da API na  9000 com o ip 0.0.0.0!","Date":"19-04-2023 12:31:05"}
+{"level":"warn","message": "Server is started on process 7661","Date":"19-04-2023 12:31:05"}
+{"level":"warn","message": "Conectado no banco de dados com sucesso","Date":"19-04-2023 12:31:05"}
+{"level":"warn","message": "Inciando tentativa de start da API na  9000 com o ip 0.0.0.0!","Date":"19-04-2023 12:31:05"}
+{"level":"warn","message": "Server is started on process 7667","Date":"19-04-2023 12:31:05"}
+{"level":"warn","message": "Servidor inciando tentativa de conexão ao banco de dados","Date":"19-04-2023 12:31:05"}
+{"level":"warn","message": "Conectado no banco de dados com sucesso","Date":"19-04-2023 12:31:05"}
+{"level":"warn","message": "Inciando tentativa de start da API na  9000 com o ip 0.0.0.0!","Date":"19-04-2023 12:31:05"}
+{"level":"warn","message": "Server is started on process 7673","Date":"19-04-2023 12:31:05"}
+{"level":"warn","message": "SIGTERM signal received: closing HTTP server and process7661","Date":"19-04-2023 13:13:17"}
+{"level":"warn","message": "SIGTERM signal received: closing HTTP server and process7673","Date":"19-04-2023 13:13:17"}
+{"level":"warn","message": "SIGTERM signal received: closing HTTP server and process7667","Date":"19-04-2023 13:13:17"}
+{"level":"warn","message": "SIGTERM signal received: closing HTTP server and process7660","Date":"19-04-2023 13:13:17"}
+{"level":"warn","message": "13650 is started","Date":"19-04-2023 13:16:00"}
+{"level":"warn","message": "13650 is started","Date":"19-04-2023 13:16:00"}
+{"level":"warn","message": "13650 is started","Date":"19-04-2023 13:16:00"}
+{"level":"warn","message": "13650 is started","Date":"19-04-2023 13:16:00"}
+{"level":"warn","message": "Servidor inciando tentativa de conexão ao banco de dados","Date":"19-04-2023 13:16:01"}
+{"level":"warn","message": "Servidor inciando tentativa de conexão ao banco de dados","Date":"19-04-2023 13:16:01"}
+{"level":"warn","message": "Servidor inciando tentativa de conexão ao banco de dados","Date":"19-04-2023 13:16:01"}
+{"level":"warn","message": "Servidor inciando tentativa de conexão ao banco de dados","Date":"19-04-2023 13:16:01"}
+>>>>>>> master

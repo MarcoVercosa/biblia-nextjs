@@ -1,3 +1,4 @@
+<<<<<<< HEAD
 {"level":"error","message": "Error: bind EADDRINUSE null:9000 -- uncaughtException on process 21152","Date":"26-04-2023 14:42:57"}
 {"level":"error","message": "Error: bind EADDRINUSE null:9000 -- uncaughtException on process 21153","Date":"26-04-2023 14:42:57"}
 {"level":"error","message": "Error: bind EADDRINUSE null:9000 -- uncaughtException on process 21159","Date":"26-04-2023 14:42:58"}
@@ -38,3 +39,5 @@
 {"level":"error","message": "Error: bind EADDRINUSE null:9000 -- uncaughtException on process 21870","Date":"26-04-2023 14:43:47"}
 {"level":"error","message": "Error: bind EADDRINUSE null:9000 -- uncaughtException on process 21883","Date":"26-04-2023 14:43:47"}
 {"level":"error","message": "Error: bind EADDRINUSE null:9000 -- uncaughtException on process 21871","Date":"26-04-2023 14:43:47"}
+=======
+>>>>>>> master
