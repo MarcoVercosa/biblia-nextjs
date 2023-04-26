@@ -79,7 +79,7 @@ export async function FetchAPICapitulosServerSide(versaoID: string | number, liv
         const response = await fetch(`${urlApiDev}/mais/buscacapitulo/${versaoID}/${livroID}`, {
             headers: {
                 'Content-Type': 'application/json',
-                'origin': 'http://localhost'
+                'origin': 'http://nextfetchbuild'
             }
         })
         if (response.status == 200) {
