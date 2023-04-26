@@ -1,13 +1,6 @@
 {
   "/_app": "pages/_app.js",
-  "/_document": "pages/_document.js",
-  "/about": "pages/about.html",
-  "/api/hello": "pages/api/hello.js",
   "/_error": "pages/_error.js",
-  "/favoritos": "pages/favoritos.html",
-  "/pesquisabiblia/[biblesearchid]": "pages/pesquisabiblia/[biblesearchid].html",
-  "/": "pages/index.html",
-  "/harpacrista/[harpacristaid]": "pages/harpacrista/[harpacristaid].js",
-  "/leitura/[versaoid]/[testamentoid]/[livroid]/[capitulo]": "pages/leitura/[versaoid]/[testamentoid]/[livroid]/[capitulo].js",
-  "/404": "pages/404.html"
+  "/_document": "pages/_document.js",
+  "/": "pages/index.js"
 }
