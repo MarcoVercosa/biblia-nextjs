@@ -4,7 +4,7 @@ import {
 } from "@/interfaces/interfaces"
 
 let urlAPI: string = ""
-process.env.NODE_ENV == "development" ? urlAPI = "https://192.168.15.143:9000" : urlAPI = "https://vps45754.publiccloud.com.br:9000"
+process.env.NODE_ENV == "development" ? urlAPI = "http://192.168.15.143:9000" : urlAPI = "https://vps45754.publiccloud.com.br:9000"
 const pass = "x?-re_3k4wrO#*zadEsp+pho+i!lswut_@f!suben2c9u4r$9es2&r666ath_0oysp+pho+i!lswut_x?-re_3k4wrO#*zadEsp+pho+i!lswut_-re_3k4wrO#*zadEsp+pho+i!lswut"
 
 export async function FetchAPIVersaoClientSide(): Promise<IresultVersao[]> {

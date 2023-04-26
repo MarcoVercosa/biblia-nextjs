@@ -1,24 +1,4 @@
-{"level":"error","message": "TypeError: server.close is not a function -- uncaughtException on process 29749","Date":"26-04-2023 15:14:03"}
-{"level":"error","message": "TypeError: server.close is not a function -- uncaughtException on process 29750","Date":"26-04-2023 15:14:03"}
-{"level":"error","message": "TypeError: server.close is not a function -- uncaughtException on process 29762","Date":"26-04-2023 15:14:03"}
-{"level":"error","message": "TypeError: server.close is not a function -- uncaughtException on process 29756","Date":"26-04-2023 15:14:03"}
-{"level":"error","message": "Erro ao iniciar o servidor Error: connect ETIMEDOUT","Date":"26-04-2023 15:14:38"}
-{"level":"error","message": "Erro ao iniciar o servidor Error: connect ETIMEDOUT","Date":"26-04-2023 15:14:38"}
-{"level":"error","message": "Erro ao iniciar o servidor Error: connect ETIMEDOUT","Date":"26-04-2023 15:14:38"}
-{"level":"error","message": "Erro ao iniciar o servidor Error: connect ETIMEDOUT","Date":"26-04-2023 15:14:38"}
-{"level":"error","message": "Erro ao iniciar o servidor Error: connect ETIMEDOUT","Date":"26-04-2023 15:14:53"}
-{"level":"error","message": "Erro ao iniciar o servidor Error: connect ETIMEDOUT","Date":"26-04-2023 15:14:53"}
-{"level":"error","message": "Erro ao iniciar o servidor Error: connect ETIMEDOUT","Date":"26-04-2023 15:14:53"}
-{"level":"error","message": "Erro ao iniciar o servidor Error: connect ETIMEDOUT","Date":"26-04-2023 15:14:53"}
-{"level":"error","message": "Erro ao iniciar o servidor Error: connect ETIMEDOUT","Date":"26-04-2023 15:15:08"}
-{"level":"error","message": "Erro ao iniciar o servidor Error: connect ETIMEDOUT","Date":"26-04-2023 15:15:08"}
-{"level":"error","message": "Erro ao iniciar o servidor Error: connect ETIMEDOUT","Date":"26-04-2023 15:15:08"}
-{"level":"error","message": "Erro ao iniciar o servidor Error: connect ETIMEDOUT","Date":"26-04-2023 15:15:08"}
-{"level":"error","message": "Erro ao iniciar o servidor Error: connect ETIMEDOUT","Date":"26-04-2023 15:15:23"}
-{"level":"error","message": "Erro ao iniciar o servidor Error: connect ETIMEDOUT","Date":"26-04-2023 15:15:23"}
-{"level":"error","message": "Erro ao iniciar o servidor Error: connect ETIMEDOUT","Date":"26-04-2023 15:15:23"}
-{"level":"error","message": "Erro ao iniciar o servidor Error: connect ETIMEDOUT","Date":"26-04-2023 15:15:23"}
-{"level":"error","message": "TypeError: server.close is not a function -- uncaughtException on process 30844","Date":"26-04-2023 15:16:41"}
-{"level":"error","message": "TypeError: server.close is not a function -- uncaughtException on process 30857","Date":"26-04-2023 15:16:41"}
-{"level":"error","message": "TypeError: server.close is not a function -- uncaughtException on process 30845","Date":"26-04-2023 15:16:41"}
-{"level":"error","message": "TypeError: server.close is not a function -- uncaughtException on process 30851","Date":"26-04-2023 15:16:41"}
+{"level":"error","message": "TypeError: server.close is not a function -- uncaughtException on process 5095","Date":"26-04-2023 16:02:16"}
+{"level":"error","message": "TypeError: server.close is not a function -- uncaughtException on process 5110","Date":"26-04-2023 16:02:16"}
+{"level":"error","message": "TypeError: server.close is not a function -- uncaughtException on process 5097","Date":"26-04-2023 16:02:16"}
+{"level":"error","message": "TypeError: server.close is not a function -- uncaughtException on process 5104","Date":"26-04-2023 16:02:16"}
