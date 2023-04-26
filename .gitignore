@@ -40,4 +40,5 @@ next-env.d.ts
 /dataBase
 
 #log server
-*.log
+logs/development/*.log
+logs/production/*.log
