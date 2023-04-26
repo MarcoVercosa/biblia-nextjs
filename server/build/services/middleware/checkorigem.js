@@ -9,7 +9,7 @@ function LiberaOrigemRegistraLog(request, response, next) {
     let headersOriginExternal = process.env.headersOriginExternal;
     let headersOriginNextExternal = process.env.headersOriginNextExternal;
     if (process.env.NODE_ENV === "development") {
-        if (origem.match(/192.168/) || origem.match(/indefi/) || origem.includes("localhost")) {
+        if (origem.match(/192.168/) || origem.match(/indefi/) || origem.includes("localhost") || origem.includes("nextfetchbuild")) {
             next();
         }
         else {

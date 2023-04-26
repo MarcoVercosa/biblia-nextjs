@@ -1,111 +1,28 @@
-<<<<<<< HEAD
-{"level":"warn","message": "7630 is started","Date":"19-04-2023 12:31:03"}
-{"level":"warn","message": "7630 is started","Date":"19-04-2023 12:31:03"}
-{"level":"warn","message": "7630 is started","Date":"19-04-2023 12:31:03"}
-{"level":"warn","message": "7630 is started","Date":"19-04-2023 12:31:03"}
-{"level":"warn","message": "Servidor inciando tentativa de conexão ao banco de dados","Date":"19-04-2023 12:31:05"}
-{"level":"warn","message": "Servidor inciando tentativa de conexão ao banco de dados","Date":"19-04-2023 12:31:05"}
-{"level":"warn","message": "Conectado no banco de dados com sucesso","Date":"19-04-2023 12:31:05"}
-{"level":"warn","message": "Conectado no banco de dados com sucesso","Date":"19-04-2023 12:31:05"}
-{"level":"warn","message": "Inciando tentativa de start da API na  9000 com o ip 0.0.0.0!","Date":"19-04-2023 12:31:05"}
-{"level":"warn","message": "Server is started on process 7660","Date":"19-04-2023 12:31:05"}
-{"level":"warn","message": "Servidor inciando tentativa de conexão ao banco de dados","Date":"19-04-2023 12:31:05"}
-{"level":"warn","message": "Inciando tentativa de start da API na  9000 com o ip 0.0.0.0!","Date":"19-04-2023 12:31:05"}
-{"level":"warn","message": "Server is started on process 7661","Date":"19-04-2023 12:31:05"}
-{"level":"warn","message": "Conectado no banco de dados com sucesso","Date":"19-04-2023 12:31:05"}
-{"level":"warn","message": "Inciando tentativa de start da API na  9000 com o ip 0.0.0.0!","Date":"19-04-2023 12:31:05"}
-{"level":"warn","message": "Server is started on process 7667","Date":"19-04-2023 12:31:05"}
-{"level":"warn","message": "Servidor inciando tentativa de conexão ao banco de dados","Date":"19-04-2023 12:31:05"}
-{"level":"warn","message": "Conectado no banco de dados com sucesso","Date":"19-04-2023 12:31:05"}
-{"level":"warn","message": "Inciando tentativa de start da API na  9000 com o ip 0.0.0.0!","Date":"19-04-2023 12:31:05"}
-{"level":"warn","message": "Server is started on process 7673","Date":"19-04-2023 12:31:05"}
-{"level":"warn","message": "SIGTERM signal received: closing HTTP server and process7661","Date":"19-04-2023 13:13:17"}
-{"level":"warn","message": "SIGTERM signal received: closing HTTP server and process7673","Date":"19-04-2023 13:13:17"}
-{"level":"warn","message": "SIGTERM signal received: closing HTTP server and process7667","Date":"19-04-2023 13:13:17"}
-{"level":"warn","message": "SIGTERM signal received: closing HTTP server and process7660","Date":"19-04-2023 13:13:17"}
-{"level":"warn","message": "13650 is started","Date":"19-04-2023 13:16:00"}
-{"level":"warn","message": "13650 is started","Date":"19-04-2023 13:16:00"}
-{"level":"warn","message": "13650 is started","Date":"19-04-2023 13:16:00"}
-{"level":"warn","message": "13650 is started","Date":"19-04-2023 13:16:00"}
-{"level":"warn","message": "Servidor inciando tentativa de conexão ao banco de dados","Date":"19-04-2023 13:16:01"}
-{"level":"warn","message": "Servidor inciando tentativa de conexão ao banco de dados","Date":"19-04-2023 13:16:01"}
-{"level":"warn","message": "Servidor inciando tentativa de conexão ao banco de dados","Date":"19-04-2023 13:16:01"}
-{"level":"warn","message": "Servidor inciando tentativa de conexão ao banco de dados","Date":"19-04-2023 13:16:01"}
-{"level":"warn","message": "12264 is started","Date":"26-04-2023 17:25:33"}
-{"level":"warn","message": "12264 is started","Date":"26-04-2023 17:25:33"}
-{"level":"warn","message": "12264 is started","Date":"26-04-2023 17:25:33"}
-{"level":"warn","message": "12264 is started","Date":"26-04-2023 17:25:33"}
-{"level":"warn","message": "Servidor inciando tentativa de conexão ao banco de dados","Date":"26-04-2023 17:25:35"}
-{"level":"warn","message": "Servidor inciando tentativa de conexão ao banco de dados","Date":"26-04-2023 17:25:35"}
-{"level":"warn","message": "Conectado no banco de dados com sucesso","Date":"26-04-2023 17:25:35"}
-{"level":"warn","message": "Servidor inciando tentativa de conexão ao banco de dados","Date":"26-04-2023 17:25:35"}
-{"level":"warn","message": "Conectado no banco de dados com sucesso","Date":"26-04-2023 17:25:35"}
-{"level":"warn","message": "Inciando tentativa de start da API na  9000 com o ip 0.0.0.0!","Date":"26-04-2023 17:25:35"}
-{"level":"warn","message": "Server is started on process 12296","Date":"26-04-2023 17:25:35"}
-{"level":"warn","message": "Servidor inciando tentativa de conexão ao banco de dados","Date":"26-04-2023 17:25:35"}
-{"level":"warn","message": "Inciando tentativa de start da API na  9000 com o ip 0.0.0.0!","Date":"26-04-2023 17:25:35"}
-{"level":"warn","message": "Server is started on process 12295","Date":"26-04-2023 17:25:35"}
-{"level":"warn","message": "Conectado no banco de dados com sucesso","Date":"26-04-2023 17:25:35"}
-{"level":"warn","message": "Conectado no banco de dados com sucesso","Date":"26-04-2023 17:25:35"}
-{"level":"warn","message": "Inciando tentativa de start da API na  9000 com o ip 0.0.0.0!","Date":"26-04-2023 17:25:35"}
-{"level":"warn","message": "Server is started on process 12302","Date":"26-04-2023 17:25:35"}
-{"level":"warn","message": "Inciando tentativa de start da API na  9000 com o ip 0.0.0.0!","Date":"26-04-2023 17:25:35"}
-{"level":"warn","message": "Server is started on process 12308","Date":"26-04-2023 17:25:35"}
-=======
-{"level":"warn","message": "5395 is started","Date":"26-04-2023 16:02:20"}
-{"level":"warn","message": "5395 is started","Date":"26-04-2023 16:02:20"}
-{"level":"warn","message": "5395 is started","Date":"26-04-2023 16:02:20"}
-{"level":"warn","message": "5395 is started","Date":"26-04-2023 16:02:20"}
-{"level":"warn","message": "Servidor inciando tentativa de conexão ao banco de dados","Date":"26-04-2023 16:02:22"}
-{"level":"warn","message": "Conectado no banco de dados com sucesso","Date":"26-04-2023 16:02:22"}
-{"level":"warn","message": "Inciando tentativa de start da API na  9000 com o ip 0.0.0.0!","Date":"26-04-2023 16:02:22"}
-{"level":"warn","message": "Server is started on process 5426","Date":"26-04-2023 16:02:22"}
-{"level":"warn","message": "Servidor rodando na porta 9000 com o ip undefined! --- HTTP","Date":"26-04-2023 16:02:22"}
-{"level":"warn","message": "Servidor rodando na porta 9000 on process 5426 !","Date":"26-04-2023 16:02:22"}
-{"level":"warn","message": "Servidor inciando tentativa de conexão ao banco de dados","Date":"26-04-2023 16:02:22"}
-{"level":"warn","message": "Servidor inciando tentativa de conexão ao banco de dados","Date":"26-04-2023 16:02:22"}
-{"level":"warn","message": "Conectado no banco de dados com sucesso","Date":"26-04-2023 16:02:22"}
-{"level":"warn","message": "Inciando tentativa de start da API na  9000 com o ip 0.0.0.0!","Date":"26-04-2023 16:02:22"}
-{"level":"warn","message": "Server is started on process 5427","Date":"26-04-2023 16:02:22"}
-{"level":"warn","message": "Conectado no banco de dados com sucesso","Date":"26-04-2023 16:02:22"}
-{"level":"warn","message": "Servidor rodando na porta 9000 com o ip undefined! --- HTTP","Date":"26-04-2023 16:02:22"}
-{"level":"warn","message": "Servidor rodando na porta 9000 on process 5427 !","Date":"26-04-2023 16:02:22"}
-{"level":"warn","message": "Inciando tentativa de start da API na  9000 com o ip 0.0.0.0!","Date":"26-04-2023 16:02:22"}
-{"level":"warn","message": "Server is started on process 5439","Date":"26-04-2023 16:02:22"}
-{"level":"warn","message": "Servidor rodando na porta 9000 com o ip undefined! --- HTTP","Date":"26-04-2023 16:02:22"}
-{"level":"warn","message": "Servidor rodando na porta 9000 on process 5439 !","Date":"26-04-2023 16:02:22"}
-{"level":"warn","message": "Servidor inciando tentativa de conexão ao banco de dados","Date":"26-04-2023 16:02:22"}
-{"level":"warn","message": "Conectado no banco de dados com sucesso","Date":"26-04-2023 16:02:22"}
-{"level":"warn","message": "Inciando tentativa de start da API na  9000 com o ip 0.0.0.0!","Date":"26-04-2023 16:02:22"}
-{"level":"warn","message": "Server is started on process 5433","Date":"26-04-2023 16:02:22"}
-{"level":"warn","message": "Servidor rodando na porta 9000 com o ip undefined! --- HTTP","Date":"26-04-2023 16:02:22"}
-{"level":"warn","message": "Servidor rodando na porta 9000 on process 5433 !","Date":"26-04-2023 16:02:22"}
->>>>>>> developer
-{"level":"warn","message": "12870 is started","Date":"26-04-2023 17:26:10"}
-{"level":"warn","message": "12870 is started","Date":"26-04-2023 17:26:10"}
-{"level":"warn","message": "12870 is started","Date":"26-04-2023 17:26:10"}
-{"level":"warn","message": "12870 is started","Date":"26-04-2023 17:26:10"}
-{"level":"warn","message": "Servidor inciando tentativa de conexão ao banco de dados","Date":"26-04-2023 17:26:13"}
-{"level":"warn","message": "Servidor inciando tentativa de conexão ao banco de dados","Date":"26-04-2023 17:26:13"}
-{"level":"warn","message": "Servidor inciando tentativa de conexão ao banco de dados","Date":"26-04-2023 17:26:13"}
-{"level":"warn","message": "Servidor inciando tentativa de conexão ao banco de dados","Date":"26-04-2023 17:26:13"}
-{"level":"warn","message": "Conectado no banco de dados com sucesso","Date":"26-04-2023 17:26:13"}
-{"level":"warn","message": "Conectado no banco de dados com sucesso","Date":"26-04-2023 17:26:13"}
-{"level":"warn","message": "Inciando tentativa de start da API na  9000 com o ip 0.0.0.0!","Date":"26-04-2023 17:26:13"}
-{"level":"warn","message": "Server is started on process 12896","Date":"26-04-2023 17:26:13"}
-{"level":"warn","message": "Inciando tentativa de start da API na  9000 com o ip 0.0.0.0!","Date":"26-04-2023 17:26:13"}
-{"level":"warn","message": "Server is started on process 12907","Date":"26-04-2023 17:26:13"}
-{"level":"warn","message": "Servidor rodando na porta 9000 com o ip undefined! --- HTTP","Date":"26-04-2023 17:26:13"}
-{"level":"warn","message": "Conectado no banco de dados com sucesso","Date":"26-04-2023 17:26:13"}
-{"level":"warn","message": "Servidor rodando na porta 9000 com o ip undefined! --- HTTP","Date":"26-04-2023 17:26:13"}
-{"level":"warn","message": "Servidor rodando na porta 9000 on process 12896 !","Date":"26-04-2023 17:26:13"}
-{"level":"warn","message": "Servidor rodando na porta 9000 on process 12907 !","Date":"26-04-2023 17:26:13"}
-{"level":"warn","message": "Inciando tentativa de start da API na  9000 com o ip 0.0.0.0!","Date":"26-04-2023 17:26:13"}
-{"level":"warn","message": "Server is started on process 12901","Date":"26-04-2023 17:26:13"}
-{"level":"warn","message": "Servidor rodando na porta 9000 com o ip undefined! --- HTTP","Date":"26-04-2023 17:26:13"}
-{"level":"warn","message": "Servidor rodando na porta 9000 on process 12901 !","Date":"26-04-2023 17:26:13"}
-{"level":"warn","message": "Conectado no banco de dados com sucesso","Date":"26-04-2023 17:26:13"}
-{"level":"warn","message": "Inciando tentativa de start da API na  9000 com o ip 0.0.0.0!","Date":"26-04-2023 17:26:13"}
-{"level":"warn","message": "Server is started on process 12913","Date":"26-04-2023 17:26:13"}
-{"level":"warn","message": "Servidor rodando na porta 9000 com o ip undefined! --- HTTP","Date":"26-04-2023 17:26:13"}
-{"level":"warn","message": "Servidor rodando na porta 9000 on process 12913 !","Date":"26-04-2023 17:26:13"}
+{"level":"warn","message": "15517 is started","Date":"26-04-2023 17:55:21"}
+{"level":"warn","message": "15517 is started","Date":"26-04-2023 17:55:21"}
+{"level":"warn","message": "15517 is started","Date":"26-04-2023 17:55:21"}
+{"level":"warn","message": "15517 is started","Date":"26-04-2023 17:55:21"}
+{"level":"warn","message": "Servidor inciando tentativa de conexão ao banco de dados","Date":"26-04-2023 17:55:23"}
+{"level":"warn","message": "Servidor inciando tentativa de conexão ao banco de dados","Date":"26-04-2023 17:55:23"}
+{"level":"warn","message": "Servidor inciando tentativa de conexão ao banco de dados","Date":"26-04-2023 17:55:23"}
+{"level":"warn","message": "Conectado no banco de dados com sucesso","Date":"26-04-2023 17:55:24"}
+{"level":"warn","message": "Inciando tentativa de start da API na  9000 com o ip 0.0.0.0!","Date":"26-04-2023 17:55:24"}
+{"level":"warn","message": "Server is started on process 15554","Date":"26-04-2023 17:55:24"}
+{"level":"warn","message": "Conectado no banco de dados com sucesso","Date":"26-04-2023 17:55:24"}
+{"level":"warn","message": "Servidor rodando na porta 9000 com o ip undefined! --- HTTP","Date":"26-04-2023 17:55:24"}
+{"level":"warn","message": "Servidor rodando na porta 9000 on process 15554 !","Date":"26-04-2023 17:55:24"}
+{"level":"warn","message": "Inciando tentativa de start da API na  9000 com o ip 0.0.0.0!","Date":"26-04-2023 17:55:24"}
+{"level":"warn","message": "Server is started on process 15548","Date":"26-04-2023 17:55:24"}
+{"level":"warn","message": "Servidor rodando na porta 9000 com o ip undefined! --- HTTP","Date":"26-04-2023 17:55:24"}
+{"level":"warn","message": "Servidor rodando na porta 9000 on process 15548 !","Date":"26-04-2023 17:55:24"}
+{"level":"warn","message": "Conectado no banco de dados com sucesso","Date":"26-04-2023 17:55:24"}
+{"level":"warn","message": "Inciando tentativa de start da API na  9000 com o ip 0.0.0.0!","Date":"26-04-2023 17:55:24"}
+{"level":"warn","message": "Server is started on process 15547","Date":"26-04-2023 17:55:24"}
+{"level":"warn","message": "Servidor rodando na porta 9000 com o ip undefined! --- HTTP","Date":"26-04-2023 17:55:24"}
+{"level":"warn","message": "Servidor rodando na porta 9000 on process 15547 !","Date":"26-04-2023 17:55:24"}
+{"level":"warn","message": "Servidor inciando tentativa de conexão ao banco de dados","Date":"26-04-2023 17:55:24"}
+{"level":"warn","message": "Conectado no banco de dados com sucesso","Date":"26-04-2023 17:55:24"}
+{"level":"warn","message": "Inciando tentativa de start da API na  9000 com o ip 0.0.0.0!","Date":"26-04-2023 17:55:24"}
+{"level":"warn","message": "Server is started on process 15560","Date":"26-04-2023 17:55:24"}
+{"level":"warn","message": "Servidor rodando na porta 9000 com o ip undefined! --- HTTP","Date":"26-04-2023 17:55:24"}
+{"level":"warn","message": "Servidor rodando na porta 9000 on process 15560 !","Date":"26-04-2023 17:55:24"}

@@ -1,3 +1,4 @@
+import path from 'path';
 import winston from 'winston'
 const { combine, timestamp, json, printf } = winston.format;
 
@@ -20,10 +21,10 @@ const alertFilter = winston.format((info, opts) => {
 const verboseFilter = winston.format((info, opts) => {
     return info.level === 'verbose' ? info : false;
 });
-
+path.resolve("certificates", "key.key")
 
 let transports: Array<any> = []
-let pathLogs = process.env.NODE_ENV == "production" ? `${__dirname}/../../../logs/production` : `${__dirname}/../../../logs/development`
+let pathLogs = process.env.NODE_ENV == "production" ? path.resolve("logs", "production") : path.resolve("logs", "development")
 
 let Printf = printf(
     (info) => `{"level":"${info.level}","message": ${JSON.stringify(info.message)},"Date":"${info.timestamp}"}`

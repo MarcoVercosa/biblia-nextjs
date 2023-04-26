@@ -38,3 +38,6 @@ next-env.d.ts
 
 #database container
 /dataBase
+
+#log server
+*.log

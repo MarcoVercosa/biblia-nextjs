@@ -4,6 +4,7 @@ var __importDefault = (this && this.__importDefault) || function (mod) {
 };
 Object.defineProperty(exports, "__esModule", { value: true });
 exports.Logger = void 0;
+const path_1 = __importDefault(require("path"));
 const winston_1 = __importDefault(require("winston"));
 const { combine, timestamp, json, printf } = winston_1.default.format;
 const errorFilter = winston_1.default.format((info, opts) => {
@@ -24,8 +25,9 @@ const alertFilter = winston_1.default.format((info, opts) => {
 const verboseFilter = winston_1.default.format((info, opts) => {
     return info.level === 'verbose' ? info : false;
 });
+path_1.default.resolve("certificates", "key.key");
 let transports = [];
-let pathLogs = process.env.NODE_ENV == "production" ? `${__dirname}/../../../logs/production` : `${__dirname}/../../../logs/development`;
+let pathLogs = process.env.NODE_ENV == "production" ? path_1.default.resolve("logs", "production") : path_1.default.resolve("logs", "development");
 let Printf = printf((info) => `{"level":"${info.level}","message": ${JSON.stringify(info.message)},"Date":"${info.timestamp}"}`);
 // if (process.env.NODE_ENV == 'production') {
 transports = [
