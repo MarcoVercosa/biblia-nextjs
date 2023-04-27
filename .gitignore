@@ -39,6 +39,9 @@ next-env.d.ts
 #database container
 /dataBase
 
+#certificate ngix
+/certificates
+
 #log server
 development/
 production/
