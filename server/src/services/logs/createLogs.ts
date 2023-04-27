@@ -23,13 +23,14 @@ const verboseFilter = winston.format((info, opts) => {
 });
 
 
-let transports: Array<any> = []
+console.log("EXECUTADO LOG FILES")
 let pathLogs = process.env.NODE_ENV == "production" ? path.resolve("logs", "production") : path.resolve("logs", "development")
 
 let Printf = printf(
     (info) => `{"level":"${info.level}","message": ${JSON.stringify(info.message)},"Date":"${info.timestamp}"}`
 )
 
+let transports: Array<any> = []
 // if (process.env.NODE_ENV == 'production') {
 transports = [
     new winston.transports.File({
