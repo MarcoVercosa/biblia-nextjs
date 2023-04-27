@@ -21,7 +21,7 @@ const alertFilter = winston.format((info, opts) => {
 const verboseFilter = winston.format((info, opts) => {
     return info.level === 'verbose' ? info : false;
 });
-path.resolve("certificates", "key.key")
+
 
 let transports: Array<any> = []
 let pathLogs = process.env.NODE_ENV == "production" ? path.resolve("logs", "production") : path.resolve("logs", "development")
