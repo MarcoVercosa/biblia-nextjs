@@ -25,10 +25,9 @@ const alertFilter = winston_1.default.format((info, opts) => {
 const verboseFilter = winston_1.default.format((info, opts) => {
     return info.level === 'verbose' ? info : false;
 });
-path_1.default.resolve("certificates", "key.key");
-let transports = [];
 let pathLogs = process.env.NODE_ENV == "production" ? path_1.default.resolve("logs", "production") : path_1.default.resolve("logs", "development");
 let Printf = printf((info) => `{"level":"${info.level}","message": ${JSON.stringify(info.message)},"Date":"${info.timestamp}"}`);
+let transports = [];
 // if (process.env.NODE_ENV == 'production') {
 transports = [
     new winston_1.default.transports.File({
