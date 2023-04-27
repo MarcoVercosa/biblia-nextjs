@@ -83,7 +83,7 @@ function MountFileSiteMap() {
         return __generator(this, function (_a) {
             switch (_a.label) {
                 case 0:
-                    fs.writeFile("siteMapFonteDeVida.xml", "\n<?xml version=\"1.0\"'}'encoding=\"UTF-8\"?>\n<urlset xmlns=\"http://www.sitemaps.org/schemas/sitemap/0.9\">", function (err) {
+                    fs.writeFile(path.resolve("public", "siteMapFonteDeVida.xml"), "<?xml version=\"1.0\" encoding=\"UTF-8\"?>\n<urlset xmlns=\"http://www.sitemaps.org/schemas/sitemap/0.9\">", function (err) {
                         if (err)
                             console.log(err);
                     });
@@ -103,7 +103,7 @@ function MountFileSiteMap() {
                     fetchCapitulos = _a.sent() //obtem a quantidade exata de capitulos do livro da vez
                     ;
                     for (capitulos = 1; capitulos <= fetchCapitulos[0].capitulo; capitulos++) { //para cada capitulo encontrado
-                        fs.writeFile(path.resolve("siteMapFonteDeVida.xml"), "\n<url>\n<loc>https://fontedevida.app.br/leitura/".concat(versao, "/").concat(testamento, "/").concat(livros, "/").concat(capitulos, "</loc>\n<lastmod>2023-04-26T18:35:03+01:00</lastmod>\n<priority>0.8</priority>\n</url>"), { flag: "a" }, function (err) {
+                        fs.writeFile(path.resolve("public", "siteMapFonteDeVida.xml"), "\n<url>\n<loc>https://fontedevida.app.br/leitura/".concat(versao, "/").concat(testamento, "/").concat(livros, "/").concat(capitulos, "</loc>\n<lastmod>2023-04-26T18:35:03+01:00</lastmod>\n<priority>0.8</priority>\n</url>"), { flag: "a" }, function (err) {
                             if (err)
                                 console.log(err);
                             ;
@@ -130,7 +130,7 @@ function MountFileSiteMap() {
                     fetchCapitulos = _a.sent() //obtem a quantidade exata de capitulos do livro da vez
                     ;
                     for (capitulos = 1; capitulos <= fetchCapitulos[0].capitulo; capitulos++) { //para cada capitulo encontrado
-                        fs.writeFile(path.resolve("siteMapFonteDeVida.xml"), "\n<url>\n<loc>https://fontedevida.app.br/leitura/".concat(versao, "/").concat(testamento, "/").concat(livros, "/").concat(capitulos, "</loc>\n<lastmod>2023-04-26T18:35:03+01:00</lastmod>\n<priority>0.8</priority>\n</url>"), { flag: "a" }, function (err) {
+                        fs.writeFile(path.resolve("public", "siteMapFonteDeVida.xml"), "\n<url>\n<loc>https://fontedevida.app.br/leitura/".concat(versao, "/").concat(testamento, "/").concat(livros, "/").concat(capitulos, "</loc>\n<lastmod>2023-04-26T18:35:03+01:00</lastmod>\n<priority>0.8</priority>\n</url>"), { flag: "a" }, function (err) {
                             if (err)
                                 console.log(err);
                             ;
@@ -144,7 +144,7 @@ function MountFileSiteMap() {
                     testamento++;
                     return [3 /*break*/, 8];
                 case 13:
-                    fs.writeFile("siteMapFonteDeVida.xml", "\n</urlset>", { flag: "a" }, function (err) {
+                    fs.writeFile(path.resolve("public", "siteMapFonteDeVida.xml"), "\n</urlset>", { flag: "a" }, function (err) {
                         if (err)
                             console.log(err);
                     });
