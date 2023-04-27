@@ -1,4 +1,5 @@
 import path from 'path';
+import fs from "fs"
 import winston from 'winston'
 const { combine, timestamp, json, printf } = winston.format;
 
@@ -21,9 +22,8 @@ const alertFilter = winston.format((info, opts) => {
 const verboseFilter = winston.format((info, opts) => {
     return info.level === 'verbose' ? info : false;
 });
-path.resolve("certificates", "key.key")
 
-console.log("EXECUTADO LOG FILES")
+
 let pathLogs = process.env.NODE_ENV == "production" ? path.resolve("logs", "production") : path.resolve("logs", "development")
 
 let Printf = printf(
