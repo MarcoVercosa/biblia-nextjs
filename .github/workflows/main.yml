@@ -18,6 +18,7 @@ jobs:
         password: M@deld4166
         port: 22
         script: |
+          sudo su
           ls /
           uname -a
           docker ps
