@@ -17,6 +17,9 @@ jobs:
         username: ${{ secrets.USER_VPS }}
         password: M@deld4166
         port: 22
-        script: ls
+        script: |
+          ls /
+          uname -a
+          docker ps
         
         
