@@ -7,7 +7,7 @@
     "dev": "NODE_ENV=development ts-node-dev --transpile-only --ignore-watch node_modules src/startServer.ts",
     "devjs": "NODE_ENV=development nodemon src/startServer.ts",
     "build": "npx tsc && NODE_ENV=production node build/startServer.js",
-    "prodDocker": "NODE_ENV=production  node build/startServer.js"
+    "prodDocker": "npm install && npm run build"
   },
   "author": "MAVS",
   "license": "ISC",
