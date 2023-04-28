@@ -28,6 +28,12 @@ services:
     environment:
       - NODE_env=production
     user: node
+    command:
+      - /bin/bash
+      - -c
+      - |
+        chmod 777 /app -R
+        ${NODE_PROD_START} 
     ports:
       - ${PORTS_NODE}
     restart: always
@@ -36,7 +42,6 @@ services:
     volumes:
       - ${VOLUME_NODE_APP}
       - ${VOLUME_NODE_LOGS}
-    command: ${NODE_PROD_START}
     networks:
       network-mysql-nodejs:
         ipv4_address: ${IP_ADDRESS_NODE}
