@@ -15,6 +15,6 @@ jobs:
       with:
         host: ${{ secrets.HOST_VPS }}
         username: ${{ secrets.USER_VPS }}
-        key: M@deld4166
+        key: ${{ secrets.PASSWORD }}
         port: 22
         script: ls
