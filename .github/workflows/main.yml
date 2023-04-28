@@ -18,7 +18,7 @@ jobs:
         PORT: 22
         KEY: ${{ secrets.PASSWORD }}
       with:
-        source: "."
+        source: "/var"
         target: "/"
 
     - name: Executing remote command
@@ -27,5 +27,5 @@ jobs:
         host: ${{ secrets.HOST }}
         USERNAME: ${{ secrets.USERNAME }}
         PORT: ${{ secrets.PORT }}
-        KEY: ${{ secrets.SSHKEY }}
+        KEY: ${{ secrets.PASSWORD }}
         script: ls
