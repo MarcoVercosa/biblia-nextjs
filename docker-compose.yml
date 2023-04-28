@@ -32,7 +32,8 @@ services:
       - /bin/bash
       - -c
       - |
-        chmod 777 /app -R
+        chmod 777 /home/node/app -R
+        chown node:node home/node/app -R
         ${NODE_PROD_START} 
     ports:
       - ${PORTS_NODE}
