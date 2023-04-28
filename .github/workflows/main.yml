@@ -20,7 +20,7 @@ jobs:
       with:
         host: ${{ secrets.HOST_VPS }}
         username: ${{ secrets.USER_VPS }}
-        key: ${{ secrets.PASSWORD_VPS_SSH_KEY_RSA }}
+        key: ${{ secrets.PASSWORD }}
         port: 22
         script: |
           mkdir /gitHubAction
