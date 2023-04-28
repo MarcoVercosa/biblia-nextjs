@@ -24,8 +24,8 @@ jobs:
     - name: Executing remote command
       uses: appleboy/ssh-action@master
       with:
-        host: vps45754.publiccloud.com.br
-        username: marcoadm
+        host: ${{ secrets.HOST_VPS }}
+        username: ${{ secrets.USER_VPS }}
+        key: ${{ secrets.PASSWORD }}
         port: 22
-        key: M@deld4166
         script: ls
