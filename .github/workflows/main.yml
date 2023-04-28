@@ -23,4 +23,4 @@ jobs:
           echo $CERTIFICATE_HOST_VPS
           echo $CERTIFICATE_USER_VPS
           echo $CERTIFICATE_PASSWORD
-      - name: Show certificate information
+
