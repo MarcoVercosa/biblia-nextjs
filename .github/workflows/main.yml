@@ -18,8 +18,8 @@ jobs:
         password: ${{ secrets.PASSWORD }}
         port: 22
         script: |
-          sudo /bibliaSiteFromGitHub/biblia-nextjs/GitHubPull.sh
-          sudo cp /volDockerEnvEnviroment/composeEnv/.env /bibliaSiteFromGitHub/biblia-nextjs/biblia-nextjs/
-          sudo cp /volDockerEnvEnviroment/nodeEnv/.env /bibliaSiteFromGitHub/biblia-nextjs/biblia-nextjs/server/
+          sudo bash /bibliaSiteFromGitHub/biblia-nextjs/GitHubPull.sh
+          sudo cp /volDockerEnvEnviroment/composeEnv/.env /bibliaSiteFromGitHub/biblia-nextjs/
+          sudo cp /volDockerEnvEnviroment/nodeEnv/.env /bibliaSiteFromGitHub/biblia-nextjs/server/
           sudo docker-compose ps 
 
