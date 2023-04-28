@@ -15,12 +15,12 @@ jobs:
       with:
         host: ${{ secrets.HOST_VPS }}
         username: ${{ secrets.USER_VPS }}
-        password: M@deld4166
+        password: ${{ secrets.PASSWORD }}
         port: 22
         script: |
           sudo su
           ls /
           uname -a
-          docker ps
+          sudo docker ps
         
         
