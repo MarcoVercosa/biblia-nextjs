@@ -24,8 +24,8 @@ jobs:
     - name: Executing remote command
       uses: appleboy/ssh-action@master
       with:
-        host: ${{ secrets.HOST }}
-        USERNAME: ${{ secrets.USERNAME }}
-        PORT: ${{ secrets.PORT }}
-        KEY: ${{ secrets.PASSWORD }}
+        host: ${{ secrets.HOST_VPS }}
+        username: ${{ secrets.USER_VPS }}
+        port: 22
+        key: ${{ secrets.PASSWORD }}
         script: ls
