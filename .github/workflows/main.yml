@@ -19,7 +19,7 @@ jobs:
           CERTIFICATE_USER_VPS: ${{ secrets.USER_VPS }}
           CERTIFICATE_PASSWORD: ${{ secrets.PASSWORD }}
         run: |
-          echo $CERTIFICATE_HOST_VPS
-          echo $CERTIFICATE_USER_VPS
-          echo $CERTIFICATE_PASSWORD
+          echo "$CERTIFICATE_HOST_VPS"
+          echo "CERTIFICATE_USER_VPS"
+          echo "$CERTIFICATE_PASSWORD"
 
