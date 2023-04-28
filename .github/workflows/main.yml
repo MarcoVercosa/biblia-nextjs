@@ -17,8 +17,9 @@ jobs:
         username: ${{ secrets.USER_VPS }}
         password: ${{ secrets.PASSWORD }}
         port: 22
+        working-directory: bibliaSiteFromGitHub/biblia-nextjs/biblia-nextjs
         script: |
-          sudo cd /bibliaSiteFromGitHub/biblia-nextjs/biblia-nextjs &&  sudo git pull origin master
+          sudo git pull origin master
           sudo cp /volDockerEnvEnviroment/composeEnv/.env /bibliaSiteFromGitHub/biblia-nextjs/biblia-nextjs/
           sudo cp /volDockerEnvEnviroment/nodeEnv/.env /bibliaSiteFromGitHub/biblia-nextjs/biblia-nextjs/server/
           sudo docker-compose ps 
