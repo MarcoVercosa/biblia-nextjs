@@ -24,5 +24,3 @@ jobs:
           echo $CERTIFICATE_USER_VPS
           echo $CERTIFICATE_PASSWORD
       - name: Show certificate information
-        run: |
-          openssl x509 -in cert.der -inform DER -text -noout
