@@ -21,7 +21,5 @@ jobs:
           ls
           pwd
           sudo bash /bibliaSiteFromGitHub/biblia-nextjs/GitHubPull.sh
-          sudo cp /volDockerEnvEnviroment/composeEnv/.env /bibliaSiteFromGitHub/biblia-nextjs/
-          sudo cp /volDockerEnvEnviroment/nodeEnv/.env /bibliaSiteFromGitHub/biblia-nextjs/server/
-          sudo docker-compose ps 
+
 
