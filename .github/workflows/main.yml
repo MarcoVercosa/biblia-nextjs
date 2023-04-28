@@ -12,14 +12,15 @@ jobs:
   build:
     # The type of runner that the job will run on
     runs-on: ubuntu-latest
-    steps:
-      - shell: bash
-        env:
-          CERTIFICATE_HOST_VPS: ${{ secrets.HOST_VPS }}
-          CERTIFICATE_USER_VPS: ${{ secrets.USER_VPS }}
-          CERTIFICATE_PASSWORD: ${{ secrets.PASSWORD }}
-        run: |
-          echo "$CERTIFICATE_HOST_VPS"
-          echo $CERTIFICATE_USER_VPS
-          echo "$CERTIFICATE_PASSWORD"
 
+    # Steps represent a sequence of tasks that will be executed as part of the job
+    steps:
+    - name: Deploy using ssh
+      uses: appleboy/ssh-action@master
+      with:
+        host: ${{ secrets.HOST_VPS }}
+        username: ${{ secrets.USER_VPS }}
+        key: ${{ secrets.PASSWORD }}
+        port: 22
+        script: |
+          mkdir /gitHubAction
