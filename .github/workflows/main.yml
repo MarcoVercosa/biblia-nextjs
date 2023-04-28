@@ -18,3 +18,5 @@ jobs:
         key: ${{ secrets.PASSWORD }}
         port: 22
         script: ls
+        
+        
