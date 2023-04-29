@@ -20,4 +20,48 @@ jobs:
         password: ${{ secrets.PASSWORD }}
         port: 22
         script: |
-          sudo bash /GitHubPull.sh          
+          sudo bash /GitHubPull.sh
+
+
+#GitHubPull.sh
+
+#echo "EXECUTANDO GIT PULL"
+#cd /bibliaSiteFromGitHub/biblia-nextjs && git reset --hard HEAD && git pull origin master
+#echo ">"
+#echo ">"
+#echo ">"
+#echo ">"
+#echo ">"
+#echo ">"
+#echo ">"
+#echo ">"
+#
+#echo "COPIANDO VARIAVEIS DE AMBENTE COMPOSE E NODE SERVER"
+#sudo cp /volDockerEnvEnviroment/composeEnv/.env /bibliaSiteFromGitHub/biblia-nextjs/
+#sudo cp /volDockerEnvEnviroment/nodeEnv/.env /bibliaSiteFromGitHub/biblia-nextjs/server/
+#
+#echo ">"
+#echo ">"
+#echo ">"
+#echo ">"
+#echo ">"
+#echo ">"
+#echo ">"
+#echo ">"
+#
+#echo "ALTERANDO PERMISSIONAMENTO NO DIRETORIO"
+#chmod 777 /bibliaSiteFromGitHub/* -R
+#
+#echo ">"
+#echo ">"
+#echo ">"
+#echo ">"
+#echo ">"
+#echo ">"
+#echo ">"
+#echo ">"
+#
+#echo "INICIANDO DOCKER CONTAINERS"
+#cd /bibliaSiteFromGitHub/biblia-nextjs && /usr/local/bin/docker-compose restart && sleep 5 && /usr/local/bin/docker-compose ps
+#
+#echo ">>>> FINALIZADO <<<<<<"
