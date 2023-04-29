@@ -22,7 +22,7 @@ services:
         ipv4_address: ${IP_ADDRESS_MYSQL}
 
   nodeapi:
-    image: "node:16"
+    build: .
     container_name: ${NODEAPI_PROD_ENV}
     working_dir: ${WORK_DIR}
     environment:
@@ -33,7 +33,7 @@ services:
       - -c
       - |
         chmod 777 /home/node/app -R
-        chown node:node home/node/app -R
+        chown node:node /home/node/app -R
         ${NODE_PROD_START} 
     ports:
       - ${PORTS_NODE}
