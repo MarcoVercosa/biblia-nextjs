@@ -56,6 +56,9 @@ export default function ArticleHome(): JSX.Element {
                 <p>
                     Uso da inteligência artificial para melhorar ainda mais seu entendimento sobre a palavra de Deus !
                 </p>
+                <p>
+                    Mais de 500 hinos da harpa !
+                </p>
             </div>
 
             <div className={styles.artigoArticleDivTres}>
