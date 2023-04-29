@@ -54,7 +54,7 @@ export default function ArticleHome(): JSX.Element {
                     a palavra de Deus.
                 </p>
                 <p>
-                    Uso da inteligência artificial para melhorar ainda mais seu entendimento sobre a palavra de Deus.
+                    Uso da inteligência artificial para melhorar ainda mais seu entendimento sobre a palavra de Deus !
                 </p>
             </div>
 
