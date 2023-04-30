@@ -22,7 +22,6 @@ jobs:
         script: |
           sudo bash /GitHubPull.sh
 
-
 #GitHubPull.sh
 
 #echo "EXECUTANDO GIT PULL"
