@@ -46,4 +46,4 @@ yarn-error.log*
 
 #log server
 development/
-production/
+production
