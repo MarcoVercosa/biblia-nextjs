@@ -35,8 +35,8 @@ function StartServerWEB(): Promise<string> {
                             key: fs.readFileSync(path.resolve("certificates", "key.key")),
                             cert: fs.readFileSync(path.resolve("certificates", "cert.crt")),
                             passphrase: 'fontedevida',
-                            requestCert: false,
-                            rejectUnauthorized: false
+                            requestCert: true,
+                            rejectUnauthorized: true
                         }, app)
                             .listen(9000, ipListening);
                         Logger.warn(`Servidor rodando na porta ${port} com o ip ${process.env.IP_LISTENING}! --- HTTPS`)
