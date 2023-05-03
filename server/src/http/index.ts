@@ -35,8 +35,8 @@ function StartServerWEB(): Promise<string> {
                             key: fs.readFileSync(path.resolve("certificates", "key.key")),
                             cert: fs.readFileSync(path.resolve("certificates", "cert.crt")),
                             passphrase: 'fontedevida',
-                            requestCert: true,
-                            rejectUnauthorized: true
+                            requestCert: false, //como a solicitação Next não possui certificado TLS, o Backend HTTPS bloqueia. False libera a solicitação http
+                            rejectUnauthorized: false
                         }, app)
                             .listen(9000, ipListening);
                         Logger.warn(`Servidor rodando na porta ${port} com o ip ${process.env.IP_LISTENING}! --- HTTPS`)
